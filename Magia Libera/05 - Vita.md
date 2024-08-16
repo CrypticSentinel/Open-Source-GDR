@@ -9,7 +9,7 @@ Guarigione, crescita, vitalità, rigenerazione. La scuola della Vita è legata a
 - **Protezione e Supporto:** I maghi della Vita sono anche protettori, creando barriere che salvaguardano gli esseri viventi dalle minacce e potenziando le capacità fisiche e mentali degli alleati.
 - **Rinascita e Resurrezione:** Una delle capacità più potenti della scuola della Vita è la resurrezione, che permette di riportare in vita chi è morto da poco tempo, facendo rivivere coloro che hanno perso la vita.
 
-## Caratteristiche del Mago
+## Caratteristiche
 - Empatico e Protettivo: I maghi della Vita sono naturalmente empatici, sentendo un profondo legame con gli altri esseri viventi. Sono protettori per natura e cercano sempre di preservare la vita.
 - Altruista e Sacrificante: Spesso disposti a mettere il benessere degli altri davanti al proprio, i maghi della Vita non esitano a sacrificarsi per salvare i loro compagni o per proteggere i più deboli.
 - Sereno e Rassicurante: Portano calma e conforto ovunque vadano, usando la loro magia per curare ferite e alleviare sofferenze. Sono spesso figure centrali in gruppi o comunità.
