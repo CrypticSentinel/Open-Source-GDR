@@ -9,7 +9,7 @@ La scuola della Terra è legata alla solidità, alla crescita naturale e alla pr
 - **Crescita e Fertilità:** La Terra è anche la fonte di tutta la vita vegetale, e i maghi di questa scuola possono accelerare la crescita delle piante, rigenerare il suolo e influenzare l'equilibrio naturale.
 - **Forza Naturale e Inesorabile:** Come le montagne e i terremoti, la magia della Terra è lenta ma inarrestabile. Una volta messa in moto, è difficile da fermare e può causare distruzione su larga scala.
 
-## Caratteristiche del Mago della Materia
+## Caratteristiche
 - Robusto e Resiliente: I maghi della Terra sono spesso robusti e resistenti, riflettendo la solidità del loro elemento. Hanno una presenza fisica imponente e una determinazione incrollabile.
 - Paziente e Costante: Come la terra stessa, i maghi della Terra sono pazienti e metodici. Preferiscono soluzioni durature e solide, prendendosi il tempo necessario per ottenere risultati permanenti.
 - Protettivo e Nurturante: I maghi della Terra sono naturalmente portati alla protezione e alla cura. Si preoccupano per l'ambiente e per coloro che li circondano, e usano la loro magia per proteggere e nutrire.
