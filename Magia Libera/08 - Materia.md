@@ -9,7 +9,7 @@ Manipolazione della materia fisica, creazione e distruzione, trasmutazione.
 - **Creazione e Distruzione:** La scuola della Materia può includere la capacità di creare oggetti dal nulla (come in alchimia) o distruggerli smontandoli nei loro componenti base.
 - **Elementi Terreni:** Mentre la Terra è un elemento in sé, la Materia può comprendere tutti gli aspetti tangibili del mondo fisico, inclusi minerali, metalli, cristalli, e anche strutture complesse come macchine o edifici.
 
-## Caratteristiche del Mago della Materia
+## Caratteristiche
 - Alchimista e Artigiano: Un mago della Materia è spesso visto come un alchimista o un artigiano, qualcuno che capisce la struttura del mondo fisico e può modificarlo a piacimento.
 - Resilienza Fisica: Potrebbe essere in grado di usare la magia della Materia per rinforzare il proprio corpo, rendendolo più resistente agli attacchi fisici.
 - Creazione di Oggetti: I maghi della Materia possono essere in grado di creare oggetti utili da materiali di base, trasformando pietre comuni in armi, armature o utensili.
