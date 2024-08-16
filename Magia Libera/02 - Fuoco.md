@@ -9,7 +9,7 @@ La scuola del Fuoco è legata all'energia, all'entropia, e alla capacità di inf
 - **Luce e Illuminazione:** Il fuoco è una fonte di luce, che scaccia l'oscurità e rivela ciò che è nascosto. Può essere usato per illuminare il cammino, ma anche per accecare e disorientare i nemici.
 - **Passione e Emozione:** Il fuoco è simbolo di passione, rabbia e potenza emotiva. I maghi del Fuoco spesso canalizzano queste emozioni per alimentare i loro incantesimi.
 
-## Caratteristiche del Mago della Materia
+## Caratteristiche
 - Impulsivo e Potente: I maghi del Fuoco sono spesso impulsivi, con una personalità ardente che rispecchia la loro magia. Non esitano a utilizzare la loro potenza per risolvere i problemi.
 - Coraggioso e Temuto: Con il potere di bruciare città e annientare eserciti, i maghi del Fuoco sono figure rispettate e temute. La loro presenza sul campo di battaglia può cambiare l'esito di una guerra.
 - Inclinazione alla Distruzione: Mentre possono controllare il fuoco, spesso la loro magia è associata alla distruzione. Anche i maghi più disciplinati del Fuoco devono stare attenti a non essere consumati dalle loro stesse fiamme.
