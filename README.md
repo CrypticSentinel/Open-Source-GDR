@@ -8,7 +8,7 @@ Coming soon...
 Coming soon...
 
 ## Magia Libera
-[Descrizione]([Magia Libera/00 - Descrizione Magia Libera.md](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md))
+[Descrizione](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md)
 
 [Come funziona](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/00%20-%20Descrizione%20della%20magia%20libera.md#descrizione-magia-libera)
 
