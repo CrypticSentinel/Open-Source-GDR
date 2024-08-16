@@ -8,29 +8,27 @@ Coming soon...
 Coming soon...
 
 ## Magia Libera
-[Descrizione](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/00%20-%20Descrizione%20della%20magia%20libera.md#descrizione-magia-libera)
+[Descrizione]([Magia Libera/00 - Descrizione Magia Libera.md](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md))
 
 [Come funziona](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/00%20-%20Descrizione%20della%20magia%20libera.md#descrizione-magia-libera)
 
 [Meccaniche](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/00%20-%20Descrizione%20della%20magia%20libera.md#meccaniche)
 
-[Assegnazione dei punti](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/11%20-%20Assegnazione%20dei%20punti.md#assegnazione-dei-punti)
+[Assegnazione dei punti](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/11%20-%20Assegnazione%20dei%20punti.md)
 
 ### Scuole di Magia
-[Acqua](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/01%20-%20Acqua.md#acqua)  
-[Fuoco](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/02%20-%20Fuoco.md#fuoco)  
-[Aria](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/03%20-%20Aria.md#aria)  
+[Acqua](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/01%20-%20Acqua.md)  
+[Fuoco](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/02%20-%20Fuoco.md)  
+[Aria](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/03%20-%20Aria.md)  
 [Terra]  
 [Vita]  
 [Morte]  
 [Spirito]  
-[Materia](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/08%20-%20Materia.md#materia)  
+[Materia](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/08%20-%20Materia.md)  
 [Mente]  
 [Spirito]  
 
 ### Tabelle
-[Tabelle lancio Incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/12%20-%20Tabelle%20lancio%20incantesimi.md#tabelle)
+[Tabelle lancio Incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi.md)
 
-[Tabella Resistenza](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/13%20-%20Tabelle%20resistenza%20e%20fatica.md#tabelle-resistenza)
-
-[Tabella Fatica](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/13%20-%20Tabelle%20resistenza%20e%20fatica.md#tabella-affaticamento)
+[Tabella Resistenza e Fatica](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/13%20-%20Tabelle%20resistenza%20e%20fatica.md)
