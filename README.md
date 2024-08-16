@@ -10,9 +10,9 @@ Coming soon...
 ## Magia Libera
 [Descrizione](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md)
 
-[Come funziona](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/00%20-%20Descrizione%20della%20magia%20libera.md#descrizione-magia-libera)
+[Come funziona](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md#come-funziona-la-magia)
 
-[Meccaniche](https://github.com/CrypticSentinel/Open-Source-GDR/blob/Magia-Libera/00%20-%20Descrizione%20della%20magia%20libera.md#meccaniche)
+[Meccaniche](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md#meccaniche)
 
 [Assegnazione dei punti](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/11%20-%20Assegnazione%20dei%20punti.md)
 
