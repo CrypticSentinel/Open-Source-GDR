@@ -9,7 +9,7 @@ La scuola dell'Acqua si concentra sul controllo dei liquidi e sul loro potere ri
 - **Forza Naturale e Distruttiva:** Sebbene sia spesso associata alla calma e alla cura, l'acqua può anche essere una forza devastante, capace di scatenare inondazioni, maremoti, e di erodere lentamente le difese degli avversari.
 - **Simbolismo di Vita e Rinascita:** L'Acqua è collegata alla nascita e alla rinascita, con la capacità di nutrire e far crescere, ma anche di purificare e rinnovare.
 
-## Caratteristiche del Mago della Materia
+## Caratteristiche
 - Calmo e Riflessivo: I maghi dell'Acqua tendono a essere calmi, saggi e adattabili. Pensano prima di agire e cercano soluzioni che non richiedano violenza, preferendo fluire attorno ai problemi piuttosto che affrontarli direttamente.
 - Empatico e Guaritore: Spesso empatici, i maghi dell'Acqua sentono una connessione profonda con gli altri e sono inclini a usare la loro magia per guarire e proteggere, piuttosto che per distruggere.
 - Paziente e Persistente: Come l'acqua che erode lentamente la roccia, i maghi dell'Acqua sanno che la persistenza vince sempre, preferendo tattiche che portano a una vittoria sicura nel tempo.
