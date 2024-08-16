@@ -20,7 +20,7 @@ Coming soon...
 [Acqua](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/01%20-%20Acqua.md)  
 [Fuoco](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/02%20-%20Fuoco.md)  
 [Aria](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/03%20-%20Aria.md)  
-[Terra]  
+[Terra](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/04%20-%20Terra.md)  
 [Vita]  
 [Morte]  
 [Spirito]  
