@@ -9,7 +9,7 @@ La scuola dell'Aria è legata al movimento, alla furtività e alla velocità.
 - **Velocità e Evasione:** La rapidità è una delle principali caratteristiche dell'Aria. Gli incantesimi di questa scuola permettono di muoversi a velocità straordinarie, di evitare pericoli o di reagire istantaneamente.
 - **Comunicazione e Intuizione:** L'Aria trasporta il suono e i pensieri, rendendo i maghi dell'Aria abili comunicatori e intuitivi, capaci di percepire segreti nascosti e di trasmettere messaggi attraverso grandi distanze.
 
-## Caratteristiche del Mago della Materia
+## Caratteristiche
 - Agile e Evasivo: I maghi dell'Aria sono spesso agili e sfuggenti, preferendo evitare il confronto diretto e sfruttare la loro capacità di muoversi liberamente e rapidamente.
 - Intelligente e Improvvisatore: Sono astuti e capaci di improvvisare soluzioni creative. Usano l'ambiente a loro vantaggio e si adattano rapidamente ai cambiamenti.
 - Misterioso e Elusivo: Come l'Aria stessa, i maghi di questa scuola sono difficili da comprendere e ancora più difficili da catturare. Possono essere silenziosi e furtivi, scegliendo con cura quando e come intervenire.
