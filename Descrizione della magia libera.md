@@ -1,4 +1,4 @@
-# Regolamento Magia Libera
+# Descrizione Magia Libera
 L'obiettivo di questo sistema è di fornire una struttura solida per una sua applicazione in qualsiasi gioco di ruolo, così da consentire un utilizzo della magia in assoluta libertà che permette ai giocatori di personalizzare gli incantesimi in base a vari parametri come distanza, modalità di lancio, durata e altre caratteristiche. La difficoltà dell'incantesimo viene poi calcolata in base a queste scelte, e il successo dipende dal punteggio di abilità del giocatore sommato a un d20. Il sistema vuole consentire una grande libertà ai giocatori nella creazione degli incantesimi, incoraggiando la creatività. Ogni aspetto dell'incantesimo influisce sulla difficoltà, permettendo di bilanciare il potere dell'incantesimo con la difficoltà del lancio.
 
 Il sistema può certamente risultare complesso ad un primo sguardo e la quantità di variabili e calcoli potrebbe risultare complessa ad una prima lettura, specialmente durante il gioco, rallentando il ritmo, ma una volta comprese le meccaniche i calcoli dovrebbero avvenire in maniera semplice.
@@ -28,3 +28,12 @@ Attingendo dalla propria fede, l'utilizzo di preghiere permette loro di guidare 
 I custodi degli antichi segreti della natura possiedono un’innata connessione con la Madre Terra, che permette loro di accedere a poteri che vanno oltre la semplice magia. Espando la propria coscienza verso ogni essere vivente intorno a se stessi, da maestosi alberi secolari a minuscole creature del sottobosco, la terra, l'acqua, l'aria e il fuoco rispondono al loro richiamo, e l'energia vitale della natura fluisce in loro.
 
 Tuttavia, questo potere ha un costo, la fusione temporanea con la natura, rischia di far perdere una parte della propria energia vitale nel processo.
+
+# Meccaniche
+Sulla base delle premesse fatte, ruolo fondamentale nell'utilizzo della magia è la forza di volontà, in questo regolamento gestita tramite la sola caratteristica e punteggio di Volontà, da sommare al proprio grado di conoscenza su una specifica scuola di magia al cui valore verrà sommato il risultato del lancio di 1d20, quindi riassumendo la meccanica, come nella quasi totalità dei regolamenti "d20 based":
+
+Lancio Incantesio = Spirito + Grado Scuola di magia + 1d20
+
+Per la riuscita del lancio sarà sufficiente superare una difficoltà che avrà 20 come valore di base, a cui si dovranno sommare o sottrarre dei punteggi in base al tipo di incantesimo che si vorrà lanciare (distanza, durata, danni etc).
+
+Tutto il resto è lasciato alla descrizione del giocatore e all'insindacabile giudizio ultimo del Master, che avrà facoltà di piegare alla sua volontà qualsiasi effetto o conseguenza.
