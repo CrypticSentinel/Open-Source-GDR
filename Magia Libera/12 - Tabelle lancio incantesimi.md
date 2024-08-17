@@ -76,13 +76,13 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 ## Tabella Danni
 | Danni               | Modificatore Difficoltà |
 | :------------------:|:-----------------------:|
-| Ogni +1 aggiuntivo  | +1                      |
-| Ogni d4 aggiuntivo  | +2                      |
-| Ogni d6 aggiuntivo  | +5                      |
-| Ogni d8 aggiuntivo  | +10                     |
-| Ogni d10 aggiuntivo | -5                      |
-| Ogni d12 aggiuntivo | +30                     |
-| Ogni d20 aggiuntivo | +20                     |
+| Ogni +1 aggiuntivo  | +2                      |
+| Ogni d4 aggiuntivo  | +5                      |
+| Ogni d6 aggiuntivo  | +7                      |
+| Ogni d8 aggiuntivo  | +9                      |
+| Ogni d10 aggiuntivo | +11                     |
+| Ogni d12 aggiuntivo | +13                     |
+| Ogni d20 aggiuntivo | +15                     |
 
 ## Tabella modificatori Mente
 | Danni        | Modificatore Difficoltà |
