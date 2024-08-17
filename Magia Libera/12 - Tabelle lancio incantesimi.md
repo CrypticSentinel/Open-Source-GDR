@@ -35,20 +35,20 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Permanente                    | +20                     |
 
 ## Tabella Modalità di lancio gestuali
-| Modalità di Lancio | Modificatore Difficoltà |
-| :-----------------:|:-----------------------:|
-| Senza gesti        | +5                      |
-| Gesti nascosti     | +3                      |
-| Gesti normali      | +0                      |
-| Gesti ampi         | -3                      |
+| Lancio gestuale | Modificatore Difficoltà |
+| :--------------:|:-----------------------:|
+| Senza gesti     | +5                      |
+| Gesti nascosti  | +3                      |
+| Gesti normali   | +0                      |
+| Gesti ampi      | -3                      |
 
 ## Tabella Modalità di lancio verbali
-| Modalità di Lancio | Modificatore Difficoltà |
-| :-----------------:|:-----------------------:|
-| Senza voce         | +5                      |
-| Voce bassa         | +3                      |
-| Voce normale       | +0                      |
-| Voce alta          | -3                      |
+| Lancio verbale | Modificatore Difficoltà |
+| :-------------:|:-----------------------:|
+| Senza voce     | +5                      |
+| Voce bassa     | +3                      |
+| Voce normale   | +0                      |
+| Voce alta      | -3                      |
 
 ## Tabella posizione di lancio
 | Posizione di Lancio         | Modificatore Difficoltà |
@@ -59,7 +59,7 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Lancio in combattimento     | +15                     |
 
 ## Tabella variabili di lancio
-| Posizione di Lancio                      | Modificatore Difficoltà |
+| Variabili di Lancio                      | Modificatore Difficoltà |
 | :---------------------------------------:|:-----------------------:|
 | Utilizzo di componenti magici            | -5                      |
 | Ogni mago aggiuntivo                     | +0                      |
