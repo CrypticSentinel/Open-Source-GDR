@@ -26,7 +26,7 @@ Coming soon...
 [Spirito](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/07%20-%20Spirito.md)  
 [Materia](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/08%20-%20Materia.md)  
 [Mente](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/09%20-%20Mente.md)  
-[Spirito]  
+[Corpo](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/10%20-%20Corpo.md)  
 
 ### Tabelle
 [Tabelle lancio Incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi.md)
