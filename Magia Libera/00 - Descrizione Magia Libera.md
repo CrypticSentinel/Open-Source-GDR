@@ -22,6 +22,8 @@ Vita ↔ Morte
 Spirito ↔ Materia  
 Mente ↔ Corpo  
 
+Ogni scuola di magia offre una prospettiva unica e meccaniche di gioco specifiche, permettendo ai giocatori di scegliere e sviluppare un personaggio che meglio si adatta al loro stile di gioco e alla narrativa della campagna. L'dea è che combinando queste scuole si riesca ad ottenere un sistema di magia che è sia complesso ed equilibrato, permettendo una grande varietà di scelte strategiche e di roleplay.
+
 # Meccaniche
 Sulla base delle premesse fatte, ruolo fondamentale nell'utilizzo della magia è la forza di volontà, in questo regolamento gestita tramite la sola caratteristica e punteggio di **Volontà**, da sommare al proprio grado di conoscenza su una specifica scuola di magia al cui valore verrà sommato il risultato del lancio di 1d20, quindi riassumendo, la meccanica è:
 
