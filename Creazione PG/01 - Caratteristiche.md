@@ -1,7 +1,7 @@
 # Caratteristiche
 Le caratteristiche fondamentali di questo regolamento sono state progettate per offrire una base solida e versatile, ma possono essere modificate liberamente per adattarsi meglio alle esigenze del tuo gioco o della tua campagna. Il sistema proposto si basa su sei caratteristiche principali, accuratamente bilanciate, che coprono una vasta gamma di aspetti fisici, mentali e di reattività del personaggio. Esaminiamole nel dettaglio:
 
-## Analisi delle Caratteristiche
+## Descrizione delle Caratteristiche
 
 **Forza:** Rappresenta la capacità muscolare e la potenza fisica di un individuo. È essenziale per compiere azioni che richiedono sforzo fisico, come sollevare, spingere, tirare o distruggere oggetti. Una Forza elevata permette di infliggere danni maggiori nei combattimenti corpo a corpo, di indossare armature più pesanti e di resistere meglio agli impatti fisici. Inoltre, la Forza è utile in attività che richiedono una prestanza fisica vigorosa, come scalare, nuotare in acque turbolente o partecipare a prove di resistenza.  
 
@@ -30,3 +30,20 @@ Per questo motivo, l'assegnazione dei punteggi delle caratteristiche potrebbe se
 - Una volta completata questa distribuzione, per riflettere ulteriormente la diversità tra i personaggi (e per offrire un po' di margine ai giocatori), il passo successivo prevede il lancio di 5d4 e 1d6, da aggiungere alle caratteristiche. È consentito ritirare il d6 e almeno uno dei d4.
 
 Questa metodologia rappresenta la mia personale visione del gioco, ma ognuno è libero di adattarla o modificarla secondo le proprie preferenze e necessità narrative.
+
+## Modificatori
+Non mi dilungherò oltre sulla descrizione di questa sezione, ritengo che la regolamentazione presente nei manuali di D&D sia valida per qualsiasi d20 System oltre che nota, di seguito mi limito a riportare la medesima tabella per comodità:
+
+| Punteggio	| Modificatore |
+| :-------: | :----------: |
+| 1         |	-5           |
+| 2-3       | -4           |
+| 4-5       |	-3           |
+| 6-7       |	-2           |
+| 8-9       |	-1           |
+| 10-11     |	+0           |
+| 12-13     |	+1           |
+| 14-15     |	+2           |
+| 16-17     | +3           |
+| 18-19     |	+4           |
+| 20-21     | +5           |
