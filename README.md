@@ -25,7 +25,7 @@ Coming soon...
 [Morte](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/06%20-%20Morte.md)  
 [Spirito](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/07%20-%20Spirito.md)  
 [Materia](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/08%20-%20Materia.md)  
-[Mente]  
+[Mente](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/09%20-%20Mente.md)  
 [Spirito]  
 
 ### Tabelle
