@@ -36,6 +36,6 @@ Di seguito sono riportate tutte le tabelle per calcolare la difficoltà di un in
 
 [Tabella Resistenza e Fatica](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/13%20-%20Tabelle%20resistenza%20e%20fatica.md)
 
-Per velocizzare i calcoli è disponibile un comodo calcolatore web
+Per velocizzare i calcoli è disponibile un comodo calcolatore web  
 [SpellCheck](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
 
