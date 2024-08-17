@@ -22,7 +22,7 @@ Coming soon...
 [Aria](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/03%20-%20Aria.md)  
 [Terra](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/04%20-%20Terra.md)  
 [Vita](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/05%20-%20Vita.md)  
-[Morte]  
+[Morte](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/06%20-%20Morte.md)  
 [Spirito]  
 [Materia](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/08%20-%20Materia.md)  
 [Mente]  
