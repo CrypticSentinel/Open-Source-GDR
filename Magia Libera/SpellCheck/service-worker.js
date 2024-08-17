@@ -1,20 +1,15 @@
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open('v1').then(function(cache) {
-      return cache.addAll([
-        '/',
-        '/index.html',
-        '/style.css',
-        '/script.js',
-        '/icon.png'
-      ]);
-    })
-  );
+// service-worker.js
+self.addEventListener('install', event => {
+  console.log('Service Worker installing.');
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('activate', event => {
+  console.log('Service Worker activated.');
+});
+
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(response => {
       return response || fetch(event.request);
     })
   );

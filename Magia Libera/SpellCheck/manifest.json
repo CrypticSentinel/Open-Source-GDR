@@ -1,14 +1,19 @@
 {
-  "name": "Calcolo Difficoltà Incantesimo",
-  "short_name": "Incantesimo",
-  "start_url": "./index.html",
+  "name": "SpellCheck",
+  "short_name": "SpellCheck",
+  "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#000000",
+  "theme_color": "#FFFFFF",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "icon-192x192.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
