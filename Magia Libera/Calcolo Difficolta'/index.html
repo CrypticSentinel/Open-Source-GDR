@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+    body {
+        font-family: 'Cinzel', serif; /* Font in stile fantasy */
+        background-image: url('background.jpg'); /* Sostituisci con il percorso della tua immagine */
+        background-size: cover;
+        color: #fff; /* Colore del testo in bianco per contrastare con lo sfondo scuro */
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-family: 'Cinzel', serif; /* Font per i titoli */
+        text-align: center;
+    }
+
+<!--     label, select, input, button {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-width: 500px;
+        font-size: 1.2em;
+        background-color: rgba(0, 0, 0, 0.6); /* Sfondo semi-trasparente */
+        border: 1px solid #ccc;
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+    }-->
+
+		label, select, input {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 10px 0; /* Spazio sopra e sotto */
+		}
+
+		label {
+			width: 40%; /* Larghezza del label */
+			text-align: right; /* Allineamento del testo a destra */
+			padding-right: 10px; /* Spazio tra label e input */
+		}
+
+		select, input {
+			width: 50%; /* Larghezza del select/input */
+		}
+
+    button {
+        background-color: #444; /* Colore del bottone */
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #555; /* Colore del bottone al passaggio del mouse */
+    }
+
+    span {
+        font-size: 1em;
+        display: block;
+        text-align: center;
+    }
+</style>
+
+    <title>Calcolo Difficoltà Incantesimo</title>
+    <script>
+      // Registra il Service Worker per gestire la cache offline, se supportato
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+      }
+    </script>
+</head>
+<body>
+    <h1>Calcolo Difficoltà Incantesimo</h1>
+
+    <!-- Selezione della distanza del bersaglio -->
+    <label for="distanza">A che distanza si trova il bersaglio?:</label>
+    <select id="distanza">
+        <option value="-2">Personale (-2)</option>
+        <option value="0">Tocco (+0)</option>
+        <option value="3">Corta (entro 3 m) (+3)</option>
+        <option value="10">Media (entro 10 m) (+10)</option>
+        <option value="25">Lunga (entro 25 m) (+25)</option>
+        <option value="50">Lunghissima (entro 1 km) (+50)</option>
+        <option value="60">Non in vista (Conosciuto) (+60)</option>
+        <option value="75">Non in vista (Sconosciuto) (+75)</option>
+    </select><br><br>
+
+    <!-- Selezione dell'area d'effetto -->
+    <label for="area">Quale sarà l'area d'effetto:</label>
+    <select id="area">
+        <option value="0">Creatura – Intera (+0)</option>
+        <option value="3">Creatura – Locazione (+3)</option>
+        <option value="5">Creatura – Sub locazione (Esterna) (+5)</option>
+        <option value="10">Creatura – Sub locazione (Interna) (+10)</option>
+        <option value="5">Ogni bersaglio oltre il primo (+5)</option>
+        <option value="5">Ogni 5 metri di diametro (+5)</option>
+    </select><br><br>
+
+    <!-- Selezione della durata dell'incantesimo -->
+    <label for="durata">Durata:</label>
+    <select id="durata">
+        <option value="0">1 round / Istantaneo (+0)</option>
+        <option value="2">Ogni round oltre il primo (+2)</option>
+        <option value="5">Ogni 7 minuti (+5)</option>
+        <option value="10">Ogni 15 minuti (+10)</option>
+        <option value="-5">Finchè si rimane concentrati	 (-5)</option>
+        <option value="30">Condizione (Finchè, Quando) (+30)</option>
+        <option value="20">Permanente (+20)</option>
+    </select><br><br>
+
+    <!-- Selezione della modalità di lancio gestuale -->
+    <label for="gesti">Modalità di lancio gestuali:</label>
+    <select id="gesti">
+        <option value="5">Senza gesti (+5)</option>
+        <option value="3">Gesti nascosti (+3)</option>
+        <option value="0">Gesti normali (+0)</option>
+        <option value="-3">Gesti ampi (-3)</option>
+    </select><br><br>
+
+    <!-- Selezione della modalità di lancio verbale -->
+    <label for="verbale">Modalità di lancio verbale:</label>
+    <select id="verbale">
+        <option value="5">Senza voce (+5)</option>
+        <option value="3">Voce bassa (+3)</option>
+        <option value="0">Voce normale (+0)</option>
+        <option value="-3">Voce alta (-3)</option>
+    </select><br><br>
+
+    <!-- Selezione della posizione di lancio -->
+    <label for="posizione">Modalità di lancio in posizione:</label>
+    <select id="posizione">
+        <option value="0">Lancio in posizione normale (+0)</option>
+        <option value="5">Lancio in movimento (+5)</option>
+        <option value="10">Lancio con disturbo (+10)</option>
+        <option value="15">Lancio in combattimento (+15)</option>
+    </select><br><br>
+	
+    <h2>Variabili di lancio:</h2>
+    <!-- Checkbox per le variabili di lancio -->
+    <input type="checkbox" id="variabile1" value="-5"> <label for="variabile1">Utilizzo di componenti magici (-5)</label><br>
+    <input type="checkbox" id="variabile2" value="0"> <label for="variabile2">Ogni mago aggiuntivo (+0)</label><br>
+    <input type="checkbox" id="variabile3" value="-10"> <label for="variabile3">Lancio con rituale (durata 15 minuti) (-10)</label><br>
+
+    <!-- Input per il numero di round di concentrazione -->
+    <label for="rounds">Numero di round di concentrazione (max 10):</label>
+    <input type="number" id="rounds" name="rounds" min="0" max="10" value="0"><br><br>
+	
+    <h2>Effetti di lancio:</h2>
+    <!-- Checkbox per gli effetti di lancio -->
+    <input type="checkbox" id="effetto1" value="5"> <label for="effetto1">Lancio incantesimo senza effetti visivi (+5)</label><br>
+    <input type="checkbox" id="effetto2" value="10"> <label for="effetto2">Lancio incantesimo senza effetti magici (+10)</label><br>
+    <input type="checkbox" id="effetto3" value="15"> <label for="effetto3">Lancio Incantesimo massimizzato (+15)</label><br>
+    <br>
+	
+    <h2>Dadi di danni:</h2>
+    <!-- Input per il numero di dadi per ogni tipo di danno -->
+    <label for="danni1">Ogni +1 aggiuntivo (+2):</label>
+    <input type="number" id="danni1" name="danni1" min="0" value="0">
+    <br><br>
+
+    <label for="danni2">Ogni d4 aggiuntivo (+5):</label>
+    <input type="number" id="danni2" name="danni2" min="0" value="0">
+    <br><br>
+
+    <label for="danni3">Ogni d6 aggiuntivo (+7):</label>
+    <input type="number" id="danni3" name="danni3" min="0" value="0">
+    <br><br>
+
+    <label for="danni4">Ogni d8 aggiuntivo (+9):</label>
+    <input type="number" id="danni4" name="danni4" min="0" value="0">
+    <br><br>
+
+    <label for="danni5">Ogni d10 aggiuntivo (+11):</label>
+    <input type="number" id="danni5" name="danni5" min="0" value="0">
+    <br><br>
+
+    <label for="danni6">Ogni d12 aggiuntivo (+13):</label>
+    <input type="number" id="danni6" name="danni6" min="0" value="0">
+    <br><br>
+
+    <label for="danni7">Ogni d20 aggiuntivo (+15):</label>
+    <input type="number" id="danni7" name="danni7" min="0" value="0">
+    <br><br>
+
+    <!-- Selezione dei modificatori per la mente -->
+    <label for="modificatori_mente">Modificatori per Mente:</label>
+    <select id="modificatori_mente">
+        <option value="0">Leggere (+0)</option>
+        <option value="15">Modificare (+15)</option>
+        <option value="20">Scrivere (+20)</option>
+        <option value="10">Rimuovere (+10)</option>
+    </select><br><br>
+
+    <!-- Bottone per calcolare la difficoltà totale -->
+    <button onclick="calcolaDifficolta()">Calcola Difficoltà</button>
+
+    <!-- Visualizzazione della difficoltà totale calcolata -->
+    <h2>Difficoltà Totale: <span id="difficolta_totale">20</span></h2>
+
+    <script>
+        // Funzione per calcolare la difficoltà totale
+        function calcolaDifficolta() {
+            // Imposta la difficoltà base
+            let base = 20;
+
+            // Ottieni i valori selezionati per distanza, area, durata, gesti, verbale, posizione e modificatori della mente
+            let distanza = parseInt(document.getElementById("distanza").value);
+            let area = parseInt(document.getElementById("area").value);
+            let durata = parseInt(document.getElementById("durata").value);
+            let gesti = parseInt(document.getElementById("gesti").value);
+            let verbale = parseInt(document.getElementById("verbale").value);
+            let posizione = parseInt(document.getElementById("posizione").value);
+            let modificatori_mente = parseInt(document.getElementById("modificatori_mente").value);
+
+            // Calcola il totale degli effetti di lancio selezionati
+            let effetti = 0;
+            if (document.getElementById("effetto1").checked) effetti += parseInt(document.getElementById("effetto1").value);
+            if (document.getElementById("effetto2").checked) effetti += parseInt(document.getElementById("effetto2").value);
+            if (document.getElementById("effetto3").checked) effetti += parseInt(document.getElementById("effetto3").value);
+            
+            // Calcola il modificatore di concentrazione basato sul numero di round
+            let rounds = parseInt(document.getElementById("rounds").value);
+            let concentrazione_mod = -1 * Math.min(rounds, 10);
+
+            // Calcola i danni totali in base ai dadi selezionati
+            let danni_totali = 0;
+            danni_totali += parseInt(document.getElementById("danni1").value) * 2;
+            danni_totali += parseInt(document.getElementById("danni2").value) * 5;
+            danni_totali += parseInt(document.getElementById("danni3").value) * 7;
+            danni_totali += parseInt(document.getElementById("danni4").value) * 9;
+            danni_totali += parseInt(document.getElementById("danni5").value) * 11;
+            danni_totali += parseInt(document.getElementById("danni6").value) * 13;
+            danni_totali += parseInt(document.getElementById("danni7").value) * 15;
+
+            // Somma tutti i valori per ottenere la difficoltà totale
+            let totale = base + distanza + area + durata + gesti + verbale + posizione + danni_totali + modificatori_mente + effetti + concentrazione_mod;
+
+            // Visualizza il risultato finale
+            document.getElementById("difficolta_totale").innerText = totale;
+        }
+    </script>
+</body>
+</html>
