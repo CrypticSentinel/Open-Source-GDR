@@ -34,28 +34,44 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Condizione (Finchè, Quando)   | +30                     |
 | Permanente                    | +20                     |
 
-## Tabella Modalità di Lancio
-| Modalità di Lancio                       | Modificatore Difficoltà |
+## Tabella Modalità di lancio gestuali
+| Modalità di Lancio | Modificatore Difficoltà |
+| :-----------------:|:-----------------------:|
+| Senza gesti        | +5                      |
+| Gesti nascosti     | +3                      |
+| Gesti normali      | +0                      |
+| Gesti ampi         | -3                      |
+
+## Tabella Modalità di lancio verbali
+| Modalità di Lancio | Modificatore Difficoltà |
+| :-----------------:|:-----------------------:|
+| Senza voce         | +5                      |
+| Voce bassa         | +3                      |
+| Voce normale       | +0                      |
+| Voce alta          | -3                      |
+
+## Tabella posizione di lancio
+| Posizione di Lancio         | Modificatore Difficoltà |
+| :--------------------------:|:-----------------------:|
+| Lancio in posizione normale | +0                      |
+| Lancio in movimento         | +5                      |
+| Lancio con disturbo         | +10                     |
+| Lancio in combattimento     | +15                     |
+
+## Tabella variabili di lancio
+| Posizione di Lancio                      | Modificatore Difficoltà |
 | :---------------------------------------:|:-----------------------:|
-| Senza gesti                              | +5                      |
-| Gesti nascosti                           | +3                      |
-| Gesti normali                            | +0                      |
-| Gesti ampi                               | -3                      |
-| Senza voce                               | +5                      |
-| Voce bassa                               | +3                      |
-| Voce normale                             | +0                      |
-| Voce alta                                | -3                      |
-| Lancio incantesimo senza effetti visivi  | +5                      |
-| Lancio incantesimo senza effetti magici  | +10                     |
-| Lancio Incantesimo massimizzato          | +15                     |
-| Lancio in posizione normale              | +0                      |
-| Lancio in movimento                      | +5                      |
-| Lancio con disturbo                      | +10                     |
-| Lancio in combattimento                  | +15                     |
 | Utilizzo di componenti magici            | -5                      |
 | Ogni mago aggiuntivo                     | +0                      |
 | Lancio con rituale (durata 15 minuti)    | -10                     |
 | Concentrazione prima del lancio (max 10) | -1                      |
+
+## Tabella effetti di Lancio
+| Effetti di Lancio                        | Modificatore Difficoltà |
+| :---------------------------------------:|:-----------------------:|
+| Lancio incantesimo senza effetti visivi  | +5                      |
+| Lancio incantesimo senza effetti magici  | +10                     |
+| Lancio Incantesimo massimizzato          | +15                     |
 
 ## Tabella Danni
 | Danni               | Modificatore Difficoltà |
