@@ -2,7 +2,8 @@
 Questo d20 system nasce dalla volontà di creare un sistema di regole accessibile a chiunque, adattabile a qualsiasi gioco di ruolo e personalizzabile per qualsiasi necessità.
 
 ## Creazione del Personaggio
-Coming soon...
+
+[Caratteristiche](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Creazione%20PG/01%20-%20Caratteristiche.md)
 
 ## Combattimento
 Coming soon...
