@@ -76,7 +76,7 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 ## Tabella Danni
 | Danni               | Modificatore Difficoltà |
 | :------------------:|:-----------------------:|
-| Ogni +1 aggiuntivo  | +0                      |
+| Ogni +1 aggiuntivo  | +1                      |
 | Ogni d4 aggiuntivo  | +2                      |
 | Ogni d6 aggiuntivo  | +5                      |
 | Ogni d8 aggiuntivo  | +10                     |
