@@ -24,28 +24,30 @@ Mente ↔ Corpo
 
 Ogni scuola di magia offre una prospettiva unica e meccaniche di gioco specifiche, permettendo ai giocatori di scegliere e sviluppare un personaggio che meglio si adatta al loro stile di gioco e alla narrativa della campagna. L'dea è che combinando queste scuole si riesca ad ottenere un sistema di magia che è sia complesso ed equilibrato, permettendo una grande varietà di scelte strategiche e di roleplay.
 
-# Meccaniche
-Sulla base delle premesse fatte, ruolo fondamentale nell'utilizzo della magia è la forza di volontà, in questo regolamento gestita tramite la sola caratteristica e punteggio di **Volontà**, da sommare al proprio grado di conoscenza su una specifica scuola di magia al cui valore verrà sommato il risultato del lancio di 1d20, quindi riassumendo, la meccanica è:
-
-Lancio Incantesio = Volontà + Grado Scuola di magia + 1d20
-
-Per la riuscita del lancio sarà sufficiente superare una difficoltà che avrà 20 come valore di base, a cui si dovranno sommare o sottrarre dei punteggi in base al tipo di incantesimo che si vorrà lanciare (distanza, durata, danni etc).
-
-Tutto il resto è lasciato alla descrizione del giocatore e all'insindacabile giudizio ultimo del Master, che avrà facoltà di piegare alla sua volontà qualsiasi effetto o conseguenza.
-
 ## Differenze di visione
 
 ### Maghi e Stregoni
-Maghi e stregoni, hanno dedicato la vita a comprendere le leggi arcane che governano l'universo, l'utilizzo da parte loro richiede una concentrazione assoluta e una profonda comprensione dell'energia cosmica che permea tutte le cose, per utilizzare la magia è richiesto loro di richiamare l'energia da ogni creatura vivente, da ogni molecola dell'aria e dalla stessa trama della realtà. Questa energia si condensa in puro potere sotto il loro controllo e richiede una continua prova di forza mentale e volontà, e ogni incantatoree deve essere preparato a sacrificare parte della propria essenza per contenerla. Solo i maghi più esperti possono padroneggiare queste tecniche senza rischiare la propria vita, ma la ricompensa è la capacità di alterare il corso di una battaglia in un singolo, devastante istante. L'uso di questa magia è estremamente dispendioso e richiede una forza interiore straordinaria, se l'incantatore non è in perfetta sintonia con l'energia raccolta, rischia di subire gravi danni fisici e spirituali.
-
+> Maghi e stregoni, hanno dedicato la vita a comprendere le leggi arcane che governano l'universo, l'utilizzo da parte loro richiede una concentrazione assoluta e una profonda comprensione dell'energia cosmica che permea tutte le cose, per utilizzare la magia è richiesto loro di richiamare l'energia da ogni creatura vivente, da ogni molecola dell'aria e dalla stessa trama della realtà. Questa energia si condensa in puro potere sotto il loro controllo e richiede una continua prova di forza mentale e volontà, e ogni incantatoree deve essere preparato a sacrificare parte della propria essenza per contenerla. Solo i maghi più esperti possono padroneggiare queste tecniche senza rischiare la propria vita, ma la ricompensa è la capacità di alterare il corso di una battaglia in un singolo, devastante istante. L'uso di questa magia è estremamente dispendioso e richiede una forza interiore straordinaria, se l'incantatore non è in perfetta sintonia con l'energia raccolta, rischia di subire gravi danni fisici e spirituali.
 Attingendo alla forza vitale circostante, è considerato pericoloso per gli incantatori l'utilizzo di questa magia in ambienti dove la vita è già fragile o in pericolo, poiché il processo di raccolta potrebbe esaurire ulteriormente le energie vitali circostanti.
 
 ### Chierici e Paladini
-I chierici, i paladini e coloro che credono che il loro potere venga concesso in quanto premio per la loro fede, ritengono di usare il potere divino in modi che superano la comprensione mortale. Il loro è un dono raro, riservato solo a coloro che dimostrano una fede incrollabile. Intonare un canto sacro, invocando la benedizione della propria divinità è solo uno dei modi che questi fedeli utilizzano per raccogliere l'energia vitale.
-
+> I chierici, i paladini e coloro che credono che il loro potere venga concesso in quanto premio per la loro fede, ritengono di usare il potere divino in modi che superano la comprensione mortale. Il loro è un dono raro, riservato solo a coloro che dimostrano una fede incrollabile. Intonare un canto sacro, invocando la benedizione della propria divinità è solo uno dei modi che questi fedeli utilizzano per raccogliere l'energia vitale.
 Attingendo dalla propria fede, l'utilizzo di preghiere permette loro di guidare questo potere, trasformandoli in incanalatori della volontò divina e per riportare l'ordine divino nel caos. Tuttavia, questo potere non è da prendere alla leggera, ogni utilizzo richiede che venga offerta parte della propria energia vitale in cambio della sua esecuzione.
 
 ### Druidi e Sciamani
-I custodi degli antichi segreti della natura possiedono un’innata connessione con la Madre Terra, che permette loro di accedere a poteri che vanno oltre la semplice magia. Espando la propria coscienza verso ogni essere vivente intorno a se stessi, da maestosi alberi secolari a minuscole creature del sottobosco, la terra, l'acqua, l'aria e il fuoco rispondono al loro richiamo, e l'energia vitale della natura fluisce in loro.
-
+> I custodi degli antichi segreti della natura possiedono un’innata connessione con la Madre Terra, che permette loro di accedere a poteri che vanno oltre la semplice magia. Espando la propria coscienza verso ogni essere vivente intorno a se stessi, da maestosi alberi secolari a minuscole creature del sottobosco, la terra, l'acqua, l'aria e il fuoco rispondono al loro richiamo, e l'energia vitale della natura fluisce in loro.
 Tuttavia, questo potere ha un costo, la fusione anche se temporanea con la natura, rischia di far perdere una parte della propria energia vitale nel processo.
+
+# Utilizzare la magia
+Sulla base delle premesse fatte, ruolo fondamentale nell'utilizzo della magia libera lo ha forza di volontà, in questo regolamento gestita tramite la sola caratteristica di **Volontà**, il cui modificatore andrà sommato al proprio grado di conoscenza su una specifica scuola di magia al cui valore verrà sommato il risultato del lancio di 1d20, quindi riassumendo, la meccanica è:
+
+**Lancio Incantesio = Modificatore Volontà + Grado Scuola di magia + 1d20**
+
+Per la riuscita del lancio sarà sufficiente superare una difficoltà che avrà 20 come valore di base, a cui si dovranno sommare o sottrarre dei punteggi in base all'incantesimo che si vorrà lanciare (vedi Tabelle lancio incantesimi).
+
+Il tema principale per un usufruitore di magia, è quello di piegare alla propria volontà le energie vitali circostanti per ottenere qualcosa plasmando le energie stesse. Nel paragrafo precedente è stato cercato di fornire le differenti visioni, maghi e stregoni sono certi di controllare la magia grazie ai loro studi e alla pratica, druidi e sciamani sono convinti di ottenere i loro poteri da Madre Natura, dai loro antenati o dai loro spiriti protettori, mentre chierici e paladini credono di ottenere i favori della divinità che pregano, grazie alla loro incrollabile fede; possono essere tutte giuste e tutte sbagliate allo stesso tempo, la scelta vuole essere puramente interpretativa secondo le volontà del giocatore il quale avrà l'onere e l'onore di descrivere come il proprio personaggio apprende e utilizza la magia.
+
+Tutto il resto è lasciato all'insindacabile giudizio ultimo del Master, che avrà facoltà di piegare alla sua volontà qualsiasi effetto o conseguenza, al fine di creare una trama avvincente e delle epiche avventure.
+
+**Non ti piace questa tematica? Ritieni che ogni usufruitore di magia debba utilizzare una Caratteristica diversa, che i maghi debbano concretamente studiare i loro incantesimi e scriverli sul loro grimorio, o che uno sciamano debba danzare attorno al fuoco preparando chissà quale rituale?**
+Nessun problema, come spero di essere risucito a trasmettere, quella descritta qui vuole essere una meccanica adattabile a qualunque gioco di ruolo, ho solo ritenuto utile per una miglior comprensione, condividere la mia visione così da far meglio comprendere il perchè di determinate meccaniche.
