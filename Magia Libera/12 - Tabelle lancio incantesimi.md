@@ -63,7 +63,7 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | :---------------------------------------:|:-----------------------:|:-----------------------------------------------------------------------------------------------------:|
 | Utilizzo di componenti non magici        | -5                      | Per l'esecuzione vengono utilizzati dei componenti (es. strumento musicale, componenti alchemici etc) |
 | Ogni mago aggiuntivo                     | +0                      | L'esecuzione avviene con il supporto di uno o più maghi aggiuntivi                                    |
-| Lancio con rituale (durata 15 minuti)    | -10                     | L'esecuzione avviene al termine di un rituale di concentrazione durato almeno 15 minuti               |
+| Lancio con rituale (ogni 15 minuti)      | -10                     | L'esecuzione avviene al termine di un rituale di concentrazione durato almeno 15 minuti               |
 | Concentrazione prima del lancio (max 10) | -1                      | L'esecuzione avviene al termine di alcuni round di concentrazione (max 10)                            |
 
 ## Tabella effetti di Lancio
