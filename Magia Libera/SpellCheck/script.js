@@ -72,6 +72,20 @@ function mostraInputRound() {
     }
 }
 
+// Funzione per incrementare il valore dell'input associato
+function incrementaInput(inputId) {
+    const inputElement = document.getElementById(inputId);
+    inputElement.value = parseInt(inputElement.value) + 1;
+}
+
+// Funzione per decrementare il valore dell'input associato
+function decrementaInput(inputId) {
+    const inputElement = document.getElementById(inputId);
+    if (parseInt(inputElement.value) > 0) {
+        inputElement.value = parseInt(inputElement.value) - 1;
+    }
+}
+
 function calcolaMoltiplicatori() {
     let moltiplicatoreBersagli = 0;
     let moltiplicatoreDiametro = 0;
@@ -168,7 +182,8 @@ function calcolaDifficolta() {
     if (document.getElementById("effetto1").checked) effetti += parseInt(document.getElementById("effetto1").value) || 0;
     if (document.getElementById("effetto2").checked) effetti += parseInt(document.getElementById("effetto2").value) || 0;
     if (document.getElementById("effetto3").checked) effetti += parseInt(document.getElementById("effetto3").value) || 0;
-
+	
+	// Dadi aggiuntivi
     let danni_totali = 0;
     danni_totali += (parseInt(document.getElementById("danni1").value) || 0) * 2;
     danni_totali += (parseInt(document.getElementById("danni2").value) || 0) * 5;
@@ -181,13 +196,68 @@ function calcolaDifficolta() {
     let totale = base + distanza + area + durata + gesti + verbale + posizione +
         moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound +
         moltiplicatoreMinuti7 + moltiplicatoreMinuti15 + moltiplicatoreMagiAggiuntivi +
-        moltiplicatoreRituali + moltiplicatoreConcentrazione + modificatori_mente + effetti;
+        moltiplicatoreRituali + moltiplicatoreConcentrazione + modificatori_mente + effetti + danni_totali;
 
     console.log("Totale calcolato:", totale);
 
     document.getElementById("difficolta-totale-popup").innerText = totale;
     document.getElementById("popup-difficolta").style.display = 'block';
 }
+
+function ripristinaValori() {
+    // Ripristina i selettori con i valori di default
+    document.getElementById("distanza").value = "0"; // Tocco (+0)
+    document.getElementById("area").value = "0"; // Creatura - Intera (+0)
+    document.getElementById("durata").value = "0"; // 1 round / Istantaneo (+0)
+    document.getElementById("gesti").value = "0"; // Gesti normali (+0)
+    document.getElementById("verbale").value = "0"; // Voce normale (+0)
+    document.getElementById("posizione").value = "0"; // Lancio in posizione normale (+0)
+    document.getElementById("modificatori_mente").value = "0"; // Leggere (+0)
+
+    // Ripristina i valori degli input dei dadi aggiuntivi a 0
+    document.getElementById("danni1").value = "0";
+    document.getElementById("danni2").value = "0";
+    document.getElementById("danni3").value = "0";
+    document.getElementById("danni4").value = "0";
+    document.getElementById("danni5").value = "0";
+    document.getElementById("danni6").value = "0";
+    document.getElementById("danni7").value = "0";
+
+    // Ripristina i valori degli input nascosti a 0
+    document.getElementById("numero-bersagli").value = "0";
+    document.getElementById("numero-diametro").value = "0";
+    document.getElementById("numero-round").value = "0";
+    document.getElementById("numero-minuti7").value = "0";
+    document.getElementById("numero-minuti15").value = "0";
+    document.getElementById("numero-magi-aggiuntivi").value = "0";
+    document.getElementById("numero-rituali").value = "0";
+    document.getElementById("numero-rounds").value = "0";
+
+    // Nascondi eventuali input condizionali
+    document.getElementById("input-bersagli").style.display = 'none';
+    document.getElementById("input-diametro").style.display = 'none';
+    document.getElementById("input-round").style.display = 'none';
+    document.getElementById("input-minuti7").style.display = 'none';
+    document.getElementById("input-minuti15").style.display = 'none';
+    document.getElementById("input-mago-aggiuntivo").style.display = 'none';
+    document.getElementById("input-lancio-rituale").style.display = 'none';
+    document.getElementById("input-rounds").style.display = 'none';
+
+    // Deseleziona le checkbox e nascondi i loro input condizionali
+    document.getElementById("variabile1").checked = false;
+    document.getElementById("variabile2").checked = false;
+    document.getElementById("variabile3").checked = false;
+    document.getElementById("rounds-checkbox").checked = false;
+    
+    // Deseleziona tutte le opzioni effetti di lancio
+    document.getElementById("effetto1").checked = false;
+    document.getElementById("effetto2").checked = false;
+    document.getElementById("effetto3").checked = false;
+
+    // Ripristina il popup di difficoltà
+    document.getElementById("difficolta-totale-popup").innerText = "20";
+}
+
 
 // Chiudi il popup quando si clicca sul pulsante "Chiudi"
 document.getElementById("close-popup").onclick = function() {

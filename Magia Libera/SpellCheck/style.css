@@ -101,6 +101,15 @@ body {
     margin-bottom: 10px;
 }
 
+.adjust-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
 footer {
     color: #F8F9FA;
 }

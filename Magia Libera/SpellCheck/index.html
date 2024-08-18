@@ -42,7 +42,7 @@
                 <label for="distanza" class="form-label">A che distanza si trova il bersaglio?</label>
                 <select id="distanza" class="form-select">
                     <option value="-2">Personale (-2)</option>
-                    <option value="0">Tocco (+0)</option>
+                    <option value="0" selected>Tocco (+0)</option>
                     <option value="3">Corta (entro 3 m) (+3)</option>
                     <option value="10">Media (entro 10 m) (+10)</option>
                     <option value="25">Lunga (entro 25 m) (+25)</option>
@@ -111,7 +111,7 @@
                 <select id="gesti" class="form-select">
                     <option value="5">Senza gesti (+5)</option>
                     <option value="3">Gesti nascosti (+3)</option>
-                    <option value="0">Gesti normali (+0)</option>
+                    <option value="0" selected>Gesti normali (+0)</option>
                     <option value="-3">Gesti ampi (-3)</option>
                 </select>
             </div>
@@ -121,7 +121,7 @@
                 <select id="verbale" class="form-select">
                     <option value="5">Senza voce (+5)</option>
                     <option value="3">Voce bassa (+3)</option>
-                    <option value="0">Voce normale (+0)</option>
+                    <option value="0" selected>Voce normale (+0)</option>
                     <option value="-3">Voce alta (-3)</option>
                 </select>
             </div>
@@ -203,37 +203,51 @@
 			<div class="dadi-aggiuntivi-container text-center">
 				<h2 class="h4 text-center">Dadi aggiuntivi</h2>
 				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni1')">
 					<img src="icons/1.png" alt="+1" class="dice-icon">
+					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni1')">
 					<label for="danni1" class="form-label d-block">Ogni +1 aggiuntivo (+2)</label>
 					<input type="number" id="danni1" class="form-control mx-auto" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni2')">
 					<img src="icons/d4.png" alt="d4" class="dice-icon">
+					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni2')">
 					<label for="danni2" class="form-label d-block">Ogni d4 aggiuntivo (+5)</label>
 					<input type="number" id="danni2" class="form-control mx-auto" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni3')">
 					<img src="icons/d6.png" alt="d6" class="dice-icon">
+					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni3')">
 					<label for="danni3" class="form-label d-block">Ogni d6 aggiuntivo (+7)</label>
 					<input type="number" id="danni3" class="form-control mx-auto" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni4')">
 					<img src="icons/d8.png" alt="d8" class="dice-icon">
+					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni4')">
 					<label for="danni4" class="form-label d-block">Ogni d8 aggiuntivo (+9)</label>
 					<input type="number" id="danni4" class="form-control mx-auto" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni5')">
 					<img src="icons/d10.png" alt="d10" class="dice-icon">
+					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni5')">
 					<label for="danni5" class="form-label d-block">Ogni d10 aggiuntivo (+11)</label>
 					<input type="number" id="danni5" class="form-control mx-auto" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni6')">
 					<img src="icons/d12.png" alt="d12" class="dice-icon">
+					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni6')">
 					<label for="danni6" class="form-label d-block">Ogni d12 aggiuntivo (+13)</label>
 					<input type="number" id="danni6" class="form-control mx-auto" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni7')">
 					<img src="icons/d20.png" alt="d20" class="dice-icon">
+					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni7')">
 					<label for="danni7" class="form-label d-block">Ogni d20 aggiuntivo (+15)</label>
 					<input type="number" id="danni7" class="form-control mx-auto" min="0" value="0">
 				</div>
@@ -241,7 +255,9 @@
 
             <div class="text-center">
                 <button type="button" class="btn btn-custom" onclick="calcolaDifficolta()">Calcola Difficoltà</button>
+				<button type="button" class="btn btn-custom" onclick="ripristinaValori()">Ripristina Valori</button>
             </div>
+			
             <div id="risultato-difficolta" style="display: none; margin: 20px auto; padding: 20px; border: 2px solid #495057; background-color: rgba(0, 0, 0, 0.85); color: #F8F9FA; width: 50%; text-align: center; border-radius: 10px;">
                 <h2>Difficoltà Totale: <span id="difficolta-totale-display">20</span></h2>
             </div>
@@ -251,7 +267,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408182006</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408182312</p>
     </footer>
 
     <!-- Bootstrap JS (opzionale) -->
