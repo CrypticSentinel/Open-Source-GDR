@@ -24,15 +24,15 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Ogni 5 metri di diametro            | +5                      | L'effetto comprenderà un'intera area                                        |
 
 ## Tabella Durata
-| Durata                        | Modificatore Difficoltà | Descrizione                                                                 |
-| :----------------------------:|:-----------------------:| :--------------------------------------------------------------------------:|
-| 1 round / Istantaneo          | +0                      | L'effetto si manifesterà e sparira all'interno dello stesso round di lancio |
-| Ogni round oltre il primo     | +2                      | L'effetto si manifesterà e perdurerà per il numero di round scelti          |
-| Ogni 7 minuti                 | +5                      | L'effetto durerà per un massimo di 7 minuti                                 |
-| Ogni 15 minuti                | +10                     | L'effetto durerà per un massimo di 15 minuti                                |
-| Finchè si rimane concentrati  | -5                      | L'effetto perdurerà fino a quanto si rimarrà concentrati                    |
-| Condizione (Finchè, Quando)   | +30                     | L'effetto si manifesterà quando o finchè non accadrà un evento specifico    |
-| Permanente                    | +20                     | l'effetto sarà permanente                                                   |
+| Durata                        | Modificatore Difficoltà | Descrizione                                                                                                |
+| :----------------------------:|:-----------------------:| :---------------------------------------------------------------------------------------------------------:|
+| 1 round / Istantaneo          | +0                      | L'effetto si manifesterà e sparira all'interno dello stesso round di lancio                                |
+| Ogni round oltre il primo     | +2                      | L'effetto si manifesterà e perdurerà per il numero di round scelti                                         |
+| Ogni 7 minuti                 | +5                      | L'effetto durerà per ogni incremento di 7 minuti                                                                |
+| Ogni 15 minuti                | +10                     | L'effetto durerà per ogni incremento di 15 minuti                                                               |
+| Finchè si rimane concentrati  | -5                      | L'effetto perdurerà fino a quanto si rimarrà concentrati, sarà necessario almeno 1 turno di concentrazione |
+| Condizione (Finchè, Quando)   | +30                     | L'effetto si manifesterà quando o finchè non accadrà un evento specifico                                   |
+| Permanente                    | +20                     | l'effetto sarà permanente                                                                                  |
 
 ## Tabella Modalità di lancio gestuali
 | Lancio gestuale | Modificatore Difficoltà | Descrizione                                                                                                             |
