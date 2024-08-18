@@ -23,7 +23,6 @@
         <h1>SpellCheck - Calcolo Difficoltà Incantesimi</h1>
         <img src="logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
         
-        <!-- Aggiungi qui il pulsante di installazione -->
         <div class="text-center mt-4">
             <button id="install-button" style="display: none;">Installa App</button>
         </div>
@@ -36,8 +35,6 @@
             </div>
         </div>
     </header>
-
-    <div class="container">
 
     <div class="container">
         <form>
@@ -67,46 +64,46 @@
                 </select>
             </div>
 
-			<!-- Campo di input nascosto per "Ogni bersaglio oltre il primo" -->
-			<div class="mb-3" id="input-bersagli" style="display: none;">
-				<label for="numero-bersagli" class="form-label">Inserisci il numero di bersagli oltre il primo:</label>
-				<input type="number" id="numero-bersagli" class="form-control" min="0" value="0">
-			</div>
-			
-			<!-- Campo di input nascosto per "Ogni 5 metri di diametro" -->
-			<div class="mb-3" id="input-diametro" style="display: none;">
-				<label for="numero-diametro" class="form-label">Inserisci il numero di incrementi di 5 metri di diametro:</label>
-				<input type="number" id="numero-diametro" class="form-control" min="0" value="0">
-			</div>
-			
-			<div class="mb-3">
-				<label for="durata" class="form-label">Durata</label>
-				<select id="durata" class="form-select" onchange="mostraInputDurata()">
-					<option value="0">1 round / Istantaneo (+0)</option>
-					<option value="2">Ogni round oltre il primo (+2)</option>
-					<option value="5">Ogni 7 minuti (+5)</option>
-					<option value="10">Ogni 15 minuti (+10)</option>
-					<option value="-5">Finchè si rimane concentrati (-5)</option>
-					<option value="30">Condizione (Finchè, Quando) (+30)</option>
-					<option value="20">Permanente (+20)</option>
-				</select>
-			</div>
+            <!-- Campo di input nascosto per "Ogni bersaglio oltre il primo" -->
+            <div class="mb-3" id="input-bersagli" style="display: none;">
+                <label for="numero-bersagli" class="form-label">Inserisci il numero di bersagli oltre il primo:</label>
+                <input type="number" id="numero-bersagli" class="form-control" min="0" value="0">
+            </div>
+            
+            <!-- Campo di input nascosto per "Ogni 5 metri di diametro" -->
+            <div class="mb-3" id="input-diametro" style="display: none;">
+                <label for="numero-diametro" class="form-label">Inserisci il numero di incrementi di 5 metri di diametro:</label>
+                <input type="number" id="numero-diametro" class="form-control" min="0" value="0">
+            </div>
+            
+            <div class="mb-3">
+                <label for="durata" class="form-label">Durata</label>
+                <select id="durata" class="form-select" onchange="mostraInputDurata()">
+                    <option value="0">1 round / Istantaneo (+0)</option>
+                    <option value="2">Ogni round oltre il primo (+2)</option>
+                    <option value="5">Ogni 7 minuti (+5)</option>
+                    <option value="10">Ogni 15 minuti (+10)</option>
+                    <option value="-5">Finchè si rimane concentrati (-5)</option>
+                    <option value="30">Condizione (Finchè, Quando) (+30)</option>
+                    <option value="20">Permanente (+20)</option>
+                </select>
+            </div>
 
-			<!-- Campi di input nascosti -->
-			<div class="mb-3" id="input-round" style="display: none;">
-				<label for="numero-round" class="form-label">Inserisci il numero di round oltre il primo:</label>
-				<input type="number" id="numero-round" class="form-control" min="0" value="0">
-			</div>
+            <!-- Campi di input nascosti -->
+            <div class="mb-3" id="input-round" style="display: none;">
+                <label for="numero-round" class="form-label">Inserisci il numero di round oltre il primo:</label>
+                <input type="number" id="numero-round" class="form-control" min="0" value="0">
+            </div>
 
-			<div class="mb-3" id="input-minuti7" style="display: none;">
-				<label for="numero-minuti7" class="form-label">Inserisci il numero di incrementi di 7 minuti:</label>
-				<input type="number" id="numero-minuti7" class="form-control" min="0" value="0">
-			</div>
+            <div class="mb-3" id="input-minuti7" style="display: none;">
+                <label for="numero-minuti7" class="form-label">Inserisci il numero di incrementi di 7 minuti:</label>
+                <input type="number" id="numero-minuti7" class="form-control" min="0" value="0">
+            </div>
 
-			<div class="mb-3" id="input-minuti15" style="display: none;">
-				<label for="numero-minuti15" class="form-label">Inserisci il numero di incrementi di 15 minuti:</label>
-				<input type="number" id="numero-minuti15" class="form-control" min="0" value="0">
-			</div>
+            <div class="mb-3" id="input-minuti15" style="display: none;">
+                <label for="numero-minuti15" class="form-label">Inserisci il numero di incrementi di 15 minuti:</label>
+                <input type="number" id="numero-minuti15" class="form-control" min="0" value="0">
+            </div>
 
             <div class="mb-3">
                 <label for="gesti" class="form-label">Modalità di lancio gestuali</label>
@@ -144,30 +141,35 @@
                 <label for="variabile1" class="form-check-label">Utilizzo di componenti magici (-5)</label>
             </div>
             <div class="form-check">
-				<input type="checkbox" id="variabile2" class="form-check-input" onchange="mostraInputVariabili()">
-				<label for="variabile2" class="form-check-label">Ogni mago aggiuntivo (+0)</label>
-			</div>
-			
-			<!-- Campo di input nascosto per "Ogni mago aggiuntivo" -->
-			<div class="mb-3" id="input-mago-aggiuntivo" style="display: none;">
-				<label for="numero-magi-aggiuntivi" class="form-label">Inserisci il numero di maghi aggiuntivi:</label>
-				<input type="number" id="numero-magi-aggiuntivi" class="form-control" min="0" value="0">
-			</div>
+                <input type="checkbox" id="variabile2" class="form-check-input" onchange="mostraInputVariabili()">
+                <label for="variabile2" class="form-check-label">Ogni mago aggiuntivo (+0)</label>
+            </div>
+            
+            <!-- Campo di input nascosto per "Ogni mago aggiuntivo" -->
+            <div class="mb-3" id="input-mago-aggiuntivo" style="display: none;">
+                <label for="numero-magi-aggiuntivi" class="form-label">Inserisci il numero di maghi aggiuntivi:</label>
+                <input type="number" id="numero-magi-aggiuntivi" class="form-control" min="0" value="0">
+            </div>
 
             <div class="form-check">
-				<input type="checkbox" id="variabile3" class="form-check-input" value="-10" onchange="mostraInputVariabili()">
-				<label for="variabile3" class="form-check-label">Lancio con rituale (ogni 15 minuti) (-10)</label>
-			</div>
+                <input type="checkbox" id="variabile3" class="form-check-input" value="-10" onchange="mostraInputVariabili()">
+                <label for="variabile3" class="form-check-label">Lancio con rituale (ogni 15 minuti) (-10)</label>
+            </div>
 
-			<!-- Campo di input nascosto per "Lancio con rituale" -->
-			<div class="mb-3" id="input-lancio-rituale" style="display: none;">
-				<label for="numero-rituali" class="form-label">Inserisci il numero di incrementi di rituali (incrementi di 15 minuti):</label>
-				<input type="number" id="numero-rituali" class="form-control" min="0" value="0">
-			</div>
+            <!-- Campo di input nascosto per "Lancio con rituale" -->
+            <div class="mb-3" id="input-lancio-rituale" style="display: none;">
+                <label for="numero-rituali" class="form-label">Inserisci il numero di incrementi di rituali (incrementi di 15 minuti):</label>
+                <input type="number" id="numero-rituali" class="form-control" min="0" value="0">
+            </div>
 
-            <div class="mb-3 mt-3">
-                <label for="rounds" class="form-label">Numero di round di concentrazione (max 10) (-1)</label>
-                <input type="number" id="rounds" class="form-control" min="0" max="10" value="0">
+            <div class="form-check">
+                <input type="checkbox" id="rounds-checkbox" class="form-check-input" onchange="mostraInputRound()">
+                <label for="rounds-checkbox" class="form-check-label">Round di concentrazione prima del lancio (max 10) (-1 per round)</label>
+            </div>
+
+            <div class="mb-3" id="input-rounds" style="display: none;">
+                <label for="numero-rounds" class="form-label">Inserisci il numero di round di concentrazione (max 10):</label>
+                <input type="number" id="numero-rounds" class="form-control" min="0" max="10" value="0">
             </div>
 
             <h2 class="h4">Effetti di lancio</h2>
@@ -227,241 +229,22 @@
             <div class="text-center">
                 <button type="button" class="btn btn-custom" onclick="calcolaDifficolta()">Calcola Difficoltà</button>
             </div>
-				<div id="risultato-difficolta" style="display: none; margin: 20px auto; padding: 20px; border: 2px solid #495057; background-color: rgba(0, 0, 0, 0.85); color: #F8F9FA; width: 50%; text-align: center; border-radius: 10px;">
-				<h2>Difficoltà Totale: <span id="difficolta-totale-display">20</span></h2>
-			</div>
+            <div id="risultato-difficolta" style="display: none; margin: 20px auto; padding: 20px; border: 2px solid #495057; background-color: rgba(0, 0, 0, 0.85); color: #F8F9FA; width: 50%; text-align: center; border-radius: 10px;">
+                <h2>Difficoltà Totale: <span id="difficolta-totale-display">20</span></h2>
+            </div>
         </form>
     </div>
-	
-    <script>
-	function mostraInputBersagliDiametro() {
-		let areaSelect = document.getElementById("area");
-		let inputBersagli = document.getElementById("input-bersagli");
-		let inputDiametro = document.getElementById("input-diametro");
-
-		// Controlla se l'opzione "Ogni bersaglio oltre il primo (+5)" è selezionata
-		if (areaSelect.value === "5" && areaSelect.options[areaSelect.selectedIndex].text.includes("Ogni bersaglio oltre il primo")) {
-			inputBersagli.style.display = 'block';
-		} else {
-			inputBersagli.style.display = 'none';
-		}
-
-		// Controlla se l'opzione "Ogni 5 metri di diametro (+5)" è selezionata
-		if (areaSelect.value === "5" && areaSelect.options[areaSelect.selectedIndex].text.includes("Ogni 5 metri di diametro")) {
-			inputDiametro.style.display = 'block';
-		} else {
-			inputDiametro.style.display = 'none';
-		}
-	}
-
-	function mostraInputDurata() {
-		let durataSelect = document.getElementById("durata");
-		let inputRound = document.getElementById("input-round");
-		let inputMinuti7 = document.getElementById("input-minuti7");
-		let inputMinuti15 = document.getElementById("input-minuti15");
-
-		// Controlla quale opzione è selezionata e mostra il campo di input corrispondente
-		if (durataSelect.value === "2" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni round oltre il primo")) {
-			inputRound.style.display = 'block';
-		} else {
-			inputRound.style.display = 'none';
-		}
-
-		if (durataSelect.value === "5" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni 7 minuti")) {
-			inputMinuti7.style.display = 'block';
-		} else {
-			inputMinuti7.style.display = 'none';
-		}
-
-		if (durataSelect.value === "10" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni 15 minuti")) {
-			inputMinuti15.style.display = 'block';
-		} else {
-			inputMinuti15.style.display = 'none';
-		}
-	}
-
-	function mostraInputVariabili() {
-		let variabileMagi = document.getElementById("variabile2");
-		let variabileRituale = document.getElementById("variabile3");
-
-		let inputMagoAggiuntivo = document.getElementById("input-mago-aggiuntivo");
-		let inputLancioRituale = document.getElementById("input-lancio-rituale");
-
-		// Mostra o nasconde l'input per "Ogni mago aggiuntivo"
-		if (variabileMagi.checked) {
-			inputMagoAggiuntivo.style.display = 'block';
-		} else {
-			inputMagoAggiuntivo.style.display = 'none';
-		}
-
-		// Mostra o nasconde l'input per "Lancio con rituale"
-		if (variabileRituale.checked) {
-			inputLancioRituale.style.display = 'block';
-		} else {
-			inputLancioRituale.style.display = 'none';
-		}
-	}
-
-function calcolaDifficolta() {
-    let base = 20;
-
-    let distanza = parseInt(document.getElementById("distanza").value) || 0;
-    let area = parseInt(document.getElementById("area").value) || 0;
-    let durata = parseInt(document.getElementById("durata").value) || 0;
-    let gesti = parseInt(document.getElementById("gesti").value) || 0;
-    let verbale = parseInt(document.getElementById("verbale").value) || 0;
-    let posizione = parseInt(document.getElementById("posizione").value) || 0;
-    let modificatori_mente = parseInt(document.getElementById("modificatori_mente").value) || 0;
-
-    let moltiplicatoreBersagli = 0;
-    let moltiplicatoreDiametro = 0;
-    let moltiplicatoreRound = 0;
-    let moltiplicatoreMinuti7 = 0;
-    let moltiplicatoreMinuti15 = 0;
-    let moltiplicatoreMagiAggiuntivi = 0;
-    let moltiplicatoreRituali = 0;
-
-    console.log("Valori base: ", { distanza, area, durata, gesti, verbale, posizione, modificatori_mente });
-
-    if (document.getElementById("input-bersagli").style.display === 'block') {
-        let numeroBersagli = parseInt(document.getElementById("numero-bersagli").value) || 0;
-        moltiplicatoreBersagli = (numeroBersagli - 1) * 5;
-        console.log("Moltiplicatore bersagli calcolato:", moltiplicatoreBersagli);
-    }
-
-    if (document.getElementById("input-diametro").style.display === 'block') {
-        let numeroDiametro = parseInt(document.getElementById("numero-diametro").value) || 0;
-        moltiplicatoreDiametro = (numeroDiametro - 1) * 5;
-        console.log("Moltiplicatore diametro calcolato:", moltiplicatoreDiametro);
-    }
-
-    if (document.getElementById("input-round").style.display === 'block') {
-        let numeroRound = parseInt(document.getElementById("numero-round").value) || 0;
-        moltiplicatoreRound = (numeroRound - 1) * 2;
-        console.log("Moltiplicatore round calcolato:", moltiplicatoreRound);
-    }
-
-    if (document.getElementById("input-minuti7").style.display === 'block') {
-        let numeroMinuti7 = parseInt(document.getElementById("numero-minuti7").value) || 0;
-        moltiplicatoreMinuti7 = (numeroMinuti7 - 1) * 5;
-        console.log("Moltiplicatore minuti 7 calcolato:", moltiplicatoreMinuti7);
-    }
-
-    if (document.getElementById("input-minuti15").style.display === 'block') {
-        let numeroMinuti15 = parseInt(document.getElementById("numero-minuti15").value) || 0;
-        moltiplicatoreMinuti15 = (numeroMinuti15 - 1) * 10;
-        console.log("Moltiplicatore minuti 15 calcolato:", moltiplicatoreMinuti15);
-    }
-
-    if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
-        let numeroMagiAggiuntivi = parseInt(document.getElementById("numero-magi-aggiuntivi").value) || 0;
-        moltiplicatoreMagiAggiuntivi = (numeroMagiAggiuntivi - 1) * 0; // Valore finale sempre 0
-        console.log("Moltiplicatore magi aggiuntivi calcolato:", moltiplicatoreMagiAggiuntivi);
-    }
-
-    // Calcola il moltiplicatore per "Lancio con rituale"
-    if (document.getElementById("input-lancio-rituale").style.display === 'block') {
-        let numeroRituali = parseInt(document.getElementById("numero-rituali").value) || 0;
-        let valoreCheckbox = parseInt(document.getElementById("variabile3").value) || 0;
-
-        console.log("Numero di rituali inserito:", numeroRituali);
-        console.log("Valore della checkbox variabile3:", valoreCheckbox);
-
-        // Calcola il moltiplicatore senza escludere il primo
-        moltiplicatoreRituali = numeroRituali * valoreCheckbox;
-        console.log("Moltiplicatore rituali calcolato:", moltiplicatoreRituali);
-    }
-
-    let effetti = 0;
-
-    // Aggiungi qui il controllo per la checkbox "Utilizzo di componenti magici"
-    if (document.getElementById("variabile1").checked) {
-        effetti += parseInt(document.getElementById("variabile1").value) || 0;
-        console.log("Effetto componenti magici calcolato:", effetti);
-    }
-
-    if (document.getElementById("effetto1").checked) effetti += parseInt(document.getElementById("effetto1").value) || 0;
-    if (document.getElementById("effetto2").checked) effetti += parseInt(document.getElementById("effetto2").value) || 0;
-    if (document.getElementById("effetto3").checked) effetti += parseInt(document.getElementById("effetto3").value) || 0;
-
-    let rounds = parseInt(document.getElementById("rounds").value) || 0;
-    let concentrazione_mod = -1 * Math.min(rounds, 10);
-
-    let danni_totali = 0;
-    danni_totali += (parseInt(document.getElementById("danni1").value) || 0) * 2;
-    danni_totali += (parseInt(document.getElementById("danni2").value) || 0) * 5;
-    danni_totali += (parseInt(document.getElementById("danni3").value) || 0) * 7;
-    danni_totali += (parseInt(document.getElementById("danni4").value) || 0) * 9;
-    danni_totali += (parseInt(document.getElementById("danni5").value) || 0) * 11;
-    danni_totali += (parseInt(document.getElementById("danni6").value) || 0) * 13;
-    danni_totali += (parseInt(document.getElementById("danni7").value) || 0) * 15;
-
-    // Somma tutti i moltiplicatori e valori calcolati
-    let totale = base + distanza + area + durata + gesti + verbale + posizione + moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound + moltiplicatoreMinuti7 + moltiplicatoreMinuti15 + moltiplicatoreMagiAggiuntivi + moltiplicatoreRituali + danni_totali + modificatori_mente + effetti + concentrazione_mod;
-
-    console.log("Totale calcolato:", totale);
-
-    document.getElementById("difficolta-totale-popup").innerText = totale;
-
-    // Mostra il popup
-    document.getElementById("popup-difficolta").style.display = 'block';
-}
-
-
-	// Chiudi il popup quando si clicca sul pulsante "Chiudi"
-	document.getElementById("close-popup").onclick = function() {
-		document.getElementById("popup-difficolta").style.display = 'none';
-	}
-
-    </script>
+    
+</div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408181629</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408181848</p>
     </footer>
 
     <!-- Bootstrap JS (opzionale) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-	
-	<script>
-	// Nascondi il pulsante "Install App" se non si sta utilizzando un dispositivo Android
-window.onload = function() {
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    // Controlla se è un dispositivo Android
-    if (!/android/i.test(userAgent)) {
-        document.getElementById('install-button').style.display = 'none';
-    }
-};
-	  if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('service-worker.js')
-		.then(reg => console.log('Service Worker registered!', reg))
-		.catch(err => console.log('Service Worker registration failed: ', err));
-	  }
-	</script>
-	<script>
-	  let deferredPrompt;
-
-	  window.addEventListener('beforeinstallprompt', (e) => {
-		e.preventDefault();
-		deferredPrompt = e;
-
-		// Mostra un pulsante di installazione personalizzato
-		const installButton = document.getElementById('install-button');
-		installButton.style.display = 'block';
-
-		installButton.addEventListener('click', () => {
-		  installButton.style.display = 'none';
-		  deferredPrompt.prompt();
-		  deferredPrompt.userChoice.then((choiceResult) => {
-			if (choiceResult.outcome === 'accepted') {
-			  console.log('User accepted the install prompt');
-			} else {
-			  console.log('User dismissed the install prompt');
-			}
-			deferredPrompt = null;
-		  });
-		});
-	  });
-	</script>
+    <!-- Collegamento al file JavaScript esterno -->
+    <script src="script.js"></script>
 </body>
 </html>
