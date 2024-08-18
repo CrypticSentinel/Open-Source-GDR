@@ -43,7 +43,7 @@ Sulla base delle premesse fatte, ruolo fondamentale nell'utilizzo della magia li
 
 **Lancio Incantesio = Modificatore Volontà + Grado Scuola di magia + 1d20**
 
-Per la riuscita del lancio sarà sufficiente superare una difficoltà che avrà 20 come valore di base, a cui si dovranno sommare o sottrarre dei punteggi in base all'incantesimo che si vorrà lanciare (vedi Tabelle lancio incantesimi).
+Per la riuscita del lancio sarà sufficiente superare una difficoltà che avrà 20 come valore di base, a cui si dovranno sommare o sottrarre dei punteggi in base all'incantesimo che si vorrà lanciare (vedi [Tabelle lancio incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi.md)).
 
 Il tema principale per un usufruitore di magia, è quello di piegare alla propria volontà le energie vitali circostanti per ottenere qualcosa plasmando le energie stesse. Nel paragrafo precedente è stato cercato di fornire le differenti visioni, maghi e stregoni sono certi di controllare la magia grazie ai loro studi e alla pratica, druidi e sciamani sono convinti di ottenere i loro poteri da Madre Natura, dai loro antenati o dai loro spiriti protettori, mentre chierici e paladini credono di ottenere i favori della divinità che pregano, grazie alla loro incrollabile fede; possono essere tutte giuste e tutte sbagliate allo stesso tempo, la scelta vuole essere puramente interpretativa secondo le volontà del giocatore il quale avrà l'onere e l'onore di descrivere come il proprio personaggio apprende e utilizza la magia.
 
