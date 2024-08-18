@@ -198,10 +198,14 @@ document.getElementById("close-popup").onclick = function() {
 window.onload = function() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    if (!/android/i.test(userAgent)) {
+    // Verifica se è un dispositivo Windows o non Android
+    if (/windows phone/i.test(userAgent) || /windows/i.test(userAgent) || !/android/i.test(userAgent)) {
         document.getElementById('install-button').style.display = 'none';
+    } else {
+        document.getElementById('install-button').style.display = 'block';
     }
 };
+
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js')
