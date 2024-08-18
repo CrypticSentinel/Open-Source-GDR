@@ -105,6 +105,7 @@
                 <input type="number" id="numero-minuti15" class="form-control" min="0" value="0">
             </div>
 
+			<h2 class="h4 text-center">Modalità di lancio</h2>
             <div class="mb-3">
                 <label for="gesti" class="form-label">Modalità di lancio gestuali</label>
                 <select id="gesti" class="form-select">
@@ -135,7 +136,7 @@
                 </select>
             </div>
 
-            <h2 class="h4">Variabili di lancio</h2>
+            <h2 class="h4 text-center">Variabili di lancio</h2>
             <div class="form-check">
                 <input type="checkbox" id="variabile1" class="form-check-input" value="-5">
                 <label for="variabile1" class="form-check-label">Utilizzo di componenti magici (-5)</label>
@@ -172,7 +173,7 @@
                 <input type="number" id="numero-rounds" class="form-control" min="0" max="10" value="0">
             </div>
 
-            <h2 class="h4">Effetti di lancio</h2>
+            <h2 class="h4 text-center">Effetti di lancio</h2>
             <div class="form-check">
                 <input type="checkbox" id="effetto1" class="form-check-input" value="5">
                 <label for="effetto1" class="form-check-label">Lancio incantesimo senza effetti visivi (+5)</label>
@@ -185,51 +186,11 @@
                 <input type="checkbox" id="effetto3" class="form-check-input" value="15">
                 <label for="effetto3" class="form-check-label">Lancio Incantesimo massimizzato (+15)</label>
             </div>
-
-			<h2 class="h4">Dadi di danni</h2>
-			<div class="mb-3">
-				<label for="danni1" class="form-label">Ogni +1 aggiuntivo (+2)</label>
-				<input type="number" id="danni1" class="form-control" min="0" value="0">
-			</div>
-			<div class="mb-3">
-				<label for="danni2" class="form-label">
-					<img src="icons/d4.png" alt="d4" style="width: 24px; height: 24px;"> aggiuntivo (+5)
-				</label>
-				<input type="number" id="danni2" class="form-control" min="0" value="0">
-			</div>
-			<div class="mb-3">
-				<label for="danni3" class="form-label">
-					<img src="icons/d6.png" alt="d6" style="width: 24px; height: 24px;"> aggiuntivo (+7)
-				</label>
-				<input type="number" id="danni3" class="form-control" min="0" value="0">
-			</div>
-			<div class="mb-3">
-				<label for="danni4" class="form-label">
-					<img src="icons/d8.png" alt="d8" style="width: 24px; height: 24px;"> aggiuntivo (+9)
-				</label>
-				<input type="number" id="danni4" class="form-control" min="0" value="0">
-			</div>
-			<div class="mb-3">
-				<label for="danni5" class="form-label">
-					<img src="icons/d10.png" alt="d10" style="width: 24px; height: 24px;"> aggiuntivo (+11)
-				</label>
-				<input type="number" id="danni5" class="form-control" min="0" value="0">
-			</div>
-			<div class="mb-3">
-				<label for="danni6" class="form-label">
-					<img src="icons/d12.png" alt="d12" style="width: 24px; height: 24px;"> aggiuntivo (+13)
-				</label>
-				<input type="number" id="danni6" class="form-control" min="0" value="0">
-			</div>
-			<div class="mb-3">
-				<label for="danni7" class="form-label">
-					<img src="icons/d20.png" alt="d20" style="width: 24px; height: 24px;"> aggiuntivo (+15)
-				</label>
-				<input type="number" id="danni7" class="form-control" min="0" value="0">
-			</div>
-
+			
+			<h2 class="h4 text-center">Modificatori per specifiche Scuole</h2>
+			<h3 class="h4">Mente</h3>
             <div class="mb-3">
-                <label for="modificatori_mente" class="form-label">Modificatori per Mente</label>
+				<!-- <label for="modificatori_mente" class="form-label">Modificatori per Mente</label> -->
                 <select id="modificatori_mente" class="form-select">
                     <option value="0">Leggere (+0)</option>
                     <option value="15">Modificare (+15)</option>
@@ -237,6 +198,46 @@
                     <option value="10">Rimuovere (+10)</option>
                 </select>
             </div>
+			
+			
+			<div class="dadi-aggiuntivi-container text-center">
+				<h2 class="h4 text-center">Dadi aggiuntivi</h2>
+				<div class="mb-3 text-center">
+					<img src="icons/1.png" alt="+1" class="dice-icon">
+					<label for="danni1" class="form-label d-block">Ogni +1 aggiuntivo (+2)</label>
+					<input type="number" id="danni1" class="form-control mx-auto" min="0" value="0">
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/d4.png" alt="d4" class="dice-icon">
+					<label for="danni2" class="form-label d-block">Ogni d4 aggiuntivo (+5)</label>
+					<input type="number" id="danni2" class="form-control mx-auto" min="0" value="0">
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/d6.png" alt="d6" class="dice-icon">
+					<label for="danni3" class="form-label d-block">Ogni d6 aggiuntivo (+7)</label>
+					<input type="number" id="danni3" class="form-control mx-auto" min="0" value="0">
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/d8.png" alt="d8" class="dice-icon">
+					<label for="danni4" class="form-label d-block">Ogni d8 aggiuntivo (+9)</label>
+					<input type="number" id="danni4" class="form-control mx-auto" min="0" value="0">
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/d10.png" alt="d10" class="dice-icon">
+					<label for="danni5" class="form-label d-block">Ogni d10 aggiuntivo (+11)</label>
+					<input type="number" id="danni5" class="form-control mx-auto" min="0" value="0">
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/d12.png" alt="d12" class="dice-icon">
+					<label for="danni6" class="form-label d-block">Ogni d12 aggiuntivo (+13)</label>
+					<input type="number" id="danni6" class="form-control mx-auto" min="0" value="0">
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/d20.png" alt="d20" class="dice-icon">
+					<label for="danni7" class="form-label d-block">Ogni d20 aggiuntivo (+15)</label>
+					<input type="number" id="danni7" class="form-control mx-auto" min="0" value="0">
+				</div>
+			</div>
 
             <div class="text-center">
                 <button type="button" class="btn btn-custom" onclick="calcolaDifficolta()">Calcola Difficoltà</button>
@@ -250,7 +251,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408181848</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408182001</p>
     </footer>
 
     <!-- Bootstrap JS (opzionale) -->

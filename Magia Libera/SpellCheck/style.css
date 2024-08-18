@@ -54,6 +54,53 @@ body {
     border-radius: 10px;
 }
 
+.form-label.d-block {
+    display: inline-block;
+    width: auto;
+    margin-top: 5px;
+}
+
+.form-control.mx-auto {
+    display: inline-block;
+    margin-top: 10px;
+    width: auto;
+}
+
+.mb-3.text-center {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
+
+.dadi-aggiuntivi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.dadi-aggiuntivi-container h2 {
+    margin-bottom: 20px;
+}
+
+.dadi-aggiuntivi-container .mb-3 {
+    margin-bottom: 15px;
+}
+
+.dadi-aggiuntivi-container .form-control.mx-auto {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: 100px; /* Puoi regolare questa larghezza secondo necessità */
+}
+
+.dice-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
 footer {
     color: #F8F9FA;
 }
