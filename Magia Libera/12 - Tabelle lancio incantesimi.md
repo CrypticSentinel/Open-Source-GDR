@@ -2,95 +2,95 @@
 Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà di lancio del proprio incantesimo da sommare alla difficoltà base di 20
 
 ## Tabella Distanze
-| Distanza                    | Modificatore Difficoltà |
-| :--------------------------:|:-----------------------:|
-| Personale                   | -2                      |
-| Tocco                       | +0                      |
-| Corta (3 m)                 | +3                      |
-| Media (10 m)                | +10                     |
-| Lunga (25 m)                | +25                     |
-| Lunghissima (1 km)          | +50                     |
-| Non in Vista (Conosciuto)   | +60                     |
-| Non in Vista (Sconosciuto)  | +75                     |
+| Distanza                    | Modificatore Difficoltà | Descrizione                                                                                                   |
+| :-------------------------: | :---------------------: | :-----------------------------------------------------------------------------------------------------------: |
+| Personale                   | -2                      | Utilizzo su se stessi                                                                                         |
+| Tocco                       | +0                      | E' richiesto di toccare il bersaglio                                                                          |
+| Corta (entro 3 m)           | +3                      | Il bersaglio si trova entro 3 metri ma a vista                                                                |
+| Media (entro 10 m)          | +10                     | Il bersaglio si trova entro 10 metri ma a vista                                                               |
+| Lunga (entro 25 m)          | +25                     | Il bersaglio si trova entro 25 metri ma a vista                                                               |
+| Lunghissima (entro 1 km)    | +50                     | Il bersaglio si trova entro 1 km ma a vista                                                                   |
+| Non in Vista (Conosciuto)   | +60                     | Il bersaglio non è visibile, ma se ne ha una sufficiente conoscenza o si possiede qualcosa di molto personale |
+| Non in Vista (Sconosciuto)  | +75                     | Il bersaglio non è visibile, non lo si conosce o non lo si conosce a sufficienza                              |
 
 ## Tabella Area d'Effetto
-| Area d'effetto                      | Modificatore Difficoltà |
-| :----------------------------------:|:-----------------------:|
-| Creatura – Intera                   | +0                      |
-| Creatura – Locazione                | +3                      |
-| Creatura – Sub locazione (Esterna)  | +5                      |
-| Creatura – Sub locazione (Interna)  | +10                     |
-| Ogni bersaglio oltre il primo       | +5                      |
-| Ogni 5 metri di diametro            | +5                      |
+| Area d'effetto                      | Modificatore Difficoltà | Descrizione                                                                 |
+| :----------------------------------:| :---------------------: | :-------------------------------------------------------------------------: |
+| Creatura – Intera                   | +0                      | Il bersaglio è l'intera creatura                                            |
+| Creatura – Locazione                | +3                      | Il bersaglio è una grande parte della creatura (es. braccio, gamba, testa)  |
+| Creatura – Sub locazione (Esterna)  | +5                      | Il bersaglio è una piccola parte della creatura (es. mano, piede, orecchio) |
+| Creatura – Sub locazione (Interna)  | +10                     | Il bersaglio è una parte interna della creatura (es. un osso o un organo)   |
+| Ogni bersaglio oltre il primo       | +5                      | Bersagli multipli                                                           |
+| Ogni 5 metri di diametro            | +5                      | L'effetto comprenderà un'intera area                                        |
 
 ## Tabella Durata
-| Durata                        | Modificatore Difficoltà |
-| :----------------------------:|:-----------------------:|
-| 1 round / Istantaneo          | +0                      |
-| Ogni round oltre il primo     | +2                      |
-| Ogni 7 minuti                 | +5                      |
-| Ogni 15 minuti                | +10                     |
-| Finchè si rimane concentrati  | -5                      |
-| Condizione (Finchè, Quando)   | +30                     |
-| Permanente                    | +20                     |
+| Durata                        | Modificatore Difficoltà | Descrizione                                                                 |
+| :----------------------------:|:-----------------------:| :--------------------------------------------------------------------------:|
+| 1 round / Istantaneo          | +0                      | L'effetto si manifesterà e sparira all'interno dello stesso round di lancio |
+| Ogni round oltre il primo     | +2                      | L'effetto si manifesterà e perdurerà per il numero di round scelti          |
+| Ogni 7 minuti                 | +5                      | L'effetto durerà per un massimo di 7 minuti                                 |
+| Ogni 15 minuti                | +10                     | L'effetto durerà per un massimo di 15 minuti                                |
+| Finchè si rimane concentrati  | -5                      | L'effetto perdurerà fino a quanto si rimarrà concentrati                    |
+| Condizione (Finchè, Quando)   | +30                     | L'effetto si manifesterà quando o finchè non accadrà un evento specifico    |
+| Permanente                    | +20                     | l'effetto sarà permanente                                                   |
 
 ## Tabella Modalità di lancio gestuali
-| Lancio gestuale | Modificatore Difficoltà |
-| :--------------:|:-----------------------:|
-| Senza gesti     | +5                      |
-| Gesti nascosti  | +3                      |
-| Gesti normali   | +0                      |
-| Gesti ampi      | -3                      |
+| Lancio gestuale | Modificatore Difficoltà | Descrizione                                                                                                             |
+| :--------------:|:-----------------------:|:----------------------------------------------------------------------------------------------------------------------: |
+| Senza gesti     | +5                      | L'esecuzione avverrà senza alcun gesto visibile                                                                         |
+| Gesti nascosti  | +3                      | L'esecuzione avverrà tramite piccoli gesti (es. un movimento della mano, un movimento della testa, uno schicco di dita) |
+| Gesti normali   | +0                      | L'esecuzione avverrà muovendo le braccia in maniera evidente.                                                           |
+| Gesti ampi      | -3                      | L'esecuzione avverrà muovendo le braccia in maniera palese come a raccogliere verso di se le energie magiche            |
 
 ## Tabella Modalità di lancio verbali
-| Lancio verbale | Modificatore Difficoltà |
-| :-------------:|:-----------------------:|
-| Senza voce     | +5                      |
-| Voce bassa     | +3                      |
-| Voce normale   | +0                      |
-| Voce alta      | -3                      |
+| Lancio verbale | Modificatore Difficoltà | Descrizione                                                                        |
+| :-------------:|:-----------------------:|:----------------------------------------------------------------------------------:|
+| Senza voce     | +5                      | L'esecuzione avverà senza proferire alcuna richiesta, formula magiaca o preghiera. |
+| Voce bassa     | +3                      | L'esecuzione avverrà a bassa voce                                                  |
+| Voce normale   | +0                      | L'esecuzione avverrà con il tono di voce di una normale conversazione              |
+| Voce alta      | -3                      | L'esecuzione avverrà con un tono di voce alta o anche urlando                      |
 
 ## Tabella posizione di lancio
-| Posizione di Lancio         | Modificatore Difficoltà |
-| :--------------------------:|:-----------------------:|
-| Lancio in posizione normale | +0                      |
-| Lancio in movimento         | +5                      |
-| Lancio con disturbo         | +10                     |
-| Lancio in combattimento     | +15                     |
+| Posizione di Lancio         | Modificatore Difficoltà | Descrizione                                                                                                    |
+| :--------------------------:|:-----------------------:|:--------------------------------------------------------------------------------------------------------------:|
+| Lancio in posizione normale | +0                      | L'esecuzione avviene in una normale posizone eretta o seduta, purche comoda e confortevole.                    |
+| Lancio in movimento         | +5                      | L'esecuzione avviene mentre si sta camminando, si è trasportati o a bordo di un carro o cavallo.               |
+| Lancio con disturbo         | +10                     | L'esecuzione avviene in un contesto di disturbo, come in mezzo alla folla, al galoppo, mentre si precipita etc |
+| Lancio in combattimento     | +15                     | L'esecuzione avviene durante un combattimento nel quale si è ingaggiati                                        |
 
 ## Tabella variabili di lancio
-| Variabili di Lancio                      | Modificatore Difficoltà |
-| :---------------------------------------:|:-----------------------:|
-| Utilizzo di componenti magici            | -5                      |
-| Ogni mago aggiuntivo                     | +0                      |
-| Lancio con rituale (durata 15 minuti)    | -10                     |
-| Concentrazione prima del lancio (max 10) | -1                      |
+| Variabili di Lancio                      | Modificatore Difficoltà | Descrizione                                                                                           |
+| :---------------------------------------:|:-----------------------:|:-----------------------------------------------------------------------------------------------------:|
+| Utilizzo di componenti non magici        | -5                      | Per l'esecuzione vengono utilizzati dei componenti (es. strumento musicale, componenti alchemici etc) |
+| Ogni mago aggiuntivo                     | +0                      | L'esecuzione avviene con il supporto di uno o più maghi aggiuntivi                                    |
+| Lancio con rituale (durata 15 minuti)    | -10                     | L'esecuzione avviene al termine di un rituale di concentrazione durato almeno 15 minuti               |
+| Concentrazione prima del lancio (max 10) | -1                      | L'esecuzione avviene al termine di alcuni round di concentrazione (max 10)                            |
 
 ## Tabella effetti di Lancio
-| Effetti di Lancio                        | Modificatore Difficoltà |
-| :---------------------------------------:|:-----------------------:|
-| Lancio incantesimo senza effetti visivi  | +5                      |
-| Lancio incantesimo senza effetti magici  | +10                     |
-| Lancio Incantesimo massimizzato          | +15                     |
+| Effetti di Lancio                        | Modificatore Difficoltà | Descrizione                                                                                               |
+| :---------------------------------------:|:-----------------------:|:---------------------------------------------------------------------------------------------------------:|
+| Lancio incantesimo senza effetti visivi  | +5                      | L'incantesimo non manifesta alcun effetto visibile (es nessun raggio partirà dalle mani dell'incantatore) |
+| Lancio incantesimo senza effetti magici  | +10                     | L'incantesimo non potrà essere rilevato magicamente                                                       |
+| Lancio Incantesimo massimizzato          | +15                     | L'incantesimo avrà il massimo danno possibile (es 4 danni automatici invece di lanciare 1d4)              |
 
 ## Tabella Danni
-| Danni               | Modificatore Difficoltà |
-| :------------------:|:-----------------------:|
-| Ogni +1 aggiuntivo  | +2                      |
-| Ogni d4 aggiuntivo  | +5                      |
-| Ogni d6 aggiuntivo  | +7                      |
-| Ogni d8 aggiuntivo  | +9                      |
-| Ogni d10 aggiuntivo | +11                     |
-| Ogni d12 aggiuntivo | +13                     |
-| Ogni d20 aggiuntivo | +15                     |
+| Danni               | Modificatore Difficoltà | Descrizione                         |
+| :------------------:|:-----------------------:|:-----------------------------------:|
+| Ogni +1 aggiuntivo  | +2                      | Al danno verrà aggiunto un +1 fisso |
+| Ogni d4 aggiuntivo  | +5                      | Al danno verrà aggiunto 1d4         |
+| Ogni d6 aggiuntivo  | +7                      | Al danno verrà aggiunto 1d6         |
+| Ogni d8 aggiuntivo  | +9                      | Al danno verrà aggiunto 1d8         |
+| Ogni d10 aggiuntivo | +11                     | Al danno verrà aggiunto 1d10        |
+| Ogni d12 aggiuntivo | +13                     | Al danno verrà aggiunto 1d12        |
+| Ogni d20 aggiuntivo | +15                     | Al danno verrà aggiunto 1d20        |
 
 ## Tabella modificatori Mente
-| Danni        | Modificatore Difficoltà |
-| :-----------:|:-----------------------:|
-| Leggere      | +0                      |
-| Modificareo  | +15                     |
-| Scrivere     | +20                     |
-| Rimuovere    | +10                     |
+| Danni        | Modificatore Difficoltà | Descrizione                                                                                          |
+| :-----------:|:-----------------------:|:----------------------------------------------------------------------------------------------------:|
+| Leggere      | +0                      | Permette di leggere la mente di un bersaglio (es un pensiero o un ricordo)                           |
+| Modificare   | +15                     | Permette di modificare la mente di un bersaglio (es è possibile modificare un ricordo o un pensiero) |
+| Scrivere     | +20                     | Permette di scrivere la mente di un bersaglio (es è possibile aggiungere un ricordo o un pensiero)   |
+| Cancellare   | +10                     | Permette di cancellare la mente di un bersaglio (es. è possibile rimuovere un ricordo o un pensiero) |
 
 ## Meccaniche incantesimi
 Molti incantesimi non possono essere facilmente gestiti tramite tabelle, basti pensare alla rianimazione di un cadavere, alla trasmutazione umana o alla chiaroveggenza, motivo per cui molti incantesimi abbandonano le meccaniche puramente matematiche, dando molto più spazio all'interpretazione che ogni Master ha della propria ambientazione e della magia.
@@ -117,4 +117,4 @@ Di seguito alcuni esempi reali che aggiornerò di volta in volta che sono stati 
 **Rischi o Conseguenze:** Trasformarsi in una creatura più potente potrebbe infliggere una grande fatica o comportare rischi, come perdere temporaneamente il controllo del proprio corpo o non poter tornare facilmente alla forma originale. Inoltre, la trasmutazione potrebbe causare un progressivo deterioramento mentale, specialmente se usata ripetutamente, portando alla perdita della propria identità o sanità mentale. 
 **Limiti:** La trasmutazione potrebbe avere una durata molto breve o richiedere una concentrazione costante per essere mantenuta, limitando la sua utilità in situazioni di lunga durata.  
 
-La trasformazione potrebbe non garantire tutti i poteri della creatura (ad esempio, trasformarsi in un drago potrebbe non dare la piena capacità di volo o di sputare fuoco). Alcuni materiali o creature potrebbero essere immuni alla trasmutazione, oppure il potere dell'incantesimo potrebbe essere limitato dalla propria abilità o dalla qualità dei materiali usati.  
+La trasformazione potrebbe non garantire tutti i poteri della creatura (ad esempio, trasformarsi in un drago potrebbe non dare la piena capacità di volo o di sputare fuoco). Alcuni materiali o creature potrebbero essere immuni alla trasmutazione, oppure il potere dell'incantesimo potrebbe essere limitato dalla propria abilità o dalla qualità dei materiali usati.
