@@ -7,7 +7,7 @@
     <title>SpellCheck</title>
 
     <!-- Collegamento alla favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 <body>
     <header class="text-center mb-4">
         <h1>SpellCheck - Calcolo Difficoltà Incantesimi</h1>
-        <img src="logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+        <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
         
         <div class="text-center mt-4">
             <button id="install-button" style="display: none;">Installa App</button>
@@ -186,35 +186,47 @@
                 <label for="effetto3" class="form-check-label">Lancio Incantesimo massimizzato (+15)</label>
             </div>
 
-            <h2 class="h4">Dadi di danni</h2>
-            <div class="mb-3">
-                <label for="danni1" class="form-label">Ogni +1 aggiuntivo (+2)</label>
-                <input type="number" id="danni1" class="form-control" min="0" value="0">
-            </div>
-            <div class="mb-3">
-                <label for="danni2" class="form-label">Ogni d4 aggiuntivo (+5)</label>
-                <input type="number" id="danni2" class="form-control" min="0" value="0">
-            </div>
-            <div class="mb-3">
-                <label for="danni3" class="form-label">Ogni d6 aggiuntivo (+7)</label>
-                <input type="number" id="danni3" class="form-control" min="0" value="0">
-            </div>
-            <div class="mb-3">
-                <label for="danni4" class="form-label">Ogni d8 aggiuntivo (+9)</label>
-                <input type="number" id="danni4" class="form-control" min="0" value="0">
-            </div>
-            <div class="mb-3">
-                <label for="danni5" class="form-label">Ogni d10 aggiuntivo (+11)</label>
-                <input type="number" id="danni5" class="form-control" min="0" value="0">
-            </div>
-            <div class="mb-3">
-                <label for="danni6" class="form-label">Ogni d12 aggiuntivo (+13)</label>
-                <input type="number" id="danni6" class="form-control" min="0" value="0">
-            </div>
-            <div class="mb-3">
-                <label for="danni7" class="form-label">Ogni d20 aggiuntivo (+15)</label>
-                <input type="number" id="danni7" class="form-control" min="0" value="0">
-            </div>
+			<h2 class="h4">Dadi di danni</h2>
+			<div class="mb-3">
+				<label for="danni1" class="form-label">Ogni +1 aggiuntivo (+2)</label>
+				<input type="number" id="danni1" class="form-control" min="0" value="0">
+			</div>
+			<div class="mb-3">
+				<label for="danni2" class="form-label">
+					<img src="icons/d4.png" alt="d4" style="width: 24px; height: 24px;"> aggiuntivo (+5)
+				</label>
+				<input type="number" id="danni2" class="form-control" min="0" value="0">
+			</div>
+			<div class="mb-3">
+				<label for="danni3" class="form-label">
+					<img src="icons/d6.png" alt="d6" style="width: 24px; height: 24px;"> aggiuntivo (+7)
+				</label>
+				<input type="number" id="danni3" class="form-control" min="0" value="0">
+			</div>
+			<div class="mb-3">
+				<label for="danni4" class="form-label">
+					<img src="icons/d8.png" alt="d8" style="width: 24px; height: 24px;"> aggiuntivo (+9)
+				</label>
+				<input type="number" id="danni4" class="form-control" min="0" value="0">
+			</div>
+			<div class="mb-3">
+				<label for="danni5" class="form-label">
+					<img src="icons/d10.png" alt="d10" style="width: 24px; height: 24px;"> aggiuntivo (+11)
+				</label>
+				<input type="number" id="danni5" class="form-control" min="0" value="0">
+			</div>
+			<div class="mb-3">
+				<label for="danni6" class="form-label">
+					<img src="icons/d12.png" alt="d12" style="width: 24px; height: 24px;"> aggiuntivo (+13)
+				</label>
+				<input type="number" id="danni6" class="form-control" min="0" value="0">
+			</div>
+			<div class="mb-3">
+				<label for="danni7" class="form-label">
+					<img src="icons/d20.png" alt="d20" style="width: 24px; height: 24px;"> aggiuntivo (+15)
+				</label>
+				<input type="number" id="danni7" class="form-control" min="0" value="0">
+			</div>
 
             <div class="mb-3">
                 <label for="modificatori_mente" class="form-label">Modificatori per Mente</label>
