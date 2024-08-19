@@ -17,6 +17,28 @@ body {
     color: #000;
 }
 
+#install-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #495057;
+    color: #FFF;
+    border: 2px solid #6C757D;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#install-button:hover {
+    background-color: #343A40;
+    transform: scale(1.1);
+}
+
+.text-center {
+    text-align: center;
+}
+
 .btn-custom {
     background-color: #495057;
     color: #FFF;

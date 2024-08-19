@@ -471,7 +471,7 @@ window.onload = function() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     // Verifica se è un dispositivo Windows o non Android
-    if (/windows phone/i.test(userAgent) || /windows/i.test(userAgent) || !/android/i.test(userAgent)) {
+    if (/windows phone/i.test(userAgent) || /windows/i.test(userAgent)) {
         document.getElementById('install-button').style.display = 'none';
     } else {
         document.getElementById('install-button').style.display = 'block';
