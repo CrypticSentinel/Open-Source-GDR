@@ -470,12 +470,11 @@ document.getElementById("close-popup").onclick = function() {
 window.onload = function() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    if (/windows phone/i.test(userAgent) || /windows/i.test(userAgent)) {
-        console.log("Dispositivo Windows rilevato. Nascondendo il pulsante.");
-        document.getElementById('install-button').style.display = 'none';
-    } else {
-        console.log("Dispositivo non Windows rilevato. Mostrando il pulsante.");
+    // Verifica se è un dispositivo Android
+    if (/android/i.test(userAgent)) {
         document.getElementById('install-button').style.display = 'block';
+    } else {
+        document.getElementById('install-button').style.display = 'none';
     }
 };
 
