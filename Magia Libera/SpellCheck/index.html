@@ -148,18 +148,22 @@
                 <input type="checkbox" id="variabile1" class="form-check-input" value="-5">
                 <label for="variabile1" class="form-check-label">Utilizzo di componenti o strumenti (-5)</label>
             </div>
-            <div class="form-check">
-                <input type="checkbox" id="variabile2" class="form-check-input" onchange="mostraInputVariabili()">
-                <label for="variabile2" class="form-check-label">Ogni mago aggiuntivo (+0)</label>
-            </div>
-            
-            <!-- Campo di input nascosto per "Ogni mago aggiuntivo" -->
-            <div class="mb-3 text-center" id="input-mago-aggiuntivo" style="display: none;">
-				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-magi-aggiuntivi')">
-                <input type="number" id="numero-magi-aggiuntivi" class="form-control mx-auto" min="0" value="1">
-				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-magi-aggiuntivi')">
-            </div>
 			
+			<div class="form-check">
+				<input type="checkbox" id="variabile2" class="form-check-input" onchange="mostraInputVariabili()">
+				<label for="variabile2" class="form-check-label">Ogni mago aggiuntivo (+Grado Scuola)</label>
+			</div>
+
+			<!-- Campo di input nascosto per "Ogni mago aggiuntivo" -->
+			<div class="mb-3 text-center" id="input-mago-aggiuntivo" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaMagiAggiuntivi()">
+				<input type="number" id="numero-magi-aggiuntivi" class="form-control mx-auto" min="0" value="1" onchange="aggiornaPunteggiMagiAggiuntivi()">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaMagiAggiuntivi()">
+			</div>
+
+			<!-- Contenitore per i punteggi dei maghi aggiuntivi -->
+			<div id="punteggi-magi-aggiuntivi" class="mb-3 text-center"></div>
+
             <div class="form-check">
                 <input type="checkbox" id="variabile3" class="form-check-input" value="-10" onchange="mostraInputVariabili()">
                 <label for="variabile3" class="form-check-label">Lancio con rituale (ogni 15 minuti) (-10)</label>

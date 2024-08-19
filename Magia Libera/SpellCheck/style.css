@@ -39,6 +39,49 @@ body {
     text-align: center;
 }
 
+#punteggi-magi-aggiuntivi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#punteggi-magi-aggiuntivi input {
+    width: 200px; /* Imposta una larghezza fissa per le input box */
+    margin: 5px 0; /* Spazio tra le input box */
+}
+
+.mago-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mago-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adjust-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.mago-input-container input {
+    text-align: center;
+    margin: 0 5px;
+}
+
 .btn-custom {
     background-color: #495057;
     color: #FFF;

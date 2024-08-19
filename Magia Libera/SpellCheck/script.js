@@ -46,27 +46,139 @@ function mostraInputDurata() {
     }
 }
 
+function incrementaMagiAggiuntivi() {
+    const inputElement = document.getElementById("numero-magi-aggiuntivi");
+    let numeroMagiAggiuntivi = parseInt(inputElement.value);
+
+    if (numeroMagiAggiuntivi < 4) {
+        inputElement.value = numeroMagiAggiuntivi + 1;
+        aggiornaPunteggiMagiAggiuntivi();
+    }
+}
+
+function decrementaMagiAggiuntivi() {
+    const inputElement = document.getElementById("numero-magi-aggiuntivi");
+    let numeroMagiAggiuntivi = parseInt(inputElement.value);
+
+    if (numeroMagiAggiuntivi > 1) {
+        inputElement.value = numeroMagiAggiuntivi - 1;
+        aggiornaPunteggiMagiAggiuntivi();
+    }
+}
+
+/* function aggiornaPunteggiMagiAggiuntivi() {
+    const numeroMagiAggiuntivi = parseInt(document.getElementById("numero-magi-aggiuntivi").value);
+    const punteggiContainer = document.getElementById("punteggi-magi-aggiuntivi");
+
+    // Resetta il contenuto del contenitore
+    punteggiContainer.innerHTML = "";
+
+    // Crea input per i punteggi dei maghi aggiuntivi
+    for (let i = 1; i <= numeroMagiAggiuntivi; i++) {
+        const input = document.createElement("input");
+        input.type = "number";
+        input.id = "punteggio-mago-" + i;
+        input.className = "form-control mx-auto";
+        input.placeholder = "Punteggio Mago " + i;
+        input.style.marginTop = "10px";
+        input.min = 0;
+        input.value = 0;
+
+        punteggiContainer.appendChild(input);
+    }
+} */
+
+function aggiornaPunteggiMagiAggiuntivi() {
+    const numeroMagiAggiuntivi = parseInt(document.getElementById("numero-magi-aggiuntivi").value);
+    const punteggiContainer = document.getElementById("punteggi-magi-aggiuntivi");
+
+    // Resetta il contenuto del contenitore
+    punteggiContainer.innerHTML = "";
+
+    // Crea input per i punteggi dei maghi aggiuntivi
+    for (let i = 1; i <= numeroMagiAggiuntivi; i++) {
+        // Crea una div per contenere la label, l'input e le icone
+        const magoDiv = document.createElement("div");
+        magoDiv.className = "mago-input-container";
+
+        // Crea la label sopra l'input
+        const label = document.createElement("label");
+        label.for = "punteggio-mago-" + i;
+        label.textContent = "Mago " + i;
+        label.className = "mago-label";
+        magoDiv.appendChild(label);
+
+        // Crea un contenitore flessibile per l'input e le icone
+        const inputGroup = document.createElement("div");
+        inputGroup.className = "input-group";
+
+        // Crea l'icona per decrementare
+        const minusIcon = document.createElement("img");
+        minusIcon.src = "icons/minus.png";
+        minusIcon.alt = "-";
+        minusIcon.className = "adjust-icon mx-2";
+        minusIcon.style.cursor = "pointer";
+        minusIcon.onclick = function() {
+            decrementaPunteggioMago(i);
+        };
+        inputGroup.appendChild(minusIcon);
+
+        // Crea l'input per il punteggio
+        const input = document.createElement("input");
+        input.type = "number";
+        input.id = "punteggio-mago-" + i;
+        input.className = "form-control mx-auto";
+        input.style.width = "60px";
+        input.min = 0;
+        input.value = 0;
+        input.style.display = "inline-block";
+        inputGroup.appendChild(input);
+
+        // Crea l'icona per incrementare
+        const plusIcon = document.createElement("img");
+        plusIcon.src = "icons/plus.png";
+        plusIcon.alt = "+";
+        plusIcon.className = "adjust-icon mx-2";
+        plusIcon.style.cursor = "pointer";
+        plusIcon.onclick = function() {
+            incrementaPunteggioMago(i);
+        };
+        inputGroup.appendChild(plusIcon);
+
+        // Aggiungi il gruppo di input alla div del mago
+        magoDiv.appendChild(inputGroup);
+
+        // Aggiungi la div del mago al contenitore principale
+        punteggiContainer.appendChild(magoDiv);
+    }
+}
+
+function incrementaPunteggioMago(magoIndex) {
+    const inputElement = document.getElementById("punteggio-mago-" + magoIndex);
+    inputElement.value = parseInt(inputElement.value) + 1;
+}
+
+function decrementaPunteggioMago(magoIndex) {
+    const inputElement = document.getElementById("punteggio-mago-" + magoIndex);
+    if (parseInt(inputElement.value) > 0) {
+        inputElement.value = parseInt(inputElement.value) - 1;
+    }
+}
+
 function mostraInputVariabili() {
     let variabileMagi = document.getElementById("variabile2");
-    let variabileRituale = document.getElementById("variabile3");
-
     let inputMagoAggiuntivo = document.getElementById("input-mago-aggiuntivo");
-    let inputLancioRituale = document.getElementById("input-lancio-rituale");
 
     if (variabileMagi.checked) {
         inputMagoAggiuntivo.style.display = 'block';
+        aggiornaPunteggiMagiAggiuntivi();
     } else {
-        document.getElementById("numero-magi-aggiuntivi").value = "1"; // Reimposta il valore a 1
+        document.getElementById("numero-magi-aggiuntivi").value = "1";
         inputMagoAggiuntivo.style.display = 'none';
-    }
-
-    if (variabileRituale.checked) {
-        inputLancioRituale.style.display = 'block';
-    } else {
-        document.getElementById("numero-rituali").value = "1"; // Reimposta il valore a 1
-        inputLancioRituale.style.display = 'none';
+        document.getElementById("punteggi-magi-aggiuntivi").innerHTML = ""; // Nascondi tutti i campi di punteggio
     }
 }
+
 
 function mostraInputRound() {
     let roundsCheckbox = document.getElementById("rounds-checkbox");
@@ -278,7 +390,7 @@ function calcolaMoltiplicatori() {
 
     if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
         let numeroMagiAggiuntivi = parseInt(document.getElementById("numero-magi-aggiuntivi").value) || 0;
-        moltiplicatoreMagiAggiuntivi = (numeroMagiAggiuntivi - 1) * 0;
+        moltiplicatoreMagiAggiuntivi = 0; // Il moltiplicatore di maghi aggiuntivi è 0, quindi non influisce
     }
 
     if (document.getElementById("input-lancio-rituale").style.display === 'block') {
@@ -292,6 +404,16 @@ function calcolaMoltiplicatori() {
         moltiplicatoreConcentrazione = numeroRounds * -1;
     }
 
+    // Sottrai i punteggi dei maghi aggiuntivi
+    let punteggiMagi = 0;
+    if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
+        const numeroMagiAggiuntivi = parseInt(document.getElementById("numero-magi-aggiuntivi").value);
+        for (let i = 1; i <= numeroMagiAggiuntivi; i++) {
+            const punteggioMago = parseInt(document.getElementById("punteggio-mago-" + i).value) || 0;
+            punteggiMagi += punteggioMago;
+        }
+    }
+
     return {
         moltiplicatoreBersagli,
         moltiplicatoreDiametro,
@@ -301,6 +423,7 @@ function calcolaMoltiplicatori() {
         moltiplicatoreMagiAggiuntivi,
         moltiplicatoreRituali,
         moltiplicatoreConcentrazione,
+        punteggiMagi, // Aggiungi i punteggi dei maghi
     };
 }
 
@@ -324,7 +447,8 @@ function calcolaDifficolta() {
         moltiplicatoreMinuti15,
         moltiplicatoreMagiAggiuntivi,
         moltiplicatoreRituali,
-        moltiplicatoreConcentrazione
+        moltiplicatoreConcentrazione,
+        punteggiMagi // Ottieni i punteggi dei maghi
     } = calcolaMoltiplicatori();
 
     let effetti = 0;
@@ -337,8 +461,8 @@ function calcolaDifficolta() {
     if (document.getElementById("effetto1").checked) effetti += parseInt(document.getElementById("effetto1").value) || 0;
     if (document.getElementById("effetto2").checked) effetti += parseInt(document.getElementById("effetto2").value) || 0;
     if (document.getElementById("effetto3").checked) effetti += parseInt(document.getElementById("effetto3").value) || 0;
-	
-	// Dadi aggiuntivi
+
+    // Dadi aggiuntivi
     let danni_totali = 0;
     danni_totali += (parseInt(document.getElementById("danni1").value) || 0) * 2;
     danni_totali += (parseInt(document.getElementById("danni2").value) || 0) * 5;
@@ -352,6 +476,9 @@ function calcolaDifficolta() {
         moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound +
         moltiplicatoreMinuti7 + moltiplicatoreMinuti15 + moltiplicatoreMagiAggiuntivi +
         moltiplicatoreRituali + moltiplicatoreConcentrazione + modificatori_mente + effetti + danni_totali;
+
+    // Sottrai i punteggi dei maghi aggiuntivi
+    totale -= punteggiMagi;
 
     console.log("Totale calcolato:", totale);
 
