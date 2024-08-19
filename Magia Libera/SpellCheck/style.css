@@ -10,6 +10,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid #495057;
     color: #F8F9FA;
+	text-align: center;
 }
 
 .form-select option {
@@ -37,11 +38,23 @@ body {
     margin-top: 30px;
 }
 
-.text-center button {
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spazio tra i pulsanti */
+    margin-top: 20px; /* Margine superiore per separare dal contenuto precedente */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* .text-center button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .modal-content {
     margin: 15% auto;
@@ -62,6 +75,7 @@ body {
 
 .form-control.mx-auto {
     display: inline-block;
+	text-align: center;
     margin-top: 10px;
     width: auto;
 }

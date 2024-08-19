@@ -6,12 +6,14 @@ function mostraInputBersagliDiametro() {
     if (areaSelect.value === "5" && areaSelect.options[areaSelect.selectedIndex].text.includes("Ogni bersaglio oltre il primo")) {
         inputBersagli.style.display = 'block';
     } else {
+        document.getElementById("numero-bersagli").value = "1"; // Reimposta il valore a 1
         inputBersagli.style.display = 'none';
     }
 
     if (areaSelect.value === "5" && areaSelect.options[areaSelect.selectedIndex].text.includes("Ogni 5 metri di diametro")) {
         inputDiametro.style.display = 'block';
     } else {
+        document.getElementById("numero-diametro").value = "1"; // Reimposta il valore a 1
         inputDiametro.style.display = 'none';
     }
 }
@@ -25,18 +27,21 @@ function mostraInputDurata() {
     if (durataSelect.value === "2" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni round oltre il primo")) {
         inputRound.style.display = 'block';
     } else {
+        document.getElementById("numero-round").value = "1"; // Reimposta il valore a 1
         inputRound.style.display = 'none';
     }
 
     if (durataSelect.value === "5" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni 7 minuti")) {
         inputMinuti7.style.display = 'block';
     } else {
+        document.getElementById("numero-minuti7").value = "1"; // Reimposta il valore a 1
         inputMinuti7.style.display = 'none';
     }
 
     if (durataSelect.value === "10" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni 15 minuti")) {
         inputMinuti15.style.display = 'block';
     } else {
+        document.getElementById("numero-minuti15").value = "1"; // Reimposta il valore a 1
         inputMinuti15.style.display = 'none';
     }
 }
@@ -51,12 +56,14 @@ function mostraInputVariabili() {
     if (variabileMagi.checked) {
         inputMagoAggiuntivo.style.display = 'block';
     } else {
+        document.getElementById("numero-magi-aggiuntivi").value = "1"; // Reimposta il valore a 1
         inputMagoAggiuntivo.style.display = 'none';
     }
 
     if (variabileRituale.checked) {
         inputLancioRituale.style.display = 'block';
     } else {
+        document.getElementById("numero-rituali").value = "1"; // Reimposta il valore a 1
         inputLancioRituale.style.display = 'none';
     }
 }
@@ -68,6 +75,7 @@ function mostraInputRound() {
     if (roundsCheckbox.checked) {
         inputRounds.style.display = 'block';
     } else {
+        document.getElementById("numero-rounds").value = "1"; // Reimposta il valore a 1
         inputRounds.style.display = 'none';
     }
 }
@@ -204,7 +212,7 @@ function calcolaDifficolta() {
     document.getElementById("popup-difficolta").style.display = 'block';
 }
 
-function ripristinaValori() {
+/* function ripristinaValori() {
     // Ripristina i selettori con i valori di default
     document.getElementById("distanza").value = "0"; // Tocco (+0)
     document.getElementById("area").value = "0"; // Creatura - Intera (+0)
@@ -256,8 +264,67 @@ function ripristinaValori() {
 
     // Ripristina il popup di difficoltà
     document.getElementById("difficolta-totale-popup").innerText = "20";
-}
+} */
 
+function ripristinaValori() {
+    // Ripristina i selettori con i valori di default
+    document.getElementById("distanza").value = "0"; // Tocco (+0)
+    document.getElementById("area").value = "0"; // Creatura - Intera (+0)
+    document.getElementById("durata").value = "0"; // 1 round / Istantaneo (+0)
+    document.getElementById("gesti").value = "0"; // Gesti normali (+0)
+    document.getElementById("verbale").value = "0"; // Voce normale (+0)
+    document.getElementById("posizione").value = "0"; // Lancio in posizione normale (+0)
+    document.getElementById("modificatori_mente").value = "0"; // Leggere (+0)
+
+    // Ripristina i valori degli input dei dadi aggiuntivi a 0
+    document.getElementById("danni1").value = "0";
+    document.getElementById("danni2").value = "0";
+    document.getElementById("danni3").value = "0";
+    document.getElementById("danni4").value = "0";
+    document.getElementById("danni5").value = "0";
+    document.getElementById("danni6").value = "0";
+    document.getElementById("danni7").value = "0";
+
+    // Ripristina i valori degli input nascosti a 1 solo se devono essere visibili
+    document.getElementById("numero-bersagli").value = "1";
+    document.getElementById("numero-diametro").value = "1";
+    document.getElementById("numero-round").value = "1";
+    document.getElementById("numero-minuti7").value = "1";
+    document.getElementById("numero-minuti15").value = "1";
+    document.getElementById("numero-magi-aggiuntivi").value = "1";
+    document.getElementById("numero-rituali").value = "1";
+    document.getElementById("numero-rounds").value = "1";
+
+    // Nascondi eventuali input condizionali
+    document.getElementById("input-bersagli").style.display = 'none';
+    document.getElementById("input-diametro").style.display = 'none';
+    document.getElementById("input-round").style.display = 'none';
+    document.getElementById("input-minuti7").style.display = 'none';
+    document.getElementById("input-minuti15").style.display = 'none';
+    document.getElementById("input-mago-aggiuntivo").style.display = 'none';
+    document.getElementById("input-lancio-rituale").style.display = 'none';
+    document.getElementById("input-rounds").style.display = 'none';
+
+    // Deseleziona le checkbox e nascondi i loro input condizionali
+    document.getElementById("variabile1").checked = false;
+    document.getElementById("variabile2").checked = false;
+    document.getElementById("variabile3").checked = false;
+    document.getElementById("rounds-checkbox").checked = false;
+    
+    // Deseleziona tutte le opzioni effetti di lancio
+    document.getElementById("effetto1").checked = false;
+    document.getElementById("effetto2").checked = false;
+    document.getElementById("effetto3").checked = false;
+
+    // Ripristina il popup di difficoltà
+    document.getElementById("difficolta-totale-popup").innerText = "20";
+    
+    // Richiama le funzioni per aggiornare la visualizzazione e reimpostare i valori
+    mostraInputBersagliDiametro();
+    mostraInputDurata();
+    mostraInputVariabili();
+    mostraInputRound();
+}
 
 // Chiudi il popup quando si clicca sul pulsante "Chiudi"
 document.getElementById("close-popup").onclick = function() {

@@ -64,16 +64,18 @@
                 </select>
             </div>
 
-            <!-- Campo di input nascosto per "Ogni bersaglio oltre il primo" -->
-            <div class="mb-3" id="input-bersagli" style="display: none;">
-                <label for="numero-bersagli" class="form-label">Inserisci il numero di bersagli oltre il primo:</label>
-                <input type="number" id="numero-bersagli" class="form-control" min="0" value="0">
-            </div>
+			<!-- Campo di input nascosto per "Ogni bersaglio oltre il primo" -->
+			<div class="mb-3 text-center" id="input-bersagli" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-bersagli')">
+				<input type="number" id="numero-bersagli" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-bersagli')">
+			</div>
             
             <!-- Campo di input nascosto per "Ogni 5 metri di diametro" -->
-            <div class="mb-3" id="input-diametro" style="display: none;">
-                <label for="numero-diametro" class="form-label">Inserisci il numero di incrementi di 5 metri di diametro:</label>
-                <input type="number" id="numero-diametro" class="form-control" min="0" value="0">
+            <div class="mb-3 text-center" id="input-diametro" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-diametro')">
+                <input type="number" id="numero-diametro" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-diametro')">
             </div>
             
             <div class="mb-3">
@@ -89,20 +91,25 @@
                 </select>
             </div>
 
-            <!-- Campi di input nascosti -->
-            <div class="mb-3" id="input-round" style="display: none;">
-                <label for="numero-round" class="form-label">Inserisci il numero di round oltre il primo:</label>
-                <input type="number" id="numero-round" class="form-control" min="0" value="0">
+            <!-- Campi di input nascosto per "Ogni round oltre il primo" -->
+			 <div class="mb-3 text-center" id="input-round" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-round')">
+                <input type="number" id="numero-round" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-round')">
             </div>
 
-            <div class="mb-3" id="input-minuti7" style="display: none;">
-                <label for="numero-minuti7" class="form-label">Inserisci il numero di incrementi di 7 minuti:</label>
-                <input type="number" id="numero-minuti7" class="form-control" min="0" value="0">
+			<!-- Campi di input nascosto per "Ogni 7 minuti" -->
+			 <div class="mb-3 text-center" id="input-minuti7" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti7')">
+                <input type="number" id="numero-minuti7" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti7')">
             </div>
 
-            <div class="mb-3" id="input-minuti15" style="display: none;">
-                <label for="numero-minuti15" class="form-label">Inserisci il numero di incrementi di 15 minuti:</label>
-                <input type="number" id="numero-minuti15" class="form-control" min="0" value="0">
+			<!-- Campi di input nascosto per "Ogni 15 minuti" -->
+			 <div class="mb-3 text-center" id="input-minuti15" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti15')">
+                <input type="number" id="numero-minuti15" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti15')">
             </div>
 
 			<h2 class="h4 text-center">Modalità di lancio</h2>
@@ -139,7 +146,7 @@
             <h2 class="h4 text-center">Variabili di lancio</h2>
             <div class="form-check">
                 <input type="checkbox" id="variabile1" class="form-check-input" value="-5">
-                <label for="variabile1" class="form-check-label">Utilizzo di componenti magici (-5)</label>
+                <label for="variabile1" class="form-check-label">Utilizzo di componenti o strumenti (-5)</label>
             </div>
             <div class="form-check">
                 <input type="checkbox" id="variabile2" class="form-check-input" onchange="mostraInputVariabili()">
@@ -147,20 +154,22 @@
             </div>
             
             <!-- Campo di input nascosto per "Ogni mago aggiuntivo" -->
-            <div class="mb-3" id="input-mago-aggiuntivo" style="display: none;">
-                <label for="numero-magi-aggiuntivi" class="form-label">Inserisci il numero di maghi aggiuntivi:</label>
-                <input type="number" id="numero-magi-aggiuntivi" class="form-control" min="0" value="0">
+            <div class="mb-3 text-center" id="input-mago-aggiuntivo" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-magi-aggiuntivi')">
+                <input type="number" id="numero-magi-aggiuntivi" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-magi-aggiuntivi')">
             </div>
-
+			
             <div class="form-check">
                 <input type="checkbox" id="variabile3" class="form-check-input" value="-10" onchange="mostraInputVariabili()">
                 <label for="variabile3" class="form-check-label">Lancio con rituale (ogni 15 minuti) (-10)</label>
             </div>
 
-            <!-- Campo di input nascosto per "Lancio con rituale" -->
-            <div class="mb-3" id="input-lancio-rituale" style="display: none;">
-                <label for="numero-rituali" class="form-label">Inserisci il numero di incrementi di rituali (incrementi di 15 minuti):</label>
-                <input type="number" id="numero-rituali" class="form-control" min="0" value="0">
+            <!-- Campo di input nascosto per "Lancio con rituale" -->		
+			<div class="mb-3 text-center" id="input-lancio-rituale" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rituali')">
+                <input type="number" id="numero-rituali" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-rituali')">
             </div>
 
             <div class="form-check">
@@ -168,9 +177,11 @@
                 <label for="rounds-checkbox" class="form-check-label">Round di concentrazione prima del lancio (max 10) (-1 per round)</label>
             </div>
 
-            <div class="mb-3" id="input-rounds" style="display: none;">
-                <label for="numero-rounds" class="form-label">Inserisci il numero di round di concentrazione (max 10):</label>
-                <input type="number" id="numero-rounds" class="form-control" min="0" max="10" value="0">
+            <!-- Campo di input nascosto per "Lancio con rituale" -->		
+			<div class="mb-3 text-center" id="input-rounds" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rounds')">
+                <input type="number" id="numero-rounds" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-rounds')">
             </div>
 
             <h2 class="h4 text-center">Effetti di lancio</h2>
@@ -207,52 +218,52 @@
 					<img src="icons/1.png" alt="+1" class="dice-icon">
 					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni1')">
 					<label for="danni1" class="form-label d-block">Ogni +1 aggiuntivo (+2)</label>
-					<input type="number" id="danni1" class="form-control mx-auto" min="0" value="0">
+					<input type="number" id="danni1" class="form-control" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
 					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni2')">
 					<img src="icons/d4.png" alt="d4" class="dice-icon">
 					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni2')">
 					<label for="danni2" class="form-label d-block">Ogni d4 aggiuntivo (+5)</label>
-					<input type="number" id="danni2" class="form-control mx-auto" min="0" value="0">
+					<input type="number" id="danni2" class="form-control" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
 					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni3')">
 					<img src="icons/d6.png" alt="d6" class="dice-icon">
 					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni3')">
 					<label for="danni3" class="form-label d-block">Ogni d6 aggiuntivo (+7)</label>
-					<input type="number" id="danni3" class="form-control mx-auto" min="0" value="0">
+					<input type="number" id="danni3" class="form-control" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
 					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni4')">
 					<img src="icons/d8.png" alt="d8" class="dice-icon">
 					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni4')">
 					<label for="danni4" class="form-label d-block">Ogni d8 aggiuntivo (+9)</label>
-					<input type="number" id="danni4" class="form-control mx-auto" min="0" value="0">
+					<input type="number" id="danni4" class="form-control" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
 					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni5')">
 					<img src="icons/d10.png" alt="d10" class="dice-icon">
 					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni5')">
 					<label for="danni5" class="form-label d-block">Ogni d10 aggiuntivo (+11)</label>
-					<input type="number" id="danni5" class="form-control mx-auto" min="0" value="0">
+					<input type="number" id="danni5" class="form-control" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
 					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni6')">
 					<img src="icons/d12.png" alt="d12" class="dice-icon">
 					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni6')">
 					<label for="danni6" class="form-label d-block">Ogni d12 aggiuntivo (+13)</label>
-					<input type="number" id="danni6" class="form-control mx-auto" min="0" value="0">
+					<input type="number" id="danni6" class="form-control" min="0" value="0">
 				</div>
 				<div class="mb-3 text-center">
 					<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('danni7')">
 					<img src="icons/d20.png" alt="d20" class="dice-icon">
 					<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('danni7')">
 					<label for="danni7" class="form-label d-block">Ogni d20 aggiuntivo (+15)</label>
-					<input type="number" id="danni7" class="form-control mx-auto" min="0" value="0">
+					<input type="number" id="danni7" class="form-control" min="0" value="0">
 				</div>
 			</div>
-
+			
             <div class="text-center">
                 <button type="button" class="btn btn-custom" onclick="calcolaDifficolta()">Calcola Difficoltà</button>
 				<button type="button" class="btn btn-custom" onclick="ripristinaValori()">Ripristina Valori</button>
@@ -267,7 +278,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408182312</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408191954</p>
     </footer>
 
     <!-- Bootstrap JS (opzionale) -->
