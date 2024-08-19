@@ -157,7 +157,7 @@ function toggleD8() {
         inputD8.value = 1;
     } else {
         // Nascondi i controlli e reimposta il valore dell'input a 0
-        d6Controls.style.display = "none";
+        d8Controls.style.display = "none";
         minusD8.style.display = "none";
         plusD8.style.display = "none";
         inputD8.value = 0;
@@ -165,7 +165,7 @@ function toggleD8() {
 }
 
 function toggleD10() {
-    let d6Controls = document.getElementById("d10-controls");
+    let d10Controls = document.getElementById("d10-controls");
     let minusD10 = document.getElementById("minus-d10");
     let plusD10 = document.getElementById("plus-d10");
     let inputD10 = document.getElementById("danni5");
