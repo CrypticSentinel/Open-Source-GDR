@@ -177,8 +177,17 @@ function mostraInputVariabili() {
         inputMagoAggiuntivo.style.display = 'none';
         document.getElementById("punteggi-magi-aggiuntivi").innerHTML = ""; // Nascondi tutti i campi di punteggio
     }
-}
 
+    let variabileRituale = document.getElementById("variabile3");
+    let inputRituale = document.getElementById("input-lancio-rituale");
+
+    if (variabileRituale.checked) {
+        inputRituale.style.display = 'block';
+    } else {
+        document.getElementById("numero-rituali").value = "1";
+        inputRituale.style.display = 'none';
+    }
+}
 
 function mostraInputRound() {
     let roundsCheckbox = document.getElementById("rounds-checkbox");
