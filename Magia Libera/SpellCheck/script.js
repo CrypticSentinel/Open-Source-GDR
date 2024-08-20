@@ -362,6 +362,16 @@ function decrementaInput(inputId) {
     }
 }
 
+function incrementaRoundConcentrazione() {
+    const inputElement = document.getElementById('numero-rounds');
+    let currentValue = parseInt(inputElement.value);
+
+    if (currentValue < 10) {
+        inputElement.value = currentValue + 1;
+    }
+}
+
+
 function calcolaMoltiplicatori() {
     let moltiplicatoreBersagli = 0;
     let moltiplicatoreDiametro = 0;
@@ -436,8 +446,96 @@ function calcolaMoltiplicatori() {
     };
 }
 
+function mostraPopupGradoMagia() {
+    document.getElementById("popup-grado-magia").style.display = 'block';
+}
+
+document.getElementById("submit-grado-magia").addEventListener("click", function() {
+    const gradoMagia = parseInt(document.getElementById("grado-magia").value);
+	
+    // Nascondi il popup per l'inserimento del grado di magia
+    document.getElementById("popup-grado-magia").style.display = 'none';
+
+    // Ora calcola la difficoltà e mostra il popup relativo
+    calcolaDifficoltaConGrado(gradoMagia);
+});
+
+function incrementaGradoMagia() {
+    const inputElement = document.getElementById("grado-magia");
+    inputElement.value = parseInt(inputElement.value) + 1;
+}
+
+function decrementaGradoMagia() {
+    const inputElement = document.getElementById("grado-magia");
+    if (parseInt(inputElement.value) > 0) {
+        inputElement.value = parseInt(inputElement.value) - 1;
+    }
+}
+
 function calcolaDifficolta() {
-    console.log("Funzione calcolaDifficolta avviata");
+     // Invece di calcolare subito la difficoltà, mostriamo prima il popup per il grado di magia
+    mostraPopupGradoMagia();
+}
+
+function calcolaFatica(gradoMagia, difficoltaTotale) {
+    let fatica = 0;
+
+    if (gradoMagia >= 1 && gradoMagia <= 3) {
+        if (difficoltaTotale >= 19 && difficoltaTotale <= 24) fatica = 0;
+        else if (difficoltaTotale >= 20 && difficoltaTotale <= 24) fatica = -1;
+        else if (difficoltaTotale >= 25 && difficoltaTotale <= 29) fatica = -2;
+        else if (difficoltaTotale >= 30 && difficoltaTotale <= 34) fatica = -3;
+        else if (difficoltaTotale >= 35 && difficoltaTotale <= 39) fatica = -4;
+        else if (difficoltaTotale >= 40 && difficoltaTotale <= 44) fatica = -5;
+    } else if (gradoMagia >= 4 && gradoMagia <= 6) {
+        if (difficoltaTotale >= 24 && difficoltaTotale <= 29) fatica = 0;
+        else if (difficoltaTotale >= 25 && difficoltaTotale <= 29) fatica = -1;
+        else if (difficoltaTotale >= 30 && difficoltaTotale <= 34) fatica = -2;
+        else if (difficoltaTotale >= 35 && difficoltaTotale <= 39) fatica = -3;
+        else if (difficoltaTotale >= 40 && difficoltaTotale <= 44) fatica = -4;
+        else if (difficoltaTotale >= 45 && difficoltaTotale <= 49) fatica = -5;
+    } else if (gradoMagia >= 7 && gradoMagia <= 9) {
+        if (difficoltaTotale >= 29 && difficoltaTotale <= 34) fatica = 0;
+        else if (difficoltaTotale >= 30 && difficoltaTotale <= 34) fatica = -1;
+        else if (difficoltaTotale >= 35 && difficoltaTotale <= 39) fatica = -2;
+        else if (difficoltaTotale >= 40 && difficoltaTotale <= 44) fatica = -3;
+        else if (difficoltaTotale >= 45 && difficoltaTotale <= 49) fatica = -4;
+        else if (difficoltaTotale >= 50 && difficoltaTotale <= 54) fatica = -5;
+    } else if (gradoMagia >= 10 && gradoMagia <= 12) {
+        if (difficoltaTotale >= 34 && difficoltaTotale <= 39) fatica = 0;
+        else if (difficoltaTotale >= 35 && difficoltaTotale <= 39) fatica = -1;
+        else if (difficoltaTotale >= 40 && difficoltaTotale <= 44) fatica = -2;
+        else if (difficoltaTotale >= 45 && difficoltaTotale <= 49) fatica = -3;
+        else if (difficoltaTotale >= 50 && difficoltaTotale <= 54) fatica = -4;
+        else if (difficoltaTotale >= 55 && difficoltaTotale <= 59) fatica = -5;
+    } else if (gradoMagia >= 13 && gradoMagia <= 15) {
+        if (difficoltaTotale >= 35 && difficoltaTotale <= 39) fatica = 0;
+        else if (difficoltaTotale >= 40 && difficoltaTotale <= 44) fatica = -1;
+        else if (difficoltaTotale >= 45 && difficoltaTotale <= 49) fatica = -2;
+        else if (difficoltaTotale >= 50 && difficoltaTotale <= 54) fatica = -3;
+        else if (difficoltaTotale >= 55 && difficoltaTotale <= 59) fatica = -4;
+		else if (difficoltaTotale >= 55 && difficoltaTotale <= 59) fatica = -5;
+    } else if (gradoMagia >= 16 && gradoMagia <= 18) {
+        if (difficoltaTotale >= 40 && difficoltaTotale <= 44) fatica = 0;
+        else if (difficoltaTotale >= 45 && difficoltaTotale <= 49) fatica = -1;
+        else if (difficoltaTotale >= 50 && difficoltaTotale <= 54) fatica = -2;
+        else if (difficoltaTotale >= 55 && difficoltaTotale <= 59) fatica = -3;
+		else if (difficoltaTotale >= 55 && difficoltaTotale <= 59) fatica = -4;
+		else if (difficoltaTotale >= 60 && difficoltaTotale <= 64) fatica = -5;
+    } else if (gradoMagia >= 19 && gradoMagia <= 21) {
+        if (difficoltaTotale >= 45 && difficoltaTotale <= 49) fatica = 0;
+        else if (difficoltaTotale >= 50 && difficoltaTotale <= 54) fatica = -1;
+        else if (difficoltaTotale >= 55 && difficoltaTotale <= 59) fatica = -2;
+		else if (difficoltaTotale >= 55 && difficoltaTotale <= 59) fatica = -3;
+		else if (difficoltaTotale >= 60 && difficoltaTotale <= 64) fatica = -4;
+		else if (difficoltaTotale >= 60 && difficoltaTotale <= 64) fatica = -5;
+    }
+
+    return fatica;
+}
+
+function calcolaDifficoltaConGrado(gradoMagia) {
+    console.log("Funzione calcolaDifficoltaConGrado avviata");
     let base = 20;
 
     let distanza = parseInt(document.getElementById("distanza").value) || 0;
@@ -485,13 +583,21 @@ function calcolaDifficolta() {
         moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound +
         moltiplicatoreMinuti7 + moltiplicatoreMinuti15 + moltiplicatoreMagiAggiuntivi +
         moltiplicatoreRituali + moltiplicatoreConcentrazione + modificatori_mente + effetti + danni_totali;
-
+	
     // Sottrai i punteggi dei maghi aggiuntivi
     totale -= punteggiMagi;
 
     console.log("Totale calcolato:", totale);
+	
+	// Calcola il lancio del dado necessario
+    const lancioDadoNecessario = totale - gradoMagia;
 
+    // Calcola la fatica accumulata
+    const faticaAccumulata = calcolaFatica(gradoMagia, totale);
+	
     document.getElementById("difficolta-totale-popup").innerText = totale;
+	document.getElementById("lancio-dado-necessario").innerText = lancioDadoNecessario;
+	document.getElementById("fatica-accumulata").innerText = faticaAccumulata;
     document.getElementById("popup-difficolta").style.display = 'block';
 }
 
@@ -614,12 +720,22 @@ window.onload = function() {
     }
 };
 
-if ('serviceWorker' in navigator) {
+/* if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js')
     .then(reg => console.log('Service Worker registered!', reg))
     .catch(err => console.log('Service Worker registration failed: ', err));
-}
+} */
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js').then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }, error => {
+        console.error('Service Worker registration failed:', error);
+      });
+    });
+  }
+  
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {

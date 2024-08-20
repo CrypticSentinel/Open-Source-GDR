@@ -21,14 +21,31 @@
 <body>
     <header class="text-center mb-4">
         <h1>SpellCheck - Calcolo Difficoltà Incantesimi</h1>
-        <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+		<img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;" loading="lazy">
+        <!-- <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;"> -->
         
         <div class="text-center mt-4">
             <button id="install-button" style="display: none;">Installa App</button>
         </div>
+		<div id="popup-grado-magia" class="modal" style="display: none;">
+			<div class="modal-content">
+				<h2>Inserisci il grado di conoscenza della scuola di magia:</h2>
+				<div class="text-center mt-4">
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaGradoMagia()">
+					<input type="number" id="grado-magia" class="form-control mx-auto" min="0" value="0" style="display: inline-block; width: 80px;">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaGradoMagia()">
+				</div>
+				<div class="text-center mt-4">
+					<button id="submit-grado-magia" class="btn btn-custom">OK</button>
+				</div>
+			</div>
+		</div>
+
         <div id="popup-difficolta" class="modal" style="display: none;">
             <div class="modal-content">
                 <h2>Difficoltà Totale: <span id="difficolta-totale-popup">20</span></h2>
+				<h3>Lancio dado necessario: <span id="lancio-dado-necessario">0</span></h3>
+				<h3>Fatica accumulata: <span id="fatica-accumulata">0</span></h3>
                 <div class="text-center mt-4">
                     <button id="close-popup" class="btn btn-custom">Chiudi</button>
                 </div>
@@ -184,8 +201,8 @@
             <!-- Campo di input nascosto per "Lancio con rituale" -->		
 			<div class="mb-3 text-center" id="input-rounds" style="display: none;">
 				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rounds')">
-                <input type="number" id="numero-rounds" class="form-control mx-auto" min="0" value="1">
-				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-rounds')">
+                <input type="number" id="numero-rounds" class="form-control mx-auto" min="0" max="10" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaRoundConcentrazione()">
             </div>
 
             <h2 class="h4 text-center">Effetti di lancio</h2>
@@ -280,6 +297,7 @@
 				</div>
 			
             <div class="text-center">
+				<!-- <button type="button" class="btn btn-custom" onclick="mostraPopupGradoMagia()">Inserisci Grado Magia</button> -->
                 <button type="button" class="btn btn-custom" onclick="calcolaDifficolta()">Calcola Difficoltà</button>
 				<button type="button" class="btn btn-custom" onclick="ripristinaValori()">Ripristina Valori</button>
             </div>
@@ -293,7 +311,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408201306</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408201613</p>
     </footer>
 
     <!-- Bootstrap JS (opzionale) -->
