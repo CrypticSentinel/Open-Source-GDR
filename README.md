@@ -63,7 +63,7 @@ Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un prati
 Tutto questo lavoro non sarebbe stato possibile senza gli amici di lunga data con i quali ho giocato centinaia di sessioni, senza di loro, questo regolamento sarebbe rimasto solo un'idea su carta (o forse nemmeno lì!). Inserirli tutti sarebbe davvero lunga, ma una menzione rigorosa spetta a:
 
 **[Rocco "JC"](https://it-it.facebook.com/rocco.ierino.14)** - è lui che ogni anno, da troppi anni, mi sprona dicendomi "Quand'è che facciamo il nostro regolamento?"  
-**Niko** - Posso dire di aver copiato in maniera spudorata dal suo lavoro di anni e anni, quindi un ringraziamento per questo e per tutte le chiacchierate post sessione fino alle 4 del mattino mi sembra il minimo.  
+**[Niko](https://m.facebook.com/nicola.valmorbida/)** - Posso dire di aver copiato in maniera spudorata dal suo lavoro di anni e anni, quindi un ringraziamento per questo e per tutte le chiacchierate post sessione fino alle 4.00 del mattino, mi sembra il minimo.  
 **Zortian** - Fù partendo dal suo regolamento, davvero articolato e complesso (in senso positivo), che nell'ormai lontano 2007 iniziai questo progetto.  
 
 Spero che questo sistema di gioco vi diverta ancor più di quanto io mi sono divertito a crearlo.
