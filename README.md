@@ -30,12 +30,15 @@ Coming soon...
 [Corpo](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/10%20-%20Corpo.md)  
 
 ### Tabelle
-Di seguito sono riportate tutte le tabelle per calcolare la difficoltà di un incantesimo
+Di seguito sono riportate tutte le tabelle per calcolare la difficoltà di un incantesimo  
 
 [Tabelle lancio Incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi.md)
 
+e per quantificare correttamente i punti fatica dopo ogni incantesimo e i punti danno base  
+
 [Tabella Resistenza e Fatica](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/13%20-%20Tabelle%20resistenza%20e%20fatica.md)
 
-Per velocizzare i calcoli è disponibile un comodo calcolatore web  
+Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un un comodo calcolatore web  
+
 [SpellCheck](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
 
