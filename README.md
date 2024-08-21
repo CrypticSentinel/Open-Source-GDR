@@ -60,7 +60,7 @@ Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un prati
 [SpellCheck - Calcolo Difficoltà Incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
 
 ## Ringrazimaneti
-Tutto questo lavoro non sarebbe stato possibile senza gli amici di lunga data con i quali ho giocato centinaia di sessioni, senza di loro, questo regolamento sarebbe rimasto solo un'idea su carta (o forse nemmeno lì!). Inserirli tutti sarebbe davvero lunga, ma una menzione speciale spetta:
+Tutto questo lavoro non sarebbe stato possibile senza gli amici di lunga data con i quali ho giocato centinaia di sessioni, senza di loro, questo regolamento sarebbe rimasto solo un'idea su carta (o forse nemmeno lì!). Inserirli tutti sarebbe davvero lunga, ma una menzione rigorosa spetta a:
 
 **[Rocco "JC"](https://it-it.facebook.com/rocco.ierino.14)** - è lui che ogni anno, da troppi anni, mi sprona dicendomi "Quand'è che facciamo il nostro regolamento?"  
 **Niko** - Posso dire di aver copiato in maniera spudorata dal suo lavoro di anni e anni, quindi un ringraziamento per questo e per tutte le chiacchierate post sessione fino alle 4 del mattino mi sembra il minimo.  
