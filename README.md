@@ -66,4 +66,4 @@ Tutto questo lavoro non sarebbe stato possibile senza gli amici di lunga data co
 **Niko** - Posso dire di aver copiato in maniera spudorata dal suo lavoro di anni e anni, quindi un ringraziamento per questo e per tutte le chiacchierate post sessione fino alle 4 del mattino mi sembra il minimo.  
 **Zortian** - Fù partendo dal suo regolamento, davvero articolato e complesso (in senso positivo), che nell'ormai lontano 2007 iniziai questo progetto.  
 
-Grazie ancora a tutti! Speriamo che questo sistema di gioco vi diverta tanto quanto noi ci siamo divertiti a crearlo.
+Spero che questo sistema di gioco vi diverta ancor più di quanto io mi sono divertito a crearlo.
