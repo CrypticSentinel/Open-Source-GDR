@@ -1,7 +1,9 @@
 # Tabelle lancio Incantesimi
-Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà di lancio del proprio incantesimo da sommare alla difficoltà base di 20
+Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà di lancio del proprio incantesimo da sommare alla difficoltà base di 20, per ogni tabella ed ogni voce, è stata fornita una descrizione per aiutare a meglio comprendere la logica che ha portato a quel ragionamento e quindi quel punteggio, oltre che per aiutare giocatori e Master a personalizzare al bisogno.
 
 ## Tabella Distanze
+Questa tabella determina la difficoltà aggiuntiva di lanciare un incantesimo in base alla distanza tra il mago e il bersaglio. Più il bersaglio è lontano o non visibile, maggiore sarà la difficoltà, richiedendo più energia e concentrazione da parte del mago.
+
 | Distanza                    | Modificatore Difficoltà | Descrizione                                                                                                   |
 | :-------------------------: | :---------------------: | :-----------------------------------------------------------------------------------------------------------: |
 | Personale                   | -2                      | Utilizzo su se stessi                                                                                         |
@@ -13,7 +15,18 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Non in Vista (Conosciuto)   | +60                     | Il bersaglio non è visibile, ma se ne ha una sufficiente conoscenza o si possiede qualcosa di molto personale |
 | Non in Vista (Sconosciuto)  | +75                     | Il bersaglio non è visibile, non lo si conosce o non lo si conosce a sufficienza                              |
 
+- **Personale (-2):** L'incantesimo è lanciato su sé stessi. Questo tipo di lancio è più semplice perché il mago è il proprio bersaglio, riducendo la difficoltà.  
+- **Tocco (+0):** L'incantesimo richiede un contatto fisico con il bersaglio. È una modalità standard che non altera la difficoltà rispetto alla base.  
+- **Corta (entro 3 m) (+3):** Il bersaglio è vicino e a portata di vista, ma non è necessario il contatto fisico. La distanza ridotta implica un leggero aumento della difficoltà.  
+- **Media (entro 10 m) (+10):** Il bersaglio è più lontano, entro 10 metri, e richiede maggiore precisione o energia magica, aumentando così la difficoltà.  
+- **Lunga (entro 25 m) (+25):** Il bersaglio è a una distanza significativa, entro 25 metri. Questo richiede un notevole sforzo magico, aumentando molto la difficoltà.  
+- **Lunghissima (entro 1 km) (+50):** Il bersaglio è lontano, fino a un chilometro di distanza, il che richiede una grande potenza magica e precisione, rendendo il lancio estremamente difficile.  
+- **Non in Vista (Conosciuto) (+60):** Il bersaglio non è visibile ma è conosciuto bene dal mago, oppure si ha un oggetto personale del bersaglio. Questo rende il lancio molto complesso, con una difficoltà molto elevata.  
+- **Non in Vista (Sconosciuto) (+75):** Il bersaglio non è visibile e non è ben conosciuto dal mago. Questo tipo di lancio è estremamente difficile e richiede una precisione eccezionale.  
+
 ## Tabella Area d'Effetto
+Questa tabella regola la difficoltà del lancio in base all'area o alla parte specifica del bersaglio che l'incantesimo colpisce. Aree più piccole o bersagli multipli richiedono maggiore precisione e controllo, aumentando così la difficoltà.
+
 | Area d'effetto                      | Modificatore Difficoltà | Descrizione                                                                 |
 | :----------------------------------:| :---------------------: | :-------------------------------------------------------------------------: |
 | Creatura – Intera                   | +0                      | Il bersaglio è l'intera creatura                                            |
@@ -23,7 +36,16 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Ogni bersaglio oltre il primo       | +5                      | Bersagli multipli                                                           |
 | Ogni 5 metri di diametro            | +5                      | L'effetto comprenderà un'intera area                                        |
 
+- **Creatura – Intera (+0):** L'incantesimo colpisce l'intera creatura senza aumentare la difficoltà. Questo è l'uso standard per colpire un singolo bersaglio.  
+- **Creatura – Locazione (+3):** L'incantesimo è mirato a una parte specifica della creatura, come un braccio o una gamba, richiedendo più precisione e aumentando leggermente la difficoltà.  
+- **Creatura – Sub locazione (Esterna) (+5):** Si mira a una piccola parte della creatura, come una mano o un orecchio, il che richiede una precisione maggiore e un aumento della difficoltà.  
+- **Creatura – Sub locazione (Interna) (+10):** L'incantesimo colpisce una parte interna della creatura, come un organo o un osso, richiedendo una precisione e una conoscenza maggiori, con un aumento significativo della difficoltà.  
+- **Ogni bersaglio oltre il primo (+5):** Colpire più bersagli con lo stesso incantesimo aumenta la difficoltà, richiedendo maggiore energia e controllo.
+- **Ogni 5 metri di diametro (+5):** Se l'incantesimo copre un'area più ampia, la difficoltà aumenta in base all'ampiezza dell'area da colpire.  
+
 ## Tabella Durata
+Questa tabella gestisce l'aumento della difficoltà in base alla durata dell'effetto dell'incantesimo. Incantesimi che durano più a lungo o hanno effetti permanenti richiedono più energia e un impegno maggiore, aumentando la difficoltà.
+
 | Durata                        | Modificatore Difficoltà | Descrizione                                                                                                |
 | :----------------------------:|:-----------------------:| :---------------------------------------------------------------------------------------------------------:|
 | 1 round / Istantaneo          | +0                      | L'effetto si manifesterà e sparira all'interno dello stesso round di lancio                                |
@@ -34,7 +56,17 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Condizione (Finchè, Quando)   | +30                     | L'effetto si manifesterà quando o finchè non accadrà un evento specifico                                   |
 | Permanente                    | +20                     | l'effetto sarà permanente                                                                                  |
 
+- **1 round / Istantaneo (+0):** L'incantesimo ha effetto immediato e dura solo un round, senza modificare la difficoltà. È l'uso più semplice e rapido di un incantesimo.  
+- **Ogni round oltre il primo (+2):** Ogni round aggiuntivo in cui l'incantesimo continua a fare effetto aumenta la difficoltà, poiché richiede un impegno magico prolungato.  
+- **Ogni 7 minuti (+5):** L'incantesimo dura per incrementi di 7 minuti, con ogni intervallo che aumenta la difficoltà a causa del mantenimento prolungato dell'energia magica.  
+- **Ogni 15 minuti (+10):** L'incantesimo dura per incrementi di 15 minuti, con un aumento ancora maggiore della difficoltà rispetto ai 7 minuti, a causa della durata estesa.  
+- **Finché si rimane concentrati (-5):** L'incantesimo dura finché il mago riesce a mantenere la concentrazione, riducendo la difficoltà poiché richiede uno sforzo continuo ma controllato. Il lancio dell'incantesimo avverrà nel turno successivo, ogni turno di concentrazione potrà essere richiesto un tiro di concentrazione a discrezione del Master.  
+- **Condizione (Finché, Quando) (+30):** L'incantesimo si attiva o continua finché non si verifica un evento specifico. Questo tipo di controllo richiede molta energia e concentrazione, aumentando notevolmente la difficoltà.  
+- **Permanente (+20):** L'incantesimo dura per sempre, il che richiede un'enorme quantità di energia magica e un alto livello di abilità, comportando un aumento significativo della difficoltà.  
+
 ## Tabella Modalità di lancio gestuali
+Questa tabella considera il tipo di gesti necessari per lanciare un incantesimo. Gesti più discreti o l'assenza totale di movimenti rendono il lancio più difficile, mentre gesti ampi e visibili possono facilitarlo.
+
 | Lancio gestuale | Modificatore Difficoltà | Descrizione                                                                                                             |
 | :--------------:|:-----------------------:|:----------------------------------------------------------------------------------------------------------------------: |
 | Senza gesti     | +5                      | L'esecuzione avverrà senza alcun gesto visibile                                                                         |
@@ -42,7 +74,14 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Gesti normali   | +0                      | L'esecuzione avverrà muovendo le braccia in maniera evidente.                                                           |
 | Gesti ampi      | -3                      | L'esecuzione avverrà muovendo le braccia in maniera palese come a raccogliere verso di se le energie magiche            |
 
+- **Senza gesti (+5):** L'incantesimo viene lanciato senza alcun movimento visibile, il che aumenta la difficoltà poiché il mago deve eseguire tutto mentalmente.  
+- **Gesti nascosti (+3):** L'incantesimo viene lanciato con piccoli movimenti discreti, aumentando leggermente la difficoltà poiché i gesti sono minimizzati.  
+- **Gesti normali (+0):** L'incantesimo viene lanciato con gesti evidenti e standard, senza modificare la difficoltà. È il metodo più comune di lancio.  
+- **Gesti ampi (-3):** L'incantesimo viene lanciato con movimenti ampi e palesi, facilitando il flusso di energia magica e riducendo la difficoltà.  
+
 ## Tabella Modalità di lancio verbali
+Questa tabella valuta come il lancio verbale di un incantesimo influisce sulla difficoltà. Pronunciare l'incantesimo a voce alta può facilitare il lancio, mentre l'assenza di voce o un tono basso aumenta la difficoltà.
+
 | Lancio verbale | Modificatore Difficoltà | Descrizione                                                                        |
 | :-------------:|:-----------------------:|:----------------------------------------------------------------------------------:|
 | Senza voce     | +5                      | L'esecuzione avverà senza proferire alcuna richiesta, formula magiaca o preghiera. |
@@ -50,7 +89,14 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Voce normale   | +0                      | L'esecuzione avverrà con il tono di voce di una normale conversazione              |
 | Voce alta      | -3                      | L'esecuzione avverrà con un tono di voce alta o anche urlando                      |
 
+- **Senza voce (+5):** L'incantesimo viene lanciato senza pronunciare alcuna parola, aumentando la difficoltà poiché richiede un maggiore controllo mentale.  
+- **Voce bassa (+3):** L'incantesimo viene pronunciato a bassa voce, aumentando leggermente la difficoltà poiché il suono è limitato.  
+- **Voce normale (+0):** L'incantesimo viene lanciato con voce normale, senza modificare la difficoltà. È il metodo standard.  
+- **Voce alta (-3):** L'incantesimo viene lanciato con voce alta o urlando, facilitando il flusso di energia magica e riducendo la difficoltà.  
+
 ## Tabella posizione di lancio
+Questa tabella esamina l'impatto della posizione e delle condizioni ambientali sul lancio dell'incantesimo. Lanciare un incantesimo in situazioni stabili è più semplice, mentre farlo in movimento o sotto stress, come in combattimento, aumenta la difficoltà.
+
 | Posizione di Lancio         | Modificatore Difficoltà | Descrizione                                                                                                    |
 | :--------------------------:|:-----------------------:|:--------------------------------------------------------------------------------------------------------------:|
 | Lancio in posizione normale | +0                      | L'esecuzione avviene in una normale posizone eretta o seduta, purche comoda e confortevole.                    |
@@ -58,22 +104,42 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Lancio con disturbo         | +10                     | L'esecuzione avviene in un contesto di disturbo, come in mezzo alla folla, al galoppo, mentre si precipita etc |
 | Lancio in combattimento     | +15                     | L'esecuzione avviene durante un combattimento nel quale si è ingaggiati                                        |
 
+- **Lancio in posizione normale (+0):** Il mago lancia l'incantesimo in una posizione confortevole e stabile, senza modificare la difficoltà. È la posizione più favorevole per il lancio.  
+- **Lancio in movimento (+5):** Il lancio avviene mentre il mago è in movimento, come durante una passeggiata, durante un viaggio su un carro o un cavallo, o trasportati a spalla da qualcuno o comunque in una condizione di tranquillità, aumentando la difficoltà poiché richiede mantenere la concentrazione durante l'azione.   
+- **Lancio con disturbo (+10):** L'incantesimo viene lanciato in un ambiente disturbante, come in mezzo a una folla o mentre si galoppa, aumentando significativamente la difficoltà a causa delle interferenze esterne.  
+- **Lancio in combattimento (+15):** Il mago lancia l'incantesimo durante un combattimento attivo, il che rende il lancio estremamente difficile a causa della necessità di concentrarsi sotto pressione. A discrezione del Master valutare se applicare questo modificatore nel caso il PG si trovi coinvolto in un combattimento, ma non direttamente coinvolto (es. il combattimento avviene ad alcuni metri di distnza tra PG e\o PNG, senza coinvolgere direttametne il mago).  
+
 ## Tabella variabili di lancio
-| Variabili di Lancio                      | Modificatore Difficoltà | Descrizione                                                                                           |
-| :---------------------------------------:|:-----------------------:|:-----------------------------------------------------------------------------------------------------:|
-| Utilizzo di componenti non magici        | -5                      | Per l'esecuzione vengono utilizzati dei componenti (es. strumento musicale, componenti alchemici etc) |
-| Ogni mago aggiuntivo                     | +0                      | L'esecuzione avviene con il supporto di uno o più maghi aggiuntivi                                    |
-| Lancio con rituale (ogni 15 minuti)      | -10                     | L'esecuzione avviene al termine di un rituale di concentrazione durato almeno 15 minuti               |
-| Concentrazione prima del lancio (max 10) | -1                      | L'esecuzione avviene al termine di alcuni round di concentrazione (max 10)                            |
+Questa tabella elenca variabili aggiuntive che possono influenzare la difficoltà di un incantesimo. Include l'uso di componenti non magici, l'assistenza di altri maghi, la concentrazione e l'esecuzione di rituali, tutti fattori che possono aumentare o diminuire la difficoltà del lancio.
+
+| Variabili di Lancio                           | Modificatore Difficoltà | Descrizione                                                                                           |
+| :--------------------------------------------:|:-----------------------:|:-----------------------------------------------------------------------------------------------------:|
+| Utilizzo di componenti o strumenti non magici | -5                      | Per l'esecuzione vengono utilizzati dei componenti (es. strumento musicale, componenti alchemici etc) |
+| Ogni mago aggiuntivo (max 4)                  | + Grado Scuola          | L'esecuzione avviene con il supporto di uno o più maghi aggiuntivi                                    |
+| Lancio con rituale (ogni 15 minuti)           | -10                     | L'esecuzione avviene al termine di un rituale di concentrazione durato almeno 15 minuti               |
+| Concentrazione prima del lancio (max 10)      | -1                      | L'esecuzione avviene al termine di alcuni round di concentrazione (max 10)                            |
+
+- **Utilizzo di componenti non magici (-5):** L'uso di componenti fisici, come strumenti da laboratorio, strumenti musicali o ingredienti, facilita il lancio e riduce la difficoltà poiché aiuta a incanalare l'energia magica.  
+- **Ogni mago aggiuntivo (max 4) (+ Grado Scuola):** Quando più maghi partecipano al lancio (max 4 oltre il primo), forniscono in maniera diretta le proprie energie e conoscenza su quella specifica scuola di magia, fornendo quindi un bonus pari al solo livello di conoscenza (es. Un mago con conoscenza della scuola di magia Vita a 4, fornirà un bonus di +4 al lancio di un incantesimo di Vita).
+- **Lancio con rituale (ogni 15 minuti) (-10):** Un rituale prolungato di concentrazione prima del lancio riduce significativamente la difficoltà, poiché permette al mago di prepararsi meglio. Il lancio con rituale può essere cumulativo al lancio con maghi aggiuntivi.  
+- **Concentrazione prima del lancio (max 10) (-1):** Ogni round di concentrazione prima del lancio riduce leggermente la difficoltà, fino a un massimo di 10 round, poiché migliora la precisione e la potenza del lancio. Il lancio con Concentrazione può essere cumulativo al lancio con maghi aggiuntivi.   
 
 ## Tabella effetti di Lancio
+Questa tabella valuta l'impatto degli effetti speciali sul lancio dell'incantesimo. Incantesimi che evitano effetti visivi o magici rilevabili, o che sono massimizzati in potenza, aumentano significativamente la difficoltà del lancio.
+
 | Effetti di Lancio                        | Modificatore Difficoltà | Descrizione                                                                                               |
 | :---------------------------------------:|:-----------------------:|:---------------------------------------------------------------------------------------------------------:|
 | Lancio incantesimo senza effetti visivi  | +5                      | L'incantesimo non manifesta alcun effetto visibile (es nessun raggio partirà dalle mani dell'incantatore) |
 | Lancio incantesimo senza effetti magici  | +10                     | L'incantesimo non potrà essere rilevato magicamente                                                       |
 | Lancio Incantesimo massimizzato          | +15                     | L'incantesimo avrà il massimo danno possibile (es 4 danni automatici invece di lanciare 1d4)              |
 
+- **Lancio incantesimo senza effetti visivi (+5):** L'incantesimo non manifesta alcun effetto visibile, il che rende più difficile il lancio poiché richiede di nascondere completamente gli effetti visibili che l'energia magica ha sull'ambiente circostante.  
+- **Lancio incantesimo senza effetti magici (+10):** L'incantesimo diventa non individuabile magicamente, aumentando la difficoltà poiché richiede di occultare l'aura magica.  
+- **Lancio Incantesimo massimizzato (+15):** L'incantesimo infligge il massimo danno possibile, il che richiede un'enorme quantità di energia magica e aumenta notevolmente la difficoltà.  
+
 ## Tabella Danni
+Questa tabella regola la difficoltà in base alla quantità di danno che l'incantesimo infligge. Maggiore è il danno aggiunto o potenziale, maggiore sarà la difficoltà, poiché richiede più energia magica.
+
 | Danni               | Modificatore Difficoltà | Descrizione                         |
 | :------------------:|:-----------------------:|:-----------------------------------:|
 | Ogni +1 aggiuntivo  | +2                      | Al danno verrà aggiunto un +1 fisso |
@@ -84,35 +150,51 @@ Di seguito sono riportate le tabelle da utilizzare per ottenere la difficoltà d
 | Ogni d12 aggiuntivo | +13                     | Al danno verrà aggiunto 1d12        |
 | Ogni d20 aggiuntivo | +15                     | Al danno verrà aggiunto 1d20        |
 
+- **Ogni +1 aggiuntivo (+2):** Ogni incremento fisso di danno (+1) aumenta leggermente la difficoltà, poiché richiede maggiore energia per potenziare l'effetto.  
+- **Ogni d4 aggiuntivo (+5):** Aggiungere un dado da 4 al danno comporta un incremento moderato della difficoltà, poiché incrementa il potenziale offensivo.  
+- **Ogni d6 aggiuntivo (+7):** Aggiungere un dado da 6 al danno richiede più energia e precisione, aumentando la difficoltà in modo significativo.  
+- **Ogni d8 aggiuntivo (+9):** Aggiungere un dado da 8 al danno comporta una difficoltà maggiore, poiché l'effetto diventa più potente.  
+- **Ogni d10 aggiuntivo (+11):** Aggiungere un dado da 10 al danno rende il lancio molto più difficile, poiché aumenta notevolmente il potenziale distruttivo.  
+- **Ogni d12 aggiuntivo (+13):** Aggiungere un dado da 12 al danno implica una difficoltà molto elevata, poiché l'incantesimo diventa estremamente potente.  
+- **Ogni d20 aggiuntivo (+15):** Aggiungere un dado da 20 al danno rappresenta un incremento estremamente elevato della difficoltà, rendendo l'incantesimo eccezionalmente devastante.  
+
 ## Tabella modificatori Mente
+Questa tabella riguarda gli incantesimi che influenzano la mente del bersaglio, come leggere, modificare, scrivere o cancellare pensieri e ricordi. Ogni azione mentale ha un impatto diverso sulla difficoltà, con operazioni più invasive che richiedono maggiore abilità e potenza magica. A discrezione del Master, valutare come gestire il numero e la complessità di ricordi o di ore di pensieri coinvolti in un incantesimo, oltre che gli effetti e le conseguenze che avranno. Personalmente, in quanto appassionato di [Vampiri La Masquerade](https://it.wikipedia.org/wiki/Vampiri:_la_masquerade) da cui ho preso spunto per la parte narrativa e in virtù anche della complessità del tema di interazione con la mente di un personaggio (giocante o meno),  nel formulare questa tabella ho volontariamente voluto lasciare libero e completo spazio al Master e alla sua personale visione. La tabella si limita a fornire le difficoltà per la riuscita o meno dell'incantesimo, ma i suoi effetti possono essere imprevedibili, ad esempio il Master potrebbe impedire che un'incantesimo di Mente venga eseguito su più bersagli poichè ritiene che un'incantesimo di questo tipo richieda che venga catturata con uno sguardo l'attenzione del bersaglio, oppure debbano essere necessariamente essere accompagnati da una descizione a voce e in maniera comprensibile, ad esempio invece di modificare o cancellare semplicemente il ricordo di qualcosa che è avvenuta, il Master potrebbe richiedere un'interazione descrittiva, come *"Ricordi? Ieri pomeriggio abbiamo fatto una lunga passeggiata nel parco, dove abbiamo sentito l'odore dei fiori appena sbocciati e...."*, più dettagliata sarà la descrizione, più intensi e reali saranno i nuovi ricordi, meno rischi ci saranno che il bersaglio si ponga delle domande su quel suo ricordo artificiale. Come scritto sopra, l'ispirazione per gestire questa scuola di magia l'ho preso dalla disciplina Dominazione di Vampiri La Masquerade, qualora non lo conosciate vi invito sicuramente a provarlo, oltre che rimandarvi alla descrizione di questa Disciplina per usarla come base per gestire in maniera coinvolgente gli incantesimi di questa scuola. **NB Sperando di non violare nessun copyright, riporto [qui](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/Dominazione.md) un'estratto del paragrafo dedicato a questa disciplina, sperando possa ispirarvi come ha fatto con me.**
+
 | Danni        | Modificatore Difficoltà | Descrizione                                                                                          |
 | :-----------:|:-----------------------:|:----------------------------------------------------------------------------------------------------:|
-| Leggere      | +0                      | Permette di leggere la mente di un bersaglio (es un pensiero o un ricordo)                           |
+| Leggere      | +5                      | Permette di leggere la mente di un bersaglio (es un pensiero o un ricordo)                           |
 | Modificare   | +15                     | Permette di modificare la mente di un bersaglio (es è possibile modificare un ricordo o un pensiero) |
 | Scrivere     | +20                     | Permette di scrivere la mente di un bersaglio (es è possibile aggiungere un ricordo o un pensiero)   |
 | Cancellare   | +10                     | Permette di cancellare la mente di un bersaglio (es. è possibile rimuovere un ricordo o un pensiero) |
 
-## Meccaniche incantesimi
+- **Leggere (+5):** Permette di leggere un pensiero o un ricordo nella mente del bersaglio. È un'azione sottile che non aumenta la difficoltà rispetto alla base.  
+- **Modificare (+15):** Consente di alterare un pensiero o un ricordo esistente nel bersaglio. Questa operazione è complessa e aumenta significativamente la difficoltà.  
+- **Scrivere (+20):** Permette di impiantare un nuovo pensiero o ricordo nella mente del bersaglio, un'operazione molto difficile che richiede grande potere mentale e aumenta enormemente la difficoltà.  
+- **Cancellare (+10):** Consente di rimuovere un pensiero o un ricordo dalla mente del bersaglio. Questa azione è meno complessa che modificare o scrivere, ma comunque aumenta la difficoltà.  
+
+
+# Meccaniche incantesimi
 Molti incantesimi non possono essere facilmente gestiti tramite tabelle, basti pensare alla rianimazione di un cadavere, alla trasmutazione umana o alla chiaroveggenza, motivo per cui molti incantesimi abbandonano le meccaniche puramente matematiche, dando molto più spazio all'interpretazione che ogni Master ha della propria ambientazione e della magia.
 
 Di seguito alcuni esempi reali che aggiornerò di volta in volta che sono stati vissuti in gioco e per i quali è stata fatta una scelta narrativa più che di regolamento:
 
-### Resuscitare i morti
+## Resuscitare i morti
 - **Costo:** Poiché vita e morte sono uno opposto all'altro, la possibilità di resuscitare un morto richiede un sacrificio vitale. Questo sacrificio potrebbe essere la vita di un altro essere vivente o un'enorme quantità di energia magica, lasciando il personaggio esausto e vulnerabile.  
 - **Rischi o Conseguenze:** La resurrezione potrebbe non restituire la persona esattamente com'era. Potrebbero esserci effetti collaterali come la perdita di ricordi, un legame con il mondo dei morti, o la possibilità che il personaggio ritorni corrotto o cambiato in qualche modo. Inoltre, c'è il rischio che l'anima non voglia o non possa tornare, lasciando un guscio vuoto o un essere non completamente vivo.  
 - **Limiti:** Il corpo deve essere ben conservato, senza alcun intervento esterno, è possibile resuscitare un morto entro 24 ore dal decesso, dopo di che l'anima si allontana troppo per essere richiamata o il corpo diventa inadatto a ospitare la vita.  
 
-### Prevedere il futuro
+## Prevedere il futuro
 - **Costo:** L'incantesimo richiede una grande quantità di energia mentale e magica, spesso richiedendo al personaggio di sacrificare temporaneamente una parte della propria vitalità o un oggetto magico prezioso come catalizzatore.  
 - **Rischi o Conseguenze:** Ogni volta che un personaggio tenta di vedere il futuro, potrebbe subire delle penalità, come affaticamento mentale, perdita temporanea di abilità o punti magia, o persino un malus permanente se l'incantesimo è abusato.Inoltre, alterare il futuro potrebbe causare effetti imprevisti o paradossi temporali che mettono a rischio l'integrità della realtà.  
 - **Limiti:** Il futuro visto potrebbe essere frammentato o difficile da interpretare, lasciando spazio a errori di interpretazione. Questo mantiene il controllo nelle mani del Master e preserva la tensione narrativa.L'incantesimo potrebbe limitarsi a mostrare solo eventi imminenti, precludendo visioni di lungo termine.  
 
-### Vedere il passato
+## Vedere il passato
 - **Costo:** Vedere il passato potrebbe essere un incantesimo che consuma molta energia o che richiede preparazione, come un rituale o l'uso di un oggetto magico legato all'evento che si vuole vedere. L'utilizzo ripetuto potrebbe causare una progressiva perdita della propria connessione con il presente.  
 - **Rischi o Conseguenze:** C'è il rischio che il personaggio rimanga intrappolato nel passato, perdendo la percezione del presente, o che venga influenzato emotivamente dagli eventi vissuti, soprattutto se traumatici. Inoltre, manipolare il flusso del tempo anche solo per osservare potrebbe causare distorsioni temporali, portando a conseguenze imprevedibili nel presente.  
 - **Limiti:** Simile alla chiaroveggenza, le visioni del passato potrebbero essere frammentarie o richiedere una certa interpretazione, questo evita che i giocatori possano ottenere una conoscenza troppo dettagliata o completa.   Inoltre l'incantesimo potrebbe permettere di vedere solo un periodo di tempo specifico e breve, ad esempio, solo le ultime 24 ore o un evento specifico connesso a un luogo o un oggetto.  
 
-### Trasmutazione
+## Trasmutazione
 **Costo:** Per ottenere qualcosa, bisogna dare in cambio qualcosa di uguale valore. Questo costo può variare in base alla complessità e alla potenza della trasmutazione; ad esempio, trasformare il ferro in oro richiede un sacrificio di energia equivalente al valore alchemico dell'oro creato.  
 **Rischi o Conseguenze:** Trasformarsi in una creatura più potente potrebbe infliggere una grande fatica o comportare rischi, come perdere temporaneamente il controllo del proprio corpo o non poter tornare facilmente alla forma originale. Inoltre, la trasmutazione potrebbe causare un progressivo deterioramento mentale, specialmente se usata ripetutamente, portando alla perdita della propria identità o sanità mentale. 
 **Limiti:** La trasmutazione potrebbe avere una durata molto breve o richiedere una concentrazione costante per essere mantenuta, limitando la sua utilità in situazioni di lunga durata.  
