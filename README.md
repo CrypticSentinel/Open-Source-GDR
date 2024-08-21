@@ -38,8 +38,7 @@ Di seguito sono riportate tutte le tabelle per utilizzare la Magia Libera così 
 
 [Tabella affaticamento](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/14%20-%20Tabella%20affaticamento.md)
 
-[Tabella Resistenza](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/15%20-%20Tabella%20resistenza.md)
-
+[Resistere agli incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/15%20-%20Resistenza%20agli%20incantesimi.md)
 
 Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un un comodo calcolatore web  
 
