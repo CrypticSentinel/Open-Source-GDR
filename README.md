@@ -36,7 +36,7 @@ Di seguito sono riportate tutte le tabelle per utilizzare la Magia Libera così 
 
 [Tabella danno base](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/13%20-%20Tabella%20danni.md)
 
-[Tabelle affaticamento](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/14%20-%20Tabella%20affaticamento.md)
+[Tabella affaticamento](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/14%20-%20Tabella%20affaticamento.md)
 
 [Tabella Resistenza](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/15%20-%20Tabella%20resistenza.md)
 
