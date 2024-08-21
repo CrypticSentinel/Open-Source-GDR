@@ -4,7 +4,7 @@ Di seguito è riportata la tabelle da utilizzare per resistere all'incantesimo.
 ## Tabella difficoltà per resistere agli incantesimi in base alla difficoltà di lancio
 | Difficoltà di lancio | Difficoltà di resistenza |
 | :-------------------:|:------------------------:|
-| 25-34                | 20                       |
+| 1-34                 | 20                       |
 | 35-44                | 25                       |
 | 45-54                | 30                       |
 | 55-64                | 35                       |
