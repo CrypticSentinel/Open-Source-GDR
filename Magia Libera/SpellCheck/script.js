@@ -66,28 +66,6 @@ function decrementaMagiAggiuntivi() {
     }
 }
 
-/* function aggiornaPunteggiMagiAggiuntivi() {
-    const numeroMagiAggiuntivi = parseInt(document.getElementById("numero-magi-aggiuntivi").value);
-    const punteggiContainer = document.getElementById("punteggi-magi-aggiuntivi");
-
-    // Resetta il contenuto del contenitore
-    punteggiContainer.innerHTML = "";
-
-    // Crea input per i punteggi dei maghi aggiuntivi
-    for (let i = 1; i <= numeroMagiAggiuntivi; i++) {
-        const input = document.createElement("input");
-        input.type = "number";
-        input.id = "punteggio-mago-" + i;
-        input.className = "form-control mx-auto";
-        input.placeholder = "Punteggio Mago " + i;
-        input.style.marginTop = "10px";
-        input.min = 0;
-        input.value = 0;
-
-        punteggiContainer.appendChild(input);
-    }
-} */
-
 function aggiornaPunteggiMagiAggiuntivi() {
     const numeroMagiAggiuntivi = parseInt(document.getElementById("numero-magi-aggiuntivi").value);
     const punteggiContainer = document.getElementById("punteggi-magi-aggiuntivi");
@@ -477,37 +455,6 @@ function calcolaDifficolta() {
     mostraPopupGradoMagia();
 }
 
-/* function calcolaFatica(gradoMagia, difficoltaTotale) {
-    // Tabella dei range di difficoltà per i diversi gradi di magia
-    const tabellaFatica = [
-        { grado: [1, 3], fatica0: 19, intervalli: [24, 29, 34, 39, 44] },
-        { grado: [4, 6], fatica0: 24, intervalli: [29, 34, 39, 44, 49] },
-        { grado: [7, 9], fatica0: 29, intervalli: [34, 39, 44, 49, 54] },
-        { grado: [10, 12], fatica0: 34, intervalli: [39, 44, 49, 54, 59] },
-        { grado: [13, 15], fatica0: 39, intervalli: [44, 49, 54, 59, 64] },
-        { grado: [16, 18], fatica0: 44, intervalli: [49, 54, 59, 64, 69] },
-        { grado: [19, 21], fatica0: 49, intervalli: [54, 59, 64, 69, 74] },
-        { grado: [22, 24], fatica0: 54, intervalli: [59, 64, 69, 74, 79] },
-        { grado: [25, 27], fatica0: 59, intervalli: [64, 69, 74, 79, 84] },
-        { grado: [28, 30], fatica0: 64, intervalli: [69, 74, 79, 84, 89] },
-        { grado: [31, 33], fatica0: 69, intervalli: [74, 79, 84, 89, 94] },
-    ];
-
-    // Trova la riga della tabella corrispondente al grado di magia
-    let riga = tabellaFatica.find(r => gradoMagia >= r.grado[0] && gradoMagia <= r.grado[1]);
-
-    if (!riga) return 0; // Se non trova una corrispondenza, ritorna 0
-
-    // Determina il valore di fatica in base alla difficoltà totale
-    if (difficoltaTotale < riga.fatica0) return 0;
-    for (let i = 0; i < riga.intervalli.length; i++) {
-        if (difficoltaTotale <= riga.intervalli[i]) {
-            return -(i + 1);
-        }
-    }
-    return -5; // Se supera tutti gli intervalli, la fatica è -5
-} */
-
 function calcolaFaticaEDannoBase(gradoMagia, difficoltaTotale) {
     // Tabella dei range di difficoltà per i diversi gradi di magia con danno base
     const tabellaFatica = [
@@ -543,6 +490,28 @@ function calcolaFaticaEDannoBase(gradoMagia, difficoltaTotale) {
     }
 
     return { fatica, dannoBase: riga.dannoBase };
+}
+
+function calcolaDifficoltaResistenza(difficoltaLancio) {
+    const tabellaDifficolta = [
+        { min: 1, max: 34, resistenza: 20 },
+        { min: 35, max: 44, resistenza: 25 },
+        { min: 45, max: 54, resistenza: 30 },
+        { min: 55, max: 64, resistenza: 35 },
+        { min: 65, max: 74, resistenza: 40 },
+        { min: 75, max: 84, resistenza: 45 },
+        { min: 85, max: 94, resistenza: 50 },
+        { min: 95, max: 104, resistenza: 55 },
+        { min: 105, max: 114, resistenza: 60 },
+        { min: 115, max: 124, resistenza: 65 }
+    ];
+
+    for (let i = 0; i < tabellaDifficolta.length; i++) {
+        if (difficoltaLancio >= tabellaDifficolta[i].min && difficoltaLancio <= tabellaDifficolta[i].max) {
+            return tabellaDifficolta[i].resistenza;
+        }
+    }
+    return 0; // Restituisce 0 se la difficoltà di lancio non rientra in nessun intervallo
 }
 
 function calcolaDifficoltaConGrado(gradoMagia) {
@@ -603,16 +572,17 @@ function calcolaDifficoltaConGrado(gradoMagia) {
 	// Calcola la fatica accumulata e il danno base usando la nuova funzione
     const { fatica, dannoBase } = calcolaFaticaEDannoBase(gradoMagia, totale);
 	
+	// Calcola la difficoltà per resistere basata sulla difficoltà totale calcolata
+    const difficoltaResistenza = calcolaDifficoltaResistenza(totale);
+	
 	// Calcola il lancio del dado necessario
     const lancioDadoNecessario = totale - gradoMagia;
 
-/*     // Calcola la fatica accumulata
-    const faticaAccumulata = calcolaFatica(gradoMagia, totale); */
-	
     document.getElementById("difficolta-totale-popup").innerText = totale;
 	document.getElementById("lancio-dado-necessario").innerText = lancioDadoNecessario;
 	document.getElementById("fatica-accumulata").innerText = fatica;
-	document.getElementById("danno-base").innerText = dannoBase; // Assicurati di avere un elemento con id "danno-base" nel popup
+	document.getElementById("danno-base").innerText = dannoBase;
+	document.getElementById("difficolta-resistenza").innerText = difficoltaResistenza;
     document.getElementById("popup-difficolta").style.display = 'block';
 }
 

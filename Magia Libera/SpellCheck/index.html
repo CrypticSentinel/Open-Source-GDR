@@ -55,6 +55,7 @@
 				<h3>Lancio dado necessario: <span id="lancio-dado-necessario">0</span></h3>
 				<h3>Fatica accumulata: <span id="fatica-accumulata">0</span></h3>
 				<h3>Danno Base: <span id="danno-base">0</span></h3>
+				<h3>Difficoltà Resistere: <span id="difficolta-resistenza">0</span></h3>
                 <div class="text-center mt-4">
                     <button id="close-popup" class="btn btn-custom">Chiudi</button>
                 </div>
@@ -172,12 +173,12 @@
             <h2 class="h4 text-center">Variabili di lancio</h2>
             <div class="form-check">
                 <input type="checkbox" id="variabile1" class="form-check-input" value="-5">
-                <label for="variabile1" class="form-check-label">Utilizzo di componenti o strumenti (-5)</label>
+                <label for="variabile1" class="form-check-label">Utilizzo di componenti o strumenti non magici (-5)</label>
             </div>
 			
 			<div class="form-check">
 				<input type="checkbox" id="variabile2" class="form-check-input" onchange="mostraInputVariabili()">
-				<label for="variabile2" class="form-check-label">Ogni mago aggiuntivo (+Grado Scuola)</label>
+				<label for="variabile2" class="form-check-label">Ogni mago aggiuntivo (max 4) (+Grado Scuola)</label>
 			</div>
 
 			<!-- Campo di input nascosto per "Ogni mago aggiuntivo" -->
@@ -233,7 +234,7 @@
             <div class="mb-3">
 				<!-- <label for="modificatori_mente" class="form-label">Modificatori per Mente</label> -->
                 <select id="modificatori_mente" class="form-select">
-                    <option value="0">Leggere (+0)</option>
+                    <option value="5">Leggere (+5)</option>
                     <option value="15">Modificare (+15)</option>
                     <option value="20">Scrivere (+20)</option>
                     <option value="10">Rimuovere (+10)</option>
@@ -320,7 +321,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408201613</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408211227</p>
 		<p>Scopri di più sul regolamento open source per giochi di ruolo su <a href="https://github.com/CrypticSentinel/Open-Source-GDR" target="_blank">GitHub</a>.</p>
 
     </footer>
