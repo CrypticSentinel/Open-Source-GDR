@@ -1,14 +1,30 @@
-# Open-Source-GDR
-Questo d20 system nasce dalla volontà di creare un sistema di regole accessibile a chiunque, adattabile a qualsiasi gioco di ruolo e personalizzabile per qualsiasi necessità.
+# Introduzione al Sistema open source di per giochi di ruolo
+Il sistema d20 based proposto in questo regolamento vuole rappresentare un approccio innovativo e altamente personalizzabile per gestire l'uso della magia all'interno di un gioco di ruolo. La logica alla base di questo sistema è semplice: consentire ai giocatori una flessibilità creativa senza precedenti, permettendo loro di plasmare gli incantesimi in modo che si adattino perfettamente alle esigenze narrative e strategiche del gioco. Questo non solo incoraggia l'espressione individuale e la personalizzazione dei personaggi, ma promuove anche un senso di immersione e coinvolgimento profondo, poiché i giocatori sono chiamati a padroneggiare un sistema che riflette la complessità e la versatilità della magia.
 
 ## Creazione del Personaggio
+Ognuno può adattare il sistema di magia libera a qualsiasi regolamento, per meglio comprendere alcune dinamiche e meccaniche ho pensato potesse essere utile avere anche delle indicazioni legate alle caratteristiche e alla creazione del Personaggio.
 
 [Caratteristiche](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Creazione%20PG/01%20-%20Caratteristiche.md)
 
 ## Combattimento
 Coming soon...
 
-## Magia Libera
+# Magia Libera
+
+## Perché Adottare il Sistema di Magia Libera?
+
+- **Libertà Creativa**: Questo sistema consente ai giocatori di creare incantesimi unici, combinando diversi elementi come distanza, durata, modalità di lancio e altro ancora. La magia non è più limitata a un elenco predefinito di incantesimi, ma diventa un'esperienza dinamica che evolve con il personaggio e la campagna.
+
+- **Bilanciamento Dinamico**: Ogni aspetto dell'incantesimo influisce sulla sua difficoltà di lancio, creando un equilibrio naturale tra potenza e complessità. Questo meccanismo garantisce che anche gli incantesimi più potenti siano accompagnati da sfide proporzionate, mantenendo il gioco equilibrato e avvincente.
+
+- **Adattabilità e Accessibilità**: Il sistema è stato progettato per essere facilmente adattabile a qualsiasi gioco di ruolo. Che si tratti di un'ambientazione fantasy classica, di un mondo futuristico o di un universo completamente originale, le regole della magia libera possono essere modificate e personalizzate per adattarsi perfettamente alle esigenze della campagna.
+
+- **Supporto Tecnologico**: Per semplificare ulteriormente l'uso di questo sistema, è disponibile un tool online, [SpellCheck](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/), che aiuta a gestire i calcoli necessari durante il gioco, rendendo il processo rapido e fluido anche per chi è alle prime armi con il sistema.
+
+- **Un Sistema Collaborativo e in Evoluzione**: Il sistema è open-source e aperto ai contributi della comunità. Questo significa che è in costante miglioramento grazie al feedback di giocatori e master che lo testano in vari scenari, garantendo che continui a evolversi e a rispondere alle esigenze di una vasta gamma di gruppi di gioco.
+
+Questo regolamento è ideale per chi cerca un'esperienza di gioco che valorizzi la creatività e l'inventiva, offrendo un sistema di magia che sia tanto profondo quanto flessibile. Se sei alla ricerca di un gioco di ruolo dove la magia non conosce limiti se non quelli imposti dalla tua immaginazione, forse sei nel posto giusto.
+
 [Descrizione](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md)
 
 [Come funziona](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md#come-funziona-la-magia)
@@ -40,6 +56,5 @@ Di seguito sono riportate tutte le tabelle per utilizzare la Magia Libera così 
 
 [Resistere agli incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/15%20-%20Resistenza%20agli%20incantesimi.md)
 
-Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un un comodo calcolatore web  
-
+Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un pratico tool online:  
 [SpellCheck - Calcolo Difficoltà Incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
