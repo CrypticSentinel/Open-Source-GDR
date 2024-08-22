@@ -49,18 +49,55 @@
 			</div>
 		</div>
 
-        <div id="popup-difficolta" class="modal" style="display: none;">
+<!--         <div id="popup-difficolta" class="modal" style="display: none;">
             <div class="modal-content">
                 <h2>Difficoltà Totale: <span id="difficolta-totale-popup">20</span></h2>
-				<h3>Lancio dado necessario: <span id="lancio-dado-necessario">0</span></h3>
-				<h3>Fatica accumulata: <span id="fatica-accumulata">0</span></h3>
-				<h3>Danno Base: <span id="danno-base">0</span></h3>
-				<h3>Difficoltà Resistere: <span id="difficolta-resistenza">0</span></h3>
+				<h3 class="popup-label">Lancio dado necessario: <span id="lancio-dado-necessario">0</span></h3>
+				<h3 class="popup-label">Fatica accumulata: <span id="fatica-accumulata">0</span></h3>
+				<h3 class="popup-label">Danno Base: <span id="danno-base">0</span></h3>
+				<h3 class="popup-label">Dadi danno da tirare: <span id="dadi-danno-riepilogo"></span></h3>
+				<h3 class="popup-label">Difficoltà per resistere: <span id="difficolta-resistenza">0</span></h3>
                 <div class="text-center mt-4">
                     <button id="close-popup" class="btn btn-custom">Chiudi</button>
                 </div>
             </div>
+        </div> -->
+<div id="popup-difficolta" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Difficoltà Totale: <span id="difficolta-totale-popup">20</span></h2>
+        
+        <div class="popup-row">
+            <label>Lancio dado necessario:</label>
+            <span id="lancio-dado-necessario">0</span>
         </div>
+        
+        <div class="popup-row">
+            <label>Fatica accumulata:</label>
+            <span id="fatica-accumulata">0</span>
+        </div>
+        
+        <div class="popup-row">
+            <label>Danno Base:</label>
+            <span id="danno-base">0</span>
+        </div>
+        
+        <div class="popup-row">
+            <label>Dadi di Danno:</label>
+            <span id="dadi-danno-riepilogo">Nessun dado</span>
+        </div>
+        
+        <div class="popup-row">
+            <label>Difficoltà per resistere:</label>
+            <span id="difficolta-resistenza">0</span>
+        </div>
+        
+        <div class="text-center mt-4">
+            <button id="close-popup" class="btn btn-custom">Chiudi</button>
+        </div>
+    </div>
+</div>
+
+
     </header>
 
     <div class="container">
@@ -322,7 +359,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408211251</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408221434</p>
 		<p>Scopri di più sul regolamento open source per giochi di ruolo su <a href="https://github.com/CrypticSentinel/Open-Source-GDR" target="_blank">GitHub</a>.</p>
 
     </footer>

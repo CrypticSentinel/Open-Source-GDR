@@ -349,7 +349,6 @@ function incrementaRoundConcentrazione() {
     }
 }
 
-
 function calcolaMoltiplicatori() {
     let moltiplicatoreBersagli = 0;
     let moltiplicatoreDiametro = 0;
@@ -455,43 +454,6 @@ function calcolaDifficolta() {
     mostraPopupGradoMagia();
 }
 
-/* function calcolaFaticaEDannoBase(gradoMagia, difficoltaTotale) {
-    // Tabella dei range di difficoltà per i diversi gradi di magia con danno base
-    const tabellaFatica = [
-        { grado: [1, 3], fatica0: 19, intervalli: [24, 29, 34, 39, 44], dannoBase: '+1' },
-        { grado: [4, 6], fatica0: 24, intervalli: [29, 34, 39, 44, 49], dannoBase: '+2' },
-        { grado: [7, 9], fatica0: 29, intervalli: [34, 39, 44, 49, 54], dannoBase: '+3' },
-        { grado: [10, 12], fatica0: 34, intervalli: [39, 44, 49, 54, 59], dannoBase: '+4' },
-        { grado: [13, 15], fatica0: 39, intervalli: [44, 49, 54, 59, 64], dannoBase: '+5' },
-        { grado: [16, 18], fatica0: 44, intervalli: [49, 54, 59, 64, 69], dannoBase: '+6' },
-        { grado: [19, 21], fatica0: 49, intervalli: [54, 59, 64, 69, 74], dannoBase: '+7' },
-        { grado: [22, 24], fatica0: 54, intervalli: [59, 64, 69, 74, 79], dannoBase: '+8' },
-        { grado: [25, 27], fatica0: 59, intervalli: [64, 69, 74, 79, 84], dannoBase: '+9' },
-        { grado: [28, 30], fatica0: 64, intervalli: [69, 74, 79, 84, 89], dannoBase: '+10' },
-        { grado: [31, 33], fatica0: 69, intervalli: [74, 79, 84, 89, 94], dannoBase: '+11' },
-    ];
-
-    // Trova la riga della tabella corrispondente al grado di magia
-    let riga = tabellaFatica.find(r => gradoMagia >= r.grado[0] && gradoMagia <= r.grado[1]);
-
-    if (!riga) return { fatica: 0, dannoBase: 0 }; // Se non trova una corrispondenza, ritorna 0 per fatica e danno base
-
-    // Determina il valore di fatica in base alla difficoltà totale
-    let fatica = 0;
-    if (difficoltaTotale < riga.fatica0) fatica = 0;
-    for (let i = 0; i < riga.intervalli.length; i++) {
-        if (difficoltaTotale <= riga.intervalli[i]) {
-            fatica = -(i + 1);
-            break;
-        }
-    }
-    if (difficoltaTotale > riga.intervalli[riga.intervalli.length - 1]) {
-        fatica = -5;
-    }
-
-    return { fatica, dannoBase: riga.dannoBase };
-} */
-
 function calcolaFaticaEDannoBase(gradoMagia, difficoltaTotale) {
     const tabellaFatica = [
         { grado: [1, 3], fatica0: 19, intervalli: [24, 29, 34, 39, 44], dannoBase: '+1' },
@@ -530,7 +492,40 @@ function calcolaFaticaEDannoBase(gradoMagia, difficoltaTotale) {
         }
     }
 
+	let riepilogoDadi = costruisciRiepilogoDadi();
+
+    document.getElementById('dadi-danno-riepilogo').textContent = riepilogoDadi;
+	
     return { fatica, dannoBase: riga.dannoBase };
+}
+
+function costruisciRiepilogoDadi() {
+    let riepilogo = '';
+    const dadi = [
+        { id: 'danni1', tipo: '+1' },
+        { id: 'danni2', tipo: 'd4' },
+        { id: 'danni3', tipo: 'd6' },
+        { id: 'danni4', tipo: 'd8' },
+        { id: 'danni5', tipo: 'd10' },
+        { id: 'danni6', tipo: 'd12' },
+        { id: 'danni7', tipo: 'd20' }
+    ];
+
+    dadi.forEach(dado => {
+        const quantità = parseInt(document.getElementById(dado.id).value) || 0;
+        if (quantità > 0) {
+            if (riepilogo !== '') {
+                riepilogo += ' + ';
+            }
+            riepilogo += `${quantità} ${dado.tipo}`;
+        }
+    });
+
+    if (riepilogo === '') {
+        riepilogo = 'Nessun dado';
+    }
+
+    return riepilogo;
 }
 
 function calcolaDifficoltaResistenza(difficoltaLancio) {

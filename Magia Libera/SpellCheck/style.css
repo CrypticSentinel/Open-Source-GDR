@@ -24,6 +24,25 @@ body {
     color: #000;
 }
 
+.popup-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: left;
+	font-size: 1.2em; /* Aumenta la dimensione del carattere */
+}
+
+.popup-row label {
+    font-weight: bold;
+    min-width: 200px; /* Puoi regolare la larghezza in base alle tue necessità */
+    padding-right: 10px;
+}
+
+.popup-row span {
+    white-space: pre;
+}
+
 #install-button {
     display: inline-block;
     margin: 20px auto;
