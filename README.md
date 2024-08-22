@@ -1,5 +1,5 @@
 # Introduzione al Sistema open source per giochi di ruolo
-Il sistema d20 based proposto in questo regolamento vuole rappresentare un approccio innovativo e altamente personalizzabile per gestire le regole e sopratutto l'uso della magia all'interno di un gioco di ruolo. La logica alla base di questo sistema è semplice: consentire ai giocatori una flessibilità creativa senza precedenti, permettendo loro di plasmare gli incantesimi in modo che si adattino perfettamente alle esigenze narrative e strategiche del gioco. Questo non solo incoraggia l'espressione individuale e la personalizzazione dei personaggi, ma promuove anche un senso di immersione e coinvolgimento profondo, poiché i giocatori sono chiamati a padroneggiare un sistema che riflette la complessità e la versatilità della magia.
+Il sistema d20 based proposto in questo regolamento vuole rappresentare un approccio innovativo e altamente personalizzabile per gestire le regole e sopratutto l'uso della magia all'interno di un gioco di ruolo. La logica alla base di questo sistema è semplice: consentire ai giocatori una flessibilità creativa senza precedenti, permettendo loro di plasmare le regole e gli incantesimi in modo che si adattino perfettamente alle esigenze narrative e strategiche del gioco. Questo non solo incoraggia l'espressione individuale e la personalizzazione dei personaggi, ma promuove anche un senso di immersione e coinvolgimento profondo, poiché i giocatori e il master sono chiamati a padroneggiare un sistema che riflette la complessità e la versatilità della magia.
 
 ## Creazione del Personaggio
 Ognuno può adattare il sistema di magia libera a qualsiasi regolamento, per meglio comprendere alcune dinamiche e meccaniche ho pensato potesse essere utile avere anche delle indicazioni legate alle caratteristiche e alla creazione del Personaggio.
@@ -11,7 +11,7 @@ Coming soon...
 
 # Magia Libera
 
-## Perché Adottare il Sistema di Magia Libera?
+## Perché Adottare un sistema di magia libera?
 
 - **Libertà Creativa**: Questo sistema consente ai giocatori di creare incantesimi unici, combinando diversi elementi come distanza, durata, modalità di lancio e altro ancora. La magia non è più limitata a un elenco predefinito di incantesimi, ma diventa un'esperienza dinamica che evolve con il personaggio e la campagna.
 
