@@ -1,4 +1,6 @@
-# Introduzione al Sistema open source per giochi di ruolo
+# Open Source GDR - Sistema di Gioco di Ruolo Open-Source
+
+## Introduzione
 Il sistema d20 based proposto in questo regolamento vuole rappresentare un approccio innovativo e altamente personalizzabile per gestire le regole e sopratutto l'uso della magia all'interno di un gioco di ruolo. La logica alla base di questo sistema è semplice: consentire ai giocatori una flessibilità creativa senza precedenti, permettendo loro di plasmare le regole e gli incantesimi in modo che si adattino perfettamente alle esigenze narrative e strategiche del gioco. Questo non solo incoraggia l'espressione individuale e la personalizzazione dei personaggi, ma promuove anche un senso di immersione e coinvolgimento profondo, poiché i giocatori e il master sono chiamati a padroneggiare un sistema che riflette la complessità e la versatilità della magia.
 
 ## Creazione del Personaggio
