@@ -179,6 +179,18 @@ function mostraInputRound() {
     }
 }
 
+function toggleMenteDropdown() {
+    const menteCheckbox = document.getElementById("mente-checkbox");
+    const menteDropdownContainer = document.getElementById("mente-dropdown-container");
+
+    if (menteCheckbox.checked) {
+        menteDropdownContainer.style.display = 'block';
+    } else {
+        menteDropdownContainer.style.display = 'none';
+        document.getElementById("modificatori_mente").value = "0"; // Reset della selezione
+    }
+}
+
 function toggled1() {
     let d1Controls = document.getElementById("d1-controls");
     let minusD1 = document.getElementById("minus-d1");

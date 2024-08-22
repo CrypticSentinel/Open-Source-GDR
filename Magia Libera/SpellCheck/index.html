@@ -267,9 +267,9 @@
             </div>
 			
 			<h2 class="h4 text-center">Modificatori per specifiche Scuole</h2>
-			<h3 class="h4">Mente</h3>
+<!-- 			<h3 class="h4">Mente</h3>
             <div class="mb-3">
-				<!-- <label for="modificatori_mente" class="form-label">Modificatori per Mente</label> -->
+				<!-- <label for="modificatori_mente" class="form-label">Modificatori per Mente</label>
                 <select id="modificatori_mente" class="form-select">
 					<option value="0">Nessun incantesimo Mente (+0)</option>
                     <option value="5">Leggere (+5)</option>
@@ -277,7 +277,21 @@
                     <option value="20">Scrivere (+20)</option>
                     <option value="10">Rimuovere (+10)</option>
                 </select>
-            </div>
+            </div> -->
+			<h3 class="h4">Mente</h3>
+			<div class="form-check">
+				<input type="checkbox" id="mente-checkbox" class="form-check-input" onchange="toggleMenteDropdown()">
+				<label for="mente-checkbox" class="form-check-label">Abilita modificatori per l'uso di Mente</label>
+			</div>
+			<div class="mb-3" id="mente-dropdown-container" style="display: none;">
+				<select id="modificatori_mente" class="form-select">
+					<option value="0">Nessun modificatore Mente (+0)</option>
+					<option value="5">Leggere (+5)</option>
+					<option value="15">Modificare (+15)</option>
+					<option value="20">Scrivere (+20)</option>
+					<option value="10">Rimuovere (+10)</option>
+				</select>
+			</div>
 			<div class="dadi-aggiuntivi-container text-center">
 				<h2 class="h4 text-center">Dadi aggiuntivi</h2>
 				<div class="mb-3 text-center">
@@ -359,7 +373,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408221434</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408221506</p>
 		<p>Scopri di più sul regolamento open source per giochi di ruolo su <a href="https://github.com/CrypticSentinel/Open-Source-GDR" target="_blank">GitHub</a>.</p>
 
     </footer>
