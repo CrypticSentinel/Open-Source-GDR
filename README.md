@@ -66,7 +66,7 @@ Tutto questo lavoro non sarebbe stato possibile senza gli amici di lunga data co
 
 **[Rocco "JC"](https://it-it.facebook.com/rocco.ierino.14)** - è lui che ogni anno, da troppi anni, mi sprona dicendomi "Quand'è che facciamo il nostro regolamento?"  
 **[Niko](https://m.facebook.com/nicola.valmorbida/)** - Posso dire di aver copiato in maniera spudorata dal suo lavoro di anni e anni, quindi un ringraziamento per questo e per tutte le chiacchierate post sessione fino alle 4.00 del mattino, mi sembra il minimo.  
-**[Andrea](https://twitter.com/fottemberg)** - Il suo contributo è stato indiretto, l'essere il mio primo Master, avermi trasmesso e condiviso molte visioni e approcci, oltre che fantastiche descrizioni e modi di farle mi hanno permesso di addentrarmi nel mondo del GDR, posso dire che senza di lui, molto probabilmente, non avrei conosciuto tutti gli amici che ruotano intorno a questo mondo e quindi alla mia vita.
+**[Andrea](https://twitter.com/fottemberg)** - Il suo contributo è stato indiretto, l'essere il mio primo Master, avermi trasmesso e condiviso molte visioni e approcci, oltre che fantastiche descrizioni e modi di farle mi hanno permesso di addentrarmi nel mondo del GDR, posso dire che senza di lui, molto probabilmente, non avrei conosciuto tutti gli amici che ruotano intorno a questo mondo e quindi alla mia vita.  
 **[Marco "Zortian"](https://m.facebook.com/zortian.marcop/?locale=it_IT)** - Fù partendo dal suo regolamento, davvero articolato e complesso (in senso positivo), che nell'ormai lontano 2007 iniziai questo progetto.  
 
 Spero che questo sistema di gioco vi diverta ancor più di quanto io mi sono divertito a crearlo.
