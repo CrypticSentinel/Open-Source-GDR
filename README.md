@@ -15,6 +15,9 @@ Questo sistema di combattimento è stato sviluppato per offrire un'esperienza pi
 
 [Fasi di combattimento](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Combattimento/01%20-%20Combattimento.md)
 
+La gestione del danno vuole offrire un'esperienza di combattimento più tattica e immersiva, in cui ogni colpo può portare a conseguenze drammatiche e richiede ai giocatori di considerare attentamente ogni azione in battaglia.
+[Gestione dei danni](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Combattimento/02%20-%20Gestione%20dei%20Danni.md)
+
 # Magia Libera
 
 ## Perché Adottare un sistema di magia libera?
