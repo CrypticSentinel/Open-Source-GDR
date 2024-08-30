@@ -1,4 +1,5 @@
-# Fasi del combattimento
+# Fasi di combattimento
+
 ## 1. Ordine di Iniziativa
 All'inizio di ogni round, i personaggi determinano l'ordine delle loro azioni tirando per l’iniziativa. L'iniziativa si calcola come segue:
 
