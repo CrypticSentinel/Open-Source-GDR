@@ -9,6 +9,10 @@ Ognuno può adattare il sistema di magia libera a qualsiasi regolamento, per meg
 [Caratteristiche](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Creazione%20PG/01%20-%20Caratteristiche.md)
 
 ## Combattimento
+In molti regolamenti di gioco, le meccaniche di combattimento spesso soffrono di una certa staticità, dove le azioni di attacco e difesa sembrano avvenire in modo prevedibile e sequenziale. Inoltre, la difesa è spesso trattata come una condizione passiva, dove un personaggio viene colpito automaticamente se il tiro d'attacco supera la sua Classe Armatura (CA). Questo approccio, sebbene funzionale, può risultare meno immersivo e realistico rispetto alla tensione e alla fluidità di un vero combattimento.
+
+Questo sistema di combattimento è stato sviluppato per offrire un'esperienza più dinamica e coinvolgente, mantenendo un equilibrio tra realismo e fluidità. Le linee guida presentate qui possono essere utilizzate come sono, adattate alle preferenze del gruppo di gioco, o integrate con altre regole esistenti.
+
 [Fasi di combattimento](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Combattimento/01%20-%20Combattimento.md)
 
 # Magia Libera
