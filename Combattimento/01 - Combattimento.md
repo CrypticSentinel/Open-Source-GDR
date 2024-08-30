@@ -1,8 +1,3 @@
-# Premessa
-In molti regolamenti di gioco, le meccaniche di combattimento spesso soffrono di una certa staticità, dove le azioni di attacco e difesa sembrano avvenire in modo prevedibile e sequenziale. Inoltre, la difesa è spesso trattata come una condizione passiva, dove un personaggio viene colpito automaticamente se il tiro d'attacco supera la sua Classe Armatura (CA). Questo approccio, sebbene funzionale, può risultare meno immersivo e realistico rispetto alla tensione e alla fluidità di un vero combattimento.
-
-Questo sistema di combattimento è stato sviluppato per offrire un'esperienza più dinamica e coinvolgente, mantenendo un equilibrio tra realismo e fluidità. Le linee guida presentate qui possono essere utilizzate come sono, adattate alle preferenze del gruppo di gioco, o integrate con altre regole esistenti.
-
 # Fasi del combattimento
 ## 1. Ordine di Iniziativa
 All'inizio di ogni round, i personaggi determinano l'ordine delle loro azioni tirando per l’iniziativa. L'iniziativa si calcola come segue:
