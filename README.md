@@ -9,7 +9,7 @@ Ognuno può adattare il sistema di magia libera a qualsiasi regolamento, per meg
 [Caratteristiche](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Creazione%20PG/01%20-%20Caratteristiche.md)
 
 ## Combattimento
-Coming soon...
+[Fasi di combattimento](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Combattimento/01%20-%20Combattimento.md)
 
 # Magia Libera
 
