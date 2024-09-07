@@ -7,19 +7,19 @@ Questo sistema vuole incoraggiare la specializzazione, ma allo stesso tempo anch
 
 ## Sistema di Assegnazione dei Punti
 
-### Punteggio Iniziale:  
-Per garantire una base equilibrata da cui partire, ogni personaggio inizia con un punteggio di 5 in ciascuna delle 10 scuole di magia.  
+### Distribuzione dei punti iniziali:  
+Per garantire una base equilibrata da cui partire, Ogni personaggio inizia con 20 punti da distribuire tra le 10 scuole di magia. I giocatori possono assegnare un massimo di 3 punti per scuola, senza alcun obbligo su quali scuole scegliere.  
   
 <center>
   <img src="Schema_Scuole.png" alt="Schema Scuole">
 </center>
   
-
-### Incremento dei Punti:  
-Ogni volta che un personaggio decide di fare un aumento di grado in una scuola, l'aumento verrà fatto di 2 punti sulla scuola scelta e di 1 punto sulle 2 scuole immediatamente adiacenti.
+### Sviluppo delle scuole
+ **- Punteggio da 0 a 5:** Non ci sono effetti sulle scuole opposte. Ogni scuola è indipendente fino a questo livello.
+ **- Punteggio dal 6 in Su:** Se un giocatore raggiunge il punteggio di 6 o superiore in una scuola, la scuola opposta subisce una penalizzazione. Per ogni punto oltre il 5, la scuola opposta diminuisce di 1 punto fino al raggiungimento dello 0, non potendo però andare in negativo. Ogni scuola di magia ha una scuola opposta. Quando si supera il livello 5 in una scuola, il giocatore deve ridurre il punteggio nella scuola opposta di 1.  
 
 ### Riduzione Inversamente Proporzionale:  
-Ogni aumento di grado in una scuola causa una pari riduzione nelle scuola opposte, rappresentando l'effetto massimo di contrapposizione e allo stesso tempo l'influenza minore ma significativa delle scuole vicine.
+Una volta raggiunto il grado 5 in una scuola di magia, ogni aumento di grado in qulla scuola causa una pari riduzione nella scuola opposta, rappresentando l'effetto massimo di contrapposizione.
 
 Fuoco ↔ Acqua  
 Terra ↔ Aria  
@@ -30,40 +30,36 @@ Mente ↔ Corpo
 In caso di aumento oltre il punteggio di 10, sarà possibile per le scuole opposte portare il punteggio in negativo, con conseguenze fisiche e mentali sullo stesso incantatore.
 
 ### Esempio di Applicazione
-Immaginiamo di avere un personaggio con i seguenti punteggi iniziali:
+Immaginiamo un personaggio appena creato, con 20 punti distribuiti tra le scuole di magia. Il giocatore decide di assegnare i punti iniziali in questo modo:  
 
-•	Fuoco: 5  
-•	Acqua: 5 (opposta a Fuoco)  
-•	Terra: 5  
-•	Aria: 5 (opposta a Terra)  
-•	Morte: 5  
-•	Vita: 5 (opposta a Morte)  
-•	Corpo: 5  
-•	Mente: 5 (opposta a Corpo)  
-•	Spirito: 5  
-•	Materia: 5 (opposta a Spirito)  
+•	Fuoco: 3  
+•	Acqua: 3 (opposta a Fuoco)  
+•	Terra: 2  
+•	Aria: 2 (opposta a Terra)  
+•	Morte: 3  
+•	Vita: 3 (opposta a Morte)  
+•	Corpo: 1  
+•	Mente: 1 (opposta a Corpo)  
+•	Spirito: 1  
+•	Materia: 1 (opposta a Spirito)  
 
-Se il giocatore decide di aumentare Fuoco, gli aumenti saranno:
+Durante le sessioni, il giocatore ha aumentato Fuoco di 2 punti, portandolo a 5. Ora decide di aggiungere il 6° punto in Fuoco, attivando la riduzione nella scuola opposta (Acqua).
 
-Fuoco +2 punti (passando da 5 a 7)  
-Spirito +1 punto (passando da 5 a 6)  
-Morte +1 punto (passando da 5 a 6)  
+Aumento
+•	Fuoco +1 punto, passando da 5 a 6.
 
-Di conseguenza le riduzioni saranno:
-
-Acqua (opposta a Fuoco) -2 punti, passando da 5 a 3  
-Materia (opposta a Spirito) -1 punto, passando da 5 a 4  
-Vita (opposta a Morte) -1 punto, passando da 5 a 4  
+Riduzione
+•	Acqua (opposta a Fuoco) -1 punto, passando da 3 a 2.
 
 Il nuovo set di punti sarà:
 
-•	Fuoco: 7  
-•	Acqua: 3 (opposta a Fuoco)  
-•	Terra: 5  
-•	Aria: 5 (opposta a Terra)  
-•	Vita: 4  
-•	Morte: 6 (opposta a Morte)  
-•	Corpo: 5  
-•	Mente: 5 (opposta a Corpo)  
-•	Spirito: 6  
-•	Materia: 4 (opposta a Spirito)  
+•	Fuoco: 6  
+•	Acqua: 2 (opposta a Fuoco)  
+•	Terra: 2  
+•	Aria: 2 (opposta a Terra)  
+•	Vita: 3  
+•	Morte: 3 (opposta a Morte)  
+•	Corpo: 1  
+•	Mente: 1 (opposta a Corpo)  
+•	Spirito: 1  
+•	Materia: 1 (opposta a Spirito)  
