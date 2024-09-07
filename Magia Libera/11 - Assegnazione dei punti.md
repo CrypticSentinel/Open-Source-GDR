@@ -15,11 +15,8 @@ Per garantire una base equilibrata da cui partire, Ogni personaggio inizia con 2
 </center>
   
 ### Sviluppo delle scuole
- **- Punteggio da 0 a 5:** Non ci sono effetti sulle scuole opposte. Ogni scuola è indipendente fino a questo livello.
- **- Punteggio dal 6 in Su:** Se un giocatore raggiunge il punteggio di 6 o superiore in una scuola, la scuola opposta subisce una penalizzazione. Per ogni punto oltre il 5, la scuola opposta diminuisce di 1 punto fino al raggiungimento dello 0, non potendo però andare in negativo. Ogni scuola di magia ha una scuola opposta. Quando si supera il livello 5 in una scuola, il giocatore deve ridurre il punteggio nella scuola opposta di 1.  
-
-### Riduzione Inversamente Proporzionale:  
-Una volta raggiunto il grado 5 in una scuola di magia, ogni aumento di grado in qulla scuola causa una pari riduzione nella scuola opposta, rappresentando l'effetto massimo di contrapposizione.
+ **- Punteggio da 0 a 5:** Non ci sono effetti sulle scuole opposte. Ogni scuola è indipendente fino a questo livello.  
+ **- Punteggio dal 6 in Su:** Se un giocatore raggiunge il punteggio di 6 o superiore in una scuola, la scuola opposta diminuisce di 1 punto fino al raggiungimento dello 0, rappresentando l'effetto massimo di contrapposizione.
 
 Fuoco ↔ Acqua  
 Terra ↔ Aria  
@@ -43,15 +40,15 @@ Immaginiamo un personaggio appena creato, con 20 punti distribuiti tra le scuole
 •	Spirito: 1  
 •	Materia: 1 (opposta a Spirito)  
 
-Durante le sessioni, il giocatore ha aumentato Fuoco di 2 punti, portandolo a 5. Ora decide di aggiungere il 6° punto in Fuoco, attivando la riduzione nella scuola opposta (Acqua).
+Durante le sessioni, il giocatore ha aumentato Fuoco di 2 punti, portandolo a 5. Decide ora di incrementare ulteriormente la scuola di magia Fuoco portando il grado di conoscenza a 6 e attivando la riduzione nella scuola opposta (Acqua).
 
-Aumento
+**Aumento**
 •	Fuoco +1 punto, passando da 5 a 6.
 
-Riduzione
+**Riduzione**
 •	Acqua (opposta a Fuoco) -1 punto, passando da 3 a 2.
 
-Il nuovo set di punti sarà:
+**Il nuovo set di punti sarà:**
 
 •	Fuoco: 6  
 •	Acqua: 2 (opposta a Fuoco)  
