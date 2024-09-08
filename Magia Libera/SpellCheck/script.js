@@ -179,6 +179,30 @@ function mostraInputRound() {
     }
 }
 
+function toggleCorpoDropdown() {
+    const corpoCheckbox = document.getElementById("corpo-checkbox");
+    const corpoDropdownContainer = document.getElementById("corpo-dropdown-container");
+
+    if (corpoCheckbox.checked) {
+        corpoDropdownContainer.style.display = 'block';
+    } else {
+        corpoDropdownContainer.style.display = 'none';
+        document.getElementById("modificatori_corpo").value = "0"; // Reset della selezione
+    }
+}
+
+function toggleMateriaDropdown() {
+    const materiaCheckbox = document.getElementById("materia-checkbox");
+    const materiaDropdownContainer = document.getElementById("materia-dropdown-container");
+
+    if (materiaCheckbox.checked) {
+        materiaDropdownContainer.style.display = 'block';
+    } else {
+        materiaDropdownContainer.style.display = 'none';
+        document.getElementById("modificatori_materia").value = "0"; // Reset della selezione
+    }
+}
+
 function toggleMenteDropdown() {
     const menteCheckbox = document.getElementById("mente-checkbox");
     const menteDropdownContainer = document.getElementById("mente-dropdown-container");
@@ -190,6 +214,33 @@ function toggleMenteDropdown() {
         document.getElementById("modificatori_mente").value = "0"; // Reset della selezione
     }
 }
+
+function uncheckOtherCheckboxes(checkedId) {
+    const checkboxes = ["mente-checkbox", "corpo-checkbox", "materia-checkbox"];
+    checkboxes.forEach(id => {
+        if (id !== checkedId) {
+            document.getElementById(id).checked = false;
+        }
+    });
+
+    // Nascondi i dropdown corrispondenti alle checkbox non selezionate
+    toggleCorpoDropdown();
+    toggleMenteDropdown();
+    toggleMateriaDropdown();
+}
+
+// Aggiungi l'evento "change" per le checkbox
+document.getElementById("mente-checkbox").addEventListener("change", function() {
+    if (this.checked) uncheckOtherCheckboxes("mente-checkbox");
+});
+
+document.getElementById("corpo-checkbox").addEventListener("change", function() {
+    if (this.checked) uncheckOtherCheckboxes("corpo-checkbox");
+});
+
+document.getElementById("materia-checkbox").addEventListener("change", function() {
+    if (this.checked) uncheckOtherCheckboxes("materia-checkbox");
+});
 
 function toggled1() {
     let d1Controls = document.getElementById("d1-controls");
@@ -582,6 +633,8 @@ function calcolaDifficoltaConGrado(gradoMagia) {
     let gesti = parseInt(document.getElementById("gesti").value) || 0;
     let verbale = parseInt(document.getElementById("verbale").value) || 0;
     let posizione = parseInt(document.getElementById("posizione").value) || 0;
+	let modificatori_corpo = parseInt(document.getElementById("modificatori_corpo").value) || 0;
+	let modificatori_materia = parseInt(document.getElementById("modificatori_materia").value) || 0;
     let modificatori_mente = parseInt(document.getElementById("modificatori_mente").value) || 0;
 
     const {
@@ -620,7 +673,7 @@ function calcolaDifficoltaConGrado(gradoMagia) {
     let totale = base + distanza + area + durata + gesti + verbale + posizione +
         moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound +
         moltiplicatoreMinuti7 + moltiplicatoreMinuti15 + moltiplicatoreMagiAggiuntivi +
-        moltiplicatoreRituali + moltiplicatoreConcentrazione + modificatori_mente + effetti + danni_totali;
+        moltiplicatoreRituali + moltiplicatoreConcentrazione + modificatori_corpo + modificatori_materia + modificatori_mente + effetti + danni_totali;
 	
     // Sottrai i punteggi dei maghi aggiuntivi
     totale -= punteggiMagi;
@@ -652,7 +705,9 @@ function ripristinaValori() {
     document.getElementById("gesti").value = "0"; // Gesti normali (+0)
     document.getElementById("verbale").value = "0"; // Voce normale (+0)
     document.getElementById("posizione").value = "0"; // Lancio in posizione normale (+0)
-    document.getElementById("modificatori_mente").value = "0"; // Leggere (+0)
+    document.getElementById("modificatori_corpo").value = "0"; // Oggetto semplice (+0)
+	document.getElementById("modificatori_materia").value = "0"; // Fino a 1 Kg (+0)
+	document.getElementById("modificatori_mente").value = "0"; // Leggere (+0)
 
     // Ripristina i valori degli input dei dadi aggiuntivi a 0
     document.getElementById("danni1").value = "0";
@@ -694,6 +749,11 @@ function ripristinaValori() {
     document.getElementById("effetto2").checked = false;
     document.getElementById("effetto3").checked = false;
 
+    // Deseleziona tutti i modificatori per specifiche Scuole
+    document.getElementById("corpo-checkbox").checked = false;
+    document.getElementById("materia-checkbox").checked = false;
+    document.getElementById("mente-checkbox").checked = false;
+		
     // Ripristina il popup di difficoltà
     document.getElementById("difficolta-totale-popup").innerText = "20";
     
@@ -744,6 +804,9 @@ function ripristinaValori() {
     mostraInputDurata();
     mostraInputVariabili();
     mostraInputRound();
+	toggleCorpoDropdown(); // Funzione che gestisce Corpo
+    toggleMenteDropdown(); // Funzione che gestisce Mente
+    toggleMateriaDropdown(); // Funzione che gestisce Materia
 }
 
 // Chiudi il popup quando si clicca sul pulsante "Chiudi"
@@ -762,12 +825,6 @@ window.onload = function() {
         document.getElementById('install-button').style.display = 'none';
     }
 };
-
-/* if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-    .then(reg => console.log('Service Worker registered!', reg))
-    .catch(err => console.log('Service Worker registration failed: ', err));
-} */
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {

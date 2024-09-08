@@ -49,19 +49,6 @@
 			</div>
 		</div>
 
-<!--         <div id="popup-difficolta" class="modal" style="display: none;">
-            <div class="modal-content">
-                <h2>Difficoltà Totale: <span id="difficolta-totale-popup">20</span></h2>
-				<h3 class="popup-label">Lancio dado necessario: <span id="lancio-dado-necessario">0</span></h3>
-				<h3 class="popup-label">Fatica accumulata: <span id="fatica-accumulata">0</span></h3>
-				<h3 class="popup-label">Danno Base: <span id="danno-base">0</span></h3>
-				<h3 class="popup-label">Dadi danno da tirare: <span id="dadi-danno-riepilogo"></span></h3>
-				<h3 class="popup-label">Difficoltà per resistere: <span id="difficolta-resistenza">0</span></h3>
-                <div class="text-center mt-4">
-                    <button id="close-popup" class="btn btn-custom">Chiudi</button>
-                </div>
-            </div>
-        </div> -->
 <div id="popup-difficolta" class="modal" style="display: none;">
     <div class="modal-content">
         <h2>Difficoltà Totale: <span id="difficolta-totale-popup">20</span></h2>
@@ -267,17 +254,38 @@
             </div>
 			
 			<h2 class="h4 text-center">Modificatori per specifiche Scuole</h2>
-<!-- 			<h3 class="h4">Mente</h3>
-            <div class="mb-3">
-				<!-- <label for="modificatori_mente" class="form-label">Modificatori per Mente</label>
-                <select id="modificatori_mente" class="form-select">
-					<option value="0">Nessun incantesimo Mente (+0)</option>
-                    <option value="5">Leggere (+5)</option>
-                    <option value="15">Modificare (+15)</option>
-                    <option value="20">Scrivere (+20)</option>
-                    <option value="10">Rimuovere (+10)</option>
-                </select>
-            </div> -->
+
+			<h3 class="h4">Corpo</h3>
+			<div class="form-check">
+				<input type="checkbox" id="corpo-checkbox" class="form-check-input" onchange="toggleCorpoDropdown()">
+				<label for="corpo-checkbox" class="form-check-label">Abilita modificatori per l'uso di Corpo</label>
+			</div>
+			<div class="mb-3" id="corpo-dropdown-container" style="display: none;">
+				<select id="modificatori_corpo" class="form-select">
+					<option value="0">Nessun modificatore Corpo (+0)</option>
+					<option value="2">Oggetto funzionale (+2)</option>
+					<option value="4">Oggetto complesso (+4)</option>
+					<option value="3">Creatura semplice (+3)</option>
+					<option value="5">Creatura complessa (+5)</option>
+				</select>
+			</div>
+
+			<h3 class="h4">Materia</h3>
+			<div class="form-check">
+				<input type="checkbox" id="materia-checkbox" class="form-check-input" onchange="toggleMateriaDropdown()">
+				<label for="materia-checkbox" class="form-check-label">Abilita modificatori per l'uso di Materia</label>
+			</div>
+			<div class="mb-3" id="materia-dropdown-container" style="display: none;">
+				<select id="modificatori_materia" class="form-select">
+					<option value="0">Nessun modificatore Materia (+0)</option>
+					<option value="1">1-10 kg (+1)</option>
+					<option value="3">10-50 kg (+3)</option>
+					<option value="5">50-100 kg (+5)</option>
+					<option value="7">100-500 kg (+7)</option>
+					<option value="9">Oltre 500 kg (+9)</option>
+				</select>
+			</div>
+
 			<h3 class="h4">Mente</h3>
 			<div class="form-check">
 				<input type="checkbox" id="mente-checkbox" class="form-check-input" onchange="toggleMenteDropdown()">
@@ -373,7 +381,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202408221506</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202409081650</p>
 		<p>Scopri di più sul regolamento open source per giochi di ruolo su <a href="https://github.com/CrypticSentinel/Open-Source-GDR" target="_blank">GitHub</a>.</p>
 
     </footer>
