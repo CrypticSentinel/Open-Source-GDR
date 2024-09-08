@@ -174,6 +174,31 @@ Questa tabella riguarda gli incantesimi che influenzano la mente del bersaglio, 
 - **Cancellare (+10):** Consente di rimuovere un pensiero o un ricordo dalla mente del bersaglio. Questa azione è meno complessa che modificare o scrivere, ma comunque aumenta la difficoltà.  
 
 
+## Tabella modificatori Materia
+Questa tabella riguarda gli incantesimi che influenzano la Materia
+
+| Massa        | Modificatore Difficoltà | Descrizione                                      |
+| :----------- |:-----------------------:|:-------------------------------------------------|
+| Fino a 1 Kg  | +0                      | Oggetti piccoli o leggeri (una pietra, una mela) |
+| 1-10 kg      | +1                      | Oggetti di dimensioni medie (libro, vaso)        |
+| 10-50 kg     | +3                      | Oggetti pesanti (sedia, statua piccola)          |
+| 50-100 kg    | +5                      | Oggetti grandi (letto, tavolo)                   |
+| 100-500 kg   | +7                      | Oggetti enormi (carro, macchinario)              |
+| Oltre 500 kg | +9                      | Oggetti molto grandi (edifici, creature giganti) |
+
+
+## Tabella modificatori Corpo
+Questa tabella riguarda gli incantesimi che influenzano il Corpo
+
+| Complessità        | Modificatore Difficoltà | Descrizione                                     |
+| :----------------- |:-----------------------:|:----------------------------------------------- |
+| Oggetto semplice   | +0                      | Forma base, nessun meccanismo                   |
+| Oggetto funzionale | +2                      | Meccanismi semplici (attrezzi, ingranaggi)      |
+| Oggetto complesso  | +4                      | Meccanismi avanzati (macchinari complessi)      |
+| Creatura semplice  | +3                      | Essere vivente di base (piccolo animale)        |
+| Creatura complessa | +5                      | Essere vivente con funzioni avanzate (umanoide) |
+
+
 # Meccaniche incantesimi
 Molti incantesimi non possono essere facilmente gestiti tramite tabelle, basti pensare alla rianimazione di un cadavere, alla trasmutazione umana o alla chiaroveggenza, motivo per cui molti incantesimi abbandonano le meccaniche puramente matematiche, dando molto più spazio all'interpretazione che ogni Master ha della propria ambientazione e della magia.
 
