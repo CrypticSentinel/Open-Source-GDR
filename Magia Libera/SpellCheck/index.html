@@ -37,12 +37,24 @@
         </div>
 		<div id="popup-grado-magia" class="modal" style="display: none;">
 			<div class="modal-content">
-				<h2>Inserisci il grado di conoscenza della scuola di magia:</h2>
+				<h2>Inserisci Volontà e Grado di conoscenza della scuola di magia:</h2>
+				
+				<!-- Input per il punteggio di forza di volontà -->
 				<div class="text-center mt-4">
+					<label for="volonta">Mod. Volontà:</label>
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaVolonta()">
+					<input type="number" id="punteggio-volonta" class="form-control mx-auto" min="0" value="0" style="display: inline-block; width: 80px;">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaVolonta()">
+				</div>
+				
+				<!-- Input per il grado di magia -->
+				<div class="text-center mt-4">
+					<label for="volonta">Grado Magia:</label>
 					<img src="icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaGradoMagia()">
 					<input type="number" id="grado-magia" class="form-control mx-auto" min="0" value="0" style="display: inline-block; width: 80px;">
 					<img src="icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaGradoMagia()">
 				</div>
+		
 				<div class="text-center mt-4">
 					<button id="submit-grado-magia" class="btn btn-custom">OK</button>
 				</div>
@@ -381,7 +393,7 @@
 </div>
 
     <footer class="text-center mt-4" style="color: #F8F9FA;">
-        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202409081650</p>
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202409130057</p>
 		<p>Scopri di più sul regolamento open source per giochi di ruolo su <a href="https://github.com/CrypticSentinel/Open-Source-GDR" target="_blank">GitHub</a>.</p>
 
     </footer>

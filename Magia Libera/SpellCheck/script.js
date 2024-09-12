@@ -492,12 +492,13 @@ function mostraPopupGradoMagia() {
 
 document.getElementById("submit-grado-magia").addEventListener("click", function() {
     const gradoMagia = parseInt(document.getElementById("grado-magia").value);
+	const punteggioVolonta = parseInt(document.getElementById("punteggio-volonta").value);
 	
     // Nascondi il popup per l'inserimento del grado di magia
     document.getElementById("popup-grado-magia").style.display = 'none';
 
     // Ora calcola la difficoltà e mostra il popup relativo
-    calcolaDifficoltaConGrado(gradoMagia);
+    calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
 });
 
 function incrementaGradoMagia() {
@@ -507,6 +508,18 @@ function incrementaGradoMagia() {
 
 function decrementaGradoMagia() {
     const inputElement = document.getElementById("grado-magia");
+    if (parseInt(inputElement.value) > 0) {
+        inputElement.value = parseInt(inputElement.value) - 1;
+    }
+}
+
+function incrementaVolonta() {
+    const inputElement = document.getElementById("punteggio-volonta");
+    inputElement.value = parseInt(inputElement.value) + 1;
+}
+
+function decrementaVolonta() {
+    const inputElement = document.getElementById("punteggio-volonta");
     if (parseInt(inputElement.value) > 0) {
         inputElement.value = parseInt(inputElement.value) - 1;
     }
@@ -623,7 +636,7 @@ function calcolaDifficoltaResistenza(difficoltaLancio) {
 }
 
 
-function calcolaDifficoltaConGrado(gradoMagia) {
+function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
     console.log("Funzione calcolaDifficoltaConGrado avviata");
     let base = 20;
 
@@ -687,7 +700,7 @@ function calcolaDifficoltaConGrado(gradoMagia) {
     const difficoltaResistenza = calcolaDifficoltaResistenza(totale);
 	
 	// Calcola il lancio del dado necessario
-    const lancioDadoNecessario = totale - gradoMagia;
+    const lancioDadoNecessario = totale - gradoMagia - punteggioVolonta;
 
     document.getElementById("difficolta-totale-popup").innerText = totale;
 	document.getElementById("lancio-dado-necessario").innerText = lancioDadoNecessario;
