@@ -12,6 +12,8 @@ Ogni parte principale del corpo di un personaggio ha una specifica soglia di res
 - **Torso:** 5
 - **Braccia:** 4
 - **Gambe:** 4
+- **Mani:** 3
+- **Piedi:** 3
 
 ## Calcolo dei Danni
 Quando un personaggio subisce un attacco, il danno viene determinato attraverso le seguenti fasi:
