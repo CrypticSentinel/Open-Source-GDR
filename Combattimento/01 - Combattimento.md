@@ -19,7 +19,7 @@ In questo sistema, tutte le azioni avvengono in simultanea, riflettendo la veloc
   - **Attacco Focalizzato:** Il personaggio si concentra interamente sull'attacco, ottenendo un +5 al tiro per colpire ma un -5 alle difese reattive (schivate, parate).  
   - **Attacco doppio:** Il personaggio esegue due attacchi nello stesso round, subendo un -3 a entrambi i tiri per colpire e un -5 alle difese reattive.  
   - **Attacco Bilanciato:** Il personaggio attacca mantenendo una certa cautela, non ottenendo né bonus né penalità all'attacco o alla difesa.  
-  - **Difesa Totale:** Il personaggio rinuncia all'attacco per concentrarsi esclusivamente sulla difesa, ottenendo un +5 alle difese reattive.
+  - **Difesa Totale:** Il personaggio rinuncia all'attacco per concentrarsi esclusivamente sulla difesa, ottenendo un +5 alle difese reattive. Nel caso il colpo vada comunque a buon fine, il personaggio in difesa perde la possibilità di eseguire l'attacco.
 
 3. **Fase di Reazione:** Durante questa fase, i personaggi possono reagire agli attacchi ricevuti. Le reazioni possono includere schivate, parate o azioni più complesse come interruzioni o controattacchi. Il DM, a sua discrezione, può permettere ai personaggi di eseguire reazioni immediate ad azioni avversarie specifiche, basandosi sul contesto e sulla narrazione. L'esperienza del DM e il buon senso saranno fondamentali per mantenere il combattimento fluido e coinvolgente.  
 
