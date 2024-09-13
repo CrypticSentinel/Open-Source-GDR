@@ -3,7 +3,7 @@
 ## 1. Ordine di Iniziativa
 All'inizio di ogni combattimento e per tutto il combattimento, i personaggi determinano l'ordine della dichiarazione delle loro azioni tirando per l’iniziativa. L'iniziativa si calcola come segue:
 
-**Iniziativa = Modificatore Destrezza + Modificatore Iniziativa + 1d20**
+**Iniziativa = Modificatore Iniziativa + 1d20**
 
 Da questo momento, salvo eventi che cambino questo equilibrio, i personaggi agiranno in ordine decrescente di Iniziativa, dichiarando le proprie azioni per ogni round.
 
