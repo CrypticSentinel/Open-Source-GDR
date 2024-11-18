@@ -1,5 +1,5 @@
 # Tabella affaticamento
-Questa tabella descrive i punti di affaticamento che un incantatore accumula a seguito del lancio di un incantesimo, basato sul grado di conoscenza della scuola di magia e la difficoltà dell'incantesimo lanciato. La fatica aumenta man mano che la difficoltà dell'incantesimo supera determinate soglie, riducendo le capacità dell'incantatore.
+Questa tabella descrive i punti di affaticamento che un incantatore accumula a seguito del lancio riuscito di un incantesimo, basato sul grado di conoscenza della scuola di magia e la difficoltà dell'incantesimo lanciato. La fatica aumenta man mano che la difficoltà dell'incantesimo supera determinate soglie, riducendo le capacità dell'incantatore.
 
 ## Tabella penalità dovute al lancio di incantesimi
 | Grado scuola di Magia | Fatica -0 | Fatica -1 | Fatica -2 | Fatica -3 | Fatica -4 | Fatica -5 | Descrizione                                                                                                                                                                                                             |
