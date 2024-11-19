@@ -29,7 +29,7 @@ A seconda del tipo di attacco scelto, i personaggi possono ottenere vantaggi o s
   - **Attacco doppio:** Il personaggio esegue due attacchi nello stesso round, subendo un -3 a entrambi i tiri per colpire e un -5 all'azione reattiva.  
   - **Attacco Bilanciato:** Il personaggio attacca mantenendo una certa cautela, non ottenendo né bonus né penalità all'attacco o alla difesa (è l'azione di base in ogni combattimento).
   - **Difesa Totale:** Il personaggio inverte la sequenza di azione e reazione, rimandando la propria azione ad un secondo momento, concentrandosi esclusivamente sulla difesa e ottenendo un +5 alla reazione. Nel caso la difesa non abbia successo, il personaggio in difesa perde la possibilità di eseguire la propria azione.
-  - **Carica:** Il personaggio non ha possibilità di schivare, ma in caso di successo, ottiene +3 al danno.
+  - **Carica:** Il personaggio non ha possibilità di schivare, ma in caso di successo, aggiunge il modificatore di costituzione al danno, se è pari a 0 o inferiore, aggiunge comunque +1.
 
 ### Suggerimenti
 Il combattimento non si svolge in un vuoto. Fattori ambientali come il terreno, l'illuminazione, e gli oggetti presenti nell'area di combattimento possono influenzare le azioni e le reazioni dei personaggi, rendendo ogni scontro unico e memorabile. Considera di integrare questi elementi per arricchire la narrazione e fornire ai giocatori nuove sfide tattiche.
