@@ -170,6 +170,14 @@ I maghi che partecipano al rituale, oltre a fornire al mago principale un bonus 
 #### Gestione del Recupero ####
 Lo Stress si azzera solo dopo un riposo completo (8 ore).
 
+### Conseguenze d’ambientazione ###
+Un rituale lungo non dovrebbe passare inosservato agli osservatori degli eventi magici, lo scopo di questa meccanica vuole introdrre delle semplici conseguenze narrative e ambientali.
+
+- **Ripercussioni nel mondo**: I rituali lunghi e impegnativi possono attirare l'attenzione di curiosi, creature magiche o entità ostili (es. un rituale potrebbe attirare uno spirito o un’entità, oppure un incantatore attento potrebbe notare l’energia magica e intervenire.  
+- **Alterazione del tessuto magico**: L’energia accumulata durante un rituale può creare anomalie locali (es vortici di energia magica che alterano l’area oppure avere conseguenze su incantesimi eseguiti in prossimità che potrebbero avere effetti casuali.  
+- **Conseguenze Sociali**: L’esecuzione di rituali prolungati potrebbero suscitare le attenzioni dei locali e gli esecutori potrebbero essere convocati dalle autorità per spiegazioni.  
+
+
 ## Tabella effetti di Lancio
 Questa tabella valuta l'impatto degli effetti speciali sul lancio dell'incantesimo. Incantesimi che evitano effetti visivi o magici rilevabili, o che sono massimizzati in potenza, aumentano significativamente la difficoltà del lancio.
 
