@@ -9,3 +9,8 @@ Questa tabella determina il danno base inflitto da un incantesimo, in relazione 
 | 5-6                   | +3         | Il danno base aumenta a +3  |
 | 7-8                   | +4         | Il danno base aumenta a +4  |
 | 9-10                  | +5         | Il danno base aumenta a +5  |
+| 11-12                 | +6         | Il danno base aumenta a +6  |
+| 13-14                 | +7         | Il danno base aumenta a +7  |
+| 15-16                 | +8         | Il danno base aumenta a +8  |
+| 17-18                 | +9         | Il danno base aumenta a +9  |
+| 19-20                 | +10        | Il danno base aumenta a +10 |
