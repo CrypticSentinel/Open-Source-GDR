@@ -124,6 +124,27 @@ Questa tabella elenca variabili aggiuntive che possono influenzare la difficolt�
 - **Lancio con rituale (ogni 15 minuti) (-10):** Un rituale prolungato di concentrazione prima del lancio riduce significativamente la difficoltà, poiché permette al mago di prepararsi meglio. Il lancio con rituale può essere cumulativo al lancio con maghi aggiuntivi.  
 - **Concentrazione prima del lancio (max 10) (-1):** Ogni round di concentrazione prima del lancio riduce leggermente la difficoltà, fino a un massimo di 10 round, poiché migliora la precisione e la potenza del lancio. Il lancio con Concentrazione può essere cumulativo al lancio con maghi aggiuntivi.   
 
+### Limite al numero di rituali giornalieri ###
+Con il solo scopo di limitare l'abuso dei **rituali (ogni 15 minuti)**, come regola opzionale è possibile applicare un sistema che definisce quante volte un personaggio può eseguire rituali lunghi senza subire conseguenze. Questa limitazione non ha lo scopo di impedire l’esecuzione dei rituali, i PG ed i PNG avranno ancora la possibilità di eseguire rituali, ma con rischi e limitazioni che rendono la scelta più ponderata.
+
+#### Stress Magico ####
+Ogni **rituale (ogni 15 minuti)** genera uno stress magico (o affaticamento), ed ogni personaggio ha un limite massimo di stress che può sopportare senza subire conseguenze, pari alla somma tra il Modificatore di Volontà ed il Danno Base della specifica scuola di magia.
+
+_es. un personaggio con un Modificatore di Volontà +3 ed un Danno Base in Fuoco di +2, potrà effettuare massimo 5 rituali da 15 minuti (5 rituali separati da 15 minuti, 1 rituale da 75 minuti oppure un mix di questi) prima di dover effettuare un riposo completo per non subire conseguenze._
+
+Superare questo limite di sopportazione dello Stress Magico è possibile, ma ciò può causare delle conseguenze sulla base del lancio di 1d100 per ottenere un risultato casuale:
+
+| Dado (d100) | Conseguenza                                                                                                                     |
+| :-----------|:------------------------------------------------------------------------------------------------------------------------------- |
+| 1-20        | Il mago subisce -1 a tutte le prove (es. Concentrazione, Atletica) fino al riposo completo.                                     |
+| 21-40       | Il mago perde un punto di Volontà temporaneo (recuperabile con un riposo completo).                                             |
+| 41-60       | Il mago subisce un malus di -5 ai tiri di Concentrazione per il resto della giornata.                                           |
+| 61-75       | Il mago riceve un malus temporaneo di -1 a tutte le caratteristiche (recuperabile con un riposo completo).                      |
+| 76-90       | Il mago subisce danni pari al doppio dello Stress accumulato oltre il limite.                                                   |
+| 91-95       | Il mago perde temporaneamente l’accesso alla scuola di magia usata (fino a un’azione narrativa o un riposo completo).           |
+| 96-100      | Il mago subisce una riduzione permanente di -1 al modificatore di Volontà, recuperabile solo con un'azione narrativa complessa. |
+
+
 ## Tabella effetti di Lancio
 Questa tabella valuta l'impatto degli effetti speciali sul lancio dell'incantesimo. Incantesimi che evitano effetti visivi o magici rilevabili, o che sono massimizzati in potenza, aumentano significativamente la difficoltà del lancio.
 
