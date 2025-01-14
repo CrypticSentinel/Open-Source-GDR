@@ -142,8 +142,33 @@ Superare questo limite di sopportazione dello Stress Magico è possibile, ma ci�
 | 61-75       | Il mago riceve un malus temporaneo di -1 a tutte le caratteristiche (recuperabile con un riposo completo).                      |
 | 76-90       | Il mago subisce danni pari al doppio dello Stress accumulato oltre il limite.                                                   |
 | 91-95       | Il mago perde temporaneamente l’accesso alla scuola di magia usata (fino a un’azione narrativa o un riposo completo).           |
-| 96-100      | Il mago subisce una riduzione permanente di -1 al modificatore di Volontà, recuperabile solo con un'azione narrativa complessa. |
+| 96-100      | Il mago subisce una riduzione permanente* di -1 al modificatore di Volontà, recuperabile solo con un'azione narrativa complessa. |
 
+_*In caso di riduzione permanente, il malus non si rimuove automaticamente con il tempo o il riposo, ma è possibile recuperare il malus solo attraverso un'azione significativa legata al contesto del rituale (es. Compiere un atto che consenta di recuperare la riduzione permanente) o comunque a discrezione del Master. Questo vuole rafforzare l’idea che ogni scelta del giocatore ha conseguenze significative, senza però rendere il malus una penalità eterna e frustrante, ma dando profondità alla personalità del personaggio._
+
+#### Eventi di disturbo ####
+L'adozione degli eventi di disturbo, non ha lo scopo di rendere più dfficile la vita ai giocatori, ma vuole creare un elemento di rischio e tensione, rendendo i rituali lunghi meno affidabili e più pericolosi.
+
+Durante i rituali, il personaggio può essere soggetto a eventi di disturbo che si manifestano ogni 15 minuti di rituale, tirando 1d100 per verificare se si attiva un evento.
+
+| Dado (d100) | Evento                                                                                                                       |
+| :-----------|:---------------------------------------------------------------------------------------------------------------------------- |
+| 1-20        | Nessun effetto, il rituale procede senza interferenze.                                                                       |
+| 21-35       | Interferenza magica lieve che infligge un malus di +5 alla difficoltà del rituale.                                           |
+| 36-50       | Flusso magico instabile: Il mago deve effettuare una prova di Concentrazione (diff. 10).                                     |
+| 51-65       | Manifestazione di entità lieve: Delle entità si manifestano con fare ostile, prova di Concentrazione (diff. 15).             |
+| 66-75       | Manifestazione di entità media: Delle entità tentano di interferire, prova di Concentrazione (diff. 20).                     |
+| 76-85       | Manifestazione di entità ostili: Delle entità attaccano il mago; il rituale richiede di allontanare l'entità per proseguire. |
+| 86-90       | Anomalia locale: Il rituale altera temporaneamente l'ambiente (es. fulmini, vento).                                          |
+| 91-95       | Rottura del rituale: Il rituale fallisce, i materiali vengono persi e tutti i maghi subiscono -1 di Stress Magico.           |
+| 96-98       | Esplosione magica lieve: Danno pari a 1d4  a tutti i partecipanti al rituale.                                                |
+| 99-100      | Esplosione magica devastante: Danno pari a 1d6 e gli incantatori subiscono anche un evento della tabella "Stress Magico".    |
+
+#### Maghi a supporto del rituale ####
+I maghi che partecipano al rituale, oltre a fornire al mago principale un bonus di lancio pari al grado di conoscenza nella scuola di magia, possono decidere di partecipare più attivamente subendo al posto del mago principale gli eventuali Eventi di Disturbo.
+
+#### Gestione del Recupero ####
+Lo Stress si azzera solo dopo un riposo completo (8 ore).
 
 ## Tabella effetti di Lancio
 Questa tabella valuta l'impatto degli effetti speciali sul lancio dell'incantesimo. Incantesimi che evitano effetti visivi o magici rilevabili, o che sono massimizzati in potenza, aumentano significativamente la difficoltà del lancio.
