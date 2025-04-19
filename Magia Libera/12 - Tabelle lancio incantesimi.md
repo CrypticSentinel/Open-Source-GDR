@@ -161,11 +161,13 @@ Durante i rituali, il personaggio può essere soggetto a eventi di disturbo che 
 | 76-85       | Manifestazione di entità ostili: Delle entità attaccano il mago; il rituale richiede di allontanare l'entità per proseguire. |
 | 86-90       | Anomalia locale: Il rituale altera temporaneamente l'ambiente (es. fulmini, vento).                                          |
 | 91-95       | Rottura del rituale: Il rituale fallisce, i materiali vengono persi e tutti i maghi subiscono -1 di Stress Magico.           |
-| 96-98       | Esplosione magica lieve: Danno pari a 1d4  a tutti i partecipanti al rituale.                                                |
-| 99-100      | Esplosione magica devastante: Danno pari a 1d6 e gli incantatori subiscono anche un evento della tabella "Stress Magico".    |
+| 96-98       | Esplosione magica lieve: Danno pari al danno che avrebbe fatto l'incantesimo +1d4 a tutti i partecipanti al rituale.                                                |
+| 99-100      | Esplosione magica devastante: Danno pari al danno che avrebbe fatto l'incantesimo +1d6 a tutti i partecipanti al rituale e gli incantatori subiscono anche un evento della tabella "Stress Magico".    |
+
+_*NB I disturbi potranno essere personalizzati in base al contesto.*
 
 #### Maghi a supporto del rituale ####
-I maghi che partecipano al rituale, oltre a fornire al mago principale un bonus di lancio pari al grado di conoscenza nella scuola di magia, possono decidere di partecipare più attivamente subendo al posto del mago principale gli eventuali Eventi di Disturbo.
+I maghi che partecipano al rituale, oltre a fornire al mago principale un bonus di lancio pari al grado di conoscenza nella scuola di magia, possono decidere di partecipare più attivamente subendo al posto del mago principale gli eventuali *Eventi di Disturbo*.
 
 #### Gestione del Recupero ####
 Lo Stress si azzera solo dopo un riposo completo (8 ore).
