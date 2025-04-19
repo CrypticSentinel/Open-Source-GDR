@@ -66,6 +66,8 @@ Di seguito sono riportate tutte le tabelle per utilizzare la Magia Libera così 
 
 [Resistere agli incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/15%20-%20Resistenza%20agli%20incantesimi.md)
 
+[Fallimenti Critici Magici](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)
+
 Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un pratico tool online:  
 [SpellCheck - Calcolo Difficoltà Incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
 
