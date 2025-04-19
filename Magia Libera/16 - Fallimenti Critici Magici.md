@@ -1,7 +1,7 @@
 # Fallimenti Critici Magici
 Può accadere che la magia sfugga al controllo dell'incantatore, non mi dilungherò in queste tematiche interpretative che lascio al Dungeon Master in base al proprio contesto, dal punto di vista tecnico si tratta del risultato di 1 sul lancio del d20 per eseguire il proprio incanteimo. Per gestire questa casistica e sopratutto le conseguenze, è possibile tuilizzare la seguente tabella, anche se ne esistono già di diverse online.
 
-##Tabella Fallimenti Critici
+## Tabella Fallimenti Critici
 
 | d100 | Effetto |
 | :--: | :------ |
