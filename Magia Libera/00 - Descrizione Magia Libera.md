@@ -10,7 +10,7 @@ L'augurio è quello di creare un sistema che sia gratificante per i giocatori ch
 # Come funziona la magia
 Alla base di questo regolamento vi è il concetto che la magia si attinge dall'energia vitale di tutte le creature viventi e persino della natura stessa, canalizzandola in ciò che l'incantatore desidera. Chi padroneggia questa tecnica è in grado di accumulare energia dalle piante, dagli animali, dagli esseri umani, e perfino dai flussi energetici della terra e del cielo<sup>1</sup>. Il mago che desidera utilizzare la magia deve entrare in una profonda connessione con il mondo circostante, espandendo la propria percezione per avvertire ogni fonte di vita nei dintorni, iniziando a raccogliere l'energia spirituale.
 
- ><sup>1</sup>I lettori più attenti avranno notato la similitudine con la [Genkidama](https://it.wikipedia.org/wiki/Tecniche_di_Dragon_Ball#:~:text=la%20neutralizzer%C3%A0%20facilmente.-,Sfera%20dell%27energia%20spirituale,-%5Bmodifica%20%7C), o Energia Sferica, dell'anime Dragonball.
+ ><sup>1</sup>I lettori più attenti avranno notato la similitudine con la [Genkidama](https://it.wikipedia.org/wiki/Tecniche_di_Dragon_Ball#:~:text=la%20neutralizzer%C3%A0%20facilmente.-,Sfera%20dell%27energia%20spirituale,-%5Bmodifica%20%7C), o Energia Sferica, del manga Dragonball.
 
 Per poter gestire al meglio questo sistema di magia e allo stesso tempo creare delle diversificazioni tra gli utilizzatori, la cosa più sensata è sembrata essere quella di creare delle scuole di magia, tramite le quali coprire tutti gli aspetti senza rendere il regolamento troppo complesso o troppo semplicistico, motivo per cui sono state scelte 10 specifiche scuole di magia. 
 
