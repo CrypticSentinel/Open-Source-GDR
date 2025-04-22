@@ -15,6 +15,30 @@ Ogni parte principale del corpo di un personaggio ha una specifica soglia di res
 - **Mani:** 3
 - **Piedi:** 3
 
+## Locazioni del danno
+Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano delle necessità di eseguire colpi mirati, in questi casi è possibile utilizzare una tabella delle locazioni
+
+| Zona | Locazione     | Dado     |
+| :--- | :------------ | :------: |
+| Alta | Testa         | 1 - 6    |
+| Alta | Collo         | 7 - 10   |
+| Alta | Spalla SX     | 12 - 25  |
+| Alta | Spalla DX     | 26 - 40  |
+| Alta | Braccio SX    | 41 - 50  |
+| Alta | Braccio DX    | 51 - 60  |
+| Alta | Mano SX       | 61 - 65  |
+| Alta | Mano DX       | 66 - 70  |
+| Alta | Torace        | 72 - 100 |
+| Bassa | Piede SX     | 1 - 6    |
+| Bassa | Piede DX     | 7 - 10   |
+| Bassa | Gamba SX     | 12 - 25  |
+| Bassa | Gamba DX     | 26 - 40  |
+| Bassa | Stinco SX    | 41 - 50  |
+| Bassa | Stinco DX    | 51 - 60  |
+| Bassa | Ginocchio SX | 61 - 65  |
+| Bassa | Ginocchio DX | 66 - 70  |
+| Bassa | Addome       | 72 - 100 |
+
 ## Calcolo dei Danni
 Quando un personaggio subisce un attacco, il danno viene determinato attraverso le seguenti fasi:
 
