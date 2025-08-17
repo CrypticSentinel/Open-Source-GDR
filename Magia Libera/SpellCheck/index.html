@@ -29,16 +29,16 @@
 
       <div class="text-center mt-4">
         <label for="punteggio-volonta">Mod. Volontà:</label>
-        <img src="icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaVolonta()">
+        <img src="assets/icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaVolonta()">
         <input type="number" id="punteggio-volonta" class="form-control mx-auto" min="0" value="0" style="display:inline-block;width:80px;">
-        <img src="icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaVolonta()">
+        <img src="assets/icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaVolonta()">
       </div>
 
       <div class="text-center mt-4">
         <label for="grado-magia">Grado Magia:</label>
-        <img src="icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaGradoMagia()">
+        <img src="assets/icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaGradoMagia()">
         <input type="number" id="grado-magia" class="form-control mx-auto" min="0" value="0" style="display:inline-block;width:80px;">
-        <img src="icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaGradoMagia()">
+        <img src="assets/icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaGradoMagia()">
       </div>
 
       <div class="text-center mt-4">
@@ -83,15 +83,15 @@
 
     <!-- Dinamici area -->
     <div class="mb-3 text-center" id="input-bersagli" style="display:none;">
-      <img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-bersagli')">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-bersagli')">
       <input type="number" id="numero-bersagli" class="form-control mx-auto" min="0" value="1">
-      <img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-bersagli')">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-bersagli')">
     </div>
 
     <div class="mb-3 text-center" id="input-diametro" style="display:none;">
-      <img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-diametro')">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-diametro')">
       <input type="number" id="numero-diametro" class="form-control mx-auto" min="0" value="1">
-      <img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-diametro')">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-diametro')">
     </div>
 
     <!-- Durata -->
@@ -102,21 +102,21 @@
 
     <!-- Dinamici durata -->
     <div class="mb-3 text-center" id="input-round" style="display:none;">
-      <img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-round')">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-round')">
       <input type="number" id="numero-round" class="form-control mx-auto" min="0" value="1">
-      <img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-round')">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-round')">
     </div>
 
     <div class="mb-3 text-center" id="input-minuti7" style="display:none;">
-      <img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti7')">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti7')">
       <input type="number" id="numero-minuti7" class="form-control mx-auto" min="0" value="1">
-      <img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti7')">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti7')">
     </div>
 
     <div class="mb-3 text-center" id="input-minuti15" style="display:none;">
-      <img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti15')">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti15')">
       <input type="number" id="numero-minuti15" class="form-control mx-auto" min="0" value="1">
-      <img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti15')">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti15')">
     </div>
 
     <!-- Modalità di lancio -->
@@ -151,9 +151,9 @@
     </div>
 
     <div class="mb-3 text-center" id="input-mago-aggiuntivo" style="display:none;">
-      <img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaMagiAggiuntivi()">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaMagiAggiuntivi()">
       <input type="number" id="numero-magi-aggiuntivi" class="form-control mx-auto" min="0" value="1" onchange="aggiornaPunteggiMagiAggiuntivi()">
-      <img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaMagiAggiuntivi()">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaMagiAggiuntivi()">
     </div>
     <div id="punteggi-magi-aggiuntivi" class="mb-3 text-center"></div>
 
@@ -163,9 +163,9 @@
     </div>
 
     <div class="mb-3 text-center" id="input-lancio-rituale" style="display:none;">
-      <img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rituali')">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rituali')">
       <input type="number" id="numero-rituali" class="form-control mx-auto" min="0" value="1">
-      <img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-rituali')">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-rituali')">
     </div>
 
     <div class="form-check">
@@ -174,9 +174,9 @@
     </div>
 
     <div class="mb-3 text-center" id="input-rounds" style="display:none;">
-      <img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rounds')">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rounds')">
       <input type="number" id="numero-rounds" class="form-control mx-auto" min="0" max="10" value="1">
-      <img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaRoundConcentrazione()">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaRoundConcentrazione()">
     </div>
 
     <!-- Effetti -->
@@ -230,9 +230,9 @@
 
       <!-- +1 -->
       <div class="mb-3 text-center">
-        <img src="icons/minus.png" class="adjust-icon mx-auto" id="minus-d1" onclick="decrementaInput('danni1')" style="display:none;" alt="-">
-        <img src="icons/1.png" alt="+1" class="dice-icon" id="toggle-d1" onclick="toggled1()">
-        <img src="icons/plus.png" class="adjust-icon mx-auto" id="plus-d1" onclick="incrementaInput('danni1')" style="display:none;" alt="+">
+        <img src="assets/icons/minus.png" class="adjust-icon mx-auto" id="minus-d1" onclick="decrementaInput('danni1')" style="display:none;" alt="-">
+        <img src="assets/icons/1.png" alt="+1" class="dice-icon" id="toggle-d1" onclick="toggled1()">
+        <img src="assets/icons/plus.png" class="adjust-icon mx-auto" id="plus-d1" onclick="incrementaInput('danni1')" style="display:none;" alt="+">
         <label class="form-label d-block" id="label-d1"></label>
         <div id="d1-controls" style="display:none;">
           <input type="number" id="danni1" class="form-control mx-auto" min="0" value="0">
@@ -241,9 +241,9 @@
 
       <!-- d4 -->
       <div class="mb-3 text-center">
-        <img src="icons/minus.png" class="adjust-icon mx-auto" id="minus-d4" onclick="decrementaInput('danni2')" style="display:none;" alt="-">
-        <img src="icons/d4.png" alt="d4" class="dice-icon" id="toggle-d4" onclick="toggleD4()">
-        <img src="icons/plus.png" class="adjust-icon mx-auto" id="plus-d4" onclick="incrementaInput('danni2')" style="display:none;" alt="+">
+        <img src="assets/icons/minus.png" class="adjust-icon mx-auto" id="minus-d4" onclick="decrementaInput('danni2')" style="display:none;" alt="-">
+        <img src="assets/icons/d4.png" alt="d4" class="dice-icon" id="toggle-d4" onclick="toggleD4()">
+        <img src="assets/icons/plus.png" class="adjust-icon mx-auto" id="plus-d4" onclick="incrementaInput('danni2')" style="display:none;" alt="+">
         <label class="form-label d-block" id="label-d4"></label>
         <div id="d4-controls" style="display:none;">
           <input type="number" id="danni2" class="form-control mx-auto" min="0" value="0">
@@ -252,9 +252,9 @@
 
       <!-- d6 -->
       <div class="mb-3 text-center">
-        <img src="icons/minus.png" class="adjust-icon mx-auto" id="minus-d6" onclick="decrementaInput('danni3')" style="display:none;" alt="-">
-        <img src="icons/d6.png" alt="d6" class="dice-icon" id="toggle-d6" onclick="toggleD6()">
-        <img src="icons/plus.png" class="adjust-icon mx-auto" id="plus-d6" onclick="incrementaInput('danni3')" style="display:none;" alt="+">
+        <img src="assets/icons/minus.png" class="adjust-icon mx-auto" id="minus-d6" onclick="decrementaInput('danni3')" style="display:none;" alt="-">
+        <img src="assets/icons/d6.png" alt="d6" class="dice-icon" id="toggle-d6" onclick="toggleD6()">
+        <img src="assets/icons/plus.png" class="adjust-icon mx-auto" id="plus-d6" onclick="incrementaInput('danni3')" style="display:none;" alt="+">
         <label class="form-label d-block" id="label-d6"></label>
         <div id="d6-controls" style="display:none;">
           <input type="number" id="danni3" class="form-control mx-auto" min="0" value="0">
@@ -263,9 +263,9 @@
 
       <!-- d8 -->
       <div class="mb-3 text-center">
-        <img src="icons/minus.png" class="adjust-icon mx-auto" id="minus-d8" onclick="decrementaInput('danni4')" style="display:none;" alt="-">
-        <img src="icons/d8.png" alt="d8" class="dice-icon" id="toggle-d8" onclick="toggleD8()">
-        <img src="icons/plus.png" class="adjust-icon mx-auto" id="plus-d8" onclick="incrementaInput('danni4')" style="display:none;" alt="+">
+        <img src="assets/icons/minus.png" class="adjust-icon mx-auto" id="minus-d8" onclick="decrementaInput('danni4')" style="display:none;" alt="-">
+        <img src="assets/icons/d8.png" alt="d8" class="dice-icon" id="toggle-d8" onclick="toggleD8()">
+        <img src="assets/icons/plus.png" class="adjust-icon mx-auto" id="plus-d8" onclick="incrementaInput('danni4')" style="display:none;" alt="+">
         <label class="form-label d-block" id="label-d8"></label>
         <div id="d8-controls" style="display:none;">
           <input type="number" id="danni4" class="form-control mx-auto" min="0" value="0">
@@ -274,9 +274,9 @@
 
       <!-- d10 -->
       <div class="mb-3 text-center">
-        <img src="icons/minus.png" class="adjust-icon mx-auto" id="minus-d10" onclick="decrementaInput('danni5')" style="display:none;" alt="-">
-        <img src="icons/d10.png" alt="d10" class="dice-icon" id="toggle-d10" onclick="toggleD10()">
-        <img src="icons/plus.png" class="adjust-icon mx-auto" id="plus-d10" onclick="incrementaInput('danni5')" style="display:none;" alt="+">
+        <img src="assets/icons/minus.png" class="adjust-icon mx-auto" id="minus-d10" onclick="decrementaInput('danni5')" style="display:none;" alt="-">
+        <img src="assets/icons/d10.png" alt="d10" class="dice-icon" id="toggle-d10" onclick="toggleD10()">
+        <img src="assets/icons/plus.png" class="adjust-icon mx-auto" id="plus-d10" onclick="incrementaInput('danni5')" style="display:none;" alt="+">
         <label class="form-label d-block" id="label-d10"></label>
         <div id="d10-controls" style="display:none;">
           <input type="number" id="danni5" class="form-control mx-auto" min="0" value="0">
@@ -285,9 +285,9 @@
 
       <!-- d12 -->
       <div class="mb-3 text-center">
-        <img src="icons/minus.png" class="adjust-icon mx-auto" id="minus-d12" onclick="decrementaInput('danni6')" style="display:none;" alt="-">
-        <img src="icons/d12.png" alt="d12" class="dice-icon" id="toggle-d12" onclick="toggleD12()">
-        <img src="icons/plus.png" class="adjust-icon mx-auto" id="plus-d12" onclick="incrementaInput('danni6')" style="display:none;" alt="+">
+        <img src="assets/icons/minus.png" class="adjust-icon mx-auto" id="minus-d12" onclick="decrementaInput('danni6')" style="display:none;" alt="-">
+        <img src="assets/icons/d12.png" alt="d12" class="dice-icon" id="toggle-d12" onclick="toggleD12()">
+        <img src="assets/icons/plus.png" class="adjust-icon mx-auto" id="plus-d12" onclick="incrementaInput('danni6')" style="display:none;" alt="+">
         <label class="form-label d-block" id="label-d12"></label>
         <div id="d12-controls" style="display:none;">
           <input type="number" id="danni6" class="form-control mx-auto" min="0" value="0">
@@ -296,9 +296,9 @@
 
       <!-- d20 -->
       <div class="mb-3 text-center">
-        <img src="icons/minus.png" class="adjust-icon mx-auto" id="minus-d20" onclick="decrementaInput('danni7')" style="display:none;" alt="-">
-        <img src="icons/d20.png" alt="d20" class="dice-icon" id="toggle-d20" onclick="toggleD20()">
-        <img src="icons/plus.png" class="adjust-icon mx-auto" id="plus-d20" onclick="incrementaInput('danni7')" style="display:none;" alt="+">
+        <img src="assets/icons/minus.png" class="adjust-icon mx-auto" id="minus-d20" onclick="decrementaInput('danni7')" style="display:none;" alt="-">
+        <img src="assets/icons/d20.png" alt="d20" class="dice-icon" id="toggle-d20" onclick="toggleD20()">
+        <img src="assets/icons/plus.png" class="adjust-icon mx-auto" id="plus-d20" onclick="incrementaInput('danni7')" style="display:none;" alt="+">
         <label class="form-label d-block" id="label-d20"></label>
         <div id="d20-controls" style="display:none;">
           <input type="number" id="danni7" class="form-control mx-auto" min="0" value="0">
