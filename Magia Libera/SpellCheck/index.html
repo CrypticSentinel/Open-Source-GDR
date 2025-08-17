@@ -314,9 +314,13 @@
 <footer class="text-center mt-4"><p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202508171245</p></footer>
 
 <!-- Tabelle centralizzate -->
+<!-- 1) Prova a caricare config JSON (override se presente) -->
+<script src="config-loader.js"></script>
+<!-- 2) Fallback/base di default -->
 <script src="tabelle.js"></script>
-<!-- Logiche applicative -->
+<!-- 3) Logiche applicative -->
 <script src="script.js"></script>
+
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
