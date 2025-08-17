@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpellCheck - Calcolo Difficoltà Incantesimi</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
 </head>
 <body>
 <header class="text-center mb-4">
   <h1>SpellCheck - Calcolo Difficoltà Incantesimi</h1>
-  <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width:150px" loading="lazy">
+  <img src="assets/img/logo.png" alt="Logo" class="img-fluid" style="max-width:150px" loading="lazy">
 
   <div class="text-center mt-4">
     <button id="install-button" style="display:none;">Installa App</button>
@@ -316,15 +316,12 @@
 
 <footer class="text-center mt-4"><p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202508171245</p></footer>
 
-<!-- Tabelle centralizzate -->
-<!-- 1) Prova a caricare config JSON (override se presente) -->
-<script src="config-loader.js"></script>
-<!-- 2) Fallback/base di default -->
-<script src="tabelle.js"></script>
-<!-- 3) Logiche applicative -->
-<script src="script.js"></script>
-<script src="modal-utils.js"></script>
-<script src="theme-toggle.js"></script>
+<script src="assets/js/config-loader.js"></script>
+<script src="assets/js/tabelle.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/modal-utils.js"></script>
+<script src="assets/js/theme-toggle.js"></script>
+<script src="assets/js/style-toggle.js"></script>
 
 <script>
   if ('serviceWorker' in navigator) {
@@ -367,8 +364,6 @@
 
     // Handler per SKIP_WAITING custom
     navigator.serviceWorker.addEventListener('controllerchange', () => {
-      // Quando cambia il controller significa che il nuovo SW è attivo
-      // Non forziamo reload qui per evitare doppi ricarichi; lo gestiamo sopra
     });
   }
 </script>
