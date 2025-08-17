@@ -1,3 +1,18 @@
+// Namespace/config per le tabelle
+const TABELLE = { fatica: null, resistenza: null, loaded: false };
+
+// Caricamento asincrono dei JSON (una sola volta)
+async function caricaTabelle() {
+  if (TABELLE.loaded) return;
+  const [fatica, resistenza] = await Promise.all([
+    fetch('data/fatica_danno.json').then(r => r.json()),
+    fetch('data/resistenza.json').then(r => r.json())
+  ]);
+  TABELLE.fatica = fatica;           // { righe: [...] }
+  TABELLE.resistenza = resistenza;   // { range: [...] }
+  TABELLE.loaded = true;
+}
+
 function mostraInputBersagliDiametro() {
     let areaSelect = document.getElementById("area");
     let inputBersagli = document.getElementById("input-bersagli");
@@ -490,15 +505,21 @@ function mostraPopupGradoMagia() {
     document.getElementById("popup-grado-magia").style.display = 'block';
 }
 
-document.getElementById("submit-grado-magia").addEventListener("click", function() {
+document.getElementById("submit-grado-magia").addEventListener("click", async function() {
     const gradoMagia = parseInt(document.getElementById("grado-magia").value);
 	const punteggioVolonta = parseInt(document.getElementById("punteggio-volonta").value);
 	
     // Nascondi il popup per l'inserimento del grado di magia
     document.getElementById("popup-grado-magia").style.display = 'none';
 
-    // Ora calcola la difficoltà e mostra il popup relativo
-    calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
+	try {
+    await caricaTabelle();
+    } catch (e) {
+		console.error('Errore nel caricamento delle tabelle', e);
+		alert('Impossibile caricare le tabelle di difficoltà.');
+		return;
+	}
+	calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
 });
 
 function incrementaGradoMagia() {
@@ -531,18 +552,7 @@ function calcolaDifficolta() {
 }
 
 function calcolaFaticaEDannoBase(gradoMagia, difficoltaTotale) {
-    const tabellaFatica = [
-        { grado: [1, 2], fatica0: 19, intervalli: [24, 29, 34, 39, 44], dannoBase: '+1' },
-        { grado: [3, 4], fatica0: 24, intervalli: [29, 34, 39, 44, 49], dannoBase: '+2' },
-        { grado: [5, 6], fatica0: 29, intervalli: [34, 39, 44, 49, 54], dannoBase: '+3' },
-        { grado: [7, 8], fatica0: 34, intervalli: [39, 44, 49, 54, 59], dannoBase: '+4' },
-        { grado: [9, 10], fatica0: 39, intervalli: [44, 49, 54, 59, 64], dannoBase: '+5' },
-        { grado: [11, 12], fatica0: 44, intervalli: [49, 54, 59, 64, 69], dannoBase: '+6' },
-        { grado: [13, 14], fatica0: 49, intervalli: [54, 59, 64, 69, 74], dannoBase: '+7' },
-        { grado: [15, 16], fatica0: 54, intervalli: [59, 64, 69, 74, 79], dannoBase: '+8' },
-        { grado: [17, 18], fatica0: 59, intervalli: [64, 69, 74, 79, 84], dannoBase: '+9' },
-        { grado: [19, 20], fatica0: 64, intervalli: [69, 74, 79, 84, 89], dannoBase: '+10' },
-    ];
+	const tabellaFatica = (TABELLE?.fatica?.righe) || [];
 
     // Trova la riga della tabella corrispondente al grado di magia
     let riga = tabellaFatica.find(r => gradoMagia >= r.grado[0] && gradoMagia <= r.grado[1]);
@@ -604,18 +614,7 @@ function costruisciRiepilogoDadi() {
 }
 
 function calcolaDifficoltaResistenza(difficoltaLancio) {
-    const tabellaDifficolta = [
-        { min: 1, max: 34, resistenza: 20 },
-        { min: 35, max: 44, resistenza: 25 },
-        { min: 45, max: 54, resistenza: 30 },
-        { min: 55, max: 64, resistenza: 35 },
-        { min: 65, max: 74, resistenza: 40 },
-        { min: 75, max: 84, resistenza: 45 },
-        { min: 85, max: 94, resistenza: 50 },
-        { min: 95, max: 104, resistenza: 55 },
-        { min: 105, max: 114, resistenza: 60 },
-        { min: 115, max: 124, resistenza: 65 }
-    ];
+	const tabellaDifficolta = (TABELLE?.resistenza?.range) || [];
 
     if (difficoltaLancio < tabellaDifficolta[0].min) {
         return tabellaDifficolta[0].resistenza; // Restituisce il minimo se difficoltà è inferiore al minimo
