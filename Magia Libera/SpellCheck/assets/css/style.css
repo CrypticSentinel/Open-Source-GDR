@@ -1,231 +1,243 @@
-body {
-    font-family: 'IM Fell English', serif;
-    background: url('img/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #F8F9FA;
-    padding: 20px;
+
+/* style.css — Restyling completo + fix popup/checkbox (2025)
+   - Design system con CSS Variables
+   - Dark mode (prefers + .dark)
+   - Header con overlay radiale sul primario
+   - Popup: label left, valori centrati e in evidenza
+   - Checkbox inline su mobile (form-check)
+*/
+
+:root {
+  /* Palette Standard (default) */
+  --bg: #f8fafc;
+  --bg-alt: #ffffff;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #2563eb;
+  --primary-600: #1d4ed8;
+  --primary-700: #1e40af;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+  --border: #e2e8f0;
+  --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  --radius: 16px;
+
+  /* Typography */
+  --font-display: "IM Fell English", serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --fs-xxl: clamp(28px, 4vw, 44px);
+  --fs-xl: clamp(22px, 3vw, 30px);
+  --fs-lg: 18px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+
+  /* Spacing */
+  --space-1: 6px;
+  --space-2: 10px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
+/* Dark mode base (Standard) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --bg-alt: #0f172a;
+    --surface: #111827;
+    --text: #e5e7eb;
+    --muted: #a3a3a3;
+    --primary: #60a5fa;
+    --primary-600: #3b82f6;
+    --primary-700: #2563eb;
+    --success: #22c55e;
+    --warning: #fbbf24;
+    --danger: #f87171;
+    --border: #1f2937;
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   }
-  /* Altri stili per dispositivi mobili */
 }
 
-.form-label, .form-select, .form-control {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid #495057;
-    color: #F8F9FA;
-	text-align: center;
+/* Manual override (tema scuro forzato) */
+.dark {
+  --bg: #0b1220;
+  --bg-alt: #0f172a;
+  --surface: #111827;
+  --text: #e5e7eb;
+  --muted: #a3a3a3;
+  --primary: #60a5fa;
+  --primary-600: #3b82f6;
+  --primary-700: #2563eb;
+  --success: #22c55e;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --border: #1f2937;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
-.form-select option {
-    color: #000;
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-md);
+  line-height: 1.5;
 }
 
-.popup-row {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 10px;
-    text-align: left;
-	font-size: 1.2em; /* Aumenta la dimensione del carattere */
+header {
+  padding: var(--space-5) var(--space-3) var(--space-4);
+  background:
+    radial-gradient(1000px 500px at 50% -10%,
+      color-mix(in oklab, var(--primary) 16%, transparent),
+      transparent 60%),
+    linear-gradient(180deg, var(--bg-alt), var(--bg));
+  border-bottom: 1px solid var(--border);
 }
 
-.popup-row label {
-    font-weight: bold;
-    min-width: 200px; /* Puoi regolare la larghezza in base alle tue necessità */
-    padding-right: 10px;
+h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-xxl);
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-2);
 }
 
-.popup-row span {
-    white-space: pre;
+h2.h4, h3.h4 {
+  font-size: var(--fs-xl);
+  margin: var(--space-4) 0 var(--space-2);
 }
 
-#install-button {
-    display: inline-block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #495057;
-    color: #FFF;
-    border: 2px solid #6C757D;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+/* Card container per il form */
+.container form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-4);
 }
 
-#install-button:hover {
-    background-color: #343A40;
-    transform: scale(1.1);
+/* Elevazione maggiore in dark per stacco visivo */
+.dark .container form {
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--surface) 96%, transparent),
+    color-mix(in oklab, var(--surface) 88%, transparent));
+  border-color: color-mix(in oklab, var(--border) 85%, transparent);
 }
 
-.text-center {
-    text-align: center;
-}
+/* Pulsanti */
+.btn.btn-custom, #install-button, .button-container .btn {
+  --btn-bg: var(--primary);
+  --btn-bg-hover: var(--primary-600);
+  --btn-bg-active: var(--primary-700);
+  --btn-text: #ffffff;
 
-#punteggi-magi-aggiuntivi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 600;
+  transition: transform 0.05s ease, background 0.15s ease;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
 }
-
-#punteggi-magi-aggiuntivi input {
-    width: 200px; /* Imposta una larghezza fissa per le input box */
-    margin: 5px 0; /* Spazio tra le input box */
-}
-
-.mago-input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.mago-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.input-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.adjust-icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.mago-input-container input {
-    text-align: center;
-    margin: 0 5px;
-}
-
-.btn-custom {
-    background-color: #495057;
-    color: #FFF;
-    border: 2px solid #6C757D;
-    border-radius: 10px;
-    padding: 10px 20px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn-custom:hover {
-    background-color: #343A40;
-    transform: scale(1.1);
-}
-
-.container {
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 30px;
-}
+.btn.btn-custom:hover, #install-button:hover, .button-container .btn:hover { background: var(--btn-bg-hover); }
+.btn.btn-custom:active, #install-button:active, .button-container .btn:active { background: var(--btn-bg-active); transform: translateY(1px); }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Spazio tra i pulsanti */
-    margin-top: 20px; /* Margine superiore per separare dal contenuto precedente */
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-top: var(--space-4);
 }
 
-.button-container button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-/* .text-center button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-.modal-content {
-    margin: 15% auto;
-    padding: 20px;
-    border: 2px solid #495057;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #F8F9FA;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
+/* Etichette */
+.form-label, label {
+  font-weight: 600;
+  color: var(--muted);
 }
 
-.form-label.d-block {
-    display: inline-block;
-    width: auto;
-    margin-top: 5px;
+/* Input & Select */
+.form-select, .form-control, input[type="number"] {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 12px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.form-select:focus, .form-control:focus, input[type="number"]:focus {
+  outline: none;
+  border-color: var(--primary-600);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 20%, transparent);
 }
 
-.form-control.mx-auto {
-    display: inline-block;
-	text-align: center;
-    margin-top: 10px;
-    width: auto;
+/* === FIX Mobile: label accanto alla checkbox (non sotto) === */
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.form-check-input {
+  flex: 0 0 auto;
+  margin-top: 2px; /* micro-tuning iOS/Safari */
+}
+.form-check-label {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: 1.35;
 }
 
-.mb-3.text-center {
-    display: inline-block;
-    text-align: center;
-    width: auto;
-}
-
-.dadi-aggiuntivi-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.dadi-aggiuntivi-container h2 {
-    margin-bottom: 20px;
-}
-
-.dadi-aggiuntivi-container .mb-3 {
-    margin-bottom: 15px;
-}
-
-.dadi-aggiuntivi-container .form-control.mx-auto {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    width: 100px; /* Puoi regolare questa larghezza secondo necessità */
-}
-
+/* Icone dadi */
 .dice-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 10px;
+  width: 48px;
+  height: 48px;
+  user-select: none;
+  cursor: pointer;
+  transition: transform .1s ease;
 }
+.dice-icon:active { transform: scale(0.96); }
 
 .adjust-icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    margin-right: 5px;
-    margin-left: 5px;
-    vertical-align: middle;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transform: translateY(5px);
+  opacity: 0.9;
+}
+.adjust-icon:hover { opacity: 1; }
+
+/* Input numerici inline nelle righe dinamiche */
+.text-center .form-control.mx-auto {
+  width: 100px !important;
 }
 
-footer {
-    color: #F8F9FA;
+/* Modal overlay + centratura */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in oklab, var(--text) 45%, transparent);
+  z-index: 1000;
+}
+/* la classe .is-open abilita il flex (centratura) */
+.modal.is-open { display: flex !important; }
+
+.modal-content {
+  width: min(760px, 94vw);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: var(--space-4);
 }
 
-
-/* === FIX 1: Popup desktop — label a sinistra, valori centrati e più evidenti === */
-#popup-difficolta .modal-content,
-#popup-grado-magia .modal-content {
-  text-align: initial !important;
-}
-
+/* === FIX Popup Desktop: label a sinistra, valori centrati/enfatizzati === */
 .popup-row {
   display: grid;
   grid-template-columns: 1fr 180px;
@@ -234,7 +246,9 @@ footer {
   border-bottom: 1px dashed var(--border);
   align-items: center;
 }
+.popup-row:last-child { border-bottom: 0; }
 
+/* Label (prima colonna) */
 .popup-row > :first-child {
   text-align: left !important;
   justify-self: start;
@@ -242,6 +256,7 @@ footer {
   font-weight: 600;
 }
 
+/* Valore (seconda colonna) centrato + pill */
 .popup-row > :last-child {
   justify-self: center;
   text-align: center;
@@ -256,25 +271,19 @@ footer {
   background: color-mix(in oklab, var(--primary) 14%, transparent);
 }
 
+/* Mobile: stack verticale */
 @media (max-width: 520px) {
+  .button-container { grid-auto-flow: row; }
   .popup-row { grid-template-columns: 1fr; }
   .popup-row > :last-child { margin-top: 6px; }
 }
 
-/* === FIX 2: Mobile — checkbox con label accanto (non sotto) === */
-.form-check {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 12px;
+/* Footer */
+footer {
+  color: var(--muted);
+  padding: var(--space-4) 0 var(--space-6);
 }
-.form-check-input {
-  flex: 0 0 auto;
-  margin-top: 2px;
-}
-.form-check-label {
-  display: block;
-  flex: 1 1 auto;
-  min-width: 0;
-  line-height: 1.35;
-}
+
+/* Utility */
+.mt-4 { margin-top: var(--space-4) !important; }
+.mb-3 { margin-bottom: var(--space-3) !important; }
