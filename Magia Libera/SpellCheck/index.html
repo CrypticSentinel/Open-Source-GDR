@@ -1,94 +1,407 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calcolatore Difficoltà – Magia Libera</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
-  <meta name="theme-color" content="#1b1f23">
+    <meta charset="UTF-8">
+	<meta name="description" content="Utilizza il nostro calcolatore di difficoltà per incantesimi basato sul regolamento open source per giochi di ruolo. Perfetto per dungeon master e giocatori appassionati di magia libera nei GDR.">
+    <meta name="keywords" content="regolamento giochi di ruolo, GDR open source, magia libera, calcolatore difficoltà incantesimi, dungeon master tool">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+	<link rel="canonical" href="https://github.com/CrypticSentinel/Open-Source-GDR">
+	<meta property="og:title" content="Calcolatore di Difficoltà per Incantesimi - GDR Open Source">
+    <meta property="og:description" content="Scopri il nostro calcolatore di difficoltà per incantesimi, basato su un regolamento open source per giochi di ruolo, perfetto per dungeon master e giocatori appassionati.">
+    <meta property="og:url" content="https://github.com/CrypticSentinel/Open-Source-GDR">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/SpellCheck/img/logo.png"> <!-- Inserisci l'URL di un'immagine rappresentativa -->
+    <title>Calcolatore di Difficoltà per Incantesimi - GDR Open Source</title>
+
+    <!-- Collegamento alla favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Aggiunta di font da Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
+    
+    <!-- Collegamento al file CSS esterno -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="app-header">
-    <h1>Calcolatore Difficoltà – Magia Libera</h1>
-    <button id="install-button" hidden>Installa</button>
-  </header>
+    <header class="text-center mb-4">
+        <h1>SpellCheck - Calcolo Difficoltà Incantesimi</h1>
+		<img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;" loading="lazy">
+        <!-- <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;"> -->
+        
+        <div class="text-center mt-4">
+            <button id="install-button" style="display: none;">Installa App</button>
+        </div>
+		<div id="popup-grado-magia" class="modal" style="display: none;">
+			<div class="modal-content">
+				<h2>Inserisci Volontà e Grado di conoscenza della scuola di magia:</h2>
+				
+				<!-- Input per il punteggio di forza di volontà -->
+				<div class="text-center mt-4">
+					<label for="volonta">Mod. Volontà:</label>
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaVolonta()">
+					<input type="number" id="punteggio-volonta" class="form-control mx-auto" min="0" value="0" style="display: inline-block; width: 80px;">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaVolonta()">
+				</div>
+				
+				<!-- Input per il grado di magia -->
+				<div class="text-center mt-4">
+					<label for="volonta">Grado Magia:</label>
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-2" onclick="decrementaGradoMagia()">
+					<input type="number" id="grado-magia" class="form-control mx-auto" min="0" value="0" style="display: inline-block; width: 80px;">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-2" onclick="incrementaGradoMagia()">
+				</div>
+		
+				<div class="text-center mt-4">
+					<button id="submit-grado-magia" class="btn btn-custom">OK</button>
+				</div>
+			</div>
+		</div>
 
-  <main class="container">
-    <section class="card">
-      <h2>Parametri</h2>
-      <div class="grid">
-        <label>Grado Magia
-          <input id="grado" type="number" min="1" max="20" value="5">
-        </label>
+<div id="popup-difficolta" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Difficoltà Totale: <span id="difficolta-totale-popup">20</span></h2>
+        
+        <div class="popup-row">
+            <label>Lancio dado necessario:</label>
+            <span id="lancio-dado-necessario">0</span>
+        </div>
+        
+        <div class="popup-row">
+            <label>Fatica accumulata:</label>
+            <span id="fatica-accumulata">0</span>
+        </div>
+        
+        <div class="popup-row">
+            <label>Danno Base:</label>
+            <span id="danno-base">0</span>
+        </div>
+        
+        <div class="popup-row">
+            <label>Dadi di Danno:</label>
+            <span id="dadi-danno-riepilogo">Nessun dado</span>
+        </div>
+        
+        <div class="popup-row">
+            <label>Difficoltà per resistere:</label>
+            <span id="difficolta-resistenza">0</span>
+        </div>
+        
+        <div class="text-center mt-4">
+            <button id="close-popup" class="btn btn-custom">Chiudi</button>
+        </div>
+    </div>
+</div>
 
-        <label>Potenza (Punti Effetto Totale)
-          <input id="difficolta-base" type="number" min="0" max="200" value="30">
-        </label>
 
-        <label>Distanza
-          <select id="distanza"></select>
-        </label>
+    </header>
 
-        <label>Area
-          <select id="area"></select>
-        </label>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="distanza" class="form-label">A che distanza si trova il bersaglio?</label>
+                <select id="distanza" class="form-select">
+                    <option value="-2">Personale (-2)</option>
+                    <option value="0" selected>Tocco (+0)</option>
+                    <option value="3">Corta (entro 3 m) (+3)</option>
+                    <option value="10">Media (entro 10 m) (+10)</option>
+                    <option value="25">Lunga (entro 25 m) (+25)</option>
+                    <option value="50">Lunghissima (entro 1 km) (+50)</option>
+                    <option value="60">Non in vista (Conosciuto) (+60)</option>
+                    <option value="75">Non in vista (Sconosciuto) (+75)</option>
+                </select>
+            </div>
 
-        <label>Durata
-          <select id="durata"></select>
-        </label>
-      </div>
+            <div class="mb-3">
+                <label for="area" class="form-label">Quale sarà l'area d'effetto?</label>
+                <select id="area" class="form-select" onchange="mostraInputBersagliDiametro()">
+                    <option value="0">Creatura – Intera (+0)</option>
+                    <option value="3">Creatura – Locazione (+3)</option>
+                    <option value="5">Creatura – Sub locazione (Esterna) (+5)</option>
+                    <option value="10">Creatura – Sub locazione (Interna) (+10)</option>
+                    <option value="5">Ogni bersaglio oltre il primo (+5)</option>
+                    <option value="5">Ogni 5 metri di diametro (+5)</option>
+                </select>
+            </div>
 
-      <div id="area-params" class="subgrid" style="display:none">
-        <label># Bersagli (oltre il primo)
-          <input id="numero-bersagli" type="number" min="0" value="0">
-        </label>
-        <label>Diametro (multipli di 5m)
-          <input id="diametro" type="number" min="0" value="0">
-        </label>
-      </div>
+			<!-- Campo di input nascosto per "Ogni bersaglio oltre il primo" -->
+			<div class="mb-3 text-center" id="input-bersagli" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-bersagli')">
+				<input type="number" id="numero-bersagli" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-bersagli')">
+			</div>
+            
+            <!-- Campo di input nascosto per "Ogni 5 metri di diametro" -->
+            <div class="mb-3 text-center" id="input-diametro" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-diametro')">
+                <input type="number" id="numero-diametro" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-diametro')">
+            </div>
+            
+            <div class="mb-3">
+                <label for="durata" class="form-label">Durata</label>
+                <select id="durata" class="form-select" onchange="mostraInputDurata()">
+                    <option value="0">1 round / Istantaneo (+0)</option>
+                    <option value="2">Ogni round oltre il primo (+2)</option>
+                    <option value="5">Ogni 7 minuti (+5)</option>
+                    <option value="10">Ogni 15 minuti (+10)</option>
+                    <option value="-5">Finchè si rimane concentrati (-5)</option>
+                    <option value="30">Condizione (Finchè, Quando) (+30)</option>
+                    <option value="20">Permanente (+20)</option>
+                </select>
+            </div>
 
-      <div id="durata-params" class="subgrid" style="display:none">
-        <label>Round aggiuntivi
-          <input id="round" type="number" min="0" value="0">
-        </label>
-        <label>Blocchi 7 minuti
-          <input id="minuti7" type="number" min="0" value="0">
-        </label>
-        <label>Blocchi 15 minuti
-          <input id="minuti15" type="number" min="0" value="0">
-        </label>
-      </div>
+            <!-- Campi di input nascosto per "Ogni round oltre il primo" -->
+			 <div class="mb-3 text-center" id="input-round" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-round')">
+                <input type="number" id="numero-round" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-round')">
+            </div>
 
-      <div class="actions">
-        <button id="calcola">Calcola</button>
-        <button id="reset">Reset</button>
-      </div>
-    </section>
+			<!-- Campi di input nascosto per "Ogni 7 minuti" -->
+			 <div class="mb-3 text-center" id="input-minuti7" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti7')">
+                <input type="number" id="numero-minuti7" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti7')">
+            </div>
 
-    <section class="card">
-      <h2>Risultati</h2>
-      <div class="results">
-        <div><strong>Difficoltà di Lancio:</strong> <span id="diff-lancio">—</span></div>
-        <div><strong>Resistere alla Magia:</strong> <span id="diff-resistenza">—</span></div>
-        <div><strong>Fatica Caster:</strong> <span id="fatica">—</span></div>
-        <div><strong>Danno Base:</strong> <span id="danno-base">—</span></div>
-      </div>
+			<!-- Campi di input nascosto per "Ogni 15 minuti" -->
+			 <div class="mb-3 text-center" id="input-minuti15" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti15')">
+                <input type="number" id="numero-minuti15" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti15')">
+            </div>
 
-      <details class="details">
-        <summary>Breakdown</summary>
-        <pre id="breakdown">—</pre>
-      </details>
-    </section>
-  </main>
+			<h2 class="h4 text-center">Modalità di lancio</h2>
+            <div class="mb-3">
+                <label for="gesti" class="form-label">Modalità di lancio gestuali</label>
+                <select id="gesti" class="form-select">
+                    <option value="5">Senza gesti (+5)</option>
+                    <option value="3">Gesti nascosti (+3)</option>
+                    <option value="0" selected>Gesti normali (+0)</option>
+                    <option value="-3">Gesti ampi (-3)</option>
+                </select>
+            </div>
 
-  <footer class="app-footer">
-    <small>Tabelle esternalizzate in JSON (resistenza, fatica/danno, opzioni UI). PWA-ready.</small>
-  </footer>
+            <div class="mb-3">
+                <label for="verbale" class="form-label">Modalità di lancio verbale</label>
+                <select id="verbale" class="form-select">
+                    <option value="5">Senza voce (+5)</option>
+                    <option value="3">Voce bassa (+3)</option>
+                    <option value="0" selected>Voce normale (+0)</option>
+                    <option value="-3">Voce alta (-3)</option>
+                </select>
+            </div>
 
-  <script>
-    window.MAGICCFG = { loaded: false };
-  </script>
-  <script src="script.js"></script>
+            <div class="mb-3">
+                <label for="posizione" class="form-label">Modalità di lancio in posizione</label>
+                <select id="posizione" class="form-select">
+                    <option value="0">Lancio in posizione normale (+0)</option>
+                    <option value="5">Lancio in movimento (+5)</option>
+                    <option value="10">Lancio con disturbo (+10)</option>
+                    <!-- <option value="15">Lancio in combattimento (+15)</option> -->
+                </select>
+            </div>
+
+            <h2 class="h4 text-center">Variabili di lancio</h2>
+            <div class="form-check">
+                <input type="checkbox" id="variabile1" class="form-check-input" value="-5">
+                <label for="variabile1" class="form-check-label">Utilizzo di componenti o strumenti non magici (-5)</label>
+            </div>
+			
+			<div class="form-check">
+				<input type="checkbox" id="variabile2" class="form-check-input" onchange="mostraInputVariabili()">
+				<label for="variabile2" class="form-check-label">Ogni mago aggiuntivo (max 4) (+Grado Scuola)</label>
+			</div>
+
+			<!-- Campo di input nascosto per "Ogni mago aggiuntivo" -->
+			<div class="mb-3 text-center" id="input-mago-aggiuntivo" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaMagiAggiuntivi()">
+				<input type="number" id="numero-magi-aggiuntivi" class="form-control mx-auto" min="0" value="1" onchange="aggiornaPunteggiMagiAggiuntivi()">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaMagiAggiuntivi()">
+			</div>
+
+			<!-- Contenitore per i punteggi dei maghi aggiuntivi -->
+			<div id="punteggi-magi-aggiuntivi" class="mb-3 text-center"></div>
+
+            <div class="form-check">
+                <input type="checkbox" id="variabile3" class="form-check-input" value="-10" onchange="mostraInputVariabili()">
+                <label for="variabile3" class="form-check-label">Lancio con rituale (ogni 15 minuti) (-10)</label>
+            </div>
+
+            <!-- Campo di input nascosto per "Lancio con rituale" -->		
+			<div class="mb-3 text-center" id="input-lancio-rituale" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rituali')">
+                <input type="number" id="numero-rituali" class="form-control mx-auto" min="0" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-rituali')">
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" id="rounds-checkbox" class="form-check-input" onchange="mostraInputRound()">
+                <label for="rounds-checkbox" class="form-check-label">Round di concentrazione prima del lancio (max 10) (-1 per round)</label>
+            </div>
+
+            <!-- Campo di input nascosto per "Lancio con rituale" -->		
+			<div class="mb-3 text-center" id="input-rounds" style="display: none;">
+				<img src="icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-rounds')">
+                <input type="number" id="numero-rounds" class="form-control mx-auto" min="0" max="10" value="1">
+				<img src="icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaRoundConcentrazione()">
+            </div>
+
+            <h2 class="h4 text-center">Effetti di lancio</h2>
+            <div class="form-check">
+                <input type="checkbox" id="effetto1" class="form-check-input" value="5">
+                <label for="effetto1" class="form-check-label">Lancio incantesimo senza effetti visivi (+5)</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="effetto2" class="form-check-input" value="10">
+                <label for="effetto2" class="form-check-label">Lancio incantesimo senza effetti magici (+10)</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="effetto3" class="form-check-input" value="15">
+                <label for="effetto3" class="form-check-label">Lancio Incantesimo massimizzato (+15)</label>
+            </div>
+			
+			<h2 class="h4 text-center">Modificatori per specifiche Scuole</h2>
+
+			<h3 class="h4">Corpo</h3>
+			<div class="form-check">
+				<input type="checkbox" id="corpo-checkbox" class="form-check-input" onchange="toggleCorpoDropdown()">
+				<label for="corpo-checkbox" class="form-check-label">Abilita modificatori per l'uso di Corpo</label>
+			</div>
+			<div class="mb-3" id="corpo-dropdown-container" style="display: none;">
+				<select id="modificatori_corpo" class="form-select">
+					<option value="0">Nessun modificatore Corpo (+0)</option>
+					<option value="2">Oggetto funzionale (+2)</option>
+					<option value="4">Oggetto complesso (+4)</option>
+					<option value="3">Creatura semplice (+3)</option>
+					<option value="5">Creatura complessa (+5)</option>
+				</select>
+			</div>
+
+			<h3 class="h4">Materia</h3>
+			<div class="form-check">
+				<input type="checkbox" id="materia-checkbox" class="form-check-input" onchange="toggleMateriaDropdown()">
+				<label for="materia-checkbox" class="form-check-label">Abilita modificatori per l'uso di Materia</label>
+			</div>
+			<div class="mb-3" id="materia-dropdown-container" style="display: none;">
+				<select id="modificatori_materia" class="form-select">
+					<option value="0">Nessun modificatore Materia (+0)</option>
+					<option value="1">1-10 kg (+1)</option>
+					<option value="3">10-50 kg (+3)</option>
+					<option value="5">50-100 kg (+5)</option>
+					<option value="7">100-500 kg (+7)</option>
+					<option value="9">Oltre 500 kg (+9)</option>
+				</select>
+			</div>
+
+			<h3 class="h4">Mente</h3>
+			<div class="form-check">
+				<input type="checkbox" id="mente-checkbox" class="form-check-input" onchange="toggleMenteDropdown()">
+				<label for="mente-checkbox" class="form-check-label">Abilita modificatori per l'uso di Mente</label>
+			</div>
+			<div class="mb-3" id="mente-dropdown-container" style="display: none;">
+				<select id="modificatori_mente" class="form-select">
+					<option value="0">Nessun modificatore Mente (+0)</option>
+					<option value="5">Leggere (+5)</option>
+					<option value="15">Modificare (+15)</option>
+					<option value="20">Scrivere (+20)</option>
+					<option value="10">Rimuovere (+10)</option>
+				</select>
+			</div>
+			<div class="dadi-aggiuntivi-container text-center">
+				<h2 class="h4 text-center">Dadi aggiuntivi</h2>
+				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-auto" id="minus-d1" onclick="decrementaInput('danni1')" style="display: none;">
+					<img src="icons/1.png" alt="+1" class="dice-icon" id="toggle-d1" onclick="toggled1()">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-auto" id="plus-d1" onclick="incrementaInput('danni1')" style="display: none;">
+					<label for="danni1" class="form-label d-block">Ogni +1 aggiuntivo (+2)</label>
+					<div id="d1-controls" style="display: none;">
+					<input type="number" id="danni1" class="form-control mx-auto" min="0" value="0">
+					</div>
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-auto" id="minus-d4" onclick="decrementaInput('danni2')" style="display: none;">
+					<img src="icons/d4.png" alt="d4" class="dice-icon" id="toggle-d4" onclick="toggleD4()">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-auto" id="plus-d4" onclick="incrementaInput('danni2')" style="display: none;">
+					<label for="danni2" class="form-label d-block">Ogni d4 aggiuntivo (+5)</label>
+					<div id="d4-controls" style="display: none;">
+					<input type="number" id="danni2" class="form-control mx-auto" min="0" value="0">
+					</div>
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-auto" id="minus-d6" onclick="decrementaInput('danni3')" style="display: none;">
+					<img src="icons/d6.png" alt="d6" class="dice-icon" id="toggle-d6" onclick="toggleD6()">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-auto" id="plus-d6" onclick="incrementaInput('danni3')" style="display: none;">
+					<label for="danni3" class="form-label d-block">Ogni d6 aggiuntivo (+7)</label>
+					<div id="d6-controls" style="display: none;">
+					<input type="number" id="danni3" class="form-control mx-auto" min="0" value="0">
+					</div>
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-auto" id="minus-d8" onclick="decrementaInput('danni4')" style="display: none;">
+					<img src="icons/d8.png" alt="d8" class="dice-icon" id="toggle-d8" onclick="toggleD8()">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-auto" id="plus-d8" onclick="incrementaInput('danni4')" style="display: none;">
+					<label for="danni4" class="form-label d-block">Ogni d8 aggiuntivo (+9)</label>
+					<div id="d8-controls" style="display: none;">
+					<input type="number" id="danni4" class="form-control mx-auto" min="0" value="0">
+					</div>
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-auto" id="minus-d10" onclick="decrementaInput('danni5')" style="display: none;">
+					<img src="icons/d10.png" alt="d10" class="dice-icon" id="toggle-d10" onclick="toggleD10()">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-auto" id="plus-d10" onclick="incrementaInput('danni5')" style="display: none;">
+					<label for="danni5" class="form-label d-block">Ogni d10 aggiuntivo (+11)</label>
+					<div id="d10-controls" style="display: none;">
+					<input type="number" id="danni5" class="form-control mx-auto" min="0" value="0">
+					</div>
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-auto" id="minus-d12" onclick="decrementaInput('danni6')" style="display: none;">
+					<img src="icons/d12.png" alt="d12" class="dice-icon" id="toggle-d12" onclick="toggleD12()">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-auto" id="plus-d12" onclick="incrementaInput('danni6')" style="display: none;">
+					<label for="danni6" class="form-label d-block">Ogni d12 aggiuntivo (+13)</label>
+					<div id="d12-controls" style="display: none;">
+					<input type="number" id="danni6" class="form-control mx-auto" min="0" value="0">
+					</div>
+				</div>
+				<div class="mb-3 text-center">
+					<img src="icons/minus.png" alt="-" class="adjust-icon mx-auto" id="minus-d20" onclick="decrementaInput('danni7')" style="display: none;">
+					<img src="icons/d20.png" alt="d20" class="dice-icon" id="toggle-d20" onclick="toggleD20()">
+					<img src="icons/plus.png" alt="+" class="adjust-icon mx-auto" id="plus-d20" onclick="incrementaInput('danni7')" style="display: none;">
+					<label for="danni7" class="form-label d-block">Ogni d20 aggiuntivo (+15)</label>
+					<div id="d20-controls" style="display: none;">
+					<input type="number" id="danni7" class="form-control mx-auto" min="0" value="0">
+					</div>
+				</div>
+			
+            <div class="text-center">
+				<!-- <button type="button" class="btn btn-custom" onclick="mostraPopupGradoMagia()">Inserisci Grado Magia</button> -->
+                <button type="button" class="btn btn-custom" onclick="calcolaDifficolta()">Calcola Difficoltà</button>
+				<button type="button" class="btn btn-custom" onclick="ripristinaValori()">Ripristina Valori</button>
+            </div>
+			
+            <div id="risultato-difficolta" style="display: none; margin: 20px auto; padding: 20px; border: 2px solid #495057; background-color: rgba(0, 0, 0, 0.85); color: #F8F9FA; width: 50%; text-align: center; border-radius: 10px;">
+                <h2>Difficoltà Totale: <span id="difficolta-totale-display">20</span></h2>
+            </div>
+        </form>
+    </div>
+    
+</div>
+
+    <footer class="text-center mt-4" style="color: #F8F9FA;">
+        <p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202501141436</p>
+		<p>Scopri di più sul regolamento open source per giochi di ruolo su <a href="https://github.com/CrypticSentinel/Open-Source-GDR" target="_blank">GitHub</a>.</p>
+
+    </footer>
+
+    <!-- Bootstrap JS (opzionale) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Collegamento al file JavaScript esterno -->
+    <script src="script.js"></script>
 </body>
 </html>
