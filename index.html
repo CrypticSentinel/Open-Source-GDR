@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calcolatore Difficoltà – Magia Libera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1b1f23" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header e navigazione: mantieni la tua -->
+  <header>
+    <h1>Calcolatore Difficoltà – Magia Libera</h1>
+  </header>
+
+  <main>
+    <!-- Sezione parametri: sostituisci le select con versioni vuote -->
+    <section id="parametri" class="card">
+      <div class="grid">
+        <label>Grado Magia
+          <input id="grado-magia" type="number" min="1" max="20" value="5" />
+        </label>
+
+        <label>Potenza / Punti Effetto Totale
+          <input id="difficolta-base" type="number" min="0" max="200" value="30" />
+        </label>
+
+        <label>Distanza
+          <select id="distanza"></select>
+        </label>
+
+        <label>Area
+          <select id="area"></select>
+        </label>
+
+        <label>Durata
+          <select id="durata"></select>
+        </label>
+      </div>
+
+      <!-- Parametri condizionali AREA -->
+      <div id="area-params" class="subgrid" style="display:none">
+        <label># Bersagli (oltre il primo)
+          <input id="numero-bersagli" type="number" min="0" value="0" />
+        </label>
+        <label>Diametro (multipli di 5m)
+          <input id="diametro" type="number" min="0" value="0" />
+        </label>
+      </div>
+
+      <!-- Parametri condizionali DURATA -->
+      <div id="durata-params" class="subgrid" style="display:none">
+        <label>Round aggiuntivi
+          <input id="round" type="number" min="0" value="0" />
+        </label>
+        <label>Blocchi 7 minuti
+          <input id="minuti7" type="number" min="0" value="0" />
+        </label>
+        <label>Blocchi 15 minuti
+          <input id="minuti15" type="number" min="0" value="0" />
+        </label>
+      </div>
+
+      <div class="actions">
+        <!-- Il tuo flusso apre un popup grado prima del calcolo: mantienilo.
+             Il bottone qui sotto è opzionale, se usi il popup separato. -->
+        <button type="button" onclick="aggiornaCalcoliSelezioniCorrenti()">Calcola</button>
+      </div>
+    </section>
+
+    <!-- Popup Grado Magia (mantieni il tuo markup se già presente) -->
+    <section id="popup-grado-magia" style="display:none">
+      <!-- ...il tuo popup esistente... -->
+      <button id="submit-grado-magia" type="button">Conferma</button>
+    </section>
+
+    <!-- Output -->
+    <section id="risultati" class="card">
+      <div class="results">
+        <div><strong>Difficoltà di Lancio:</strong> <span id="difficolta-totale">—</span></div>
+        <div><strong>Resistere alla Magia:</strong> <span id="difficolta-resistere">—</span></div>
+        <div><strong>Fatica Caster:</strong> <span id="fatica-caster">—</span></div>
+        <div><strong>Danno Base:</strong> <span id="danno-base">—</span></div>
+      </div>
+      <div style="margin-top:8px;">
+        <strong>Riepilogo Dadi:</strong> <span id="dadi-danno-riepilogo">—</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <small>Tabelle UI e di gioco esternalizzate in /data/*.json</small>
+	<p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202508171218</p>
+	<p>Scopri di più sul regolamento open source per giochi di ruolo su <a href="https://github.com/CrypticSentinel/Open-Source-GDR" target="_blank">GitHub</a>.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
