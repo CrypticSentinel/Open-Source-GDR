@@ -1,17 +1,20 @@
-// style-toggle.js — Switch Stile Standard/Arcano con persistenza
+// style-toggle.js — Switch Stile Standard/Arcano/Rosso con persistenza
 (function () {
-  const STYLE_KEY = 'spellcheck_theme_style'; // 'standard' | 'arcano'
+  const STYLE_KEY = 'spellcheck_theme_style'; // 'standard' | 'arcano' | 'rosso'
 
   function apply(style) {
     const root = document.documentElement;
-    const isArcano = style === 'arcano';
-    root.classList.toggle('theme-arcano', isArcano);
+    root.classList.toggle('theme-arcano', style === 'arcano');
+    root.classList.toggle('theme-rosso',  style === 'rosso');
     try { localStorage.setItem(STYLE_KEY, style); } catch {}
 
     const btn = document.getElementById('style-toggle');
     if (btn) {
-      btn.textContent = isArcano ? 'Stile: Arcano' : 'Stile: Standard';
-      btn.setAttribute('aria-pressed', isArcano ? 'true' : 'false');
+      let label = 'Stile: Standard';
+      if (style === 'arcano') label = 'Stile: Arcano';
+      if (style === 'rosso')  label = 'Stile: Rosso';
+      btn.textContent = label;
+      btn.setAttribute('aria-pressed', style !== 'standard' ? 'true' : 'false');
     }
   }
 
@@ -25,7 +28,9 @@
   }
 
   function next(style) {
-    return style === 'arcano' ? 'standard' : 'arcano';
+    if (style === 'standard') return 'arcano';
+    if (style === 'arcano')   return 'rosso';
+    return 'standard'; // rosso -> standard
   }
 
   function init() {

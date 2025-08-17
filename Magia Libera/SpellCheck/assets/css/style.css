@@ -1,10 +1,3 @@
-
-/* style.css — Restyling 2025, focus su design system, accessibilità e dark mode
-   - Usa CSS Variables per palette, spacing e tipografia
-   - Supporto automatico prefers-color-scheme + toggle manuale
-   - Migliora gerarchie visive, pulsanti, form, modali e layout
-*/
-
 :root {
   /* Palette (Nord-inspired) */
   --bg: #f8fafc;
