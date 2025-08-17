@@ -1,7 +1,4 @@
-/* script.js
- * Aggiunta principale: popolamento dinamico dei SELECT da TABELLE (tabelle.js).
- * Il resto delle funzioni riprende la logica esistente.
- */
+/* script.js - versione robusta con codici interni e testability */
 
 /* =======================
    Bootstrap dei SELECT
@@ -9,14 +6,22 @@
 function populateSelect(selectId, items) {
   const sel = document.getElementById(selectId);
   if (!sel) return;
-  sel.innerHTML = ""; // pulizia
-  items.forEach(({ text, value, selected }) => {
+  sel.innerHTML = ""; // reset
+  items.forEach(({ text, value, selected, code }) => {
     const opt = document.createElement("option");
     opt.textContent = text;
     opt.value = String(value);
+    opt.dataset.code = code;
     if (selected) opt.selected = true;
     sel.appendChild(opt);
   });
+}
+
+function getSelectedCode(selectId) {
+  const sel = document.getElementById(selectId);
+  if (!sel) return null;
+  const opt = sel.options[sel.selectedIndex];
+  return opt?.dataset?.code || null;
 }
 
 function bootstrapSelects() {
@@ -25,36 +30,50 @@ function bootstrapSelects() {
     return;
   }
   const S = TABELLE.select;
-
   populateSelect("distanza", S.distanza);
   populateSelect("area", S.area);
   populateSelect("durata", S.durata);
   populateSelect("gesti", S.gesti);
   populateSelect("verbale", S.verbale);
   populateSelect("posizione", S.posizione);
-
-  // dropdown scuole (restano nascosti fino al check)
   populateSelect("modificatori_corpo", S.modificatori_corpo);
   populateSelect("modificatori_materia", S.modificatori_materia);
   populateSelect("modificatori_mente", S.modificatori_mente);
+
+  // Allineamento etichette Variabili/Effetti/rounds
+  document.getElementById("label-variabile1").innerText = TABELLE.variabili.variabile1.label;
+  document.getElementById("label-variabile2").innerText = TABELLE.variabili.variabile2.label;
+  document.getElementById("label-variabile3").innerText = TABELLE.variabili.variabile3.label;
+  document.getElementById("label-rounds").innerText     = TABELLE.variabili.rounds.label;
+
+  document.getElementById("label-effetto1").innerText = TABELLE.effetti.effetto1.label;
+  document.getElementById("label-effetto2").innerText = TABELLE.effetti.effetto2.label;
+  document.getElementById("label-effetto3").innerText = TABELLE.effetti.effetto3.label;
+
+  // Etichette dadi
+  TABELLE.dadi.forEach(d => {
+    const lbl = document.getElementById(d.uiIds.label);
+    if (lbl) lbl.innerText = d.label || `Ogni ${d.tipo} (+${d.costo})`;
+  });
 }
 
 /* =======================
-   Funzioni UI esistenti
+   Funzioni UI
    ======================= */
 function mostraInputBersagliDiametro() {
-  let areaSelect = document.getElementById("area");
-  let inputBersagli = document.getElementById("input-bersagli");
-  let inputDiametro = document.getElementById("input-diametro");
+  const code = getSelectedCode("area");
+  const inputBersagli = document.getElementById("input-bersagli");
+  const inputDiametro  = document.getElementById("input-diametro");
 
-  if (areaSelect.value === "5" && areaSelect.options[areaSelect.selectedIndex].text.includes("Ogni bersaglio oltre il primo")) {
+  // bersagli oltre il primo
+  if (code === "AREA_BERSAGLI_OLTRE") {
     inputBersagli.style.display = 'block';
   } else {
     document.getElementById("numero-bersagli").value = "1";
     inputBersagli.style.display = 'none';
   }
-
-  if (areaSelect.value === "5" && areaSelect.options[areaSelect.selectedIndex].text.includes("Ogni 5 metri di diametro")) {
+  // diametro a step di 5m
+  if (code === "AREA_DIAMETRO_5M") {
     inputDiametro.style.display = 'block';
   } else {
     document.getElementById("numero-diametro").value = "1";
@@ -63,31 +82,18 @@ function mostraInputBersagliDiametro() {
 }
 
 function mostraInputDurata() {
-  let durataSelect = document.getElementById("durata");
-  let inputRound = document.getElementById("input-round");
-  let inputMinuti7 = document.getElementById("input-minuti7");
-  let inputMinuti15 = document.getElementById("input-minuti15");
+  const code = getSelectedCode("durata");
+  const inputRound   = document.getElementById("input-round");
+  const inputMinuti7 = document.getElementById("input-minuti7");
+  const inputMinuti15= document.getElementById("input-minuti15");
 
-  if (durataSelect.value === "2" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni round oltre il primo")) {
-    inputRound.style.display = 'block';
-  } else {
-    document.getElementById("numero-round").value = "1";
-    inputRound.style.display = 'none';
-  }
+  inputRound.style.display   = (code === "DUR_ROUND_OLTRE") ? 'block' : 'none';
+  inputMinuti7.style.display = (code === "DUR_MIN_7")       ? 'block' : 'none';
+  inputMinuti15.style.display= (code === "DUR_MIN_15")      ? 'block' : 'none';
 
-  if (durataSelect.value === "5" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni 7 minuti")) {
-    inputMinuti7.style.display = 'block';
-  } else {
-    document.getElementById("numero-minuti7").value = "1";
-    inputMinuti7.style.display = 'none';
-  }
-
-  if (durataSelect.value === "10" && durataSelect.options[durataSelect.selectedIndex].text.includes("Ogni 15 minuti")) {
-    inputMinuti15.style.display = 'block';
-  } else {
-    document.getElementById("numero-minuti15").value = "1";
-    inputMinuti15.style.display = 'none';
-  }
+  if (code !== "DUR_ROUND_OLTRE") document.getElementById("numero-round").value = "1";
+  if (code !== "DUR_MIN_7")       document.getElementById("numero-minuti7").value = "1";
+  if (code !== "DUR_MIN_15")      document.getElementById("numero-minuti15").value = "1";
 }
 
 function incrementaMagiAggiuntivi() {
@@ -115,7 +121,7 @@ function aggiornaPunteggiMagiAggiuntivi() {
     magoDiv.className = "mago-input-container";
 
     const label = document.createElement("label");
-    label.for = "punteggio-mago-" + i;
+    label.htmlFor = "punteggio-mago-" + i;
     label.textContent = "Mago " + i;
     label.className = "mago-label";
     magoDiv.appendChild(label);
@@ -124,26 +130,20 @@ function aggiornaPunteggiMagiAggiuntivi() {
     inputGroup.className = "input-group";
 
     const minusIcon = document.createElement("img");
-    minusIcon.src = "icons/minus.png";
-    minusIcon.alt = "-";
+    minusIcon.src = "icons/minus.png"; minusIcon.alt = "-";
     minusIcon.className = "adjust-icon mx-2";
     minusIcon.style.cursor = "pointer";
     minusIcon.onclick = function () { decrementaPunteggioMago(i); };
     inputGroup.appendChild(minusIcon);
 
     const input = document.createElement("input");
-    input.type = "number";
-    input.id = "punteggio-mago-" + i;
-    input.className = "form-control mx-auto";
-    input.style.width = "60px";
-    input.min = 0;
-    input.value = 0;
-    input.style.display = "inline-block";
+    input.type = "number"; input.id = "punteggio-mago-" + i;
+    input.className = "form-control mx-auto"; input.style.width = "60px";
+    input.min = 0; input.value = 0; input.style.display = "inline-block";
     inputGroup.appendChild(input);
 
     const plusIcon = document.createElement("img");
-    plusIcon.src = "icons/plus.png";
-    plusIcon.alt = "+";
+    plusIcon.src = "icons/plus.png"; plusIcon.alt = "+";
     plusIcon.className = "adjust-icon mx-2";
     plusIcon.style.cursor = "pointer";
     plusIcon.onclick = function () { incrementaPunteggioMago(i); };
@@ -153,116 +153,55 @@ function aggiornaPunteggiMagiAggiuntivi() {
     wrap.appendChild(magoDiv);
   }
 }
-function incrementaPunteggioMago(i) {
-  const el = document.getElementById("punteggio-mago-" + i);
-  el.value = parseInt(el.value) + 1;
-}
-function decrementaPunteggioMago(i) {
-  const el = document.getElementById("punteggio-mago-" + i);
-  if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1;
-}
+function incrementaPunteggioMago(i) { const el = document.getElementById("punteggio-mago-" + i); el.value = parseInt(el.value) + 1; }
+function decrementaPunteggioMago(i) { const el = document.getElementById("punteggio-mago-" + i); if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1; }
 
 function mostraInputVariabili() {
-  let variabileMagi = document.getElementById("variabile2");
-  let inputMagoAggiuntivo = document.getElementById("input-mago-aggiuntivo");
-  if (variabileMagi.checked) {
-    inputMagoAggiuntivo.style.display = 'block';
-    aggiornaPunteggiMagiAggiuntivi();
-  } else {
-    document.getElementById("numero-magi-aggiuntivi").value = "1";
-    inputMagoAggiuntivo.style.display = 'none';
-    document.getElementById("punteggi-magi-aggiuntivi").innerHTML = "";
-  }
+  const v2 = document.getElementById("variabile2");
+  const inputMagoAggiuntivo = document.getElementById("input-mago-aggiuntivo");
+  if (v2.checked) { inputMagoAggiuntivo.style.display = 'block'; aggiornaPunteggiMagiAggiuntivi(); }
+  else { document.getElementById("numero-magi-aggiuntivi").value = "1"; inputMagoAggiuntivo.style.display = 'none'; document.getElementById("punteggi-magi-aggiuntivi").innerHTML = ""; }
 
-  let variabileRituale = document.getElementById("variabile3");
-  let inputRituale = document.getElementById("input-lancio-rituale");
-  if (variabileRituale.checked) {
-    inputRituale.style.display = 'block';
-  } else {
-    document.getElementById("numero-rituali").value = "1";
-    inputRituale.style.display = 'none';
-  }
+  const v3 = document.getElementById("variabile3");
+  const inputRituale = document.getElementById("input-lancio-rituale");
+  if (v3.checked) inputRituale.style.display = 'block';
+  else { document.getElementById("numero-rituali").value = "1"; inputRituale.style.display = 'none'; }
 }
 
 function mostraInputRound() {
-  let roundsCheckbox = document.getElementById("rounds-checkbox");
-  let inputRounds = document.getElementById("input-rounds");
-  if (roundsCheckbox.checked) {
-    inputRounds.style.display = 'block';
-  } else {
-    document.getElementById("numero-rounds").value = "1";
-    inputRounds.style.display = 'none';
-  }
+  const roundsCheckbox = document.getElementById("rounds-checkbox");
+  const inputRounds = document.getElementById("input-rounds");
+  inputRounds.style.display = roundsCheckbox.checked ? 'block' : 'none';
+  if (!roundsCheckbox.checked) document.getElementById("numero-rounds").value = "1";
 }
 
 function toggleCorpoDropdown() {
   const corpoCheckbox = document.getElementById("corpo-checkbox");
   const corpoDropdownContainer = document.getElementById("corpo-dropdown-container");
-  if (corpoCheckbox.checked) {
-    corpoDropdownContainer.style.display = 'block';
-  } else {
-    corpoDropdownContainer.style.display = 'none';
-    document.getElementById("modificatori_corpo").value = "0";
-  }
+  corpoDropdownContainer.style.display = corpoCheckbox.checked ? 'block' : 'none';
+  if (!corpoCheckbox.checked) document.getElementById("modificatori_corpo").value = "0";
 }
-
 function toggleMateriaDropdown() {
   const materiaCheckbox = document.getElementById("materia-checkbox");
   const materiaDropdownContainer = document.getElementById("materia-dropdown-container");
-  if (materiaCheckbox.checked) {
-    materiaDropdownContainer.style.display = 'block';
-  } else {
-    materiaDropdownContainer.style.display = 'none';
-    document.getElementById("modificatori_materia").value = "0";
-  }
+  materiaDropdownContainer.style.display = materiaCheckbox.checked ? 'block' : 'none';
+  if (!materiaCheckbox.checked) document.getElementById("modificatori_materia").value = "0";
 }
-
 function toggleMenteDropdown() {
   const menteCheckbox = document.getElementById("mente-checkbox");
   const menteDropdownContainer = document.getElementById("mente-dropdown-container");
-  if (menteCheckbox.checked) {
-    menteDropdownContainer.style.display = 'block';
-  } else {
-    menteDropdownContainer.style.display = 'none';
-    document.getElementById("modificatori_mente").value = "0";
-  }
+  menteDropdownContainer.style.display = menteCheckbox.checked ? 'block' : 'none';
+  if (!menteCheckbox.checked) document.getElementById("modificatori_mente").value = "0";
 }
 
 function uncheckOtherCheckboxes(checkedId) {
-  const checkboxes = ["mente-checkbox", "corpo-checkbox", "materia-checkbox"];
-  checkboxes.forEach(id => {
-    if (id !== checkedId) {
-      document.getElementById(id).checked = false;
-    }
+  ["mente-checkbox", "corpo-checkbox", "materia-checkbox"].forEach(id => {
+    if (id !== checkedId) document.getElementById(id).checked = false;
   });
-  toggleCorpoDropdown();
-  toggleMenteDropdown();
-  toggleMateriaDropdown();
+  toggleCorpoDropdown(); toggleMenteDropdown(); toggleMateriaDropdown();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Popola i select da TABELLE
-  bootstrapSelects();
-
-  // Wiring esclusività scuole
-  document.getElementById("mente-checkbox").addEventListener("change", function () {
-    if (this.checked) uncheckOtherCheckboxes("mente-checkbox");
-  });
-  document.getElementById("corpo-checkbox").addEventListener("change", function () {
-    if (this.checked) uncheckOtherCheckboxes("corpo-checkbox");
-  });
-  document.getElementById("materia-checkbox").addEventListener("change", function () {
-    if (this.checked) uncheckOtherCheckboxes("materia-checkbox");
-  });
-
-  // Chiudi popup risultati
-  const closeBtn = document.getElementById("close-popup");
-  if (closeBtn) closeBtn.addEventListener("click", () => {
-    document.getElementById("popup-difficolta").style.display = 'none';
-  });
-});
-
-/* Toggle dadi (+/- mostra/nasconde controlli) */
+/* Toggle dadi */
 function toggled1() { toggleDieControls("d1"); }
 function toggleD4()  { toggleDieControls("d4"); }
 function toggleD6()  { toggleDieControls("d6"); }
@@ -272,15 +211,11 @@ function toggleD12() { toggleDieControls("d12"); }
 function toggleD20() { toggleDieControls("d20"); }
 
 function toggleDieControls(suffix) {
-  let controls = document.getElementById(`${suffix}-controls`);
-  let minusEl = document.getElementById(`minus-${suffix}`);
-  let plusEl  = document.getElementById(`plus-${suffix}`);
-  let inputId = {
-    d1: "danni1", d4: "danni2", d6: "danni3",
-    d8: "danni4", d10: "danni5", d12: "danni6", d20: "danni7"
-  }[suffix];
-
-  let inputEl = document.getElementById(inputId);
+  const controls = document.getElementById(`${suffix}-controls`);
+  const minusEl = document.getElementById(`minus-${suffix}`);
+  const plusEl  = document.getElementById(`plus-${suffix}`);
+  const map = { d1:"danni1", d4:"danni2", d6:"danni3", d8:"danni4", d10:"danni5", d12:"danni6", d20:"danni7" };
+  const inputEl = document.getElementById(map[suffix]);
   if (controls.style.display === "none") {
     controls.style.display = "inline-block";
     minusEl.style.display = "inline-block";
@@ -294,58 +229,76 @@ function toggleDieControls(suffix) {
   }
 }
 
-function incrementaInput(inputId) {
-  const el = document.getElementById(inputId);
-  el.value = parseInt(el.value) + 1;
-}
-function decrementaInput(inputId) {
-  const el = document.getElementById(inputId);
-  if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1;
-}
+function incrementaInput(inputId) { const el = document.getElementById(inputId); el.value = parseInt(el.value) + 1; }
+function decrementaInput(inputId) { const el = document.getElementById(inputId); if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1; }
 function incrementaRoundConcentrazione() {
-  const el = document.getElementById('numero-rounds');
-  let v = parseInt(el.value);
+  const el = document.getElementById('numero-rounds'); const v = parseInt(el.value);
   if (v < 10) el.value = v + 1;
 }
 
 /* =======================
-   Calcoli
+   Calcoli - funzioni PURE per test
+   ======================= */
+function _faticaEDannoBase(gradoMagia, difficoltaTotale, tab = TABELLE.faticaEDannoBase) {
+  const riga = tab.find(r => gradoMagia >= r.grado[0] && gradoMagia <= r.grado[1]);
+  if (!riga) return { fatica: 0, dannoBase: 0 };
+  let fatica = 0;
+  if (difficoltaTotale < riga.fatica0) fatica = 0;
+  else {
+    fatica = -5;
+    for (let i = 0; i < riga.intervalli.length; i++) {
+      if (difficoltaTotale <= riga.intervalli[i]) { fatica = -(i + 1); break; }
+    }
+  }
+  return { fatica, dannoBase: riga.dannoBase };
+}
+
+function _difficoltaResistenza(difficoltaLancio, tab = TABELLE.difficoltaResistenza) {
+  if (difficoltaLancio < tab[0].min) return tab[0].resistenza;
+  if (difficoltaLancio > tab[tab.length - 1].max) return tab[tab.length - 1].resistenza;
+  for (let i = 0; i < tab.length; i++) {
+    if (difficoltaLancio >= tab[i].min && difficoltaLancio <= tab[i].max) return tab[i].resistenza;
+  }
+  return 0;
+}
+
+/* =======================
+   Calcoli - logica UI
    ======================= */
 function calcolaMoltiplicatori() {
   let mBersagli = 0, mDiametro = 0, mRound = 0, mMin7 = 0, mMin15 = 0, mMagi = 0, mRituali = 0, mConc = 0;
 
   if (document.getElementById("input-bersagli").style.display === 'block') {
-    let n = parseInt(document.getElementById("numero-bersagli").value) || 0;
-    mBersagli = (n - 1) * 5;
+    const n = parseInt(document.getElementById("numero-bersagli").value) || 0;
+    mBersagli = (n - 1) * TABELLE.select.area.find(a => a.code === "AREA_BERSAGLI_OLTRE").value;
   }
   if (document.getElementById("input-diametro").style.display === 'block') {
-    let n = parseInt(document.getElementById("numero-diametro").value) || 0;
-    mDiametro = (n - 1) * 5;
+    const n = parseInt(document.getElementById("numero-diametro").value) || 0;
+    mDiametro = (n - 1) * TABELLE.select.area.find(a => a.code === "AREA_DIAMETRO_5M").value;
   }
   if (document.getElementById("input-round").style.display === 'block') {
-    let n = parseInt(document.getElementById("numero-round").value) || 0;
-    mRound = (n - 1) * 2;
+    const n = parseInt(document.getElementById("numero-round").value) || 0;
+    mRound = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_ROUND_OLTRE").value;
   }
   if (document.getElementById("input-minuti7").style.display === 'block') {
-    let n = parseInt(document.getElementById("numero-minuti7").value) || 0;
-    mMin7 = (n - 1) * 5;
+    const n = parseInt(document.getElementById("numero-minuti7").value) || 0;
+    mMin7 = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_MIN_7").value;
   }
   if (document.getElementById("input-minuti15").style.display === 'block') {
-    let n = parseInt(document.getElementById("numero-minuti15").value) || 0;
-    mMin15 = (n - 1) * 10;
+    const n = parseInt(document.getElementById("numero-minuti15").value) || 0;
+    mMin15 = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_MIN_15").value;
   }
   if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
-    let _n = parseInt(document.getElementById("numero-magi-aggiuntivi").value) || 0;
-    mMagi = 0; // come da specifica: zero
+    // come da specifica: la variabile2 aggiunge maghi (sottrazione dei loro punteggi a valle)
+    mMagi = 0;
   }
   if (document.getElementById("input-lancio-rituale").style.display === 'block') {
-    let n = parseInt(document.getElementById("numero-rituali").value) || 0;
-    let v = parseInt(document.getElementById("variabile3").value) || 0;
-    mRituali = n * v;
+    const n = parseInt(document.getElementById("numero-rituali").value) || 0;
+    mRituali = n * TABELLE.variabili.variabile3.value; // tipicamente -10 per step
   }
   if (document.getElementById("input-rounds").style.display === 'block') {
-    let n = parseInt(document.getElementById("numero-rounds").value) || 0;
-    mConc = n * -1;
+    const n = parseInt(document.getElementById("numero-rounds").value) || 0;
+    mConc = n * TABELLE.variabili.rounds.value; // tipicamente -1 per round
   }
 
   // Punteggi dei maghi aggiuntivi (si sottraggono dopo)
@@ -371,9 +324,19 @@ function calcolaMoltiplicatori() {
   };
 }
 
-function mostraPopupGradoMagia() {
-  document.getElementById("popup-grado-magia").style.display = 'block';
-}
+function mostraPopupGradoMagia() { document.getElementById("popup-grado-magia").style.display = 'block'; }
+
+document.addEventListener("DOMContentLoaded", () => {
+  bootstrapSelects();
+
+  // wiring esclusività scuole
+  document.getElementById("mente-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("mente-checkbox"); });
+  document.getElementById("corpo-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("corpo-checkbox"); });
+  document.getElementById("materia-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("materia-checkbox"); });
+
+  const closeBtn = document.getElementById("close-popup");
+  if (closeBtn) closeBtn.addEventListener("click", () => { document.getElementById("popup-difficolta").style.display = 'none'; });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const submit = document.getElementById("submit-grado-magia");
@@ -395,67 +358,41 @@ function decrementaVolonta()    { const el = document.getElementById("punteggio-
 function calcolaDifficolta() { mostraPopupGradoMagia(); }
 
 function calcolaFaticaEDannoBase(gradoMagia, difficoltaTotale) {
-  const tab = TABELLE.faticaEDannoBase;
-  const riga = tab.find(r => gradoMagia >= r.grado[0] && gradoMagia <= r.grado[1]);
-  if (!riga) return { fatica: 0, dannoBase: 0 };
-
-  let fatica = 0;
-  if (difficoltaTotale < riga.fatica0) {
-    fatica = 0;
-  } else {
-    for (let i = 0; i < riga.intervalli.length; i++) {
-      if (difficoltaTotale <= riga.intervalli[i]) { fatica = -(i + 1); break; }
-    }
-    if (difficoltaTotale > riga.intervalli[riga.intervalli.length - 1]) fatica = -5;
-  }
-
+  const { fatica, dannoBase } = _faticaEDannoBase(gradoMagia, difficoltaTotale);
   document.getElementById('dadi-danno-riepilogo').textContent = costruisciRiepilogoDadi();
-  return { fatica, dannoBase: riga.dannoBase };
+  return { fatica, dannoBase };
 }
 
 function costruisciRiepilogoDadi() {
-  let riepilogo = '';
-  const dadi = [
-    { id: 'danni1', tipo: '+1' },
-    { id: 'danni2', tipo: 'd4' },
-    { id: 'danni3', tipo: 'd6' },
-    { id: 'danni4', tipo: 'd8' },
-    { id: 'danni5', tipo: 'd10' },
-    { id: 'danni6', tipo: 'd12' },
-    { id: 'danni7', tipo: 'd20' }
-  ];
-  dadi.forEach(d => {
+  let out = '';
+  TABELLE.dadi.forEach(d => {
     const q = parseInt(document.getElementById(d.id).value) || 0;
     if (q > 0) {
-      if (riepilogo !== '') riepilogo += ' + ';
-      riepilogo += `${q} ${d.tipo}`;
+      if (out) out += ' + ';
+      out += `${q} ${d.tipo}`;
     }
   });
-  return riepilogo || 'Nessun dado';
+  return out || 'Nessun dado';
 }
 
 function calcolaDifficoltaResistenza(difficoltaLancio) {
-  const t = TABELLE.difficoltaResistenza;
-  if (difficoltaLancio < t[0].min) return t[0].resistenza;
-  if (difficoltaLancio > t[t.length - 1].max) return t[t.length - 1].resistenza;
-  for (let i = 0; i < t.length; i++) {
-    if (difficoltaLancio >= t[i].min && difficoltaLancio <= t[i].max) return t[i].resistenza;
-  }
-  return 0;
+  return _difficoltaResistenza(difficoltaLancio);
 }
 
 function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
-  let base = 20;
+  const base = TABELLE.baseline.difficoltaBase;
 
-  let distanza = parseInt(document.getElementById("distanza").value) || 0;
-  let area = parseInt(document.getElementById("area").value) || 0;
-  let durata = parseInt(document.getElementById("durata").value) || 0;
-  let gesti = parseInt(document.getElementById("gesti").value) || 0;
-  let verbale = parseInt(document.getElementById("verbale").value) || 0;
-  let posizione = parseInt(document.getElementById("posizione").value) || 0;
-  let modificatori_corpo = parseInt(document.getElementById("modificatori_corpo").value) || 0;
-  let modificatori_materia = parseInt(document.getElementById("modificatori_materia").value) || 0;
-  let modificatori_mente = parseInt(document.getElementById("modificatori_mente").value) || 0;
+  const selVal = id => parseInt(document.getElementById(id).value) || 0;
+
+  const distanza  = selVal("distanza");
+  const area      = selVal("area");
+  const durata    = selVal("durata");
+  const gesti     = selVal("gesti");
+  const verbale   = selVal("verbale");
+  const posizione = selVal("posizione");
+  const mod_corpo   = selVal("modificatori_corpo");
+  const mod_materia = selVal("modificatori_materia");
+  const mod_mente   = selVal("modificatori_mente");
 
   const {
     moltiplicatoreBersagli,
@@ -470,22 +407,22 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
   } = calcolaMoltiplicatori();
 
   let effetti = 0;
-  if (document.getElementById("variabile1").checked) effetti += parseInt(document.getElementById("variabile1").value) || 0;
-  if (document.getElementById("effetto1").checked) effetti += parseInt(document.getElementById("effetto1").value) || 0;
-  if (document.getElementById("effetto2").checked) effetti += parseInt(document.getElementById("effetto2").value) || 0;
-  if (document.getElementById("effetto3").checked) effetti += parseInt(document.getElementById("effetto3").value) || 0;
+  if (document.getElementById("variabile1").checked) effetti += TABELLE.variabili.variabile1.value;
+  if (document.getElementById("effetto1").checked)   effetti += TABELLE.effetti.effetto1.value;
+  if (document.getElementById("effetto2").checked)   effetti += TABELLE.effetti.effetto2.value;
+  if (document.getElementById("effetto3").checked)   effetti += TABELLE.effetti.effetto3.value;
 
-  // Dadi aggiuntivi (costi da TABELLE)
+  // Dadi aggiuntivi
   let danni_totali = 0;
-  TABELLE.dadiCosto.forEach(({ id, costo }) => {
-    danni_totali += (parseInt(document.getElementById(id).value) || 0) * costo;
+  TABELLE.dadi.forEach(d => {
+    danni_totali += (parseInt(document.getElementById(d.id).value) || 0) * d.costo;
   });
 
   let totale = base + distanza + area + durata + gesti + verbale + posizione
     + moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound
     + moltiplicatoreMinuti7 + moltiplicatoreMinuti15 + moltiplicatoreMagiAggiuntivi
     + moltiplicatoreRituali + moltiplicatoreConcentrazione
-    + modificatori_corpo + modificatori_materia + modificatori_mente
+    + mod_corpo + mod_materia + mod_mente
     + effetti + danni_totali;
 
   // sottrai punteggi dei maghi aggiuntivi
@@ -505,54 +442,26 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
 }
 
 function ripristinaValori() {
-  document.getElementById("distanza").value = "0";
-  document.getElementById("area").value = "0";
-  document.getElementById("durata").value = "0";
-  document.getElementById("gesti").value = "0";
-  document.getElementById("verbale").value = "0";
-  document.getElementById("posizione").value = "0";
-  document.getElementById("modificatori_corpo").value = "0";
-  document.getElementById("modificatori_materia").value = "0";
-  document.getElementById("modificatori_mente").value = "0";
+  const setVal = (id,v)=>{document.getElementById(id).value = String(v);};
 
-  ["danni1","danni2","danni3","danni4","danni5","danni6","danni7"].forEach(id => {
-    document.getElementById(id).value = "0";
-  });
+  setVal("distanza","0"); setVal("area","0"); setVal("durata","0");
+  setVal("gesti","0"); setVal("verbale","0"); setVal("posizione","0");
+  setVal("modificatori_corpo","0"); setVal("modificatori_materia","0"); setVal("modificatori_mente","0");
 
-  document.getElementById("numero-bersagli").value = "1";
-  document.getElementById("numero-diametro").value = "1";
-  document.getElementById("numero-round").value = "1";
-  document.getElementById("numero-minuti7").value = "1";
-  document.getElementById("numero-minuti15").value = "1";
-  document.getElementById("numero-magi-aggiuntivi").value = "1";
-  document.getElementById("numero-rituali").value = "1";
-  document.getElementById("numero-rounds").value = "1";
+  TABELLE.dadi.forEach(d => setVal(d.id, "0"));
 
-  document.getElementById("input-bersagli").style.display = 'none';
-  document.getElementById("input-diametro").style.display = 'none';
-  document.getElementById("input-round").style.display = 'none';
-  document.getElementById("input-minuti7").style.display = 'none';
-  document.getElementById("input-minuti15").style.display = 'none';
-  document.getElementById("input-mago-aggiuntivo").style.display = 'none';
-  document.getElementById("input-lancio-rituale").style.display = 'none';
-  document.getElementById("input-rounds").style.display = 'none';
+  setVal("numero-bersagli","1"); setVal("numero-diametro","1"); setVal("numero-round","1");
+  setVal("numero-minuti7","1"); setVal("numero-minuti15","1");
+  setVal("numero-magi-aggiuntivi","1"); setVal("numero-rituali","1"); setVal("numero-rounds","1");
 
-  document.getElementById("variabile1").checked = false;
-  document.getElementById("variabile2").checked = false;
-  document.getElementById("variabile3").checked = false;
-  document.getElementById("rounds-checkbox").checked = false;
+  ["input-bersagli","input-diametro","input-round","input-minuti7","input-minuti15","input-mago-aggiuntivo","input-lancio-rituale","input-rounds"]
+    .forEach(id => document.getElementById(id).style.display = 'none');
 
-  document.getElementById("effetto1").checked = false;
-  document.getElementById("effetto2").checked = false;
-  document.getElementById("effetto3").checked = false;
+  ["variabile1","variabile2","variabile3","rounds-checkbox","effetto1","effetto2","effetto3","corpo-checkbox","materia-checkbox","mente-checkbox"]
+    .forEach(id => document.getElementById(id).checked = false);
 
-  document.getElementById("corpo-checkbox").checked = false;
-  document.getElementById("materia-checkbox").checked = false;
-  document.getElementById("mente-checkbox").checked = false;
+  document.getElementById("difficolta-totale-popup").innerText = String(TABELLE.baseline.difficoltaBase);
 
-  document.getElementById("difficolta-totale-popup").innerText = "20";
-
-  // Nascondi controlli dadi e reset valori
   const pairs = [
     ["minus-d1","plus-d1","d1-controls","danni1"],
     ["minus-d4","plus-d4","d4-controls","danni2"],
