@@ -1,5 +1,13 @@
+
+/* style.css — Restyling 2025, focus su design system, accessibilità e dark mode
+   - CSS Variables per palette, spacing e tipografia
+   - Supporto prefers-color-scheme + toggle manuale
+   - Header con overlay radiale sul primario (patch B)
+   - Eleva card in dark mode (patch extra)
+*/
+
 :root {
-  /* Palette (Nord-inspired) */
+  /* Palette Standard (default) */
   --bg: #f8fafc;
   --bg-alt: #ffffff;
   --surface: #ffffff;
@@ -33,7 +41,7 @@
   --space-6: 48px;
 }
 
-/* Dark mode palette */
+/* Dark mode palette di base (Standard) */
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0b1220;
@@ -79,7 +87,11 @@ html, body {
 
 header {
   padding: var(--space-5) var(--space-3) var(--space-4);
-  background: linear-gradient(180deg, var(--bg-alt), var(--bg));
+  background:
+    radial-gradient(1000px 500px at 50% -10%,
+      color-mix(in oklab, var(--primary) 16%, transparent),
+      transparent 60%),
+    linear-gradient(180deg, var(--bg-alt), var(--bg));
   border-bottom: 1px solid var(--border);
 }
 
@@ -102,6 +114,14 @@ h2.h4, h3.h4 {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: var(--space-4);
+}
+
+/* Elevazione maggiore in dark per stacco visivo (patch extra) */
+.dark .container form {
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--surface) 96%, transparent),
+    color-mix(in oklab, var(--surface) 88%, transparent));
+  border-color: color-mix(in oklab, var(--border) 85%, transparent);
 }
 
 /* Buttons */
