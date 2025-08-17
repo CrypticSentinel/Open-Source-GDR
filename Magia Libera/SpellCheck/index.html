@@ -319,7 +319,48 @@
 <script src="script.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').catch(()=>{});
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').then(reg => {
+        // Tenta un update proattivo a ogni pageload
+        reg.update().catch(()=>{});
+
+        // Quando arriva un nuovo SW in waiting, chiedi di attivarsi subito
+        function onNewServiceWorker(worker) {
+          if (!worker) return;
+          worker.postMessage({ type: 'SKIP_WAITING' });
+        }
+
+        // Se il SW supporta waiting già subito
+        if (reg.waiting) {
+          onNewServiceWorker(reg.waiting);
+        }
+
+        // Monitor installazione di una nuova versione
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          if (!newWorker) return;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              // c'è una nuova versione attiva → ricarico per evitare asset stali
+              window.location.reload();
+            }
+          });
+        });
+
+        // Canale per far partire skipWaiting da SW (fallback)
+        navigator.serviceWorker.addEventListener('message', event => {
+          if (event.data && event.data.type === 'RELOAD_PAGE') {
+            window.location.reload();
+          }
+        });
+      }).catch(()=>{});
+    });
+
+    // Handler per SKIP_WAITING custom
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      // Quando cambia il controller significa che il nuovo SW è attivo
+      // Non forziamo reload qui per evitare doppi ricarichi; lo gestiamo sopra
+    });
   }
 </script>
 </body>
