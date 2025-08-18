@@ -8,12 +8,12 @@ Questa tabella determina la difficoltà aggiuntiva di lanciare un incantesimo in
 | :-------------------------- | :---------------------: | :------------------------------------------------------------------------------------------------------------ |
 | Personale                   | -2                      | Utilizzo su se stessi                                                                                         |
 | Tocco                       | +0                      | E' richiesto di toccare il bersaglio                                                                          |
-| Corta (entro 3 m)           | +3                      | Il bersaglio si trova entro 3 metri ma a vista                                                                |
-| Media (entro 10 m)          | +10                     | Il bersaglio si trova entro 10 metri ma a vista                                                               |
-| Lunga (entro 25 m)          | +25                     | Il bersaglio si trova entro 25 metri ma a vista                                                               |
-| Lunghissima (entro 1 km)    | +50                     | Il bersaglio si trova entro 1 km ma a vista                                                                   |
-| Non in Vista (Conosciuto)   | +60                     | Il bersaglio non è visibile, ma se ne ha una sufficiente conoscenza o si possiede qualcosa di molto personale |
-| Non in Vista (Sconosciuto)  | +75                     | Il bersaglio non è visibile, non lo si conosce o non lo si conosce a sufficienza                              |
+| Corta (entro 3 m)           | +2                      | Il bersaglio si trova entro 3 metri ma a vista                                                                |
+| Media (entro 10 m)          | +6                     | Il bersaglio si trova entro 10 metri ma a vista                                                               |
+| Lunga (entro 25 m)          | +12                     | Il bersaglio si trova entro 25 metri ma a vista                                                               |
+| Lunghissima (entro 1 km)    | +24                     | Il bersaglio si trova entro 1 km ma a vista                                                                   |
+| Non in Vista (Conosciuto)   | +36                     | Il bersaglio non è visibile, ma se ne ha una sufficiente conoscenza o si possiede qualcosa di molto personale |
+| Non in Vista (Sconosciuto)  | +48                     | Il bersaglio non è visibile, non lo si conosce o non lo si conosce a sufficienza                              |
 
 - **Personale (-2):** L'incantesimo è lanciato su sé stessi. Questo tipo di lancio è più semplice perché il mago è il proprio bersaglio, riducendo la difficoltà.  
 - **Tocco (+0):** L'incantesimo richiede un contatto fisico con il bersaglio. È una modalità standard che non altera la difficoltà rispetto alla base.  
