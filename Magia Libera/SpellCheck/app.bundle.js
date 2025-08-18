@@ -214,7 +214,19 @@ const TABELLE = {
 
     // Se esistono pulsanti per aprire/chiudere i modali, li ricolleghiamo
     const gradoOk = document.getElementById('submit-grado-magia');
-    if (gradoOk) gradoOk.addEventListener('click', () => hideModal('popup-grado-magia'));
+	// Evita doppio binding se wireButtons() venisse richiamata più volte
+	if (gradoOk && !gradoOk.dataset.bound) {
+		gradoOk.dataset.bound = '1';
+		gradoOk.addEventListener('click', () => {
+    const grado = Number.parseInt(document.getElementById('grado-magia').value, 10) || 0;
+    const vol   = Number.parseInt(document.getElementById('punteggio-volonta').value, 10) || 0;
+
+    // Chiudi la modale e lancia il calcolo una sola volta
+    hideModal('popup-grado-magia');
+    calcolaDifficoltaConGrado(grado, vol);
+  });
+}
+
 
     // Click su overlay per chiudere (fuori dal contenuto)
     document.querySelectorAll('.modal').forEach(modal => {
@@ -756,17 +768,17 @@ document.addEventListener("DOMContentLoaded", () => {
   if (closeBtn) closeBtn.addEventListener("click", () => { window.hideModal ? window.hideModal("popup-difficolta") : (document.getElementById("popup-difficolta").style.display = "none"); });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const submit = document.getElementById("submit-grado-magia");
-  if (submit) {
-    submit.addEventListener("click", function () {
-      const gradoMagia = parseInt(document.getElementById("grado-magia").value);
-      const punteggioVolonta = parseInt(document.getElementById("punteggio-volonta").value);
-      window.hideModal ? window.hideModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "none");
-      calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
-    });
-  }
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//  const submit = document.getElementById("submit-grado-magia");
+//  if (submit) {
+//    submit.addEventListener("click", function () {
+//      const gradoMagia = parseInt(document.getElementById("grado-magia").value);
+//      const punteggioVolonta = parseInt(document.getElementById("punteggio-volonta").value);
+//      window.hideModal ? window.hideModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "none");
+//      calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
+//    });
+//  }
+//});
 
 function incrementaGradoMagia() { const el = document.getElementById("grado-magia"); el.value = parseInt(el.value) + 1; }
 function decrementaGradoMagia() { const el = document.getElementById("grado-magia"); if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1; }

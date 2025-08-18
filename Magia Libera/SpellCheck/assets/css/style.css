@@ -1,12 +1,3 @@
-
-/* style.css — Restyling completo + fix popup/checkbox (2025)
-   - Design system con CSS Variables
-   - Dark mode (prefers + .dark)
-   - Header con overlay radiale sul primario
-   - Popup: label left, valori centrati e in evidenza
-   - Checkbox inline su mobile (form-check)
-*/
-
 :root {
   /* Palette Standard (default) */
   --bg: #f8fafc;
@@ -287,3 +278,105 @@ footer {
 /* Utility */
 .mt-4 { margin-top: var(--space-4) !important; }
 .mb-3 { margin-bottom: var(--space-3) !important; }
+
+/* ----------------------------- */
+/* OVERRIDES FINE FILE (CRITICI) */
+/* ----------------------------- */
+
+/* ===== FIX layout controlli + / - (rispetta display:none inline) ===== */
+.adjust-wrapper {
+  /* NON forzare più il display qui */
+  /* display: flex !important;  <-- rimosso */
+  display: flex;                 /* sufficiente, inline vince se è display:none */
+  flex-direction: row;           /* allineamento orizzontale */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;             /* no a capo dei tre elementi - input - + */
+}
+
+/* Se il wrapper è nascosto inline (style="display:none"), rispetta e non mostrarlo */
+.adjust-wrapper[style*="display:none"] {
+  display: none !important;
+}
+
+/* Input dentro i wrapper: restano inline, non si allargano al 100% */
+.adjust-wrapper .form-control,
+.adjust-wrapper input[type="number"] {
+  display: inline-block !important;   /* override Bootstrap block */
+  width: auto !important;             /* no 100% */
+  min-width: 88px;
+  text-align: center;
+  margin: 0 2px;
+}
+
+/* Icone +/- come inline-block per allineamento stabile */
+.adjust-wrapper .adjust-icon,
+img.adjust-icon {
+  display: inline-block !important;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+/* Su schermi piccoli consenti wrap ordinato solo se serve */
+@media (max-width: 576px) {
+  .adjust-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px;
+  }
+}
+
+/* === Fix campi "Mago 1–4": dimensioni, centratura, radius === */
+.mago-input-container {
+  text-align: center; /* il contenuto inline-flex si centra col margin auto */
+}
+
+.mago-input-container .input-group {
+  display: inline-flex !important;   /* non full-width */
+  align-items: center !important;    /* no stretch */
+  justify-content: center;
+  gap: 10px;
+  width: auto !important;            /* sblocca il 100% di Bootstrap */
+  flex-wrap: nowrap;
+  margin: 0 auto;                    /* centrato */
+}
+
+/* Evita che l’input si espanda a tutta riga */
+.mago-input-container .input-group > * {
+  flex: 0 0 auto !important;
+}
+
+/* Input identici agli altri (dimensione e styling) */
+.mago-input-container .input-group .form-control {
+  display: inline-block !important;
+  width: auto !important;
+  min-width: 88px;
+  text-align: center;
+  margin: 0 2px;
+  border-radius: 12px !important;    /* allinea ai controlli standard */
+}
+
+/* Annulla i radius “a capsule” di Bootstrap sugli estremi dell’input-group */
+.mago-input-container .input-group > .form-control:not(:first-child),
+.mago-input-container .input-group > .form-control:not(:last-child) {
+  border-radius: 12px !important;
+}
+
+/* Icone +/– identiche agli altri controlli */
+.mago-input-container .input-group .adjust-icon,
+.mago-input-container .input-group img.adjust-icon {
+  display: inline-block !important;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+/* Mobile: se lo spazio è minimo, consenti wrap ordinato mantenendo centrale il gruppo */
+@media (max-width: 576px) {
+  .mago-input-container .input-group {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+}

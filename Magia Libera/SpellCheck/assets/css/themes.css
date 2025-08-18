@@ -1,11 +1,3 @@
-
-/* themes.css — Preset di stile + centratura modali
-   - Arcano: palette viola/teal con override completo (bg, surface, text, ecc.)
-   - Rosso:  pulsanti rossi + background e superfici allineate al tema
-   - Standard: usa i token di default definiti in style.css (nessuna classe)
-   - La centratura dei popup avviene con .modal.is-open (display:flex)
-*/
-
 /* ===== Tema Arcano (palette viola/teal) ===== */
 .theme-arcano {
   --primary: #7c3aed;    /* violet-600 */
@@ -74,6 +66,3 @@
   --primary-700: #dc2626; /* red-600 */
   --shadow:  0 12px 28px rgba(0, 0, 0, 0.45);
 }
-
-/* ===== Centratura modali ===== */
-.modal.is-open { display: flex !important; }
