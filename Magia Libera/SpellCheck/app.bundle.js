@@ -344,34 +344,40 @@ const TABELLE = {
 
   function apply(style) {
     const root = document.documentElement;
-    root.classList.toggle('theme-arcano', style === 'arcano');
-    root.classList.toggle('theme-rosso',  style === 'rosso');
+    root.classList.remove('theme-blu', 'theme-viola', 'theme-rosso', 'theme-verde');
+		if (style === 'blu')   root.classList.add('theme-blu');
+		if (style === 'viola') root.classList.add('theme-viola');
+		if (style === 'rosso') root.classList.add('theme-rosso');
+		if (style === 'verde') root.classList.add('theme-verde');
+		
     try { localStorage.setItem(STYLE_KEY, style); } catch {}
 
-    const btn = document.getElementById('style-toggle');
-    if (btn) {
-      let label = 'Stile: Standard';
-      if (style === 'arcano') label = 'Stile: Arcano';
-      if (style === 'rosso')  label = 'Stile: Rosso';
-      btn.textContent = label;
-      btn.setAttribute('aria-pressed', style !== 'standard' ? 'true' : 'false');
-    }
+	const btn = document.getElementById('style-toggle');
+		if (btn) {
+			let label = 'Stile: Blu';
+				if (style === 'viola') label = 'Stile: Viola';
+				if (style === 'rosso') label = 'Stile: Rosso';
+				if (style === 'verde') label = 'Stile: Verde';
+    btn.textContent = label;
+    btn.setAttribute('aria-pressed', style !== 'blu' ? 'true' : 'false');
   }
+}
 
-  function current() {
-    let style = 'standard';
-    try {
-      const saved = localStorage.getItem(STYLE_KEY);
-      if (saved) style = saved;
-    } catch {}
-    return style;
-  }
+function current() {
+  let style = 'blu'; // default
+  try {
+    const saved = localStorage.getItem(STYLE_KEY);
+    if (saved) style = saved;
+  } catch {}
+  return style;
+}
 
-  function next(style) {
-    if (style === 'standard') return 'arcano';
-    if (style === 'arcano')   return 'rosso';
-    return 'standard'; // rosso -> standard
-  }
+function next(style) {
+  if (style === 'blu')   return 'viola';
+  if (style === 'viola') return 'rosso';
+  if (style === 'rosso') return 'verde';
+  return 'blu'; // verde -> blu
+}
 
   function init() {
     apply(current());

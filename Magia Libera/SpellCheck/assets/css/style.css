@@ -1,5 +1,5 @@
 :root {
-    --bg: #f8fafc;
+  --bg: #f8fafc;
   --bg-alt: #ffffff;
   --surface: #ffffff;
   --text: #0f172a;
@@ -28,6 +28,7 @@
   --space-6: 48px;
 }
 
+/* Automatic dark mode (OS-driven) */
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0b1220;
@@ -46,6 +47,7 @@
   }
 }
 
+/* Manual dark mode (class-driven) */
 .dark {
   --bg: #0b1220;
   --bg-alt: #0f172a;
@@ -62,6 +64,7 @@
   --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
+/* ---------- Base elements ---------- */
 html, body {
   background: var(--bg);
   color: var(--text);
@@ -70,6 +73,7 @@ html, body {
   line-height: 1.5;
 }
 
+/* ---------- Header & Typography ---------- */
 header {
   padding: var(--space-5) var(--space-3) var(--space-4);
   background:
@@ -92,6 +96,7 @@ h2.h4, h3.h4 {
   margin: var(--space-4) 0 var(--space-2);
 }
 
+/* ---------- Card/Form container ---------- */
 .container form {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -99,14 +104,16 @@ h2.h4, h3.h4 {
   box-shadow: var(--shadow);
   padding: var(--space-4);
 }
-
 .dark .container form {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+    180deg,
     color-mix(in oklab, var(--surface) 96%, transparent),
-    color-mix(in oklab, var(--surface) 88%, transparent));
+    color-mix(in oklab, var(--surface) 88%, transparent)
+  );
   border-color: color-mix(in oklab, var(--border) 85%, transparent);
 }
 
+/* ---------- Buttons ---------- */
 .btn.btn-custom, #install-button, .button-container .btn {
   --btn-bg: var(--primary);
   --btn-bg-hover: var(--primary-600);
@@ -122,7 +129,6 @@ h2.h4, h3.h4 {
   transition: transform 0.05s ease, background 0.15s ease;
   box-shadow: 0 2px 0 rgba(0,0,0,0.08);
 }
-
 .btn.btn-custom:hover, #install-button:hover, .button-container .btn:hover { background: var(--btn-bg-hover); }
 .btn.btn-custom:active, #install-button:active, .button-container .btn:active { background: var(--btn-bg-active); transform: translateY(1px); }
 
@@ -134,6 +140,7 @@ h2.h4, h3.h4 {
   margin-top: var(--space-4);
 }
 
+/* ---------- Forms ---------- */
 .form-label, label {
   font-weight: 600;
   color: var(--muted);
@@ -153,23 +160,17 @@ h2.h4, h3.h4 {
   box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 20%, transparent);
 }
 
+/* Checkbox rows */
 .form-check {
   display: flex;
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 12px;
 }
-.form-check-input {
-  flex: 0 0 auto;
-  margin-top: 2px;
-}
-.form-check-label {
-  display: block;
-  flex: 1 1 auto;
-  min-width: 0;
-  line-height: 1.35;
-}
+.form-check-input { flex: 0 0 auto; margin-top: 2px; }
+.form-check-label { display: block; flex: 1 1 auto; min-width: 0; line-height: 1.35; }
 
+/* ---------- Icons & helpers ---------- */
 .dice-icon {
   width: 48px;
   height: 48px;
@@ -188,6 +189,7 @@ h2.h4, h3.h4 {
 }
 .adjust-icon:hover { opacity: 1; }
 
+/* Centered numeric controls in .text-center contexts */
 .dice-input-container,
 .text-center .form-control.mx-auto {
   margin-left: auto !important;
@@ -196,6 +198,7 @@ h2.h4, h3.h4 {
   text-align: center;
 }
 
+/* ---------- Modals ---------- */
 .modal {
   position: fixed;
   inset: 0;
@@ -205,7 +208,6 @@ h2.h4, h3.h4 {
   background: color-mix(in oklab, var(--text) 45%, transparent);
   z-index: 1000;
 }
-
 .modal.is-open { display: flex !important; }
 
 .modal-content {
@@ -217,6 +219,7 @@ h2.h4, h3.h4 {
   padding: var(--space-4);
 }
 
+/* Popup rows (key-value layout) */
 .popup-row {
   display: grid;
   grid-template-columns: 1fr 180px;
@@ -233,7 +236,6 @@ h2.h4, h3.h4 {
   color: var(--muted);
   font-weight: 600;
 }
-
 .popup-row > :last-child {
   justify-self: center;
   text-align: center;
@@ -248,20 +250,17 @@ h2.h4, h3.h4 {
   background: color-mix(in oklab, var(--primary) 14%, transparent);
 }
 
-@media (max-width: 520px) {
-  .button-container { grid-auto-flow: row; }
-  .popup-row { grid-template-columns: 1fr; }
-  .popup-row > :last-child { margin-top: 6px; }
-}
-
+/* ---------- Footer ---------- */
 footer {
   color: var(--muted);
   padding: var(--space-4) 0 var(--space-6);
 }
 
+/* ---------- Spacing utilities ---------- */
 .mt-4 { margin-top: var(--space-4) !important; }
 .mb-3 { margin-bottom: var(--space-3) !important; }
 
+/* ---------- Adjust wrapper (generic) ---------- */
 .adjust-wrapper {
   display: flex;
   flex-direction: row;
@@ -270,11 +269,7 @@ footer {
   gap: 10px;
   flex-wrap: nowrap;
 }
-
-.adjust-wrapper[style*="display:none"] {
-  display: none !important;
-}
-
+.adjust-wrapper[style*="display:none"] { display: none !important; }
 .adjust-wrapper .form-control,
 .adjust-wrapper input[type="number"] {
   display: inline-block !important;
@@ -283,7 +278,6 @@ footer {
   text-align: center;
   margin: 0 2px;
 }
-
 .adjust-wrapper .adjust-icon,
 img.adjust-icon {
   display: inline-block !important;
@@ -292,46 +286,38 @@ img.adjust-icon {
   vertical-align: middle;
 }
 
-@media (max-width: 576px) {
-  .adjust-wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 8px;
-  }
-}
-
+/* ---------- Mago input (CONSOLIDATED) ---------- */
 .mago-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
   text-align: center;
 }
-
+.mago-input-container .mago-label {
+  display: block;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0;
+}
 .mago-input-container .input-group {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center;
   gap: 10px;
-  width: auto !important;
   flex-wrap: nowrap;
+  width: auto;
   margin: 0 auto;
 }
-
-.mago-input-container .input-group > * {
-  flex: 0 0 auto !important;
-}
-
+.mago-input-container .input-group > * { flex: 0 0 auto; }
 .mago-input-container .input-group .form-control {
   display: inline-block !important;
   width: auto !important;
   min-width: 88px;
   text-align: center;
   margin: 0 2px;
-  border-radius: 12px !important;
+  border-radius: 12px;
 }
-
-.mago-input-container .input-group > .form-control:not(:first-child),
-.mago-input-container .input-group > .form-control:not(:last-child) {
-  border-radius: 12px !important;
-}
-
 .mago-input-container .input-group .adjust-icon,
 .mago-input-container .input-group img.adjust-icon {
   display: inline-block !important;
@@ -340,46 +326,116 @@ img.adjust-icon {
   vertical-align: middle;
 }
 
+/* ---------- Media queries (consolidated) ---------- */
 @media (max-width: 576px) {
-  .mago-input-container .input-group {
-    flex-wrap: wrap;
-    row-gap: 8px;
-  }
+  .adjust-wrapper { flex-wrap: wrap; justify-content: center; row-gap: 8px; }
+  .mago-input-container .input-group { flex-wrap: wrap; row-gap: 8px; }
+}
+@media (max-width: 520px) {
+  .button-container { grid-auto-flow: row; }
+  .popup-row { grid-template-columns: 1fr; }
+  .popup-row > :last-child { margin-top: 6px; }
 }
 
-.mago-input-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 12px;
+
+/* === Theme overrides (Arcano, Rosso) merged in === */
+/* ===== Tema Arcano (palette viola/teal) ===== */
+.theme-viola {
+  --primary: #7c3aed;    /* violet-600 */
+  --primary-600: #6d28d9;
+  --primary-700: #5b21b6;
+
+  --bg: #f7f6fb;
+  --bg-alt: #ffffff;
+  --surface: #ffffff;
+  --text: #1f1b2e;
+  --muted: #5b5870;
+  --border: #e7e2f5;
+  --success: #14b8a6; /* teal-500 */
+  --warning: #eab308; /* amber-500 */
+  --danger:  #ef4444; /* red-500 */
+  --shadow:  0 12px 28px rgba(92, 69, 158, 0.12);
 }
 
-.mago-input-container .mago-label {
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: var(--muted);
+/* Arcano + Dark (contrastato) */
+.dark.theme-viola {
+  --bg: #0d0a18;
+  --bg-alt: #1a1330;     /* più chiaro di ~8–10 L* rispetto a --bg */
+  --surface: #201a3b;
+  --text: #e9e7ff;
+  --muted: #b7b3d1;
+  --border: #2b2347;
+  --primary: #a78bfa;    /* violet-400 */
+  --primary-600: #8b5cf6;/* violet-500 */
+  --primary-700: #7c3aed;/* violet-600 */
+  --success: #2dd4bf;
+  --warning: #f59e0b;
+  --danger:  #f87171;
+  --shadow:  0 12px 28px rgba(0, 0, 0, 0.45);
 }
 
-.mago-input-container {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center;
-  gap: 6px;
+/* ===== Tema Rosso (pulsanti primari rossi + bg aligned) ===== */
+.theme-rosso {
+  /* Accenti/pulsanti */
+  --primary: #dc2626;     /* red-600 */
+  --primary-600: #b91c1c; /* red-700 */
+  --primary-700: #991b1b; /* red-800 */
+
+  /* Background e superfici coerenti con il tema */
+  --bg: #fff5f5;          /* red-50 */
+  --bg-alt: #ffffff;
+  --surface: #ffffff;
+  --text: #1f2937;        /* slate-800 per ottimo contrasto */
+  --muted: #6b7280;       /* slate-500 neutro per testi secondari */
+  --border: #ffe4e6;      /* rose-100 per un bordo leggero */
+  --success: #16a34a;     /* green-600 */
+  --warning: #f59e0b;     /* amber-500 */
+  --danger:  #dc2626;     /* red-600 */
+  --shadow:  0 12px 28px rgba(220, 38, 38, 0.12);
 }
 
-.mago-input-container .mago-label {
-  display: block;
-  margin: 0;
-  font-weight: 600;
-  color: var(--muted);
+/* Rosso + Dark (contrastato) */
+.dark.theme-rosso {
+  --bg: #120606;
+  --bg-alt: #220c0c;     /* più chiaro di ~8–10 L* rispetto a --bg */
+  --surface: #2a1010;
+  --text: #f3f4f6;
+  --muted: #d6cccc;
+  --border: #341515;
+  --primary: #f87171;     /* red-400 */
+  --primary-600: #ef4444; /* red-500 */
+  --primary-700: #dc2626; /* red-600 */
+  --shadow:  0 12px 28px rgba(0, 0, 0, 0.45);
 }
 
-.mago-input-container .input-group {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center;
-  gap: 10px;
-  width: auto !important;
-  flex-wrap: nowrap;
-  margin: 0 auto;
+/* ===== Tema Verde (nuovo) ===== */
+.theme-verde {
+  --primary: #16a34a;    /* green-600 */
+  --primary-600: #15803d;
+  --primary-700: #166534;
+  --bg: #f0fdf4;         /* green-50 */
+  --bg-alt: #ffffff;
+  --surface: #ffffff;
+  --text: #064e3b;       /* green-900 */
+  --muted: #4b5563;      /* slate-600 */
+  --border: #bbf7d0;     /* green-200 */
+  --success: #16a34a;
+  --warning: #eab308;
+  --danger:  #dc2626;
+  --shadow:  0 12px 28px rgba(22, 163, 74, 0.12);
+}
+.dark.theme-verde {
+  --bg: #052e16;
+  --bg-alt: #064e3b;
+  --surface: #14532d;
+  --text: #ecfdf5;
+  --muted: #a7f3d0;
+  --border: #065f46;
+  --primary: #4ade80;    /* green-400 */
+  --primary-600: #22c55e;
+  --primary-700: #16a34a;
+  --success: #22c55e;
+  --warning: #facc15;
+  --danger:  #f87171;
+  --shadow:  0 12px 28px rgba(0, 0, 0, 0.45);
 }
