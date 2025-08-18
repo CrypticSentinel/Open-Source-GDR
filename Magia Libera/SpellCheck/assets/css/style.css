@@ -1,289 +1,66 @@
 
-/* style.css — Restyling completo + fix popup/checkbox (2025)
-   - Design system con CSS Variables
-   - Dark mode (prefers + .dark)
-   - Header con overlay radiale sul primario
-   - Popup: label left, valori centrati e in evidenza
-   - Checkbox inline su mobile (form-check)
-*/
 
-:root {
-  /* Palette Standard (default) */
-  --bg: #f8fafc;
-  --bg-alt: #ffffff;
-  --surface: #ffffff;
-  --text: #0f172a;
-  --muted: #475569;
-  --primary: #2563eb;
-  --primary-600: #1d4ed8;
-  --primary-700: #1e40af;
-  --success: #16a34a;
-  --warning: #f59e0b;
-  --danger: #dc2626;
-  --border: #e2e8f0;
-  --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
-  --radius: 16px;
-
-  /* Typography */
-  --font-display: "IM Fell English", serif;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --fs-xxl: clamp(28px, 4vw, 44px);
-  --fs-xl: clamp(22px, 3vw, 30px);
-  --fs-lg: 18px;
-  --fs-md: 16px;
-  --fs-sm: 14px;
-
-  /* Spacing */
-  --space-1: 6px;
-  --space-2: 10px;
-  --space-3: 16px;
-  --space-4: 24px;
-  --space-5: 32px;
-  --space-6: 48px;
-}
-
-/* Dark mode base (Standard) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b1220;
-    --bg-alt: #0f172a;
-    --surface: #111827;
-    --text: #e5e7eb;
-    --muted: #a3a3a3;
-    --primary: #60a5fa;
-    --primary-600: #3b82f6;
-    --primary-700: #2563eb;
-    --success: #22c55e;
-    --warning: #fbbf24;
-    --danger: #f87171;
-    --border: #1f2937;
-    --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-  }
-}
-
-/* Manual override (tema scuro forzato) */
-.dark {
-  --bg: #0b1220;
-  --bg-alt: #0f172a;
-  --surface: #111827;
-  --text: #e5e7eb;
-  --muted: #a3a3a3;
-  --primary: #60a5fa;
-  --primary-600: #3b82f6;
-  --primary-700: #2563eb;
-  --success: #22c55e;
-  --warning: #fbbf24;
-  --danger: #f87171;
-  --border: #1f2937;
-  --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-}
-
-html, body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-sans);
-  font-size: var(--fs-md);
-  line-height: 1.5;
-}
-
-header {
-  padding: var(--space-5) var(--space-3) var(--space-4);
-  background:
-    radial-gradient(1000px 500px at 50% -10%,
-      color-mix(in oklab, var(--primary) 16%, transparent),
-      transparent 60%),
-    linear-gradient(180deg, var(--bg-alt), var(--bg));
-  border-bottom: 1px solid var(--border);
-}
-
-h1 {
-  font-family: var(--font-display);
-  font-size: var(--fs-xxl);
-  letter-spacing: 0.5px;
-  margin-bottom: var(--space-2);
-}
-
-h2.h4, h3.h4 {
-  font-size: var(--fs-xl);
-  margin: var(--space-4) 0 var(--space-2);
-}
-
-/* Card container per il form */
-.container form {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: var(--space-4);
-}
-
-/* Elevazione maggiore in dark per stacco visivo */
-.dark .container form {
-  background: linear-gradient(180deg,
-    color-mix(in oklab, var(--surface) 96%, transparent),
-    color-mix(in oklab, var(--surface) 88%, transparent));
-  border-color: color-mix(in oklab, var(--border) 85%, transparent);
-}
-
-/* Pulsanti */
-.btn.btn-custom, #install-button, .button-container .btn {
-  --btn-bg: var(--primary);
-  --btn-bg-hover: var(--primary-600);
-  --btn-bg-active: var(--primary-700);
-  --btn-text: #ffffff;
-
-  background: var(--btn-bg);
-  color: var(--btn-text);
-  border: none;
-  border-radius: 999px;
-  padding: 10px 18px;
-  font-weight: 600;
-  transition: transform 0.05s ease, background 0.15s ease;
-  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
-}
-.btn.btn-custom:hover, #install-button:hover, .button-container .btn:hover { background: var(--btn-bg-hover); }
-.btn.btn-custom:active, #install-button:active, .button-container .btn:active { background: var(--btn-bg-active); transform: translateY(1px); }
-
-.button-container {
-  display: grid;
-  grid-auto-flow: column;
-  gap: var(--space-3);
-  justify-content: center;
-  margin-top: var(--space-4);
-}
-
-/* Etichette */
-.form-label, label {
-  font-weight: 600;
-  color: var(--muted);
-}
-
-/* Input & Select */
-.form-select, .form-control, input[type="number"] {
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  color: var(--text);
-  border-radius: 12px;
-  padding: 10px 12px;
-  transition: border-color .2s ease, box-shadow .2s ease;
-}
-.form-select:focus, .form-control:focus, input[type="number"]:focus {
-  outline: none;
-  border-color: var(--primary-600);
-  box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 20%, transparent);
-}
-
-/* === FIX Mobile: label accanto alla checkbox (non sotto) === */
-.form-check {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-.form-check-input {
-  flex: 0 0 auto;
-  margin-top: 2px; /* micro-tuning iOS/Safari */
-}
-.form-check-label {
-  display: block;
-  flex: 1 1 auto;
-  min-width: 0;
-  line-height: 1.35;
-}
-
-/* Icone dadi */
-.dice-icon {
-  width: 48px;
-  height: 48px;
-  user-select: none;
-  cursor: pointer;
-  transition: transform .1s ease;
-}
-.dice-icon:active { transform: scale(0.96); }
-
-.adjust-icon {
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  transform: translateY(5px);
-  opacity: 0.9;
-}
-.adjust-icon:hover { opacity: 1; }
-
-/* Input numerici inline nelle righe dinamiche */
-.text-center .form-control.mx-auto {
-  width: 100px !important;
-}
-
-/* Modal overlay + centratura */
-.modal {
-  position: fixed;
-  inset: 0;
-  display: none;
+/* === Dice inline styles merged === */
+/* dice-inline.css — layout pulito per i controlli dadi */
+.dice-inline {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: color-mix(in oklab, var(--text) 45%, transparent);
-  z-index: 1000;
-}
-/* la classe .is-open abilita il flex (centratura) */
-.modal.is-open { display: flex !important; }
-
-.modal-content {
-  width: min(760px, 94vw);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  padding: var(--space-4);
+  gap: .5rem;
+  flex-wrap: nowrap;
 }
 
-/* === FIX Popup Desktop: label a sinistra, valori centrati/enfatizzati === */
-.popup-row {
-  display: grid;
-  grid-template-columns: 1fr 180px;
-  gap: var(--space-2);
-  padding: 10px 0;
-  border-bottom: 1px dashed var(--border);
-  align-items: center;
-}
-.popup-row:last-child { border-bottom: 0; }
-
-/* Label (prima colonna) */
-.popup-row > :first-child {
-  text-align: left !important;
-  justify-self: start;
-  color: var(--muted);
-  font-weight: 600;
-}
-
-/* Valore (seconda colonna) centrato + pill */
-.popup-row > :last-child {
-  justify-self: center;
-  text-align: center;
+.dice-inline .form-label {
   display: inline-block;
-  min-width: 130px;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-weight: 800;
-  letter-spacing: .2px;
-  font-size: clamp(16px, 2vw, 20px);
-  border: 1px solid color-mix(in oklab, var(--primary) 32%, var(--border));
-  background: color-mix(in oklab, var(--primary) 14%, transparent);
+  margin: 0;
+  white-space: nowrap;
 }
 
-/* Mobile: stack verticale */
-@media (max-width: 520px) {
-  .button-container { grid-auto-flow: row; }
-  .popup-row { grid-template-columns: 1fr; }
-  .popup-row > :last-child { margin-top: 6px; }
+.dice-inline .adjust-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
 }
 
-/* Footer */
-footer {
-  color: var(--muted);
-  padding: var(--space-4) 0 var(--space-6);
+.dice-icon-inline {
+  display: inline-block;
+  margin-left: .5rem;
+  vertical-align: middle;
 }
 
-/* Utility */
-.mt-4 { margin-top: var(--space-4) !important; }
-.mb-3 { margin-bottom: var(--space-3) !important; }
+.dadi-aggiuntivi-container [id$="-controls"] {
+  display: block;
+  margin-top: .25rem;
+}
+
+/* === Modal inline controls (Volontà & Grado Magia) === */
+.form-inline-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: nowrap;
+}
+
+.form-inline-controls .adjust-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.form-inline-controls label.form-label {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.form-inline-controls input[type="number"] {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+
+
+/* === Utility: hide/show === */
+.is-hidden { display: none; }
