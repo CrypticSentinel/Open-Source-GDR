@@ -4,12 +4,16 @@ Questa tabella descrive i punti di affaticamento che un incantatore accumula a s
 ## Tabella penalità dovute al lancio di incantesimi
 | Grado scuola di Magia | Fatica -0 | Fatica -1 | Fatica -2 | Fatica -3 | Fatica -4 | Fatica -5 | Descrizione                                                                                                        |
 | :-------------------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :----------------------------------------------------------------------------------------------------------------- |
-| 1-2                   | 0-19      | 20-24     | 25-29     | 30-34     | 35-39     | 40-44     | Gli incantatori con poca esperienza possono lanciare incantesimi con difficoltà fino a 19 senza accumulare fatica. |
-| 3-4                   | 0-24      | 25-29     | 30-34     | 35-39     | 40-44     | 45-49     | Incantatori di livello medio non accumulano fatica fino a una difficoltà di 24.                                    |
-| 5-6                   | 0-29      | 30-34     | 35-39     | 40-44     | 45-49     | 50-54     | Questi incantatori non accumulano fatica fino a una difficoltà di 29.                                              |
-| 7-8                   | 0-34      | 35-39     | 40-44     | 49-49     | 50-54     | 55-59     | La fatica si accumula a partire da una difficoltà di 34                                                            |
-| 9-10                  | 0-39      | 40-44     | 45-49     | 50-54     | 55-59     | 60-64     | La soglia per non accumulare fatica è fissata a 39                                                                 |
-| 11-12                 | 0-44      | 45-49     | 50-54     | 55-59     | 60-64     | 65-69     | Incantatori avanzati non accumulano fatica fino a una difficoltà di 44                                             |
+| 1-2                   | 0-22      | 23-28     | 29-34     | 35-40     | 41-46     | 47-52     | Gli incantatori con poca esperienza possono lanciare incantesimi con difficoltà fino a 22 senza accumulare fatica. |
+| 3-4                   | 0-26      | 27-32     | 33-38     | 39-44     | 45-50     | 51-56     | Incantatori di livello medio non accumulano fatica fino a una difficoltà di 26.                                    |
+| 5-6                   | 0-31      | 31-37     | 38-43     | 44-49     | 50-55     | 56-61     | Questi incantatori non accumulano fatica fino a una difficoltà di 31.                                              |
+| 7-8                   | 0-36      | 37-42     | 43-48     | 49-54     | 55-60     | 61-66     | La fatica si accumula a partire da una difficoltà di 36                                                            |
+| 9-10                  | 0-41      | 42-47     | 48-53     | 54-59     | 60-65     | 66-71     | La soglia per non accumulare fatica è fissata a 41                                                                 |
+| 11-12                 | 0-46      | 47-52     | 53-58     | 59-64     | 65-70     | 71-76     | Incantatori avanzati non accumulano fatica fino a una difficoltà di 46                                             |
+| 13-14                 | 0-51      | 52-57     | 58-63     | 64-69     | 70-75     | 77-81     | Incantatori avanzati non accumulano fatica fino a una difficoltà di 51                                             |
+| 15-16                 | 0-56      | 57-62     | 63-68     | 69-74     | 75-80     | 81-66     | Incantatori avanzati non accumulano fatica fino a una difficoltà di 56                                             |
+| 17-18                 | 0-61      | 62-67     | 68-73     | 74-79     | 80-85     | 86-91     | Incantatori avanzati non accumulano fatica fino a una difficoltà di 61                                             |
+| 19-20                 | 0-66      | 67-72     | 73-78     | 79-84     | 85-90     | 91-96     | Incantatori avanzati non accumulano fatica fino a una difficoltà di 66                                             |
 
 # Tabella recupero affaticamento
 Questa tabella fornisce le linee guida per il recupero dei punti di fatica accumulati durante il lancio degli incantesimi. La quantità di fatica recuperata dipende dal tipo di riposo che l'incantatore riesce a ottenere.
