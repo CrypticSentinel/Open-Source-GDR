@@ -17,12 +17,12 @@ Questa tabella determina la difficoltà aggiuntiva di lanciare un incantesimo in
 
 - **Personale (-2):** L'incantesimo è lanciato su sé stessi. Questo tipo di lancio è più semplice perché il mago è il proprio bersaglio, riducendo la difficoltà.  
 - **Tocco (+0):** L'incantesimo richiede un contatto fisico con il bersaglio. È una modalità standard che non altera la difficoltà rispetto alla base.  
-- **Corta (entro 3 m) (+3):** Il bersaglio è vicino e a portata di vista, ma non è necessario il contatto fisico. La distanza ridotta implica un leggero aumento della difficoltà.  
-- **Media (entro 10 m) (+10):** Il bersaglio è più lontano, entro 10 metri, e richiede maggiore precisione o energia magica, aumentando così la difficoltà.  
-- **Lunga (entro 25 m) (+25):** Il bersaglio è a una distanza significativa, entro 25 metri. Questo richiede un notevole sforzo magico, aumentando molto la difficoltà.  
-- **Lunghissima (entro 1 km) (+50):** Il bersaglio è lontano, fino a un chilometro di distanza, il che richiede una grande potenza magica e precisione, rendendo il lancio estremamente difficile.  
-- **Non in Vista (Conosciuto) (+60):** Il bersaglio non è visibile ma è conosciuto bene dal mago, oppure si ha un oggetto personale del bersaglio. Questo rende il lancio molto complesso, con una difficoltà molto elevata.  
-- **Non in Vista (Sconosciuto) (+75):** Il bersaglio non è visibile e non è ben conosciuto dal mago. Questo tipo di lancio è estremamente difficile e richiede una precisione eccezionale.  
+- **Corta (entro 3 m) (+2):** Il bersaglio è vicino e a portata di vista, ma non è necessario il contatto fisico. La distanza ridotta implica un leggero aumento della difficoltà.  
+- **Media (entro 10 m) (+6):** Il bersaglio è più lontano, entro 10 metri, e richiede maggiore precisione o energia magica, aumentando così la difficoltà.  
+- **Lunga (entro 25 m) (+12):** Il bersaglio è a una distanza significativa, entro 25 metri. Questo richiede un notevole sforzo magico, aumentando molto la difficoltà.  
+- **Lunghissima (entro 1 km) (+24):** Il bersaglio è lontano, fino a un chilometro di distanza, il che richiede una grande potenza magica e precisione, rendendo il lancio estremamente difficile.  
+- **Non in Vista (Conosciuto) (+36):** Il bersaglio non è visibile ma è conosciuto bene dal mago, oppure si ha un oggetto personale del bersaglio. Questo rende il lancio molto complesso, con una difficoltà molto elevata.  
+- **Non in Vista (Sconosciuto) (+48):** Il bersaglio non è visibile e non è ben conosciuto dal mago. Questo tipo di lancio è estremamente difficile e richiede una precisione eccezionale.  
 
 ## Tabella Area d'Effetto
 Questa tabella regola la difficoltà del lancio in base all'area o alla parte specifica del bersaglio che l'incantesimo colpisce. Aree più piccole o bersagli multipli richiedono maggiore precisione e controllo, aumentando così la difficoltà.
