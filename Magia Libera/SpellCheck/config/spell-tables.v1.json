@@ -18,33 +18,33 @@
       },
       {
         "code": "DIST_CORTA",
-        "text": "Corta (entro 3 m) (+3)",
-        "value": 3
+        "text": "Corta (entro 3 m) (+2)",
+        "value": 2
       },
       {
         "code": "DIST_MEDIA",
-        "text": "Media (entro 10 m) (+10)",
-        "value": 10
+        "text": "Media (entro 10 m) (+6)",
+        "value": 6
       },
       {
         "code": "DIST_LUNGA",
-        "text": "Lunga (entro 25 m) (+25)",
-        "value": 25
+        "text": "Lunga (entro 25 m) (+12)",
+        "value": 12
       },
       {
         "code": "DIST_LUNGHISSIMA",
-        "text": "Lunghissima (entro 1 km) (+50)",
-        "value": 50
+        "text": "Lunghissima (entro 1 km) (+24)",
+        "value": 24
       },
       {
         "code": "DIST_NONVISTA_CONOSCIUTO",
-        "text": "Non in vista (Conosciuto) (+60)",
-        "value": 60
+        "text": "Non in vista (Conosciuto) (+36)",
+        "value": 36
       },
       {
         "code": "DIST_NONVISTA_SCONOSCIUTO",
-        "text": "Non in vista (Sconosciuto) (+75)",
-        "value": 75
+        "text": "Non in vista (Sconosciuto) (+48)",
+        "value": 48
       }
     ],
     "area": [
@@ -93,29 +93,24 @@
         "value": 2
       },
       {
-        "code": "DUR_MIN_7",
-        "text": "Ogni 7 minuti (+5)",
-        "value": 5
-      },
-      {
-        "code": "DUR_MIN_15",
-        "text": "Ogni 15 minuti (+10)",
-        "value": 10
+        "code": "DUR_MIN_10",
+        "text": "Ogni 10 minuti (+6)",
+        "value": 6
       },
       {
         "code": "DUR_CONCENTRAZIONE",
-        "text": "Finchè si rimane concentrati (-5)",
-        "value": -5
+        "text": "Finchè si rimane concentrati (-2)",
+        "value": -2
       },
       {
         "code": "DUR_CONDIZIONE",
-        "text": "Condizione (Finchè, Quando) (+30)",
-        "value": 30
+        "text": "Condizione (Finchè, Quando) (+25)",
+        "value": 25
       },
       {
         "code": "DUR_PERMANENTE",
-        "text": "Permanente (+20)",
-        "value": 20
+        "text": "Permanente (+35)",
+        "value": 35
       }
     ],
     "gesti": [
@@ -267,8 +262,8 @@
       },
       {
         "code": "MENTE_RIMUOVERE",
-        "text": "Rimuovere (+10)",
-        "value": 10
+        "text": "Rimuovere (+12)",
+        "value": 12
       }
     ]
   },
