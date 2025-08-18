@@ -68,33 +68,74 @@
 <label class="form-label" for="area">Quale sarà l'area d'effetto?</label>
 <select class="form-select" id="area" onchange="mostraInputBersagliDiametro()"></select>
 </div>
+
 <!-- Dinamici area -->
-<div class="adjust-wrapper mb-3 text-center" id="input-bersagli" style="display:none;">
-<img alt="-" class="adjust-icon" onclick="decrementaInput('numero-bersagli')" src="assets/icons/minus.png"/>
-<input class="form-control mx-auto" id="numero-bersagli" min="0" type="number" value="1"/>
-<img alt="+" class="adjust-icon" onclick="incrementaInput('numero-bersagli')" src="assets/icons/plus.png"/>
+<div class="mb-3 text-center" id="input-bersagli" style="display:none;">
+  <div class="mago-input-container">
+    <label for="numero-bersagli" class="mago-label">Ogni bersaglio oltre il primo (+5)</label>
+    <div class="input-group">
+      <img alt="-" class="adjust-icon" src="assets/icons/minus.png"
+           onclick="decrementaInput('numero-bersagli')">
+      <input class="form-control mx-auto" id="numero-bersagli" type="number"
+             min="0" value="1" style="width:88px;">
+      <img alt="+" class="adjust-icon" src="assets/icons/plus.png"
+           onclick="incrementaInput('numero-bersagli')">
+    </div>
+  </div>
 </div>
-<div class="adjust-wrapper mb-3 text-center" id="input-diametro" style="display:none;">
-<img alt="-" class="adjust-icon" onclick="decrementaInput('numero-diametro')" src="assets/icons/minus.png"/>
-<input class="form-control mx-auto" id="numero-diametro" min="0" type="number" value="1"/>
-<img alt="+" class="adjust-icon" onclick="incrementaInput('numero-diametro')" src="assets/icons/plus.png"/>
+
+<!-- Sostituisci tutto il blocco esistente -->
+<div class="mb-3 text-center" id="input-diametro" style="display:none;">
+  <div class="mago-input-container">
+    <label for="numero-diametro" class="mago-label">Ogni 5 metri di diametro (+5)</label>
+    <div class="input-group">
+      <img alt="-" class="adjust-icon" src="assets/icons/minus.png"
+           onclick="decrementaInput('numero-diametro')">
+      <input class="form-control mx-auto" id="numero-diametro" type="number"
+             min="0" value="1" style="width:88px;">
+      <img alt="+" class="adjust-icon" src="assets/icons/plus.png"
+           onclick="incrementaInput('numero-diametro')">
+    </div>
+  </div>
 </div>
+
 <!-- Durata -->
 <div class="mb-3">
 <label class="form-label" for="durata">Durata</label>
 <select class="form-select" id="durata" onchange="mostraInputDurata()"></select>
 </div>
-<!-- Dinamici durata -->
-<div class="adjust-wrapper mb-3 text-center" id="input-round" style="display:none;">
-<img alt="-" class="adjust-icon" onclick="decrementaInput('numero-round')" src="assets/icons/minus.png"/>
-<input class="form-control mx-auto" id="numero-round" min="0" type="number" value="1"/>
-<img alt="+" class="adjust-icon" onclick="incrementaInput('numero-round')" src="assets/icons/plus.png"/>
+
+<!-- Sostituisci il blocco esistente -->
+<div class="mb-3 text-center" id="input-round" style="display:none;">
+  <div class="mago-input-container">
+    <label for="numero-round" class="mago-label">Ogni round oltre il primo (+2)</label>
+    <div class="input-group">
+      <img alt="-" class="adjust-icon" src="assets/icons/minus.png"
+           onclick="decrementaInput('numero-round')">
+      <input class="form-control mx-auto" id="numero-round" type="number"
+             min="0" value="1" style="width:88px;">
+      <img alt="+" class="adjust-icon" src="assets/icons/plus.png"
+           onclick="incrementaInput('numero-round')">
+    </div>
+  </div>
 </div>
-<div class="adjust-wrapper mb-3 text-center" id="input-minuti10" style="display:none;">
-<img alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti10')" src="assets/icons/minus.png"/>
-<input class="form-control mx-auto" id="numero-minuti10" min="0" type="number" value="1"/>
-<img alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti10')" src="assets/icons/plus.png"/>
+
+<!-- Sostituisci il blocco esistente -->
+<div class="mb-3 text-center" id="input-minuti10" style="display:none;">
+  <div class="mago-input-container">
+    <label for="numero-minuti10" class="mago-label">Ogni 10 minuti (+6)</label>
+    <div class="input-group">
+      <img alt="-" class="adjust-icon" src="assets/icons/minus.png"
+           onclick="decrementaInput('numero-minuti10')">
+      <input class="form-control mx-auto" id="numero-minuti10" type="number"
+             min="0" value="1" style="width:88px;">
+      <img alt="+" class="adjust-icon" src="assets/icons/plus.png"
+           onclick="incrementaInput('numero-minuti10')">
+    </div>
+  </div>
 </div>
+
+
 <!-- Modalità di lancio -->
 <h2 class="h4 text-center">Modalità di lancio</h2>
 <div class="mb-3">
@@ -119,30 +160,60 @@
 <input class="form-check-input" id="variabile2" onchange="mostraInputVariabili()" type="checkbox"/>
 <label class="form-check-label" for="variabile2" id="label-variabile2"></label>
 </div>
-<div class="adjust-wrapper mb-3 text-center" id="input-mago-aggiuntivo" style="display:none;">
-<img alt="-" class="adjust-icon" onclick="decrementaMagiAggiuntivi()" src="assets/icons/minus.png"/>
-<input class="form-control mx-auto" id="numero-magi-aggiuntivi" min="0" onchange="aggiornaPunteggiMagiAggiuntivi()" type="number" value="1"/>
-<img alt="+" class="adjust-icon" onclick="incrementaMagiAggiuntivi()" src="assets/icons/plus.png"/>
+
+<!-- PRIMA: <div class="adjust-wrapper mb-3 text-center" id="input-mago-aggiuntivo" ...> -->
+<div class="mb-3 text-center" id="input-mago-aggiuntivo" style="display:none;">
+  <div class="mago-input-container">
+    <label for="numero-magi-aggiuntivi" class="mago-label">Ogni mago aggiuntivo (max 4) (+Grado Scuola)</label>
+    <div class="input-group">
+      <img alt="-" class="adjust-icon" src="assets/icons/minus.png" onclick="decrementaMagiAggiuntivi()">
+      <input class="form-control mx-auto" id="numero-magi-aggiuntivi" type="number"
+             min="0" value="1" style="width:88px;" onchange="aggiornaPunteggiMagiAggiuntivi()">
+      <img alt="+" class="adjust-icon" src="assets/icons/plus.png" onclick="incrementaMagiAggiuntivi()">
+    </div>
+  </div>
 </div>
+
+
 <div class="mb-3 text-center" id="punteggi-magi-aggiuntivi"></div>
 <div class="form-check">
 <input class="form-check-input" id="variabile3" onchange="mostraInputVariabili()" type="checkbox"/>
 <label class="form-check-label" for="variabile3" id="label-variabile3"></label>
 </div>
-<div class="adjust-wrapper mb-3 text-center" id="input-lancio-rituale" style="display:none;">
-<img alt="-" class="adjust-icon" onclick="decrementaInput('numero-rituali')" src="assets/icons/minus.png"/>
-<input class="form-control mx-auto" id="numero-rituali" min="0" type="number" value="1"/>
-<img alt="+" class="adjust-icon" onclick="incrementaInput('numero-rituali')" src="assets/icons/plus.png"/>
+
+<!-- PRIMA: <div class="adjust-wrapper mb-3 text-center" id="input-lancio-rituale" ...> -->
+<div class="mb-3 text-center" id="input-lancio-rituale" style="display:none;">
+  <div class="mago-input-container">
+    <label for="numero-rituali" class="mago-label">Lancio con rituale (ogni 15 minuti) (-10)</label>
+    <div class="input-group">
+      <img alt="-" class="adjust-icon" src="assets/icons/minus.png" onclick="decrementaInput('numero-rituali')">
+      <input class="form-control mx-auto" id="numero-rituali" type="number"
+             min="0" value="1" style="width:88px;">
+      <img alt="+" class="adjust-icon" src="assets/icons/plus.png" onclick="incrementaInput('numero-rituali')">
+    </div>
+  </div>
 </div>
+
+
 <div class="form-check">
 <input class="form-check-input" id="rounds-checkbox" onchange="mostraInputRound()" type="checkbox"/>
 <label class="form-check-label" for="rounds-checkbox" id="label-rounds"></label>
 </div>
-<div class="adjust-wrapper mb-3 text-center" id="input-rounds" style="display:none;">
-<img alt="-" class="adjust-icon" onclick="decrementaInput('numero-rounds')" src="assets/icons/minus.png"/>
-<input class="form-control mx-auto" id="numero-rounds" max="10" min="0" type="number" value="1"/>
-<img alt="+" class="adjust-icon" onclick="incrementaRoundConcentrazione()" src="assets/icons/plus.png"/>
+
+<!-- PRIMA: <div class="adjust-wrapper mb-3 text-center" id="input-rounds" ...> -->
+<div class="mb-3 text-center" id="input-rounds" style="display:none;">
+  <div class="mago-input-container">
+    <label for="numero-rounds" class="mago-label">Round di concentrazione prima del lancio (max 10) (-1 per round)</label>
+    <div class="input-group">
+      <img alt="-" class="adjust-icon" src="assets/icons/minus.png" onclick="decrementaInput('numero-rounds')">
+      <input class="form-control mx-auto" id="numero-rounds" type="number"
+             min="0" max="10" value="1" style="width:88px;">
+      <img alt="+" class="adjust-icon" src="assets/icons/plus.png" onclick="incrementaRoundConcentrazione()">
+    </div>
+  </div>
 </div>
+
+
 <!-- Effetti -->
 <h2 class="h4 text-center">Effetti di lancio</h2>
 <div class="form-check">
