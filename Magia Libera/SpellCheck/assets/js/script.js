@@ -86,17 +86,14 @@ function mostraInputBersagliDiametro() {
 function mostraInputDurata() {
   const code = getSelectedCode("durata");
   const inputRound   = document.getElementById("input-round");
-  const inputMinuti7 = document.getElementById("input-minuti7");
-  const inputMinuti15= document.getElementById("input-minuti15");
-
+  const inputMinuti10 = document.getElementById("input-minuti10");
+  
   inputRound.style.display   = (code === "DUR_ROUND_OLTRE") ? 'block' : 'none';
-  inputMinuti7.style.display = (code === "DUR_MIN_7")       ? 'block' : 'none';
-  inputMinuti15.style.display= (code === "DUR_MIN_15")      ? 'block' : 'none';
-
+  inputMinuti10.style.display = (code === "DUR_MIN_10")       ? 'block' : 'none';
+  
   if (code !== "DUR_ROUND_OLTRE") document.getElementById("numero-round").value = "1";
-  if (code !== "DUR_MIN_7")       document.getElementById("numero-minuti7").value = "1";
-  if (code !== "DUR_MIN_15")      document.getElementById("numero-minuti15").value = "1";
-}
+  if (code !== "DUR_MIN_10")       document.getElementById("numero-minuti10").value = "1";
+  }
 
 function incrementaMagiAggiuntivi() {
   const inputElement = document.getElementById("numero-magi-aggiuntivi");
@@ -268,7 +265,7 @@ function _difficoltaResistenza(difficoltaLancio, tab = TABELLE.difficoltaResiste
    Calcoli - logica UI
    ======================= */
 function calcolaMoltiplicatori() {
-  let mBersagli = 0, mDiametro = 0, mRound = 0, mMin7 = 0, mMin15 = 0, mMagi = 0, mRituali = 0, mConc = 0;
+  let mBersagli = 0, mDiametro = 0, mRound = 0, mMin10 = 0, mMagi = 0, mRituali = 0, mConc = 0;
 
   if (document.getElementById("input-bersagli").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-bersagli").value) || 0;
@@ -282,13 +279,9 @@ function calcolaMoltiplicatori() {
     const n = parseInt(document.getElementById("numero-round").value) || 0;
     mRound = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_ROUND_OLTRE").value;
   }
-  if (document.getElementById("input-minuti7").style.display === 'block') {
-    const n = parseInt(document.getElementById("numero-minuti7").value) || 0;
-    mMin7 = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_MIN_7").value;
-  }
-  if (document.getElementById("input-minuti15").style.display === 'block') {
-    const n = parseInt(document.getElementById("numero-minuti15").value) || 0;
-    mMin15 = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_MIN_15").value;
+  if (document.getElementById("input-minuti10").style.display === 'block') {
+    const n = parseInt(document.getElementById("numero-minuti10").value) || 0;
+    mMin10 = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_MIN_10").value;
   }
   if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
     // come da specifica: la variabile2 aggiunge maghi (sottrazione dei loro punteggi a valle)
@@ -317,8 +310,7 @@ function calcolaMoltiplicatori() {
     moltiplicatoreBersagli: mBersagli,
     moltiplicatoreDiametro: mDiametro,
     moltiplicatoreRound: mRound,
-    moltiplicatoreMinuti7: mMin7,
-    moltiplicatoreMinuti15: mMin15,
+    moltiplicatoreMinuti10: mMin10,
     moltiplicatoreMagiAggiuntivi: mMagi,
     moltiplicatoreRituali: mRituali,
     moltiplicatoreConcentrazione: mConc,
@@ -400,8 +392,7 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
     moltiplicatoreBersagli,
     moltiplicatoreDiametro,
     moltiplicatoreRound,
-    moltiplicatoreMinuti7,
-    moltiplicatoreMinuti15,
+    moltiplicatoreMinuti10,
     moltiplicatoreMagiAggiuntivi,
     moltiplicatoreRituali,
     moltiplicatoreConcentrazione,
@@ -422,7 +413,7 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
 
   let totale = base + distanza + area + durata + gesti + verbale + posizione
     + moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound
-    + moltiplicatoreMinuti7 + moltiplicatoreMinuti15 + moltiplicatoreMagiAggiuntivi
+    + moltiplicatoreMinuti10 + moltiplicatoreMagiAggiuntivi
     + moltiplicatoreRituali + moltiplicatoreConcentrazione
     + mod_corpo + mod_materia + mod_mente
     + effetti + danni_totali;
@@ -453,10 +444,10 @@ function ripristinaValori() {
   TABELLE.dadi.forEach(d => setVal(d.id, "0"));
 
   setVal("numero-bersagli","1"); setVal("numero-diametro","1"); setVal("numero-round","1");
-  setVal("numero-minuti7","1"); setVal("numero-minuti15","1");
+  setVal("numero-minuti10","1");
   setVal("numero-magi-aggiuntivi","1"); setVal("numero-rituali","1"); setVal("numero-rounds","1");
 
-  ["input-bersagli","input-diametro","input-round","input-minuti7","input-minuti15","input-mago-aggiuntivo","input-lancio-rituale","input-rounds"]
+  ["input-bersagli","input-diametro","input-round","input-minuti10","input-mago-aggiuntivo","input-lancio-rituale","input-rounds"]
     .forEach(id => document.getElementById(id).style.display = 'none');
 
   ["variabile1","variabile2","variabile3","rounds-checkbox","effetto1","effetto2","effetto3","corpo-checkbox","materia-checkbox","mente-checkbox"]

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="description" content="Calcolatore di difficoltà per incantesimi - regolamento open source GdR">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpellCheck - Calcolo Difficoltà Incantesimi</title>
@@ -317,48 +317,39 @@
 <script src="assets/js/style-toggle.js"></script>
 <script src="assets/js/pwa-install.js"></script>
 <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('service-worker.js').then(reg => {
-        // Tenta un update proattivo a ogni pageload
-        reg.update().catch(()=>{});
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', async () => {
+    try {
+      const reg = await navigator.serviceWorker.register('./service-worker.js');
 
-        // Quando arriva un nuovo SW in waiting, chiedi di attivarsi subito
-        function onNewServiceWorker(worker) {
-          if (!worker) return;
-          worker.postMessage({ type: 'SKIP_WAITING' });
-        }
-
-        // Se il SW supporta waiting già subito
-        if (reg.waiting) {
-          onNewServiceWorker(reg.waiting);
-        }
-
-        // Monitor installazione di una nuova versione
-        reg.addEventListener('updatefound', () => {
-          const newWorker = reg.installing;
-          if (!newWorker) return;
-          newWorker.addEventListener('statechange', () => {
-            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-              // c'è una nuova versione attiva → ricarico per evitare asset stali
+      // 1) Quando trova un update
+      reg.addEventListener('updatefound', () => {
+        const newWorker = reg.installing;
+        if (!newWorker) return;
+        newWorker.addEventListener('statechange', () => {
+          // 'installed' + esiste un controller => SW aggiornato, app già controllata dal vecchio SW
+          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+            // Reload "morbido": evita loop usando un flag
+            if (!sessionStorage.getItem('sw-reloaded')) {
+              sessionStorage.setItem('sw-reloaded', '1');
               window.location.reload();
             }
-          });
-        });
-
-        // Canale per far partire skipWaiting da SW (fallback)
-        navigator.serviceWorker.addEventListener('message', event => {
-          if (event.data && event.data.type === 'RELOAD_PAGE') {
-            window.location.reload();
           }
         });
-      }).catch(()=>{});
-    });
+      });
 
-    // Handler per SKIP_WAITING custom
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-    });
-  }
+      // 2) Fallback: se cambia il controller, ricarica una sola volta
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!sessionStorage.getItem('sw-reloaded')) {
+          sessionStorage.setItem('sw-reloaded', '1');
+          window.location.reload();
+        }
+      });
+    } catch (e) {
+      console.error('SW registration failed:', e);
+    }
+  });
+}
 </script>
 </body>
 </html>
