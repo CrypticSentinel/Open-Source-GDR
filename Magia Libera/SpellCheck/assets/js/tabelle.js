@@ -12,12 +12,12 @@ const TABELLE = {
     distanza: [
       { code: "DIST_PERSONALE", text: "Personale (-2)", value: -2 },
       { code: "DIST_TOCCO", text: "Tocco (+0)", value: 0, selected: true },
-      { code: "DIST_CORTA", text: "Corta (entro 3 m) (+3)", value: 3 },
-      { code: "DIST_MEDIA", text: "Media (entro 10 m) (+10)", value: 10 },
-      { code: "DIST_LUNGA", text: "Lunga (entro 25 m) (+25)", value: 25 },
-      { code: "DIST_LUNGHISSIMA", text: "Lunghissima (entro 1 km) (+50)", value: 50 },
-      { code: "DIST_NONVISTA_CONOSCIUTO", text: "Non in vista (Conosciuto) (+60)", value: 60 },
-      { code: "DIST_NONVISTA_SCONOSCIUTO", text: "Non in vista (Sconosciuto) (+75)", value: 75 }
+      { code: "DIST_CORTA", text: "Corta (entro 3 m) (+2)", value: 2 },
+      { code: "DIST_MEDIA", text: "Media (entro 10 m) (+6)", value: 6 },
+      { code: "DIST_LUNGA", text: "Lunga (entro 25 m) (+12)", value: 12 },
+      { code: "DIST_LUNGHISSIMA", text: "Lunghissima (entro 1 km) (+24)", value: 24 },
+      { code: "DIST_NONVISTA_CONOSCIUTO", text: "Non in vista (Conosciuto) (+36)", value: 36 },
+      { code: "DIST_NONVISTA_SCONOSCIUTO", text: "Non in vista (Sconosciuto) (+48)", value: 48 }
     ],
     area: [
       { code: "AREA_CREATURA_INTERA", text: "Creatura – Intera (+0)", value: 0, selected: true },
@@ -30,11 +30,10 @@ const TABELLE = {
     durata: [
       { code: "DUR_ISTANTANEO", text: "1 round / Istantaneo (+0)", value: 0, selected: true },
       { code: "DUR_ROUND_OLTRE", text: "Ogni round oltre il primo (+2)", value: 2 },
-      { code: "DUR_MIN_7", text: "Ogni 7 minuti (+5)", value: 5 },
-      { code: "DUR_MIN_15", text: "Ogni 15 minuti (+10)", value: 10 },
-      { code: "DUR_CONCENTRAZIONE", text: "Finchè si rimane concentrati (-5)", value: -5 },
-      { code: "DUR_CONDIZIONE", text: "Condizione (Finchè, Quando) (+30)", value: 30 },
-      { code: "DUR_PERMANENTE", text: "Permanente (+20)", value: 20 }
+      { code: "DUR_MIN_10", text: "Ogni 10 minuti (+6)", value: 6 },
+      { code: "DUR_CONCENTRAZIONE", text: "Finchè si rimane concentrati (-2)", value: -2 },
+      { code: "DUR_CONDIZIONE", text: "Condizione (Finchè, Quando) (+25)", value: 25 },
+      { code: "DUR_PERMANENTE", text: "Permanente (+35)", value: 35 }
     ],
     gesti: [
       { code: "GESTI_SENZA", text: "Senza gesti (+5)", value: 5 },
@@ -73,7 +72,7 @@ const TABELLE = {
       { code: "MENTE_LEGGERE", text: "Leggere (+5)", value: 5 },
       { code: "MENTE_MODIFICARE", text: "Modificare (+15)", value: 15 },
       { code: "MENTE_SCRIVERE", text: "Scrivere (+20)", value: 20 },
-      { code: "MENTE_RIMUOVERE", text: "Rimuovere (+10)", value: 10 }
+      { code: "MENTE_RIMUOVERE", text: "Rimuovere (+12)", value: 12 }
     ]
   },
 
