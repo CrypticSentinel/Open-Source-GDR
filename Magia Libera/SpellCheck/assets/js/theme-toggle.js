@@ -1,4 +1,3 @@
-// theme-toggle.js v3 — Switch singolo Auto/Light/Dark con persistenza
 (function () {
   const MODE_KEY = 'spellcheck_theme_mode'; // valori: auto | light | dark
 

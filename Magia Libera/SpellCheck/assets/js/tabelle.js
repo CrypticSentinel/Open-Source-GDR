@@ -1,7 +1,3 @@
-/* tabelle.js
- * Sorgente dati centralizzato: opzioni, pesi, etichette e costanti di calcolo.
- */
-
 const TABELLE = {
   baseline: {
     difficoltaBase: 20

@@ -1,12 +1,5 @@
-/* service-worker.js — modalità cache-safe per GitHub Pages
- * Obiettivi:
- * - Aggiornamento immediato (skipWaiting + clients.claim)
- * - Niente cache “sticky” per HTML (network-first con cache: 'reload')
- * - Stale-While-Revalidate per asset statici (JS/CSS/immagini) con no-store lato fetch
- * - Pulizia aggressiva delle cache legacy all’attivazione
- */
-
 const RUNTIME_CACHE = 'runtime-cache-v1';
+const CACHE_PREFIX = 'runtime-cache-';
 
 /** Install: attiva subito la nuova versione */
 self.addEventListener('install', (event) => {
@@ -18,17 +11,12 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     (async () => {
       const keys = await caches.keys();
-      await Promise.all(keys.map((k) => caches.delete(k))); // wipe totale, evita collisioni con cache precedenti
+      await Promise.all(keys.filter(k => k.startsWith(CACHE_PREFIX)).map(k => caches.delete(k))); // wipe totale, evita collisioni con cache precedenti
       await self.clients.claim();
     })()
   );
 });
 
-/** Strategia di fetch:
- * - Navigazioni (HTML): network-first, con cache: 'reload' per bypass are proxy/CDN/browser
- * - Asset first-party (JS/CSS/img): SWR (serve cache se presente e aggiorna in background), ma il fetch usa no-store per forzare contenuto fresco
- * - Request non-GET o third-party: lasciate pass-through
- */
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
@@ -47,7 +35,7 @@ self.addEventListener('fetch', (event) => {
           return fresh;
         } catch {
           // fallback cache (offline/errore rete)
-          const cached = await caches.match(req);
+          const cached = await caches.match(req) || await caches.match(new Request('./')) || await caches.match('/index.html');
           if (cached) return cached;
           // fallback minimale a una pagina vuota per non rompere la UX
           return new Response('<!doctype html><title>Offline</title><h1>Offline</h1>', {

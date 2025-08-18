@@ -1,4 +1,3 @@
-// style-toggle.js — Switch Stile Standard/Arcano/Rosso con persistenza
 (function () {
   const STYLE_KEY = 'spellcheck_theme_style'; // 'standard' | 'arcano' | 'rosso'
 

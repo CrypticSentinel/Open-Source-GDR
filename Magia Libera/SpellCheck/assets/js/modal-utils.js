@@ -1,8 +1,3 @@
-// modal-utils.js — Gestione modali centrati (Punto C)
-// - Forza centratura tramite classe .is-open (usata in themes.css/style.css)
-// - Compatibile con il codice esistente: non serve modificare script.js
-// - Include focus management & ESC per chiusura accessibile
-
 (function () {
   const OPEN_CLASS = 'is-open';
   let lastActive = null;
@@ -94,7 +89,6 @@
         return original.apply(this, arguments);
       };
     }
-    // Patch del close del popup risultati già gestito da wireButtons()
   }
 
   // Bootstrap

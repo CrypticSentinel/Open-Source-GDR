@@ -2,9 +2,6 @@ const ASSETS_BASE = 'assets/';
 const ICONS_BASE  = ASSETS_BASE + 'icons/';
 const IMG_BASE    = ASSETS_BASE + 'img/';
 
-/* =======================
-   Bootstrap dei SELECT
-   ======================= */
 function populateSelect(selectId, items) {
   const sel = document.getElementById(selectId);
   if (!sel) return;
@@ -59,9 +56,6 @@ function bootstrapSelects() {
   });
 }
 
-/* =======================
-   Funzioni UI
-   ======================= */
 function mostraInputBersagliDiametro() {
   const code = getSelectedCode("area");
   const inputBersagli = document.getElementById("input-bersagli");
@@ -200,7 +194,6 @@ function uncheckOtherCheckboxes(checkedId) {
   toggleCorpoDropdown(); toggleMenteDropdown(); toggleMateriaDropdown();
 }
 
-/* Toggle dadi */
 function toggled1() { toggleDieControls("d1"); }
 function toggleD4()  { toggleDieControls("d4"); }
 function toggleD6()  { toggleDieControls("d6"); }
@@ -235,9 +228,6 @@ function incrementaRoundConcentrazione() {
   if (v < 10) el.value = v + 1;
 }
 
-/* =======================
-   Calcoli - funzioni PURE per test
-   ======================= */
 function _faticaEDannoBase(gradoMagia, difficoltaTotale, tab = TABELLE.faticaEDannoBase) {
   const riga = tab.find(r => gradoMagia >= r.grado[0] && gradoMagia <= r.grado[1]);
   if (!riga) return { fatica: 0, dannoBase: 0 };
@@ -261,30 +251,26 @@ function _difficoltaResistenza(difficoltaLancio, tab = TABELLE.difficoltaResiste
   return 0;
 }
 
-/* =======================
-   Calcoli - logica UI
-   ======================= */
 function calcolaMoltiplicatori() {
   let mBersagli = 0, mDiametro = 0, mRound = 0, mMin10 = 0, mMagi = 0, mRituali = 0, mConc = 0;
 
   if (document.getElementById("input-bersagli").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-bersagli").value) || 0;
-    mBersagli = (n - 1) * TABELLE.select.area.find(a => a.code === "AREA_BERSAGLI_OLTRE").value;
+    mBersagli = (n - 1) * (TABELLE.select.area.find(a => a.code === "AREA_BERSAGLI_OLTRE")?.value ?? 0);
   }
   if (document.getElementById("input-diametro").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-diametro").value) || 0;
-    mDiametro = (n - 1) * TABELLE.select.area.find(a => a.code === "AREA_DIAMETRO_5M").value;
+    mDiametro = (n - 1) * (TABELLE.select.area.find(a => a.code === "AREA_DIAMETRO_5M")?.value ?? 0);
   }
   if (document.getElementById("input-round").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-round").value) || 0;
-    mRound = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_ROUND_OLTRE").value;
+    mRound = (n - 1) * (TABELLE.select.durata.find(d => d.code === "DUR_ROUND_OLTRE")?.value ?? 0);
   }
   if (document.getElementById("input-minuti10").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-minuti10").value) || 0;
-    mMin10 = (n - 1) * TABELLE.select.durata.find(d => d.code === "DUR_MIN_10").value;
+    mMin10 = (n - 1) * (TABELLE.select.durata.find(d => d.code === "DUR_MIN_10")?.value ?? 0);
   }
   if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
-    // come da specifica: la variabile2 aggiunge maghi (sottrazione dei loro punteggi a valle)
     mMagi = 0;
   }
   if (document.getElementById("input-lancio-rituale").style.display === 'block') {
@@ -296,7 +282,6 @@ function calcolaMoltiplicatori() {
     mConc = n * TABELLE.variabili.rounds.value; // tipicamente -1 per round
   }
 
-  // Punteggi dei maghi aggiuntivi (si sottraggono dopo)
   let punteggiMagi = 0;
   if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-magi-aggiuntivi").value);
@@ -318,18 +303,17 @@ function calcolaMoltiplicatori() {
   };
 }
 
-function mostraPopupGradoMagia() { document.getElementById("popup-grado-magia").style.display = 'block'; }
+function mostraPopupGradoMagia() { window.showModal ? window.showModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "block"); }
 
 document.addEventListener("DOMContentLoaded", () => {
   bootstrapSelects();
 
-  // wiring esclusività scuole
   document.getElementById("mente-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("mente-checkbox"); });
   document.getElementById("corpo-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("corpo-checkbox"); });
   document.getElementById("materia-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("materia-checkbox"); });
 
   const closeBtn = document.getElementById("close-popup");
-  if (closeBtn) closeBtn.addEventListener("click", () => { document.getElementById("popup-difficolta").style.display = 'none'; });
+  if (closeBtn) closeBtn.addEventListener("click", () => { window.hideModal ? window.hideModal("popup-difficolta") : (document.getElementById("popup-difficolta").style.display = "none"); });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -338,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submit.addEventListener("click", function () {
       const gradoMagia = parseInt(document.getElementById("grado-magia").value);
       const punteggioVolonta = parseInt(document.getElementById("punteggio-volonta").value);
-      document.getElementById("popup-grado-magia").style.display = 'none';
+      window.hideModal ? window.hideModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "none");
       calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
     });
   }
@@ -418,7 +402,6 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
     + mod_corpo + mod_materia + mod_mente
     + effetti + danni_totali;
 
-  // sottrai punteggi dei maghi aggiuntivi
   totale -= punteggiMagi;
 
   const { fatica, dannoBase } = calcolaFaticaEDannoBase(gradoMagia, totale);
@@ -431,7 +414,7 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
   document.getElementById("danno-base").innerText = dannoBase;
   document.getElementById("difficolta-resistenza").innerText = difficoltaRes;
 
-  document.getElementById("popup-difficolta").style.display = 'block';
+  window.showModal ? window.showModal("popup-difficolta") : (document.getElementById("popup-difficolta").style.display = "block");
 }
 
 function ripristinaValori() {
