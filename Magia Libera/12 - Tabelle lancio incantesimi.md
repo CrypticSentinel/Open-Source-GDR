@@ -53,7 +53,7 @@ Questa tabella gestisce l'aumento della difficoltà in base alla durata dell'eff
 | Ogni 10 minuti                 | +6                      | L'effetto durerà per ogni incremento di 10 minuti                                                                |
 | Finchè si rimane concentrati  | -2                      | L'effetto perdurerà fino a quanto si rimarrà concentrati, sarà necessario almeno 1 turno di concentrazione |
 | Condizione (Finchè, Quando)   | +25                     | L'effetto si manifesterà quando o finchè non accadrà un evento specifico                                   |
-| Permanente                    | +35                     | l'effetto sarà permanente                                                                                  |
+| Permanente                    | +35                     | L'effetto sarà permanente                                                                                  |
 
 - **1 round / Istantaneo (+0):** L'incantesimo ha effetto immediato e dura solo un round, senza modificare la difficoltà. È l'uso più semplice e rapido di un incantesimo.  
 - **Ogni round oltre il primo (+2):** Ogni round aggiuntivo in cui l'incantesimo continua a fare effetto aumenta la difficoltà, poiché richiede un impegno magico prolungato.  
