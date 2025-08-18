@@ -1,12 +1,3 @@
-
-/* style.css — Restyling completo + fix popup/checkbox (2025)
-   - Design system con CSS Variables
-   - Dark mode (prefers + .dark)
-   - Header con overlay radiale sul primario
-   - Popup: label left, valori centrati e in evidenza
-   - Checkbox inline su mobile (form-check)
-*/
-
 :root {
   /* Palette Standard (default) */
   --bg: #f8fafc;
@@ -287,3 +278,38 @@ footer {
 /* Utility */
 .mt-4 { margin-top: var(--space-4) !important; }
 .mb-3 { margin-bottom: var(--space-3) !important; }
+
+/* ===== UI Fix: Dadi aggiuntivi (Opzione A - solo CSS) =====
+   Incolla queste regole IN FONDO al tuo assets/css/style.css.
+   Scopo: allineare su un'unica riga i pulsanti - / label / + e mandare l'input sotto.
+*/
+.dadi-aggiuntivi-container .mb-3.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.dadi-aggiuntivi-container .form-label {
+  display: inline-block !important;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.dadi-aggiuntivi-container .adjust-icon,
+.dadi-aggiuntivi-container .dice-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dadi-aggiuntivi-container [id$="-controls"] {
+  flex-basis: 100%;
+  display: block;
+  margin-top: .25rem;
+}
+
+.dadi-aggiuntivi-container .adjust-icon {
+  width: 24px;
+  height: 24px;
+}
