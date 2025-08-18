@@ -201,9 +201,13 @@ h2.h4, h3.h4 {
 }
 .adjust-icon:hover { opacity: 1; }
 
-/* Input numerici inline nelle righe dinamiche */
+/* Centra le input box dei dadi come gli altri controlli */
+.dice-input-container,
 .text-center .form-control.mx-auto {
-  width: 100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important; /* necessario per il centraggio col margin auto */
+  text-align: center;
 }
 
 /* Modal overlay + centratura */
@@ -379,4 +383,43 @@ img.adjust-icon {
     flex-wrap: wrap;
     row-gap: 8px;
   }
+}
+
+.mago-input-container {
+  display: flex;
+  flex-direction: column; /* Etichetta sopra, input-group sotto */
+  align-items: center;    /* Centra orizzontalmente */
+  margin-bottom: 12px;
+}
+
+.mago-input-container .mago-label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--muted); /* stesso stile delle altre label */
+}
+
+/* === Forza layout verticale "Mago 1–4" (label sopra) === */
+.mago-input-container {
+  display: flex !important;         /* impone flex anche se ereditato altro */
+  flex-direction: column !important;/* label sopra, input-group sotto */
+  align-items: center;              /* centratura coerente col tuo inline-flex */
+  gap: 6px;
+}
+
+/* Garantisce che i due figli siano trattati come item separati della colonna */
+.mago-input-container .mago-label {
+  display: block;                   /* evita che si comporti da inline sullo stesso rigo */
+  margin: 0;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.mago-input-container .input-group {
+  display: inline-flex !important;  /* mantiene il tuo comportamento interno */
+  align-items: center !important;
+  justify-content: center;
+  gap: 10px;
+  width: auto !important;
+  flex-wrap: nowrap;
+  margin: 0 auto;
 }
