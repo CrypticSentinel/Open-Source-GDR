@@ -220,12 +220,12 @@ Questa tabella riguarda gli incantesimi che influenzano la mente del bersaglio, 
 | Leggere      | +5                      | Permette di leggere la mente di un bersaglio (es un pensiero o un ricordo)                           |
 | Modificare   | +15                     | Permette di modificare la mente di un bersaglio (es è possibile modificare un ricordo o un pensiero) |
 | Scrivere     | +20                     | Permette di scrivere la mente di un bersaglio (es è possibile aggiungere un ricordo o un pensiero)   |
-| Cancellare   | +10                     | Permette di cancellare la mente di un bersaglio (es. è possibile rimuovere un ricordo o un pensiero) |
+| Cancellare   | +12                     | Permette di cancellare la mente di un bersaglio (es. è possibile rimuovere un ricordo o un pensiero) |
 
 - **Leggere (+5):** Permette di leggere un pensiero o un ricordo nella mente del bersaglio. È un'azione sottile che non aumenta la difficoltà rispetto alla base.  
 - **Modificare (+15):** Consente di alterare un pensiero o un ricordo esistente nel bersaglio. Questa operazione è complessa e aumenta significativamente la difficoltà.  
 - **Scrivere (+20):** Permette di impiantare un nuovo pensiero o ricordo nella mente del bersaglio, un'operazione molto difficile che richiede grande potere mentale e aumenta enormemente la difficoltà.  
-- **Cancellare (+10):** Consente di rimuovere un pensiero o un ricordo dalla mente del bersaglio. Questa azione è meno complessa che modificare o scrivere, ma comunque aumenta la difficoltà.  
+- **Cancellare (+12):** Consente di rimuovere un pensiero o un ricordo dalla mente del bersaglio. Questa azione è meno complessa che modificare o scrivere, ma comunque aumenta la difficoltà.  
 
 
 ## Tabella modificatori Materia
