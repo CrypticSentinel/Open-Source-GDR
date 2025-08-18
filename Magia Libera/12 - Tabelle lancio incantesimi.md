@@ -50,19 +50,17 @@ Questa tabella gestisce l'aumento della difficoltà in base alla durata dell'eff
 | :-----------------------------|:-----------------------:| :----------------------------------------------------------------------------------------------------------|
 | 1 round / Istantaneo          | +0                      | L'effetto si manifesterà e sparira all'interno dello stesso round di lancio                                |
 | Ogni round oltre il primo     | +2                      | L'effetto si manifesterà e perdurerà per il numero di round scelti                                         |
-| Ogni 7 minuti                 | +5                      | L'effetto durerà per ogni incremento di 7 minuti                                                                |
-| Ogni 15 minuti                | +10                     | L'effetto durerà per ogni incremento di 15 minuti                                                               |
-| Finchè si rimane concentrati  | -5                      | L'effetto perdurerà fino a quanto si rimarrà concentrati, sarà necessario almeno 1 turno di concentrazione |
-| Condizione (Finchè, Quando)   | +30                     | L'effetto si manifesterà quando o finchè non accadrà un evento specifico                                   |
-| Permanente                    | +20                     | l'effetto sarà permanente                                                                                  |
+| Ogni 10 minuti                 | +6                      | L'effetto durerà per ogni incremento di 10 minuti                                                                |
+| Finchè si rimane concentrati  | -2                      | L'effetto perdurerà fino a quanto si rimarrà concentrati, sarà necessario almeno 1 turno di concentrazione |
+| Condizione (Finchè, Quando)   | +25                     | L'effetto si manifesterà quando o finchè non accadrà un evento specifico                                   |
+| Permanente                    | +35                     | l'effetto sarà permanente                                                                                  |
 
 - **1 round / Istantaneo (+0):** L'incantesimo ha effetto immediato e dura solo un round, senza modificare la difficoltà. È l'uso più semplice e rapido di un incantesimo.  
 - **Ogni round oltre il primo (+2):** Ogni round aggiuntivo in cui l'incantesimo continua a fare effetto aumenta la difficoltà, poiché richiede un impegno magico prolungato.  
-- **Ogni 7 minuti (+5):** L'incantesimo dura per incrementi di 7 minuti, con ogni intervallo che aumenta la difficoltà a causa del mantenimento prolungato dell'energia magica.  
-- **Ogni 15 minuti (+10):** L'incantesimo dura per incrementi di 15 minuti, con un aumento ancora maggiore della difficoltà rispetto ai 7 minuti, a causa della durata estesa.  
-- **Finché si rimane concentrati (-5):** L'incantesimo dura finché il mago riesce a mantenere la concentrazione, riducendo la difficoltà poiché richiede uno sforzo continuo ma controllato. Il lancio dell'incantesimo avverrà nel turno successivo, ogni turno di concentrazione potrà essere richiesto un tiro di concentrazione a discrezione del Master.  
-- **Condizione (Finché, Quando) (+30):** L'incantesimo si attiva o continua finché non si verifica un evento specifico. Questo tipo di controllo richiede molta energia e concentrazione, aumentando notevolmente la difficoltà.  
-- **Permanente (+20):** L'incantesimo dura per sempre, il che richiede un'enorme quantità di energia magica e un alto livello di abilità, comportando un aumento significativo della difficoltà.  
+- **Ogni 10 minuti (+6):** L'incantesimo dura per incrementi di 10 minuti, con ogni intervallo che aumenta la difficoltà a causa del mantenimento prolungato dell'energia magica.  
+- **Finché si rimane concentrati (-2):** L'incantesimo dura finché il mago riesce a mantenere la concentrazione, riducendo la difficoltà poiché richiede uno sforzo continuo ma controllato. Il lancio dell'incantesimo avverrà nel turno successivo, ogni turno di concentrazione potrà essere richiesto un tiro di concentrazione a discrezione del Master.  
+- **Condizione (Finché, Quando) (+25):** L'incantesimo si attiva o continua finché non si verifica un evento specifico. Questo tipo di controllo richiede molta energia e concentrazione, aumentando notevolmente la difficoltà.  
+- **Permanente (+35):** L'incantesimo dura per sempre, il che richiede un'enorme quantità di energia magica e un alto livello di abilità, comportando un aumento significativo della difficoltà.  
 
 ## Tabella Modalità di lancio gestuali
 Questa tabella considera il tipo di gesti necessari per lanciare un incantesimo. Gesti più discreti o l'assenza totale di movimenti rendono il lancio più difficile, mentre gesti ampi e visibili possono facilitarlo.
