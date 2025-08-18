@@ -107,16 +107,10 @@
       <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-round')">
     </div>
 
-    <div class="mb-3 text-center" id="input-minuti7" style="display:none;">
-      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti7')">
-      <input type="number" id="numero-minuti7" class="form-control mx-auto" min="0" value="1">
-      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti7')">
-    </div>
-
-    <div class="mb-3 text-center" id="input-minuti15" style="display:none;">
-      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti15')">
-      <input type="number" id="numero-minuti15" class="form-control mx-auto" min="0" value="1">
-      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti15')">
+    <div class="mb-3 text-center" id="input-minuti10" style="display:none;">
+      <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-minuti10')">
+      <input type="number" id="numero-minuti10" class="form-control mx-auto" min="0" value="1">
+      <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-minuti10')">
     </div>
 
     <!-- Modalità di lancio -->
@@ -314,15 +308,14 @@
   </form>
 </div>
 
-<footer class="text-center mt-4"><p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202508171510</p></footer>
+<footer class="text-center mt-4"><p>&copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202508181151</p></footer>
 
-<script src="assets/js/config-loader.js"></script>
 <script src="assets/js/tabelle.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/modal-utils.js"></script>
 <script src="assets/js/theme-toggle.js"></script>
 <script src="assets/js/style-toggle.js"></script>
-
+<script src="assets/js/pwa-install.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
@@ -367,6 +360,5 @@
     });
   }
 </script>
-<script src="assets/js/pwa-install.js"></script>
 </body>
 </html>
