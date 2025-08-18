@@ -103,16 +103,16 @@ const TABELLE = {
 
   // Tabella fatica + danno base per range di Grado
   faticaEDannoBase: [
-    { grado: [1, 2],  fatica0: 19, intervalli: [24, 29, 34, 39, 44], dannoBase: "+1" },
-    { grado: [3, 4],  fatica0: 24, intervalli: [29, 34, 39, 44, 49], dannoBase: "+2" },
-    { grado: [5, 6],  fatica0: 29, intervalli: [34, 39, 44, 49, 54], dannoBase: "+3" },
-    { grado: [7, 8],  fatica0: 34, intervalli: [39, 44, 49, 54, 59], dannoBase: "+4" },
-    { grado: [9, 10], fatica0: 39, intervalli: [44, 49, 54, 59, 64], dannoBase: "+5" },
-    { grado: [11,12], fatica0: 44, intervalli: [49, 54, 59, 64, 69], dannoBase: "+6" },
-    { grado: [13,14], fatica0: 49, intervalli: [54, 59, 64, 69, 74], dannoBase: "+7" },
-    { grado: [15,16], fatica0: 54, intervalli: [59, 64, 69, 74, 79], dannoBase: "+8" },
-    { grado: [17,18], fatica0: 59, intervalli: [64, 69, 74, 79, 84], dannoBase: "+9" },
-    { grado: [19,20], fatica0: 64, intervalli: [69, 74, 79, 84, 89], dannoBase: "+10" }
+    { grado: [1, 2],  fatica0: 22, intervalli: [28, 34, 40, 46, 52], dannoBase: "+1" },
+    { grado: [3, 4],  fatica0: 26, intervalli: [32, 38, 44, 50, 56], dannoBase: "+2" },
+    { grado: [5, 6],  fatica0: 31, intervalli: [37, 43, 49, 55, 61], dannoBase: "+3" },
+    { grado: [7, 8],  fatica0: 36, intervalli: [42, 48, 54, 60, 66], dannoBase: "+4" },
+    { grado: [9, 10], fatica0: 41, intervalli: [47, 53, 59, 65, 71], dannoBase: "+5" },
+    { grado: [11,12], fatica0: 46, intervalli: [52, 58, 64, 70, 76], dannoBase: "+6" },
+    { grado: [13,14], fatica0: 51, intervalli: [57, 63, 69, 75, 81], dannoBase: "+7" },
+    { grado: [15,16], fatica0: 56, intervalli: [62, 68, 74, 80, 86], dannoBase: "+8" },
+    { grado: [17,18], fatica0: 61, intervalli: [67, 73, 79, 85, 91], dannoBase: "+9" },
+    { grado: [19,20], fatica0: 66, intervalli: [72, 78, 84, 90, 96], dannoBase: "+10" }
   ],
 
   // Difficoltà per resistere
