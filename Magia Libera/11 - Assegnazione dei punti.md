@@ -97,12 +97,10 @@ Ecco alcuni esempi narrativi per gli incrementi e le diminuzioni estreme nel sis
 
 **Morte**: Dopo anni di studio nei segreti oscuri, un mago sacrifica completamente le sue capacità di dare la vita o curare creature, per diventare un maestro della morte. Tuttavia, la sua maestria necromantica influisce negativamente sulla scuola di magia oppoeta (Vita) e gli oggetti che tocca sembrano invecchiare o decomporsi.  
 
-**Mente o Corpo**: Un illusionista perfeziona l’arte di manipolare la percezione fino a confondere persino gli dei. Tuttavia, le sue abilità nelle scuole opposte decadono, non riuscendo ad evocare nemmeno una semplice creatura o a trasformare oggetti con efficacia.  
-
 **Materia**: Un mago diventa un maestro nel mutare la materia a volontà, trasformando il piombo in oro e le rocce in aria. Ma l'arte della divinazione (Spirito) gli sfugge completamente, rendendolo cieco ai segreti del futuro e al flusso del tempo.  
 
 **Fuoco**: Un mago, specializzato nell’arte del fuoco, manifesta un'aura costante di calore intorno a sé. Tuttavia, il suo corpo diventa più fragile contro il freddo, e non riesce nemmeno a evocare una leggera brezza o manipolare acqua.  
 
 **Acqua**: Un incantatore padroneggia il gelo al punto che la temperatura del suo corpo è sempre fredda come il ghiaccio. Anche nelle giornate calde, le sue impronte lasciano brina, ma la sua incapacità di maneggiare il fuoco lo rende estremamente vulnerabile al calore.  
 
-**Mentea**: Un mago che sviluppa una grande abilità nel muovere oggetti con la mente riesce a far fluttuare persino enormi massi. Tuttavia, il suo corpo fisico diventa debole, non riesce più a sollevare nemmeno un oggetto leggero con le mani.  
+**Mente**: Un mago che sviluppa una grande abilità nel muovere oggetti con la mente riesce a far fluttuare persino enormi massi. Tuttavia, il suo corpo fisico diventa debole, non riesce più a sollevare nemmeno un oggetto leggero con le mani.  
