@@ -1,3 +1,14 @@
+/* ==========================================================================
+   Project: SpellCheck (PWA) — Service Worker
+   Strategy:
+     - HTML navigations: network-first con fallback cache/offline.
+     - First-party assets: stale-while-revalidate con aggiornamento in background.
+     - Cache isolation tramite prefisso e versione.
+   Notes:
+     - Evitare commenti inline eccessivi per minimizzare il diff sui deploy.
+   Authoring: Refactor by ChatGPT — 2025-08-19
+   ========================================================================== */
+
 const RUNTIME_CACHE = 'runtime-cache-v1';
 const CACHE_PREFIX = 'runtime-cache-';
 

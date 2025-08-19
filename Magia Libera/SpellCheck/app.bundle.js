@@ -1,3 +1,14 @@
+/* ==========================================================================
+   Project: SpellCheck (PWA) — Application Bundle
+   Purpose: UI wiring, theming toggles, modals handling, PWA install flow, and
+            domain-specific calculators/tables.
+   Conventions:
+     - Funzioni pure dove possibile; accesso al DOM in wrapper dedicati.
+     - Event listeners registrati su DOMContentLoaded per idempotenza.
+     - Nomi costanti in MAIUSCOLO, funzioni in camelCase.
+   Authoring: Refactor by ChatGPT — 2025-08-19
+   ========================================================================== */
+
 const TABELLE = {
   baseline: {
     difficoltaBase: 20
@@ -128,6 +139,10 @@ const TABELLE = {
 
 
 (function () {
+/**
+ * initConfig() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
   function initConfig() {
     if (typeof window !== 'undefined' && window.TABELLE) {
       console.info('[config-loader] Tabelle caricate da tabelle.js');
@@ -148,6 +163,11 @@ const TABELLE = {
   let lastActive = null;
 
   /** Apre il modal con ID specificato */
+/**
+ * showModal() — vedi implementazione per dettagli.
+ * @param {any} id
+ * @returns {void}
+ */
   function showModal(id) {
     const el = document.getElementById(id);
     if (!el) return;
@@ -162,6 +182,11 @@ const TABELLE = {
   }
 
   /** Chiude il modal con ID specificato */
+/**
+ * hideModal() — vedi implementazione per dettagli.
+ * @param {any} id
+ * @returns {void}
+ */
   function hideModal(id) {
     const el = document.getElementById(id);
     if (!el) return;
@@ -174,6 +199,10 @@ const TABELLE = {
   }
 
   /** Chiude tutti i modali aperti */
+/**
+ * hideAllModals() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
   function hideAllModals() {
     document.querySelectorAll('.modal.' + OPEN_CLASS).forEach(el => {
       el.classList.remove(OPEN_CLASS);
@@ -182,6 +211,10 @@ const TABELLE = {
   }
 
   /** Osserva cambi di 'style.display' sulle modali e sincronizza la classe */
+/**
+ * setupObserver() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
   function setupObserver() {
     const modals = document.querySelectorAll('.modal');
     const observer = new MutationObserver(mutations => {
@@ -201,6 +234,10 @@ const TABELLE = {
   }
 
   /** ESC per chiudere modal aperta */
+/**
+ * setupEscClose() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
   function setupEscClose() {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') hideAllModals();
@@ -208,6 +245,10 @@ const TABELLE = {
   }
 
   /** Wire di pulsanti già presenti (best-effort) */
+/**
+ * wireButtons() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
   function wireButtons() {
     const closeBtn = document.getElementById('close-popup');
     if (closeBtn) closeBtn.addEventListener('click', () => hideModal('popup-difficolta'));
@@ -237,6 +278,10 @@ const TABELLE = {
   }
 
   /** Monkey-patch leggero delle funzioni globali, se presenti */
+/**
+ * patchGlobals() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
   function patchGlobals() {
     if (typeof window.mostraPopupGradoMagia === 'function') {
       const original = window.mostraPopupGradoMagia;
@@ -249,6 +294,10 @@ const TABELLE = {
   }
 
   // Bootstrap
+/**
+ * init() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
   function init() {
     setupObserver();
     setupEscClose();
@@ -268,12 +317,20 @@ const TABELLE = {
   if (!btn) return;
 
   let deferredPrompt = null;
+/**
+ * isStandalone() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
   function isStandalone() {
     return window.matchMedia('(display-mode: standalone)').matches ||
            window.navigator.standalone === true || // iOS
            document.referrer.startsWith('android-app://');
   }
+/**
+ * isIosSafari() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
   function isIosSafari() {
     const ua = navigator.userAgent || '';
@@ -281,6 +338,10 @@ const TABELLE = {
     const isSafari = /^((?!chrome|android).)*safari/i.test(ua);
     return isIOS && isSafari;
   }
+/**
+ * showIosA2hsHint() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
   function showIosA2hsHint() {
     const msg = [
@@ -341,6 +402,11 @@ const TABELLE = {
 
 (function () {
   const STYLE_KEY = 'spellcheck_theme_style'; // 'standard' | 'arcano' | 'rosso'
+/**
+ * apply() — vedi implementazione per dettagli.
+ * @param {any} style
+ * @returns {void}
+ */
 
   function apply(style) {
     const root = document.documentElement;
@@ -362,6 +428,10 @@ const TABELLE = {
     btn.setAttribute('aria-pressed', style !== 'blu' ? 'true' : 'false');
   }
 }
+/**
+ * current() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function current() {
   let style = 'blu'; // default
@@ -371,6 +441,11 @@ function current() {
   } catch {}
   return style;
 }
+/**
+ * next() — vedi implementazione per dettagli.
+ * @param {any} style
+ * @returns {void}
+ */
 
 function next(style) {
   if (style === 'blu')   return 'viola';
@@ -378,6 +453,10 @@ function next(style) {
   if (style === 'rosso') return 'verde';
   return 'blu'; // verde -> blu
 }
+/**
+ * init() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
   function init() {
     apply(current());
@@ -395,6 +474,11 @@ function next(style) {
   const MODE_KEY = 'spellcheck_theme_mode'; // valori: auto | light | dark
 
   /** Applica il tema */
+/**
+ * apply() — vedi implementazione per dettagli.
+ * @param {any} mode
+ * @returns {void}
+ */
   function apply(mode) {
     const root = document.documentElement;
     root.classList.remove('dark'); // reset
@@ -419,11 +503,20 @@ function next(style) {
   }
 
   /** Calcola prossimo step */
+/**
+ * nextMode() — vedi implementazione per dettagli.
+ * @param {any} curr
+ * @returns {void}
+ */
   function nextMode(curr) {
     if (curr === 'auto') return 'light';
     if (curr === 'light') return 'dark';
     return 'auto';
   }
+/**
+ * current() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
   function current() {
     let mode = 'auto';
@@ -433,6 +526,10 @@ function next(style) {
     } catch {}
     return mode;
   }
+/**
+ * init() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
   function init() {
     let mode = current();
@@ -459,6 +556,12 @@ function next(style) {
 const ASSETS_BASE = 'assets/';
 const ICONS_BASE  = ASSETS_BASE + 'icons/';
 const IMG_BASE    = ASSETS_BASE + 'img/';
+/**
+ * populateSelect() — vedi implementazione per dettagli.
+ * @param {any} selectId
+ * @param {any} items
+ * @returns {void}
+ */
 
 function populateSelect(selectId, items) {
   const sel = document.getElementById(selectId);
@@ -473,6 +576,11 @@ function populateSelect(selectId, items) {
     sel.appendChild(opt);
   });
 }
+/**
+ * getSelectedCode() — vedi implementazione per dettagli.
+ * @param {any} selectId
+ * @returns {void}
+ */
 
 function getSelectedCode(selectId) {
   const sel = document.getElementById(selectId);
@@ -480,6 +588,10 @@ function getSelectedCode(selectId) {
   const opt = sel.options[sel.selectedIndex];
   return opt?.dataset?.code || null;
 }
+/**
+ * bootstrapSelects() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function bootstrapSelects() {
   if (typeof TABELLE === "undefined") {
@@ -513,6 +625,10 @@ function bootstrapSelects() {
     if (lbl) lbl.innerText = d.label || `Ogni ${d.tipo} (+${d.costo})`;
   });
 }
+/**
+ * mostraInputBersagliDiametro() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function mostraInputBersagliDiametro() {
   const code = getSelectedCode("area");
@@ -534,6 +650,10 @@ function mostraInputBersagliDiametro() {
     inputDiametro.style.display = 'none';
   }
 }
+/**
+ * mostraInputDurata() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function mostraInputDurata() {
   const code = getSelectedCode("durata");
@@ -546,6 +666,10 @@ function mostraInputDurata() {
   if (code !== "DUR_ROUND_OLTRE") document.getElementById("numero-round").value = "1";
   if (code !== "DUR_MIN_10")       document.getElementById("numero-minuti10").value = "1";
   }
+/**
+ * incrementaMagiAggiuntivi() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function incrementaMagiAggiuntivi() {
   const inputElement = document.getElementById("numero-magi-aggiuntivi");
@@ -555,6 +679,10 @@ function incrementaMagiAggiuntivi() {
     aggiornaPunteggiMagiAggiuntivi();
   }
 }
+/**
+ * decrementaMagiAggiuntivi() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function decrementaMagiAggiuntivi() {
   const inputElement = document.getElementById("numero-magi-aggiuntivi");
   let v = parseInt(inputElement.value);
@@ -563,6 +691,10 @@ function decrementaMagiAggiuntivi() {
     aggiornaPunteggiMagiAggiuntivi();
   }
 }
+/**
+ * aggiornaPunteggiMagiAggiuntivi() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function aggiornaPunteggiMagiAggiuntivi() {
   const numero = parseInt(document.getElementById("numero-magi-aggiuntivi").value);
   const wrap = document.getElementById("punteggi-magi-aggiuntivi");
@@ -604,8 +736,22 @@ function aggiornaPunteggiMagiAggiuntivi() {
     wrap.appendChild(magoDiv);
   }
 }
+/**
+ * incrementaPunteggioMago() — vedi implementazione per dettagli.
+ * @param {any} i
+ * @returns {void}
+ */
 function incrementaPunteggioMago(i) { const el = document.getElementById("punteggio-mago-" + i); el.value = parseInt(el.value) + 1; }
+/**
+ * decrementaPunteggioMago() — vedi implementazione per dettagli.
+ * @param {any} i
+ * @returns {void}
+ */
 function decrementaPunteggioMago(i) { const el = document.getElementById("punteggio-mago-" + i); if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1; }
+/**
+ * mostraInputVariabili() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function mostraInputVariabili() {
   const v2 = document.getElementById("variabile2");
@@ -618,6 +764,10 @@ function mostraInputVariabili() {
   if (v3.checked) inputRituale.style.display = 'block';
   else { document.getElementById("numero-rituali").value = "1"; inputRituale.style.display = 'none'; }
 }
+/**
+ * mostraInputRound() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function mostraInputRound() {
   const roundsCheckbox = document.getElementById("rounds-checkbox");
@@ -625,6 +775,10 @@ function mostraInputRound() {
   inputRounds.style.display = roundsCheckbox.checked ? 'block' : 'none';
   if (!roundsCheckbox.checked) document.getElementById("numero-rounds").value = "1";
 }
+/**
+ * toggleCorpoDropdown() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function toggleCorpoDropdown() {
   const corpoCheckbox = document.getElementById("corpo-checkbox");
@@ -632,18 +786,31 @@ function toggleCorpoDropdown() {
   corpoDropdownContainer.style.display = corpoCheckbox.checked ? 'block' : 'none';
   if (!corpoCheckbox.checked) document.getElementById("modificatori_corpo").value = "0";
 }
+/**
+ * toggleMateriaDropdown() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function toggleMateriaDropdown() {
   const materiaCheckbox = document.getElementById("materia-checkbox");
   const materiaDropdownContainer = document.getElementById("materia-dropdown-container");
   materiaDropdownContainer.style.display = materiaCheckbox.checked ? 'block' : 'none';
   if (!materiaCheckbox.checked) document.getElementById("modificatori_materia").value = "0";
 }
+/**
+ * toggleMenteDropdown() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function toggleMenteDropdown() {
   const menteCheckbox = document.getElementById("mente-checkbox");
   const menteDropdownContainer = document.getElementById("mente-dropdown-container");
   menteDropdownContainer.style.display = menteCheckbox.checked ? 'block' : 'none';
   if (!menteCheckbox.checked) document.getElementById("modificatori_mente").value = "0";
 }
+/**
+ * uncheckOtherCheckboxes() — vedi implementazione per dettagli.
+ * @param {any} checkedId
+ * @returns {void}
+ */
 
 function uncheckOtherCheckboxes(checkedId) {
   ["mente-checkbox", "corpo-checkbox", "materia-checkbox"].forEach(id => {
@@ -651,14 +818,47 @@ function uncheckOtherCheckboxes(checkedId) {
   });
   toggleCorpoDropdown(); toggleMenteDropdown(); toggleMateriaDropdown();
 }
+/**
+ * toggled1() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function toggled1() { toggleDieControls("d1"); }
+/**
+ * toggleD4() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function toggleD4()  { toggleDieControls("d4"); }
+/**
+ * toggleD6() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function toggleD6()  { toggleDieControls("d6"); }
+/**
+ * toggleD8() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function toggleD8()  { toggleDieControls("d8"); }
+/**
+ * toggleD10() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function toggleD10() { toggleDieControls("d10"); }
+/**
+ * toggleD12() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function toggleD12() { toggleDieControls("d12"); }
+/**
+ * toggleD20() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function toggleD20() { toggleDieControls("d20"); }
+/**
+ * toggleDieControls() — vedi implementazione per dettagli.
+ * @param {any} suffix
+ * @returns {void}
+ */
 
 function toggleDieControls(suffix) {
   const controls = document.getElementById(`${suffix}-controls`);
@@ -678,13 +878,34 @@ function toggleDieControls(suffix) {
     inputEl.value = 0;
   }
 }
+/**
+ * incrementaInput() — vedi implementazione per dettagli.
+ * @param {any} inputId
+ * @returns {void}
+ */
 
 function incrementaInput(inputId) { const el = document.getElementById(inputId); el.value = parseInt(el.value) + 1; }
+/**
+ * decrementaInput() — vedi implementazione per dettagli.
+ * @param {any} inputId
+ * @returns {void}
+ */
 function decrementaInput(inputId) { const el = document.getElementById(inputId); if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1; }
+/**
+ * incrementaRoundConcentrazione() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function incrementaRoundConcentrazione() {
   const el = document.getElementById('numero-rounds'); const v = parseInt(el.value);
   if (v < 10) el.value = v + 1;
 }
+/**
+ * _faticaEDannoBase() — vedi implementazione per dettagli.
+ * @param {any} gradoMagia
+ * @param {any} difficoltaTotale
+ * @param {any} tab
+ * @returns {void}
+ */
 
 function _faticaEDannoBase(gradoMagia, difficoltaTotale, tab = TABELLE.faticaEDannoBase) {
   const riga = tab.find(r => gradoMagia >= r.grado[0] && gradoMagia <= r.grado[1]);
@@ -699,6 +920,12 @@ function _faticaEDannoBase(gradoMagia, difficoltaTotale, tab = TABELLE.faticaEDa
   }
   return { fatica, dannoBase: riga.dannoBase };
 }
+/**
+ * _difficoltaResistenza() — vedi implementazione per dettagli.
+ * @param {any} difficoltaLancio
+ * @param {any} tab
+ * @returns {void}
+ */
 
 function _difficoltaResistenza(difficoltaLancio, tab = TABELLE.difficoltaResistenza) {
   if (difficoltaLancio < tab[0].min) return tab[0].resistenza;
@@ -708,6 +935,10 @@ function _difficoltaResistenza(difficoltaLancio, tab = TABELLE.difficoltaResiste
   }
   return 0;
 }
+/**
+ * calcolaMoltiplicatori() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function calcolaMoltiplicatori() {
   let mBersagli = 0, mDiametro = 0, mRound = 0, mMin10 = 0, mMagi = 0, mRituali = 0, mConc = 0;
@@ -760,6 +991,10 @@ function calcolaMoltiplicatori() {
     punteggiMagi
   };
 }
+/**
+ * mostraPopupGradoMagia() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function mostraPopupGradoMagia() { window.showModal ? window.showModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "block"); }
 
@@ -785,19 +1020,49 @@ document.addEventListener("DOMContentLoaded", () => {
 //    });
 //  }
 //});
+/**
+ * incrementaGradoMagia() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function incrementaGradoMagia() { const el = document.getElementById("grado-magia"); el.value = parseInt(el.value) + 1; }
+/**
+ * decrementaGradoMagia() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function decrementaGradoMagia() { const el = document.getElementById("grado-magia"); if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1; }
+/**
+ * incrementaVolonta() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function incrementaVolonta()    { const el = document.getElementById("punteggio-volonta"); el.value = parseInt(el.value) + 1; }
+/**
+ * decrementaVolonta() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 function decrementaVolonta()    { const el = document.getElementById("punteggio-volonta"); if (parseInt(el.value) > 0) el.value = parseInt(el.value) - 1; }
+/**
+ * calcolaDifficolta() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function calcolaDifficolta() { mostraPopupGradoMagia(); }
+/**
+ * calcolaFaticaEDannoBase() — vedi implementazione per dettagli.
+ * @param {any} gradoMagia
+ * @param {any} difficoltaTotale
+ * @returns {void}
+ */
 
 function calcolaFaticaEDannoBase(gradoMagia, difficoltaTotale) {
   const { fatica, dannoBase } = _faticaEDannoBase(gradoMagia, difficoltaTotale);
   document.getElementById('dadi-danno-riepilogo').textContent = costruisciRiepilogoDadi();
   return { fatica, dannoBase };
 }
+/**
+ * costruisciRiepilogoDadi() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function costruisciRiepilogoDadi() {
   let out = '';
@@ -810,10 +1075,21 @@ function costruisciRiepilogoDadi() {
   });
   return out || 'Nessun dado';
 }
+/**
+ * calcolaDifficoltaResistenza() — vedi implementazione per dettagli.
+ * @param {any} difficoltaLancio
+ * @returns {void}
+ */
 
 function calcolaDifficoltaResistenza(difficoltaLancio) {
   return _difficoltaResistenza(difficoltaLancio);
 }
+/**
+ * calcolaDifficoltaConGrado() — vedi implementazione per dettagli.
+ * @param {any} gradoMagia
+ * @param {any} punteggioVolonta
+ * @returns {void}
+ */
 
 function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
   const base = TABELLE.baseline.difficoltaBase;
@@ -874,6 +1150,10 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
 
   window.showModal ? window.showModal("popup-difficolta") : (document.getElementById("popup-difficolta").style.display = "block");
 }
+/**
+ * ripristinaValori() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function ripristinaValori() {
   const setVal = (id,v)=>{document.getElementById(id).value = String(v);};

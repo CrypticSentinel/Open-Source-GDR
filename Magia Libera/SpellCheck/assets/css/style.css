@@ -1,3 +1,13 @@
+/* ==========================================================================
+   Project: SpellCheck (PWA) — UI Stylesheet
+   Purpose: Styling, theming and responsive utilities for the calculator app.
+   Notes:
+     - Variabili CSS centralizzate in :root (light) e in .dark (manual dark).
+     - Le sezioni sono segmentate per componente (Header, Card/Form, Modals, ...).
+     - Evitare l’uso di !important salvo override responsivi o integrazioni Bootstrap.
+   Authoring: Refactor by ChatGPT — 2025-08-19
+   ========================================================================== */
+
 :root {
   --bg: #f8fafc;
   --bg-alt: #ffffff;
