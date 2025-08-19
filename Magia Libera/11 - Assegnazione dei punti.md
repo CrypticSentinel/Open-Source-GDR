@@ -60,8 +60,9 @@ Durante le sessioni, il giocatore ha aumentato Fuoco di 2 punti, portandolo a 5,
 •	Materia: 1 (opposta a Spirito)
 
 ### Incrementi e diminuzionei estreme
-In caso di aumento oltre il punteggio di 10, sarà possibile per le scuole opposte portare il punteggio in negativo, con conseguenze fisiche o mentali sullo stesso incantatore, legate alla scuola di magia incrementata. Allo stesso modo, in caso di incremento oltre il 20, il personaggio dovrebbe iniziare a sviluppare delle conseguenze a discrezione del DM, sempre legate alla scuola di magia.
+In caso di aumento oltre il punteggio di 5, sarà possibile per le scuole opposte portare il punteggio in negativo, con conseguenze fisiche o mentali sullo stesso incantatore, legate alla scuola di magia incrementata. Allo stesso modo, in caso di incremento oltre il 15, il personaggio dovrebbe iniziare a sviluppare delle conseguenze a discrezione del DM, sempre legate alla scuola di magia.
 
+## Tabella scuole di magia < 0 ##
 | Scuola | -1 Grado (Vulnerabilità Minore) | -2 Gradi (Vulnerabilità Moderata) | -3 Gradi (Vulnerabilità Grave) |
 | :----: | :-----------------------------: | :-------------------------------: | :----------------------------: |
 | Fuoco	| +1 danno da fiamme o calore. | +2 danni e svantaggio contro effetti di fuoco. | Fuoco e calore non lo proteggono: anche un fuocherello lo brucia come brace. |
@@ -78,7 +79,7 @@ In caso di aumento oltre il punteggio di 10, sarà possibile per le scuole oppos
 #### Eesempi di conseguenze
 Ecco alcuni esempi narrativi per gli incrementi e le diminuzioni estreme nel sistema di magia:  
 
-**Morte**: Dopo anni di studio nei segreti oscuri, un mago sacrifica completamente le sue capacità di dare la vita o curare creature, per diventare un maestro della morte. Tuttavia, la sua maestria necromantica influisce negativamente sulle scuole opposte vicine (Mente e Acqua) e gli oggetti che tocca sembrano invecchiare o decomporsi.  
+**Morte**: Dopo anni di studio nei segreti oscuri, un mago sacrifica completamente le sue capacità di dare la vita o curare creature, per diventare un maestro della morte. Tuttavia, la sua maestria necromantica influisce negativamente sulla scuola di magia oppoeta (Vita) e gli oggetti che tocca sembrano invecchiare o decomporsi.  
 
 **Mente o Corpo**: Un illusionista perfeziona l’arte di manipolare la percezione fino a confondere persino gli dei. Tuttavia, le sue abilità nelle scuole opposte decadono, non riuscendo ad evocare nemmeno una semplice creatura o a trasformare oggetti con efficacia.  
 
