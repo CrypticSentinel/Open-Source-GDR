@@ -337,6 +337,14 @@ img.adjust-icon {
   .popup-row > :last-child { margin-top: 6px; }
 }
 
+/* Aggiungi in fondo a style.css */
+@media (max-width: 576px) {
+  .mago-input-container .input-group .form-control {
+    min-width: 60px;   /* ridotto da 88px */
+    max-width: 70px;   /* limite massimo per evitare overflow */
+    padding: 6px 8px;  /* padding più contenuto */
+  }
+}
 
 /* === Theme overrides (Arcano, Rosso) merged in === */
 /* ===== Tema Arcano (palette viola/teal) ===== */
