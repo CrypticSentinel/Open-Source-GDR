@@ -73,5 +73,5 @@ Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano dell
 | Bassa | Ginocchio DX | 66 - 70  |
 | Bassa | Addome       | 72 - 100 |
 
-Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)  
 Vai alle [**Fasi del Combattimento**](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Combattimento)
