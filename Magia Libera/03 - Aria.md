@@ -45,3 +45,5 @@ Gli incantesimi dell'Aria offrono grandi vantaggi in termini di movimento e velo
 **5. Camminata nel Vento**
 - Effetto: Aumenta notevolmente la velocità di movimento e rende difficile per i nemici colpire il mago con attacchi fisici o magici.
 - Descrizione: "Permette al mago di muoversi con la velocità del vento, diventando quasi intangibile e difficile da colpire."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
