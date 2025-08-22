@@ -48,3 +48,5 @@ La scuola della Vita eccelle nel mantenere in vita il gruppo. Gli incantesimi di
 **5. Aura di Protezione**
 - Effetto: Fornisce una resistenza aumentata a danni fisici e magici, oltre a protezione contro effetti debilitanti come malattie e veleni.
 - Descrizione: "Crea un'aura attorno al mago o a un alleato che protegge da malattie, veleni e danni, potenziando la resistenza fisica."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
