@@ -40,5 +40,5 @@ La combinazione di caratteristiche e abilità fornisce una solida base per gesti
 | Mente | **Volontà** - Gli incantesimi di Mente influenzano direttamente la percezione, i pensieri e le emozioni, quindi la Volontà è essenziale per resistere a tali effetti. | Abilità che rappresenta una barriera mentale che aiuta a bloccare intrusioni psicologiche, telepatia o controllo mentale. |
 | Corpo | **Costituzione** o **Forza** - Gli incantesimi che alterano o influenzano il corpo fisico, come trasformazioni o debolezze fisiche, possono essere contrastati con Costituzione o Forza. | Abilità che offre protezione contro gli incantesimi che cercano di alterare la forma fisica o causare debolezze corporee. |
 
-Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)  
 Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
