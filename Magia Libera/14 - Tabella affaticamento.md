@@ -25,5 +25,5 @@ Questa tabella fornisce le linee guida per il recupero dei punti di fatica accum
 | Riposo breve    | 2 punti ogni ora  | Durante un riposo breve, l'incantatore può recuperare 2 punti di fatica per ogni ora di riposo.                   |
 | Riposo completo | 4 punti ogni ora  | Un riposo completo permette il recupero massimo, con 4 punti di fatica recuperati per ogni ora di riposo.         |
 
-Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)  
 Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
