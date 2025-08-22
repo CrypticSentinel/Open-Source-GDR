@@ -39,3 +39,6 @@ La combinazione di caratteristiche e abilità fornisce una solida base per gesti
 | Materia | **Forza** o **Destrezza** - La magia della Materia potrebbe influenzare la fisicità e il controllo di oggetti materiali, quindi Forza e Destrezza sono adatte per resistere a queste forme di magia. | Abilità che permette di resistere o manipolare incantesimi che alterano o controllano oggetti materiali. |
 | Mente | **Volontà** - Gli incantesimi di Mente influenzano direttamente la percezione, i pensieri e le emozioni, quindi la Volontà è essenziale per resistere a tali effetti. | Abilità che rappresenta una barriera mentale che aiuta a bloccare intrusioni psicologiche, telepatia o controllo mentale. |
 | Corpo | **Costituzione** o **Forza** - Gli incantesimi che alterano o influenzano il corpo fisico, come trasformazioni o debolezze fisiche, possono essere contrastati con Costituzione o Forza. | Abilità che offre protezione contro gli incantesimi che cercano di alterare la forma fisica o causare debolezze corporee. |
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
