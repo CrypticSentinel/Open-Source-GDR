@@ -22,7 +22,7 @@ Vita ↔ Morte
 Spirito ↔ Materia  
 Mente ↔ Corpo  
 
-Ogni scuola di magia offre una prospettiva unica e meccaniche di gioco specifiche, permettendo ai giocatori di scegliere e sviluppare un personaggio che meglio si adatta al loro stile di gioco e alla narrativa della campagna. L'dea è che combinando queste scuole si riesca ad ottenere un sistema di magia che è sia complesso ed equilibrato, permettendo una grande varietà di scelte strategiche e di roleplay.
+Ogni scuola di magia offre una prospettiva unica e meccaniche di gioco specifiche, permettendo ai giocatori di scegliere e sviluppare un personaggio che meglio si adatta al loro stile di gioco e alla narrativa della campagna. L'idea è che combinando queste scuole si riesca ad ottenere un sistema di magia che è sia complesso ed equilibrato, permettendo una grande varietà di scelte strategiche e di roleplay.
 
 ## Differenze di visione
 
@@ -45,7 +45,7 @@ Sulla base delle premesse fatte, ruolo fondamentale nell'utilizzo della magia li
 
 Per la riuscita del lancio sarà sufficiente superare una difficoltà che avrà 20 come valore di base, a cui si dovranno sommare o sottrarre dei punteggi in base all'incantesimo che si vorrà lanciare (vedi [Tabelle lancio incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi)).
 
-Nella mia personale visione, esistono casi sfortuiti in cui la magia sfugga dal controllo dell'incantatore, nella meccanica di gioco avviene quando al lancio del d20 per il lancio dell'incantesimo, k'incantatorei ottiene il risultato di 1 sul dado. Le conseguenze sono lasciate all'insindacabile giudizio del Master, ma per una gestione assolutamente iimparziale e divertente delle conseguenze, ci si può affidare alla [Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)
+Nella mia personale visione, esistono casi sfortuiti in cui la magia sfugge dal controllo dell'incantatore, nella meccanica di gioco avviene quando al lancio del d20 per il lancio dell'incantesimo, l'incantatore ottiene il risultato di 1 sul dado. Le conseguenze sono lasciate all'insindacabile giudizio del Master, ma per una gestione assolutamente imparziale e divertente delle conseguenze, ci si può affidare alla [Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)
 
 Il tema principale per un usufruitore di magia, è quello di piegare alla propria volontà le energie vitali circostanti per ottenere qualcosa plasmando le energie stesse. Nel paragrafo precedente è stato cercato di fornire le differenti visioni, maghi e stregoni sono certi di controllare la magia grazie ai loro studi e alla pratica, druidi e sciamani sono convinti di ottenere i loro poteri da Madre Natura, dai loro antenati o dai loro spiriti protettori, mentre chierici e paladini credono di ottenere i favori della divinità che pregano, grazie alla loro incrollabile fede; possono essere tutte giuste e tutte sbagliate allo stesso tempo, la scelta vuole essere puramente interpretativa secondo le volontà del giocatore il quale avrà l'onere e l'onore di descrivere come il proprio personaggio apprende e utilizza la magia.
 
@@ -53,3 +53,5 @@ Tutto il resto è lasciato all'insindacabile giudizio ultimo del Master, che avr
 
 **Non ti piace questa tematica? Ritieni che ogni usufruitore di magia debba utilizzare una Caratteristica diversa, che i maghi debbano concretamente studiare i loro incantesimi e scriverli sul loro grimorio, o che uno sciamano debba danzare attorno al fuoco preparando chissà quale rituale?**
 Nessun problema, come spero di essere risucito a trasmettere, quella descritta qui vuole essere una meccanica adattabile a qualunque gioco di ruolo, ho solo ritenuto utile per una miglior comprensione, condividere la mia visione così da far meglio comprendere il perchè di determinate meccaniche.
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
