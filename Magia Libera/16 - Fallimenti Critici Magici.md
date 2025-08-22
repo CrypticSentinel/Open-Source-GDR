@@ -105,3 +105,6 @@ Può accadere che la magia sfugga al controllo dell'incantatore, non mi dilunghe
 |	98 | l'incantatore subisce 2d10 danni psichici. Questo danno non può ridurre l'incantatore a 0 punti ferita.	|
 |	99 | l'incantatore scambia la propria anima con quella di una creatura casuale situata entro 9 metri da lui. l'incantatore prende il controllo della creatura nel suo prossimo turno e viceversa. Alla fine del prossimo turno dell'incantatore, ciascuno torna all’interno del proprio corpo originale, ammesso che sia ancora vivo.	|
 |	100| l'incantatore recupera tutti i punti stregoneria spesi.	|
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
