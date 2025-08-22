@@ -51,3 +51,5 @@ Focalizzati sulla manipolazione di oggetti fisici e materiali, questi maghi poss
 **7. Alterazione della Gravità**
 - Effetto: Il mago altera la gravità che agisce su un oggetto o una creatura, permettendo di far levitare ciò che tocca o, al contrario, di aumentarne il peso fino a schiacciarlo. Questo incantesimo può far fluttuare una pietra di montagna o far crollare al suolo un potente avversario.
 - Descrizione: "Il mago solleva le braccia, pronunciando parole di comando che riecheggiano nell'etere. L'aria intorno all'obiettivo si increspa, e all'improvviso, ciò che era ancorato a terra inizia a sollevarsi senza sforzo, come se la gravità stessa avesse cessato di esistere. Al contrario, un movimento della mano del mago può aumentare la pressione sulla stessa entità, spingendola verso il suolo con una forza irresistibile, quasi come se il mondo stesso cercasse di schiacciarla sotto il suo peso."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
