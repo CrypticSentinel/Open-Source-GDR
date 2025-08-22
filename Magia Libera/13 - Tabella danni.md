@@ -15,5 +15,5 @@ Questa tabella determina il danno base inflitto da un incantesimo, in relazione 
 | 17-18                 | +9         | Il danno base aumenta a +9  |
 | 19-20                 | +10        | Il danno base aumenta a +10 |
 
-Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)  
 Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
