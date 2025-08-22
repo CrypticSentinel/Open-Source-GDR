@@ -104,3 +104,6 @@ Ecco alcuni esempi narrativi per gli incrementi e le diminuzioni estreme nel sis
 **Acqua**: Un incantatore padroneggia il gelo al punto che la temperatura del suo corpo è sempre fredda come il ghiaccio. Anche nelle giornate calde, le sue impronte lasciano brina, ma la sua incapacità di maneggiare il fuoco lo rende estremamente vulnerabile al calore.  
 
 **Mente**: Un mago che sviluppa una grande abilità nel muovere oggetti con la mente riesce a far fluttuare persino enormi massi. Tuttavia, il suo corpo fisico diventa debole, non riesce più a sollevare nemmeno un oggetto leggero con le mani.  
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
