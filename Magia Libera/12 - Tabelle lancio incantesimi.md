@@ -279,3 +279,6 @@ Di seguito alcuni esempi reali che aggiornerò di volta in volta che sono stati 
 **Limiti:** La trasmutazione potrebbe avere una durata molto breve o richiedere una concentrazione costante per essere mantenuta, limitando la sua utilità in situazioni di lunga durata.  
 
 La trasformazione potrebbe non garantire tutti i poteri della creatura (ad esempio, trasformarsi in un drago potrebbe non dare la piena capacità di volo o di sputare fuoco). Alcuni materiali o creature potrebbero essere immuni alla trasmutazione, oppure il potere dell'incantesimo potrebbe essere limitato dalla propria abilità o dalla qualità dei materiali usati.
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
