@@ -44,3 +44,5 @@ Versatili, con capacità difensive e curative, ma meno offensivi rispetto ad alt
 **5. Ghiaccio Spettrale**
 - Effetto: Crea una superficie difficile da attraversare o imprigiona un nemico in blocchi di ghiaccio, rallentandolo o immobilizzandolo.
 - Descrizione: "Il mago trasforma l'acqua circostante in ghiaccio, creando una superficie scivolosa o persino imprigionando i nemici nel ghiaccio."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
