@@ -43,3 +43,5 @@ La scuola del Corpo eccelle nel miglioramento delle capacità fisiche, gli incan
 **5. Resistenza Sovrumana**
 - Effetto: Riduce o annulla gli effetti di afflizioni fisiche come fatica, veleno o temperature estreme.
 - Descrizione: "Aumenta la resistenza del bersaglio, permettendogli di sopportare condizioni estreme, come temperature estreme, veleno, o sforzi fisici prolungati."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
