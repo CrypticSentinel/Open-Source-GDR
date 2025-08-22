@@ -47,3 +47,5 @@ Non mi dilungherò oltre sulla descrizione di questa sezione, ritengo che la reg
 | 16-17     | +3           |
 | 18-19     |	+4           |
 | 20-21     | +5           |
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
