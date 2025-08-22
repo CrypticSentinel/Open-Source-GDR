@@ -6,18 +6,18 @@ Il sistema d20 based proposto in questo regolamento vuole rappresentare un appro
 ## Creazione del Personaggio
 Ognuno può adattare il sistema di magia libera a qualsiasi regolamento, per meglio comprendere alcune dinamiche e meccaniche ho pensato potesse essere utile avere anche delle indicazioni legate alle caratteristiche e alla creazione del Personaggio.
 
-[Caratteristiche](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Creazione%20PG/01%20-%20Caratteristiche.md)
+[Caratteristiche](https://crypticsentinel.github.io/Open-Source-GDR/Creazione%20PG/01%20-%20Caratteristiche)
 
 ## Combattimento
 In molti regolamenti di gioco, le meccaniche di combattimento spesso soffrono di una certa staticità, dove le azioni di attacco e difesa sembrano avvenire in modo prevedibile e sequenziale. Inoltre, la difesa è spesso trattata come una condizione passiva, dove un personaggio viene colpito automaticamente se il tiro d'attacco supera la sua Classe Armatura (CA). Questo approccio, sebbene funzionale, può risultare meno immersivo e realistico rispetto alla tensione e alla fluidità di un vero combattimento.
 
 Questo sistema di combattimento è stato sviluppato per offrire un'esperienza più dinamica e coinvolgente, mantenendo un equilibrio tra realismo e fluidità. Le linee guida presentate qui possono essere utilizzate come sono, adattate alle preferenze del gruppo di gioco, o integrate con altre regole esistenti.
 
-[Fasi di combattimento](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Combattimento/01%20-%20Combattimento.md)
+[Fasi di combattimento](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Combattimento)
 
 La gestione del danno vuole offrire un'esperienza di combattimento più tattica e immersiva, in cui ogni colpo può portare a conseguenze drammatiche e richiede ai giocatori di considerare attentamente ogni azione in battaglia.  
 
-[Gestione dei danni](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Combattimento/02%20-%20Gestione%20dei%20Danni.md)
+[Gestione dei danni](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Gestione%20dei%20Danni)
 
 # Magia Libera
 
@@ -35,38 +35,38 @@ La gestione del danno vuole offrire un'esperienza di combattimento più tattica 
 
 Questo regolamento è ideale per chi cerca un'esperienza di gioco che valorizzi la creatività e l'inventiva, offrendo un sistema di magia che sia tanto profondo quanto flessibile. Se sei alla ricerca di un gioco di ruolo dove la magia non conosce limiti se non quelli imposti dalla tua immaginazione, forse sei nel posto giusto.
 
-[Descrizione](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md)
+[Descrizione](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
 
-[Come funziona](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md#come-funziona-la-magia)
+[Come funziona](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera#come-funziona-la-magia)
 
-[Utilizzare la magia](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera.md#utilizzare-la-magia)
+[Utilizzare la magia](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera#utilizzare-la-magia)
 
-[Assegnazione dei punti](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/11%20-%20Assegnazione%20dei%20punti.md)
+[Assegnazione dei punti](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/11%20-%20Assegnazione%20dei%20punti)
 
 ### Scuole di Magia
-[Acqua](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/01%20-%20Acqua.md)  
-[Fuoco](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/02%20-%20Fuoco.md)  
-[Aria](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/03%20-%20Aria.md)  
-[Terra](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/04%20-%20Terra.md)  
-[Vita](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/05%20-%20Vita.md)  
-[Morte](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/06%20-%20Morte.md)  
-[Spirito](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/07%20-%20Spirito.md)  
-[Materia](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/08%20-%20Materia.md)  
-[Mente](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/09%20-%20Mente.md)  
-[Corpo](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/10%20-%20Corpo.md)  
+[Acqua](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/01%20-%20Acqua)  
+[Fuoco](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/02%20-%20Fuoco)  
+[Aria](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/03%20-%20Aria)  
+[Terra](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/04%20-%20Terra)  
+[Vita](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/05%20-%20Vita)  
+[Morte](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/06%20-%20Morte)  
+[Spirito](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/07%20-%20Spirito)  
+[Materia](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/08%20-%20Materia)  
+[Mente](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/09%20-%20Mente)  
+[Corpo](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/10%20-%20Corpo)  
 
 ### Tabelle
 Di seguito sono riportate tutte le tabelle per utilizzare la Magia Libera così come l'ho immaginata:
 
-[Tabelle lancio Incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi.md)
+[Tabelle lancio Incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi)
 
-[Tabella danno base](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/13%20-%20Tabella%20danni.md)
+[Tabella danno base](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/13%20-%20Tabella%20danni)
 
-[Tabella affaticamento](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/14%20-%20Tabella%20affaticamento.md)
+[Tabella affaticamento](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/14%20-%20Tabella%20affaticamento)
 
-[Resistere agli incantesimi](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/15%20-%20Resistenza%20agli%20incantesimi.md)
+[Resistere agli incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/15%20-%20Resistenza%20agli%20incantesimi)
 
-[Fallimenti Critici Magici](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici.md)
+[Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)
 
 Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un pratico tool online:  
 [SpellCheck - Calcolo Difficoltà Incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
