@@ -19,7 +19,7 @@ Ogni parte principale del corpo di un personaggio ha una specifica soglia di res
 Quando un personaggio subisce un attacco, il danno viene determinato attraverso le seguenti fasi:
 
 1. **Tiro per Colpire e Localizzazione del Colpo:**  
-   Una volta determinato il successo dell'attacco, in assenza di dichiarazioni, si tira un dado per determinare la parte colpita (vedi sotto [**Locazioni del danno**] (https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Combattimento/02%20-%20Gestione%20dei%20Danni.md#locazioni-del-danno))
+   Una volta determinato il successo dell'attacco, in assenza di dichiarazioni, si tira un dado per determinare la parte colpita usando la tabella [**Locazioni del danno**](https://github.com/CrypticSentinel/Open-Source-GDR/blob/main/Combattimento/02%20-%20Gestione%20dei%20Danni.md#locazioni-del-danno)
 
 2. **Determinazione del Danno:**  
    Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto vengono sottratti la soglia di resistenza e il punteggio di assorbimento (dato dal Modificatore di Costituzione più l'armatura). La differenza rappresenta il danno effettivamente subito.
