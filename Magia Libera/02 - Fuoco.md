@@ -44,3 +44,5 @@ Sebbene il Fuoco sia potente, potrebbe essere limitato in ambienti umidi o somme
 **5. Esplosione Solare**
 - Effetto: Infligge danni da fuoco ad area e acceca temporaneamente i nemici.
 - Descrizione: "Un potente incantesimo che richiama l'energia del sole, emettendo una luce accecante e una fiammata esplosiva che colpisce tutti i nemici circostanti."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
