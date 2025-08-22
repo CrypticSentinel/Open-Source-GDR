@@ -23,7 +23,7 @@ Telepatia, controllo mentale, illusioni, conoscenza. La scuola della Mente è le
 
 
 ## Meccaniche di Gioco
-La scuola della Mente offre potenti strumenti per controllare e manipolare nemici e alleati. Il controllo mentale diretto, come la Dominazione, può trasformare i nemici in alleati temporanei o neutralizzare minacce, creando illusioni che confondono e disorientano i nemici, rendendoli vulnerabili o distraendoli in momenti critici, questo può essere usato per evitare combattimenti o per ottenere vantaggi tattici. Possono rafforzare la propria mente e quella degli alleati, rendendo difficile per i nemici usare la magia della Mente contro di loro. La capacità di comunicare telepaticamente permette di coordinare strategie e tattiche senza rivelare i piani ai nemici. Questo è particolarmente utile in situazioni dove la discrezione è essenziale.
+La scuola della Mente offre potenti strumenti per controllare e manipolare nemici e alleati. Il controllo mentale diretto, come la [**Dominazione**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/Dominazione), può trasformare i nemici in alleati temporanei o neutralizzare minacce, creando illusioni che confondono e disorientano i nemici, rendendoli vulnerabili o distraendoli in momenti critici, questo può essere usato per evitare combattimenti o per ottenere vantaggi tattici. Possono rafforzare la propria mente e quella degli alleati, rendendo difficile per i nemici usare la magia della Mente contro di loro. La capacità di comunicare telepaticamente permette di coordinare strategie e tattiche senza rivelare i piani ai nemici. Questo è particolarmente utile in situazioni dove la discrezione è essenziale.
 
 ## Esempi di Incantesimi
 
