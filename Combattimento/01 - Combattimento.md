@@ -35,3 +35,6 @@ A seconda del tipo di azione d'attacco scelta, i personaggi possono ottenere van
 Il combattimento non si svolge in un vuoto. Fattori ambientali come il terreno, l'illuminazione, e gli oggetti presenti nell'area di combattimento possono influenzare le azioni e le reazioni dei personaggi, rendendo ogni scontro unico e memorabile. Considera di integrare questi elementi per arricchire la narrazione e fornire ai giocatori nuove sfide tattiche, incoraggiando i giocatori a pensare in modo dinamico e a sfruttare l'ambiente e le reazioni degli avversari. La gestione delle azioni e delle reazioni non deve essere rigida; anzi, un approccio flessibile e narrativo può portare a situazioni di gioco più emozionanti e imprevedibili.
 
 Questo sistema di combattimento è pensato per dare vita a scontri più vividi e interattivi, dove ogni decisione può influire sull'esito del round. Ricorda che, come ogni regolamento, queste regole sono linee guida da adattare alle esigenze del gruppo. Sperimentare, modificare e trova il bilanciamento che meglio si adatta al proprio stile di gioco, è forse la miglior regola.
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Gestione dei Danni**](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Gestione%20dei%20Danni)
