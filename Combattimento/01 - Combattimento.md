@@ -36,5 +36,5 @@ Il combattimento non si svolge in un vuoto. Fattori ambientali come il terreno, 
 
 Questo sistema di combattimento è pensato per dare vita a scontri più vividi e interattivi, dove ogni decisione può influire sull'esito del round. Ricorda che, come ogni regolamento, queste regole sono linee guida da adattare alle esigenze del gruppo. Sperimentare, modificare e trova il bilanciamento che meglio si adatta al proprio stile di gioco, è forse la miglior regola.
 
-Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)  
 Vai alla [**Gestione dei Danni**](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Gestione%20dei%20Danni)
