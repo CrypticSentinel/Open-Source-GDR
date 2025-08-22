@@ -15,35 +15,11 @@ Ogni parte principale del corpo di un personaggio ha una specifica soglia di res
 - **Mani:** 3
 - **Piedi:** 3
 
-## Locazioni del danno
-Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano delle necessità di eseguire colpi mirati, in questi casi è possibile utilizzare una tabella delle locazioni
-
-| Zona | Locazione     | Dado     |
-| :--- | :------------ | :------: |
-| Alta | Testa         | 1 - 6    |
-| Alta | Collo         | 7 - 10   |
-| Alta | Spalla SX     | 12 - 25  |
-| Alta | Spalla DX     | 26 - 40  |
-| Alta | Braccio SX    | 41 - 50  |
-| Alta | Braccio DX    | 51 - 60  |
-| Alta | Mano SX       | 61 - 65  |
-| Alta | Mano DX       | 66 - 70  |
-| Alta | Torace        | 72 - 100 |
-| Bassa | Piede SX     | 1 - 6    |
-| Bassa | Piede DX     | 7 - 10   |
-| Bassa | Gamba SX     | 12 - 25  |
-| Bassa | Gamba DX     | 26 - 40  |
-| Bassa | Stinco SX    | 41 - 50  |
-| Bassa | Stinco DX    | 51 - 60  |
-| Bassa | Ginocchio SX | 61 - 65  |
-| Bassa | Ginocchio DX | 66 - 70  |
-| Bassa | Addome       | 72 - 100 |
-
 ## Calcolo dei Danni
 Quando un personaggio subisce un attacco, il danno viene determinato attraverso le seguenti fasi:
 
 1. **Tiro per Colpire e Localizzazione del Colpo:**  
-   Dopo aver determinato il successo dell'attacco, il DM o il giocatore può decidere di colpire una specifica zona del corpo (Alta, Media o Bassa). In assenza di dichiarazioni, si tira un dado per determinare la parte colpita (ad esempio, 1d6: 1-2 Testa, 3-4 Torso, 5-6 Arti).
+   Una volta determinato il successo dell'attacco, in assenza di dichiarazioni, si tira un dado per determinare la parte colpita (vedi sotto **Locazioni del danno**)
 
 2. **Determinazione del Danno:**  
    Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto vengono sottratti la soglia di resistenza e il punteggio di assorbimento (dato dal Modificatore di Costituzione più l'armatura). La differenza rappresenta il danno effettivamente subito.
@@ -72,3 +48,27 @@ Per riflettere la possibilità che un colpo ben assestato possa essere immediata
 
 - **Colpo Critico:**  
    Se un attacco critico (un 20 naturale su un d20) colpisce una parte vitale come la testa o il torso, il DM può decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola. Il DM può richiedere un tiro aggiuntivo per confermare l'effetto letale o applicare modificatori basati sulla situazione e la narrazione.
+
+## Locazioni del danno
+Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano delle necessità di eseguire colpi mirati, in questi casi è possibile utilizzare una tabella delle locazioni
+
+| Zona | Locazione     | Dado     |
+| :--- | :------------ | :------: |
+| Alta | Testa         | 1 - 6    |
+| Alta | Collo         | 7 - 10   |
+| Alta | Spalla SX     | 12 - 25  |
+| Alta | Spalla DX     | 26 - 40  |
+| Alta | Braccio SX    | 41 - 50  |
+| Alta | Braccio DX    | 51 - 60  |
+| Alta | Mano SX       | 61 - 65  |
+| Alta | Mano DX       | 66 - 70  |
+| Alta | Torace        | 72 - 100 |
+| Bassa | Piede SX     | 1 - 6    |
+| Bassa | Piede DX     | 7 - 10   |
+| Bassa | Gamba SX     | 12 - 25  |
+| Bassa | Gamba DX     | 26 - 40  |
+| Bassa | Stinco SX    | 41 - 50  |
+| Bassa | Stinco DX    | 51 - 60  |
+| Bassa | Ginocchio SX | 61 - 65  |
+| Bassa | Ginocchio DX | 66 - 70  |
+| Bassa | Addome       | 72 - 100 |
