@@ -44,3 +44,5 @@ Gli incantesimi dello Spirito forniscono protezione contro attacchi magici, male
 **5. Ancoraggio Spirituale**
 - Effetto: Previene la morte spirituale o la perdita dell'anima, mantenendo l'individuo legato alla realtà fisica.
 - Descrizione: "Collega l'anima di un alleato al mondo terreno, impedendo che venga trascinata via da forze spirituali o che subisca danni mortali. Può anche ancorare l'anima del mago stesso."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
