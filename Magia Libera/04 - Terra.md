@@ -47,3 +47,5 @@ La scuola della Terra eccelle nella difesa, con incantesimi che aumentano la res
 **5. Rigenerazione della Terra**
 - Effetto: Guarisce la terra danneggiata, favorendo la crescita delle piante e rendendo fertile il terreno sterile.
 - Descrizione: "Rinvigorisce il suolo, accelerando la crescita delle piante e ripristinando l'equilibrio naturale."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
