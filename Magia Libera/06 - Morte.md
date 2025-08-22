@@ -44,3 +44,5 @@ La capacità di rianimare i morti e controllare non-morti è uno dei tratti dist
 **5. Invocazione delle Ombre**
 - Effetto: Crea un'area di oscurità magica che diminuisce la visibilità e causa panico tra i nemici.
 - Descrizione: "Evoca ombre che assorbono la luce e causano terrore nei cuori dei nemici, limitando la loro visione e instillando paura."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
