@@ -46,3 +46,5 @@ La scuola della Mente offre potenti strumenti per controllare e manipolare nemic
 **5. Risucchio di Volontà**
 - Effetto: Riduce temporaneamente la volontà e la determinazione del bersaglio, rendendolo più suscettibile a manipolazioni mentali e illusioni.
 - Descrizione: "Il mago drena la forza di volontà di un nemico, indebolendo la sua capacità di resistere ad altri incantesimi mentali o di agire con determinazione."
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
