@@ -9,17 +9,12 @@ Questo sistema di gestione dei danni vuole introdurre un approccio più realisti
 
 Danno effettivo = (Danno Arma + Mod. Forza) – (Armatura + Mod. Costituzione)
   
-3. **Applicazione della condizione:**  
-   Il danno subito in una specifica locazione porta ad una "Condizione" associata a quella parte del corpo:
+3. **Applicazione dei danni:**  
+   Il danno subito in una specifica locazione porta ad una condizione associata a quella parte del corpo:
    - **Testa:** Stordimento, perdita di coscienza, o morte immediata se il danno è particolarmente elevato.
    - **Torso:** Ferite gravi, difficoltà a respirare, emorragie interne.
    - **Braccia:** Incapacità di usare l'arto, caduta dell'arma.
    - **Gambe:** Difficoltà a muoversi, caduta, immobilizzazione.
-
-**Condizioni meccaniche:**  
-- **Leggere:** -2 a tutte le azioni, effetto dal round successivo  
-- **Gravi:** -5 a tutte le azioni, effetto dal round successivo  
-- **Letali:** colpo mortale o potenzialmente letale immediato
 
 ## Parti del Corpo e Soglie di Danno
 Ogni parte principale del corpo di un personaggio ha una specifica soglia di resistenza, che rappresenta quanto danno quella parte può subire prima di subire effetti gravi.
@@ -36,22 +31,13 @@ Ogni parte principale del corpo di un personaggio ha una specifica soglia di res
 Un personaggio con un punteggio di assorbimento pari a 4 (dato da +1 di Modificatore di Costituzione e +3 dall'armatura) subisce un colpo al petto che infligge 6 danni. Dopo aver sottratto l'assorbimento, il danno reale subito è 2 (6 danni - 4 assorbimento = 2 danni). Se, in un turno successivo, il personaggio subisce 8 danni al torso, sottraendo ancora 4 punti di assorbimento, rimangono 4 danni effettivi, portando il totale dei danni al torso a 6. Avendo superato la soglia di resistenza del torso (5), il personaggio subisce una Condizione, che il DM determina in base alla natura del danno ricevuto.
 
 ## Condizioni e Guarigione
-Le "Condizioni" sostituiscono i Punti Ferita come indicatore dello stato fisico di un personaggio. Ogni condizione ha effetti immediati sul personaggio e può variare in gravità:
+Ogni condizione ha effetti immediati sul personaggio e può variare in gravità:
 
 - **Condizioni Leggere:** Nel momento in cui si subiscono almeno 2 danni, si ricevono delle penalità temporanee, pari a -2 al movimento o agli attacchi.
 - **Condizioni Gravi:** Nel momento in cui si raggiunge in una locazione un numero di danni pari alla soglia di resistenza, si subise una penalità di -5 fino alla guarigione, come immobilizzazione, perdita di sensi, o emorragie.
 - **Condizioni Letali:** Se i danni ricevuti in una locazione raggiungono il doppio della soglia di resistenza di una locazione, si può avere come conseguenza una condizione letale come la morte, l'amputazione di un arto o una grossa emorraggia.
 
 La guarigione delle condizioni richiede tempo e cure appropriate. Alcune condizioni possono essere trattate rapidamente tramite magia o abilità curative, mentre altre potrebbero richiedere riposo prolungato o interventi medici.
-
-### Gestione del Combattimento Fatale
-Per riflettere la possibilità che un colpo ben assestato possa essere immediatamente letale, si può introdurre la regola del "Colpo Critico":
-
-- **Colpo Critico:**  
-   Se un attacco critico (un 20 naturale su un d20) colpisce una parte vitale come la testa o il torso, il DM può decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola. Il DM può richiedere un tiro aggiuntivo per confermare l'effetto letale o applicare modificatori basati sulla situazione e la narrazione.
-
-- **Tiro Salvezza contro Morte:**  
-   Una volta raggiunta la condizione Letale in modalità che il DM lo ritenga mortale (es una palla chiodata in testa, trafitto da una lancia, lesione dell'aorta femorale etc), il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera: a ogni turno il giocatore dovrà tirare un d20 e con un risultato da 2 a 10 viene considerato fallimento, mentre da 11 a 19 è considerato successo. Se il giocatore otterrà 3 successi prima di compiere 3 fallimenti, si stabilizzerà, altrimenti morirà. In caso di 20 o 1 sul dado, quel tiro varrà come doppio successo o doppio fallimento.
 
 ## Locazioni del danno
 Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano delle necessità di eseguire colpi mirati, in questi casi è possibile utilizzare una tabella delle locazioni
@@ -76,6 +62,15 @@ Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano dell
 | Bassa | Ginocchio SX | 61 - 65  |
 | Bassa | Ginocchio DX | 66 - 70  |
 | Bassa | Addome       | 72 - 100 |
+
+### Gestione della morte
+Per riflettere la possibilità che un colpo ben assestato possa essere immediatamente letale, si può introdurre la regola del "Colpo Critico":
+
+- **Colpo Critico:**  
+   Se un attacco critico (un 20 naturale su un d20) colpisce una parte vitale come la testa o il torso, il DM può decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola. Il DM può richiedere un tiro aggiuntivo per confermare l'effetto letale o applicare modificatori basati sulla situazione e la narrazione.
+
+- **Tiro Salvezza contro Morte:**  
+   Una volta raggiunta la condizione Letale in modalità che il DM lo ritenga mortale (es una palla chiodata in testa, trafitto da una lancia, lesione dell'aorta femorale etc), il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera: a ogni turno il giocatore dovrà tirare un d20 e con un risultato da 2 a 10 viene considerato fallimento, mentre da 11 a 19 è considerato successo. Se il giocatore otterrà 3 successi prima di compiere 3 fallimenti, si stabilizzerà, altrimenti morirà. In caso di 20 o 1 sul dado, quel tiro varrà come doppio successo o doppio fallimento.  
 
 Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)  
 Vai alle [**Fasi del Combattimento**](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Combattimento)
