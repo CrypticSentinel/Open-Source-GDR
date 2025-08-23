@@ -1,8 +1,7 @@
 # Il Caos della Battaglia
+Il combattimento non è mai ordinato. È un turbine di respiri spezzati, colpi improvvisi, occhi che cercano un varco nell’avversario. I personaggi non si muovono a turno come in una danza coreografata: non esiste un ritmo scandito, non c’è un “mio turno” o un “tuo turno”. Tutto avviene insieme, nello stesso istante: ogni lama che fende l’aria porta con sé un respiro interrotto e una possibilità di morte, un corpo che si piega sotto il dolore bruciante, un attimo di terrore sospeso tra vita e morte.
 
-Il combattimento non è mai ordinato. È un turbine di respiri spezzati, colpi improvvisi, occhi che cercano un varco nell’avversario. I personaggi non si muovono a turno come in una danza coreografata: non esiste un ritmo scandito, non c’è un “mio turno” o un “tuo turno”. Tutto avviene insieme, nello stesso istante: una lama che cala, un grido che esplode, un corpo che si muove di scatto per non farsi trafiggere.
-
-All’interno del gioco, però, serve un minimo di ordine per rappresentare questa simultaneità. Il combattimento si svolge in **round**, attimi di pochi secondi che racchiudono dichiarazioni, azioni e reazioni: quegli istanti sospesi in cui tutti agiscono insieme, cercando di anticipare o sopraffare l’avversario.
+All’interno del gioco, però, serve un minimo di ordine per rappresentare questa simultaneità. Il combattimento si svolge in **round**, attimi di pochi secondi che racchiudono dichiarazioni, azioni e reazioni: quei momenti in cui la vita è appesa a un filo, e ogni scelta può cambiare il destino.
 
 In ogni round, i giocatori dichiarano cosa vogliono fare: attaccare, difendersi, arretrare, tentare un colpo mirato o compiere azioni narrative. Solo dopo, i dadi stabiliscono se quelle intenzioni producono ferite, schivate o restano movimenti nel vuoto.
 
@@ -11,7 +10,7 @@ In ogni round, i giocatori dichiarano cosa vogliono fare: attaccare, difendersi,
 ## I Tre Momenti del Caos
 
 ### 1. Iniziativa
-I dadi stabiliscono chi è più rapido, chi reagisce per primo all’istante di pericolo. L’iniziativa si calcola così:
+I dadi stabiliscono chi è più rapido, chi reagisce per primo all’istante di pericolo.  
 
 **Iniziativa = Mod. Destrezza + Mod. Prontezza + 1d20**
 
@@ -21,28 +20,26 @@ Chi ottiene il punteggio più alto dichiara per primo le proprie azioni. Ma atte
 Partendo dall’iniziativa più alta fino alla più bassa, ogni giocatore dichiara cosa intende fare: attaccare, difendersi, arretrare, tentare un colpo mirato o compiere azioni narrative. Dichiarare non è ancora agire: significa tendere corpo e mente verso quell’azione, prepararsi, posizionarsi per il prossimo istante di caos.
 
 #### Azioni Possibili
- - **Attacco Normale:** Il personaggio attacca mantenendo una certa cautela, non ottenendo né bonus né penalità all'attacco o alla difesa (è l'azione di base in ogni combattimento).
- - **Attacco Focalizzato:** Il personaggio si concentra interamente sull'attacco, ottenendo un +5 al tiro per colpire ma un -5 al tiro per difendersi (schivate, parate).  
- - **Attacco Doppio:** Il personaggio esegue due attacchi nello stesso round, subendo -3 a entrambi i tiri per colpire e un -5 all'azione reattiva.
- - **Difesa Totale:** Il personaggio inverte la sequenza di attacco e difesa, guadagnando un bonus di +3 alla difesa. Se la difesa ha successo, può contrattaccare nello stesso round con un +5 all’attacco. Nel caso la difesa non abbia successo, il personaggio in difesa perde la possibilità di eseguire un attacco.
- - **Carica:** Il personaggio non ha possibilità di schivare o parare (a discrezione del DM eventuali eccezzioni), ma in caso di successo, aggiunge il modificatore di costituzione al danno, se è pari a 0 o inferiore, aggiunge comunque +1.
- - **Movimento:** In questa fase, tutti i personaggi si muovono secondo le azioni dichiarate. Il Dungeon Master (DM) può decidere se l'azione di movimento consuma l'intero turno o se lascia spazio per ulteriori azioni.
- - **Attacco a distanza:** Gli attacchi a distanza richiedono che venga superata almeno la difficoltà base di **10***, altrimenti il colpo mancherà il bersaglio. In caso di successo, se il beraglio ha possibilità di schivare il colpo, si dovrà fare un confronto tra chi attacca e chi difende.
- - **Confronto diretto:** Quando 2 o più personaggi si attaccano a vicenda, solo l'attacco con il tiro per colpire più alto va a segno, tutti gli altri attacchi falliscono automaticamente.
-
-> **Nota:** *Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.
+ - **Attacco Normale:** Cauto, misurato, senza bonus o penalità. L’azione di base del combattimento.
+ - **Attacco Focalizzato:** Il personaggio si concentra interamente sull'attacco, ottenendo un +5 al tiro per colpire ma un -5 al tiro per difendersi (schivate, parate). La concentrazione è totale, la mente e il corpo sospesi sul filo del colpo.  
+ - **Attacco Doppio:** Due colpi nello stesso round, -3 a entrambi e -5 all'azione reattiva. Ogni lama si muove come un’ombra fulminea.  
+ - **Difesa Totale:** Rinuncia all’attacco per ottenere +3 alla difesa. Se la difesa riesce, può contrattaccare con +5 all’attacco; se fallisce, perde l’azione. Il corpo diventa barriera viva, il cuore un martello sospeso.  
+ - **Carica:** Nessuna possibilità di schivare o parare, ma danno aumentato dal Mod. Costituzione (+1 minimo). L’assalto è bruciante, il corpo si getta in avanti con violenza.  
+ - **Movimento:** Tutti i personaggi si muovono secondo le azioni dichiarate. Il DM decide se l’azione consuma l’intero turno o lascia spazio per altre azioni.  
 
 ### 3. Risoluzione delle azioni
-I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la battaglia prende forma concreta: una lama che colpisce, un corpo che si piega, una ferita che segna la carne.
+I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la battaglia prende forma concreta: una lama che colpisce, un corpo che si piega, sangue che schizza e carne che geme sotto il colpo.
 
 #### Tiri e Confronti
  - **Attacco e Parata:** Mod. Destrezza + Abilità nell’uso dell’arma.
  - **Schivata:** Mod. Destrezza + Abilità Schivare.
- - **Attacchi a distanza:** difficoltà base 10. Se il difensore può schivare, si confrontano i tiri (attacco vs. schivata).
- - **Confronto diretto:** quando due o più personaggi si attaccano tra di loro, solo l’attacco con il tiro per colpire più alto va a segno; gli altri falliscono automaticamente. Non si applica a più personaggi che attaccano lo stesso bersaglio.
+ - **Attacco a distanza:** Difficoltà base **10***. Se il bersaglio può schivare, si confrontano i tiri. Un attimo di tensione, un respiro sospeso prima dell’impatto.
+ - **Confronto diretto:** Quando 2 o più personaggi si attaccano tra di loro, solo l’attacco con il tiro più alto va a segno; gli altri falliscono automaticamente. *Non si applica se più personaggi attaccano lo stesso bersaglio*.
+
+> **Nota:** *Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.
 
 ## Gestione dei Danni: Realismo e Narrazione
-Questo sistema di gestione dei danni vuole introdurre un approccio più realistico e narrativo, sostituendo i tradizionali Punti Ferita con meccaniche basate su **Danni Localizzati** e **Gravità delle ferite**. Ideale per gruppi che desiderano un'esperienza di combattimento più intensa e coinvolgente, questo sistema consente a ogni colpo di avere conseguenze significative e potenzialmente letali. In questo sistema, non esistono punti ferita astratti. Esistono corpi vulnerabili. Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali.
+Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali. I Punti Ferita sono sostituiti da **Danni Localizzati** e **Gravità delle ferite**. Il corpo reagisce: ossa, carne e sangue raccontano la storia dello scontro.
 
 ### Determinazione della Parte Colpita
 Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella **Colpi Mirati e Tiri di Localizzazione**.  
@@ -105,18 +102,20 @@ Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano dell
 La guarigione dalle ferite richiede tempo e cure appropriate. Alcune condizioni possono essere trattate rapidamente tramite magia o abilità curative, mentre altre potrebbero richiedere riposo prolungato o interventi medici.
 
 ## Gestione della morte
-Per riflettere la possibilità che un colpo ben assestato possa essere immediatamente letale, si può introdurre la regola del "Colpo Critico":
+Per riflettere la possibilità che un colpo ben assestato possa essere immediatamente letale, si può introdurre la regola del **Colpo Critico**:
 
 ### Colpo Critico
-Se un attacco critico (un 20 naturale su un d20) colpisce una parte vitale come la testa o il torso, il DM può decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola. Il DM può richiedere un tiro aggiuntivo per confermare l'effetto letale o applicare modificatori basati sulla situazione e la narrazione.
+Un 20 naturale su un d20 su parti vitali come la testa o il torso, può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
 
 ### Tiro salvezza contro Morte
-   Quando un personaggio subisce una **Ferita Letale** che il DM considera potenzialmente mortale (es una palla chiodata in testa, trafitto da una lancia, lesione dell'aorta femorale etc), il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
-  - a ogni turno il giocatore dovrà tirare un d20
-  - con un risultato da 2 a 10 viene considerato fallimento
-  - con un risultato da 11 a 19 è considerato successo.
+   Quando un personaggio subisce una ferita che il DM considera potenzialmente mortale (es una palla chiodata in testa, trafitto da una lancia, lesione dell'aorta femorale etc), il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
+  - Ogni turno il giocatore dovrà tirare un d20
+  - Con un risultato da 2 a 10 viene considerato fallimento
+  - Con un risultato da 11 a 19 è considerato successo.
   - Se il giocatore otterrà 3 successi prima di compiere 3 fallimenti, si stabilizzerà, altrimenti morirà.
   - In caso di 20 o 1 sul dado, quel tiro varrà come doppio successo o doppio fallimento.
+
+> *La vita pende da un filo; ogni respiro può essere l’ultimo.*
 
 ## Suggerimenti narrativi
 Il combattimento non si svolge in un vuoto. Fattori ambientali come il terreno, l'illuminazione, e gli oggetti presenti nell'area di combattimento possono influenzare le azioni e le reazioni dei personaggi, rendendo ogni scontro unico e memorabile. Considera di integrare questi elementi per arricchire la narrazione e fornire ai giocatori nuove sfide tattiche, incoraggiando i giocatori a pensare in modo dinamico e a sfruttare l'ambiente e le reazioni degli avversari. La gestione delle azioni e delle reazioni non deve essere rigida; anzi, un approccio flessibile e narrativo può portare a situazioni di gioco più emozionanti e imprevedibili.
