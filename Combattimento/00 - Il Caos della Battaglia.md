@@ -34,7 +34,7 @@ I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la bat
  - **Attacco e Parata:** Mod. Destrezza + Abilità nell’uso dell’arma.
  - **Schivata:** Mod. Destrezza + Abilità Schivare.
  - **Attacco a distanza:** Difficoltà base **10***. Se il bersaglio può schivare, si confrontano i tiri. Un attimo di tensione, un respiro sospeso prima dell’impatto.
- - **Confronto diretto:** Quando 2 o più personaggi si attaccano tra di loro, solo l’attacco con il tiro più alto va a segno; gli altri falliscono automaticamente. *Non si applica se più personaggi attaccano lo stesso bersaglio*.
+ - **Confronto diretto:** Quando due personaggi si attaccano a vicenda, si confrontano i tiri per colpire e solo il punteggio più alto va a segno; il perdente fallisce automaticamente, mentre altri attacchi di altri personaggi vengono risolti normalmente.
 
 > **Nota:** *Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.
 
