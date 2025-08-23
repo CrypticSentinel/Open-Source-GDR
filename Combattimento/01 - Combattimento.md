@@ -26,6 +26,8 @@ In questo sistema, tutte le azioni vengono risolte simultaneamente, riflettendo 
  - es. azioni come parare o schivare un colpo sono a tutti gli effetti considerate delle **Reazioni**
 
 ### Azioni di combattimento
+I tiri per colpire e parare usano il Modificatore Destrezza + l'Abilità nell'arma, mentre i tiri per schivare usanot il Modificatore Destrezza + l'Abilità Schivare.
+
 A seconda del tipo di azione d'attacco scelta, i personaggi possono ottenere vantaggi o subire penalità:
 
   - **Attacco Focalizzato:** Il personaggio si concentra interamente sull'attacco, ottenendo un +5 al tiro per colpire ma un -5 al tiro per difendersi (schivate, parate).  
@@ -33,9 +35,10 @@ A seconda del tipo di azione d'attacco scelta, i personaggi possono ottenere van
   - **Attacco Normale o Bilanciato:** Il personaggio attacca mantenendo una certa cautela, non ottenendo né bonus né penalità all'attacco o alla difesa (è l'azione di base in ogni combattimento).
   - **Difesa Totale:** Il personaggio inverte la sequenza di azione e reazione, rinuncia alla propria azione offensiva, ma guadagna bonus alla difesa (+3 alla Reazione). Se la difesa ha successo, può contrattaccare nello stesso round con un +5 all’attacco”. Nel caso la difesa non abbia successo, il personaggio in difesa perde la possibilità di eseguire la propria Azione.
   - **Carica:** Il personaggio non ha possibilità di schivare o parare (a discrezione del DM eventuali eccezzioni), ma in caso di successo, aggiunge il modificatore di costituzione al danno, se è pari a 0 o inferiore, aggiunge comunque +1.
-  - **Attacco a distanza:** Gli attacchi a distanza richiedono che venga superata almeno la difficoltà base di **10**. > Nota: Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.    
-   - Risultato ≥ 10 → Attacco a distanza riuscito (il personaggio colpisce l’area desiderata o il bersaglio)  
-   - Risultato < 10 → Attacco a distanza fallito (il colpo manca il bersaglio)
+  - **Attacco a distanza:** Gli attacchi a distanza richiedono che venga superata almeno la difficoltà base di **10***, altrimenti il colpo mancherà il bersaglio. In caso di successo, se il beraglio ha possibilità di schivare il colpo, si dovrà fare un confronto tra chi attacca e chi difende.
+  - **Confronto diretto:** Quando 2 o più personaggi si attaccano a vicenda, solo l'attacco con il tiro per colpire più alto va a segno, tutti gli altri attacchi falliscono automaticamente.
+
+*Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.
 
 ### Suggerimenti
 Il combattimento non si svolge in un vuoto. Fattori ambientali come il terreno, l'illuminazione, e gli oggetti presenti nell'area di combattimento possono influenzare le azioni e le reazioni dei personaggi, rendendo ogni scontro unico e memorabile. Considera di integrare questi elementi per arricchire la narrazione e fornire ai giocatori nuove sfide tattiche, incoraggiando i giocatori a pensare in modo dinamico e a sfruttare l'ambiente e le reazioni degli avversari. La gestione delle azioni e delle reazioni non deve essere rigida; anzi, un approccio flessibile e narrativo può portare a situazioni di gioco più emozionanti e imprevedibili.
