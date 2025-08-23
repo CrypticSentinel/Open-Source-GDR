@@ -4,12 +4,12 @@ Questo sistema di gestione dei danni vuole introdurre un approccio più realisti
 ## Tiro per Colpire e Localizzazione
 
 1. **Verifica dell’azione:**  
-   - Ogni attacco richiede un tiro di dado, con difficoltà base **10**.  
+   - Ogni attacco richiede un tiro di dado, con difficoltà base **10**. Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.  
    - Risultato ≥ 10 → azione riuscita (il personaggio colpisce l’area desiderata o esegue l’azione)  
    - Risultato < 10 → azione fallita (il colpo manca, l’abilità non riesce)
 
 2. **Determinazione della parte colpita:**  
-   - Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella [**Locazioni del danno**](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Gestione%20dei%20Danni#locazioni-del-danno).  
+   - Prima di tirare il dado per determianre se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella [**Locazioni del danno**](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Gestione%20dei%20Danni#locazioni-del-danno).  
 
 3. **Calcolo del danno:**  
    Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto viene sottratto il punteggio di assorbimento. La differenza rappresenta il danno effettivamente subito.
@@ -42,7 +42,7 @@ Le ferite sostituiscono i Punti Ferita come indicatore dello stato fisico.
 
 - **Ferita Leggera:** Nel momento in cui si subiscono almeno 2 danni, si ricevono delle penalità temporanee, pari a -2 al movimento o agli attacchi.
 - **Ferita Grave:** Nel momento in cui si raggiunge in una locazione un numero di danni pari alla **Soglia di resistenza**, si subisce una penalità di -5 fino alla guarigione; gli effetti possono includere immobilizzazione, perdita di sensi, o emorragie.
-- **Ferite Letali:** Se i danni ricevuti in una locazione raggiungono il doppio della soglia di resistenza di una locazione, si può avere come conseguenza la morte, l'amputazione di un arto o una grossa emorraggia.
+- **Ferite Letali:** Se i danni ricevuti in una locazione raggiungono il doppio della soglia di resistenza di una locazione, si può avere come conseguenza la morte, l'amputazione di un arto o una grossa emorragia.
 
 | Tipo Ferita     | Effetto sui Tiri |
 |-----------------|----------------|
@@ -81,7 +81,7 @@ Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano dell
 - Il terreno, la luce e gli oggetti influenzano il combattimento.  
 - Le azioni simultanee, i colpi mirati e le reazioni aumentano la tensione narrativa.  
 - Il DM decide effetti e conseguenze in base alla situazione e alla logica del mondo di gioco.
-- 
+
 ## Guarigione
 La guarigione dalle ferite richiede tempo e cure appropriate. Alcune condizioni possono essere trattate rapidamente tramite magia o abilità curative, mentre altre potrebbero richiedere riposo prolungato o interventi medici.
 
