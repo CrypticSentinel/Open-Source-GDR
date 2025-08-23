@@ -15,19 +15,15 @@ Seguendo l'ordine determinato dall'iniziativa, ogni personaggio dichiara le prop
 - Difendersi  
 - Compire altre azioni narrative o abilità speciali  
 
-**Verifica dell’azione:**  
-Tutte le azioni saranno poi risolte **simultaneamente**. Ogni attacco in corpo a corpo richiedono un tiro contrapposto, mentre tutti i tiri per attacchi a distanza, richiedono che venga superata almeno la difficoltà base di **10**. Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.    
-   - Risultato ≥ 10 → azione riuscita (il personaggio colpisce l’area desiderata o esegue l’azione)  
-   - Risultato < 10 → azione fallita (il colpo manca, l’abilità non riesce)
-
 ### Risoluzione delle Azioni: Le Fasi
-In questo sistema, tutte le azioni avvengono risolte simultaneamente, riflettendo la velocità e l'incertezza di un vero combattimento.
+In questo sistema, tutte le azioni vengono risolte simultaneamente, riflettendo la velocità e l'incertezza di un vero combattimento.
 
 1. **Fase di Movimento:** In questa fase, tutti i personaggi si muovono secondo le azioni dichiarate. Il Dungeon Master (DM) può decidere se l'azione di movimento consuma l'intero turno o se lascia spazio per ulteriori azioni.
 
 2. **Fase di Azione:** Tutti i personaggi compiono le azioni dichiarate. I tiri vengono confrontati per determinare se gli attacchi vanno a segno o se si neutralizzano a vicenda.
 
-3. **Fase di Reazione:** Durante questa fase, i personaggi possono reagire alle azioni precedentemente dichiarate. Le reazioni possono includere schivate, parate o azioni più complesse come interruzioni o controattacchi. Il DM, a sua discrezione, può permettere ai personaggi di eseguire reazioni immediate ad azioni avversarie specifiche, basandosi sul contesto e sulla narrazione. L'esperienza del DM e il buon senso saranno fondamentali per mantenere il combattimento fluido e coinvolgente.  
+3. **Fase di Reazione:** Durante questa fase, i personaggi possono reagire alle azioni precedentemente dichiarate. Le reazioni possono includere schivate, parate o azioni più complesse come interruzioni o controattacchi. Il DM, a sua discrezione, può permettere ai personaggi di eseguire reazioni immediate ad azioni avversarie specifiche, basandosi sul contesto e sulla narrazione. L'esperienza del DM e il buon senso saranno fondamentali per mantenere il combattimento fluido e coinvolgente.
+ - es. azioni come parare o schivare un colpo sono a tutti gli effetti considerate delle **Reazioni**
 
 ### Azioni di combattimento
 A seconda del tipo di azione d'attacco scelta, i personaggi possono ottenere vantaggi o subire penalità:
@@ -35,8 +31,11 @@ A seconda del tipo di azione d'attacco scelta, i personaggi possono ottenere van
   - **Attacco Focalizzato:** Il personaggio si concentra interamente sull'attacco, ottenendo un +5 al tiro per colpire ma un -5 al tiro per difendersi (schivate, parate).  
   - **Attacco doppio:** Il personaggio esegue due attacchi nello stesso round, subendo un -3 a entrambi i tiri per colpire e un -5 all'azione reattiva.  
   - **Attacco Normale o Bilanciato:** Il personaggio attacca mantenendo una certa cautela, non ottenendo né bonus né penalità all'attacco o alla difesa (è l'azione di base in ogni combattimento).
-  - **Difesa Totale:** Il personaggio inverte la sequenza di azione e reazione, rimandando la propria azione ad un secondo momento entro la fine del round, concentrandosi esclusivamente sulla difesa ottenendo +3 alla Reazione (Difesa) ed un +5 all'Azione (Attacco). Nel caso la difesa non abbia successo, il personaggio in difesa perde la possibilità di eseguire la propria Azione.
+  - **Difesa Totale:** Il personaggio inverte la sequenza di azione e reazione, rinuncia alla propria azione offensiva, ma guadagna bonus alla difesa (+3 alla Reazione). Se la difesa ha successo, può contrattaccare nello stesso round con un +5 all’attacco”. Nel caso la difesa non abbia successo, il personaggio in difesa perde la possibilità di eseguire la propria Azione.
   - **Carica:** Il personaggio non ha possibilità di schivare o parare (a discrezione del DM eventuali eccezzioni), ma in caso di successo, aggiunge il modificatore di costituzione al danno, se è pari a 0 o inferiore, aggiunge comunque +1.
+  - **Attacco a distanza:** Gli attacchi a distanza richiedono che venga superata almeno la difficoltà base di **10**. > Nota: Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.    
+   - Risultato ≥ 10 → Attacco a distanza riuscito (il personaggio colpisce l’area desiderata o il bersaglio)  
+   - Risultato < 10 → Attacco a distanza fallito (il colpo manca il bersaglio)
 
 ### Suggerimenti
 Il combattimento non si svolge in un vuoto. Fattori ambientali come il terreno, l'illuminazione, e gli oggetti presenti nell'area di combattimento possono influenzare le azioni e le reazioni dei personaggi, rendendo ogni scontro unico e memorabile. Considera di integrare questi elementi per arricchire la narrazione e fornire ai giocatori nuove sfide tattiche, incoraggiando i giocatori a pensare in modo dinamico e a sfruttare l'ambiente e le reazioni degli avversari. La gestione delle azioni e delle reazioni non deve essere rigida; anzi, un approccio flessibile e narrativo può portare a situazioni di gioco più emozionanti e imprevedibili.
