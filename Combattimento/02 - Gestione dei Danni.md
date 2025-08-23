@@ -37,14 +37,11 @@ Le ferite sostituiscono i Punti Ferita come indicatore dello stato fisico.
 - **Ferita Grave:** Nel momento in cui si raggiunge in una locazione un numero di danni pari alla **Soglia di resistenza**, si subisce una penalità di -5 fino alla guarigione; gli effetti possono includere immobilizzazione, perdita di sensi, o emorragie.
 - **Ferite Letali:** Se i danni ricevuti in una locazione raggiungono il doppio della soglia di resistenza di una locazione, si può avere come conseguenza la morte, l'amputazione di un arto o una grossa emorragia.
 
-| Tipo Ferita     | Effetto sui Tiri |
-|-----------------|----------------|
-| Leggera         | -2 a tutte le azioni (dal round successivo) |
-| Grave           | -5 a tutte le azioni (dal round successivo) |
-| Letale          | Potenzialmente mortale: morte, amputazione, emorragia grave |
-
-- Le penalità si applicano a partire dal round successivo.  
-- La guarigione richiede tempo e cure: magia, abilità curative o riposo.
+| Tipo Ferita     | Danno richiesto | Effetto sui Tiri |
+| :-------------- | :-------------- | :--------------- |
+| Leggera         | ≥2 danni (ma sotto la soglia) | -2 a tutte le azioni (dal round successivo) |
+| Grave           | ≥ soglia locazione | -5 a tutte le azioni (dal round successivo) |
+| Letale          | ≥ 2x soglia locazione | Potenzialmente mortale: morte, amputazione, emorragia grave |
 
 ## Locazioni del Danno
 Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano delle necessità di eseguire colpi mirati, in questi casi è possibile utilizzare una tabella delle locazioni
