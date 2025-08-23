@@ -32,7 +32,7 @@ Ogni parte principale del corpo di un personaggio ha una specifica soglia di res
 Un personaggio con un punteggio di assorbimento pari a 4 (dato da +1 di Modificatore di Costituzione e +3 dall'armatura) subisce un colpo al petto che infligge 6 danni. Dopo aver sottratto l'assorbimento, il danno reale subito è 2 (6 danni - 4 assorbimento = 2 danni), portandolo ad una **Ferita Leggera** e conseguente -2 a tutte le azioni. Se, in un turno successivo, il personaggio subisce 8 danni al torso, sottraendo ancora 4 punti di assorbimento, rimangono 4 danni effettivi, portando il totale dei danni al torso a 6. Avendo superato la **Soglia di resistenza** del torso (5), il personaggio subisce una **Ferita Grave**, che il DM determina in base alla natura del danno ricevuto.
 
 Le ferite subite in una specifica locazione possono portare ad una conseguenza associata a quella parte del corpo, a discrezione del DM:
-   - **Testa:** Stordimento o perdita di coscienza in caso di colpo condundente, oppure morte immediata in caso di pesanti colpi contundenti o colpi da taglio.
+   - **Testa:** Stordimento o perdita di coscienza in caso di colpo contundente, oppure morte immediata in caso di pesanti colpi contundenti o colpi da taglio.
    - **Torso:** Ferite gravi, difficoltà a respirare, emorragie interne.
    - **Braccia:** Incapacità di usare l'arto, caduta dell'arma o amputazione.
    - **Gambe:** Difficoltà a muoversi, caduta, immobilizzazione.
@@ -41,7 +41,7 @@ Le ferite subite in una specifica locazione possono portare ad una conseguenza a
 Le ferite sostituiscono i Punti Ferita come indicatore dello stato fisico.
 
 - **Ferita Leggera:** Nel momento in cui si subiscono almeno 2 danni, si ricevono delle penalità temporanee, pari a -2 al movimento o agli attacchi.
-- **Ferita Grave:** Nel momento in cui si raggiunge in una locazione un numero di danni pari alla **Soglia di resistenza**, si subisce una penalità di -5 fino alla guarigione, fino a immobilizzazione, perdita di sensi, o emorragie.
+- **Ferita Grave:** Nel momento in cui si raggiunge in una locazione un numero di danni pari alla **Soglia di resistenza**, si subisce una penalità di -5 fino alla guarigione; gli effetti possono includere immobilizzazione, perdita di sensi, o emorragie.
 - **Ferite Letali:** Se i danni ricevuti in una locazione raggiungono il doppio della soglia di resistenza di una locazione, si può avere come conseguenza la morte, l'amputazione di un arto o una grossa emorraggia.
 
 | Tipo Ferita     | Effetto sui Tiri |
@@ -92,7 +92,7 @@ Per riflettere la possibilità che un colpo ben assestato possa essere immediata
 Se un attacco critico (un 20 naturale su un d20) colpisce una parte vitale come la testa o il torso, il DM può decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola. Il DM può richiedere un tiro aggiuntivo per confermare l'effetto letale o applicare modificatori basati sulla situazione e la narrazione.
 
 - **Tiro Salvezza contro la Morte:**  
-   Una volta ricevuta una **Ferita Letale** in modalità che il DM lo ritenga mortale (es una palla chiodata in testa, trafitto da una lancia, lesione dell'aorta femorale etc), il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
+   Quando un personaggio subisce una **Ferita Letale** che il DM considera potenzialmente mortale (es una palla chiodata in testa, trafitto da una lancia, lesione dell'aorta femorale etc), il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
   - a ogni turno il giocatore dovrà tirare un d20
   - con un risultato da 2 a 10 viene considerato fallimento
   - con un risultato da 11 a 19 è considerato successo.
