@@ -11,13 +11,9 @@ Ognuno può adattare il sistema di magia libera a qualsiasi regolamento, per meg
 ## Combattimento
 In molti regolamenti di gioco, le meccaniche di combattimento spesso soffrono di una certa staticità, dove le azioni di attacco e difesa sembrano avvenire in modo prevedibile e sequenziale. Inoltre, la difesa è spesso trattata come una condizione passiva, dove un personaggio viene colpito automaticamente se il tiro d'attacco supera la sua Classe Armatura (CA). Questo approccio, sebbene funzionale, può risultare meno immersivo e realistico rispetto alla tensione e alla fluidità di un vero combattimento.
 
-Questo sistema di combattimento è stato sviluppato per offrire un'esperienza più dinamica e coinvolgente, mantenendo un equilibrio tra realismo e fluidità. Le linee guida presentate qui possono essere utilizzate come sono, adattate alle preferenze del gruppo di gioco, o integrate con altre regole esistenti.
+Questo sistema di combattimento è stato sviluppato per offrire un'esperienza più dinamica e coinvolgente, mantenendo un equilibrio tra realismo e fluidità. Le linee guida presentate qui possono essere utilizzate come sono, adattate alle preferenze del gruppo di gioco, o integrate con altre regole esistenti, mentre la gestione del danno vuole offrire un'esperienza di combattimento più tattica e immersiva, in cui ogni colpo può portare a conseguenze drammatiche e richiede ai giocatori di considerare attentamente ogni azione in battaglia.  
 
-[Fasi di combattimento](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Combattimento)
-
-La gestione del danno vuole offrire un'esperienza di combattimento più tattica e immersiva, in cui ogni colpo può portare a conseguenze drammatiche e richiede ai giocatori di considerare attentamente ogni azione in battaglia.  
-
-[Gestione dei danni](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Gestione%20dei%20Danni)
+[Il Caos della Battaglia](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia)
 
 # Magia Libera
 
