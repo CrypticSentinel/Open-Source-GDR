@@ -15,11 +15,11 @@ Seguendo l'ordine determinato dall'iniziativa, ogni personaggio dichiara le prop
 - Difendersi  
 - Compire altre azioni narrative o abilità speciali  
 
-Tutte le azioni saranno poi risolte **simultaneamente**. Ogni azione richiede un tiro di dado: difficoltà base **10**.  
+Tutte le azioni saranno poi risolte **simultaneamente**. Ogni azione in corpo a corpo richiedono un tiro contrapposto, mentre tutti i tiri per attacchi a distanza, richiedono che venga superata almeno la difficoltà base di **10**.  
 - Risultato ≥ 10 → azione riuscita (intenzione completata)  
 - Risultato < 10 → azione fallita (colpo mancato, azione non riuscita)  
 
-> Nota: il vero impatto sul bersaglio dipende dal confronto tra tiri di attacco e difesa, o tra attacchi simultanei.
+> Nota: Eventuali bonus o malus sono a discrezione del DM.
 
 ### Risoluzione delle Azioni: Le Fasi
 In questo sistema, tutte le azioni avvengono risolte simultaneamente, riflettendo la velocità e l'incertezza di un vero combattimento.
