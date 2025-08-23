@@ -1,14 +1,7 @@
 # Gestione dei Danni: Realismo e Narrazione
 Questo sistema di gestione dei danni vuole introdurre un approccio più realistico e narrativo, sostituendo i tradizionali Punti Ferita con meccaniche basate su **Danni Localizzati** e **Gravità delle ferite**. Ideale per gruppi che desiderano un'esperienza di combattimento più intensa e coinvolgente, questo sistema consente a ogni colpo di avere conseguenze significative e potenzialmente letali.
 
-## Tiro per Colpire e Localizzazione
-
-1. **Verifica dell’azione:**  
-   - Ogni attacco richiede un tiro di dado, con difficoltà base **10**. Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.  
-   - Risultato ≥ 10 → azione riuscita (il personaggio colpisce l’area desiderata o esegue l’azione)  
-   - Risultato < 10 → azione fallita (il colpo manca, l’abilità non riesce)
-
-2. **Determinazione della parte colpita:**  
+**Determinazione della parte colpita:**  
    - Prima di tirare il dado per determianre se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella [**Locazioni del danno**](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Gestione%20dei%20Danni#locazioni-del-danno).  
 
 3. **Calcolo del danno:**  
