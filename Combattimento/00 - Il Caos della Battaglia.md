@@ -42,7 +42,7 @@ I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la bat
 Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali. I Punti Ferita sono sostituiti da **Danni Localizzati** e **Gravità delle ferite**. Il corpo reagisce: ossa, carne e sangue raccontano la storia dello scontro.
 
 ### Determinazione della Parte Colpita
-Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella **Colpi Mirati e Tiri di Localizzazione**.  
+Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella [**Colpi Mirati e Tiri di Localizzazione**](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia#colpi-mirati-e-tiri-di-localizzazione).  
 
 ### Calcolo del danno
 Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto viene sottratto il punteggio di assorbimento. La differenza rappresenta il danno effettivamente subito.
