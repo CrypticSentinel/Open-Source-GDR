@@ -1,161 +1,90 @@
-# Esempi di Combattimento: Il Caos della Battaglia
-Questi esempi guidano passo passo attraverso l’uso del sistema di combattimento, enfatizzando il realismo, la tensione e l’aspetto narrativo. Ogni colpo può essere letale, ogni movimento è sospeso tra vita e morte.
+# Scenario di Combattimento: “Scontro nella Taverna Abbandonata”
 
----
-
-## Esempio 1: Attacco Normale e Confronto diretto
-
-**Scenario:** Il ladro Elric affronta un mercenario in un vicolo stretto.  
+## Situazione:
+Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella taverna abbandonata. La stanza è buia e piena di detriti.
 
 ### 1. Iniziativa
-- **Elric:** 1d20 + Destrezza + Prontezza → 15  
-- **Mercenario:** 1d20 + Destrezza + Prontezza → 12  
+Personaggio	Mod. Destrezza	Mod. Prontezza	1d20	Totale Iniziativa
+Aric	+2	+1	14	17
+Lyra	+3	+2	8	13
+Orco1	+1	+0	15	16
+Orco2	+1	+0	5	6
 
-> *L’oscurità è densa, il cuore di Elric batte accelerato. Ogni passo è un sussurro di morte.*
+Ordine dichiarazioni: Aric (17) → Orco1 (16) → Lyra (13) → Orco2 (6)
 
-### 2. Dichiarazioni Simultanee
-- **Elric:** Attacco Normale  
-- **Mercenario:** Attacco Normale  
-
-### 3. Risoluzione dei Tiri
-- Elric tira per colpire: 1d20 + abilità → 17 → colpisce  
-- Mercenario tira per colpire: 1d20 + abilità → 13 → il tiro ha successo, ma entrambi si attaccano a vicenda quindi solo Aric colpisce perché ha ottenuto il punteggio più alto.  
-
-### 4. Danni
-- Danno effettivo = 4 → Ferita Leggera  
-
-> *Il colpo graffia la pelle, un bruciore sottile percorre il corpo. La vita pende da un filo.*
-
----
-
-## Esempio 2: Attacco Focalizzato
-
-**Scenario:** La sacerdotessa Mara tenta di abbattere un goblin che minaccia il gruppo.  
-
-### 1. Iniziativa
-- **Mara:** 1d20 + Destrezza + Prontezza → 18  
-- **Goblin:** 1d20 + Destrezza + Prontezza → 10  
-
-> *Gli occhi di Mara sono fissi sul bersaglio, ogni respiro teso al massimo. Il filo del destino vibra tra le dita.*
+> *L’aria è densa di tensione, ogni respiro sospeso come se il filo della vita potesse spezzarsi da un momento all’altro.
 
 ### 2. Dichiarazioni Simultanee
-- **Mara:** Attacco Focalizzato  
-- **Goblin:** Attacco Normale  
+| Personaggio	| Azione Dichiarata |
+| Aric |	Attacco Normale verso Orco1 |
+| Lyra |	Attacco Focalizzato verso Orco1 |
+| Orco1 |	Attacco Normale verso Aric |
+| Orco2	| Carica verso Lyra |
 
-### 3. Risoluzione dei Tiri
-- Mara tira per colpire: 1d20 + abilità + 5 → 21 → colpisce  
-- Goblin tira per colpire: fallisce → colpo mancato  
+### 3. Risoluzione delle azioni – Confronto diretto e tiri
+Confronto Diretto: Aric vs Orco1
 
-### 4. Danni
-- Danno effettivo = 6 → supera soglia torso → Ferita Grave  
+Aric: Mod. Destrezza +2, Abilità spada +3, 1d20=12 → Totale 17
 
-> *La lama penetra il corpo, dolore bruciante, vita sospesa in un attimo di terrore.*
+Orco1: Mod. Destrezza +1, Abilità spada +2, 1d20=15 → Totale 18
 
----
+Esito confronto diretto: Orco1 colpisce Aric, Aric fallisce automaticamente.
 
-## Esempio 3: Attacco Doppio
+Box narrativo:
+L’orco anticipa il colpo di Aric, il ferro graffia l’aria sopra la sua spalla. Un attimo di terrore sospeso tra vita e morte.
 
-**Scenario:** Kael, guerriero veterano, affronta due banditi in un vicolo stretto.  
+Danno Orco1: Spadone 6 + Mod. Costituzione 2 = 8
 
-### 1. Iniziativa
-- **Kael:** 1d20 + Destrezza + Prontezza → 19  
-- **Bandito A:** 1d20 + Destrezza + Prontezza → 14  
-- **Bandito B:** 1d20 + Destrezza + Prontezza → 12  
+Armatura Aric 3 + Mod. Costituzione 2 → Assorbimento 5
 
-> *Le ombre si allungano, il cuore di Kael batte accelerato. Ogni lama dei banditi luccica al riflesso della luna.*
+Danno effettivo: 8 – 5 = 3
 
-### 2. Dichiarazioni Simultanee
-- **Kael:** Attacco Doppio → mira a Bandito A e Bandito B  
-- **Banditi:** Attacco Normale verso Kael  
+Zona colpita: 1d100=32 → Torso → Soglia 5 → Ferita Leggera (-2 a tutte le azioni)
 
-### 3. Risoluzione dei Tiri
-- Kael tira per primo attacco: 1d20 + abilità → 18 → colpisce Bandito A  
-- Kael tira secondo attacco: 1d20 + abilità → 15 → colpisce Bandito B  
-- Banditi tirano per colpire Kael: falliscono entrambi contro la reazione di Kael
+Attacco Lyra vs Orco1
 
-### 4. Danni
-- Bandito A: 5 → Ferita Grave  
-- Bandito B: 4 → Ferita Leggera  
+Mod. Destrezza +3, Abilità pugnale +4, Attacco Focalizzato +5, 1d20=9 → Totale 21
 
-> *Due lame scoccano in rapida successione. Dolore bruciante, sangue sulle mani, vite sull’orlo della morte.*
+Orco1 tenta di parare: Mod. Destrezza + Abilità parata = 1+2, 1d20=10 → Totale 13
 
----
+Esito: Colpo a segno
 
-## Esempio 4: Carica
+Danno: Pugnale 5 + Forza 2 = 7
 
-**Scenario:** Il Paladino Sirion lancia una carica contro un cavaliere corrotto sul ponte.  
+Assorbimento Orco1: Armatura 2 + Mod. Costituzione 1 = 3
 
-### 1. Iniziativa
-- **Sirion:** 1d20 + Destrezza + Prontezza → 16  
-- **Cavaliere:** 1d20 + Destrezza + Prontezza → 15  
+Danno effettivo: 7 – 3 = 4
 
-> *Il ponte scricchiola sotto il peso della corsa. Sirion sente il cuore rimbombare, respiro un tamburo di guerra.*
+Zona colpita: 1d100=45 → Braccio DX → Soglia 4 → Ferita Grave (-5 a tutte le azioni)
 
-### 2. Dichiarazioni Simultanee
-- **Sirion:** Carica  
-- **Cavaliere:** Attacco Normale  
+Box narrativo:
+Lyra scivola tra i colpi, il pugnale fende la carne dell’orco, l’arto cede e la lama cade a terra. Il dolore bruciante piega il suo corpo, mentre la morte sembra vicina a ogni respiro.
 
-### 3. Risoluzione dei Tiri
-- Sirion tira per colpire: 1d20 + Mod. Forza → 20 → colpisce  
-- Cavaliere non può parare la carica  
+Attacco Orco2 vs Lyra (Carica)
 
-### 4. Danni
-- Danno = 7 → supera soglia torso → Ferita Grave  
+Mod. Destrezza +1, Abilità spadone +2, 1d20=14 → Totale 17
 
-> *Il corpo del cavaliere trema, il ponte risuona di urla e strappi di armatura. La vita pende da un filo.*
+Lyra tenta schivata: Mod. Destrezza + Abilità Schivare 3+4, 1d20=6 → Totale 13
 
----
+Esito: Colpo a segno
 
-## Esempio 5: Colpo Mirato e Ferita Letale
+Danno: Spadone 6 + Mod. Costituzione 2 = 8
 
-**Scenario:** Nyra mira al cuore del mercenario traditore.  
+Assorbimento Lyra: Armatura 1 + Mod. Costituzione 1 = 2
 
-### 1. Iniziativa
-- **Nyra:** 1d20 + Destrezza + Prontezza → 20  
-- **Mercenario:** 1d20 + Destrezza + Prontezza → 12  
+Danno effettivo: 8 – 2 = 6
 
-> *L’aria è carica di tensione. Ogni muscolo di Nyra è teso, il sangue freddo come la lama.*
+Zona colpita: 1d100=2 → Testa → Soglia 3 → Ferita Grave (-5 a tutte le azioni)
 
-### 2. Dichiarazioni Simultanee
-- **Nyra:** Colpo mirato al torso  
-- **Mercenario:** Movimento per scappare  
+Box narrativo:
+L’orco piomba su Lyra. La lama graffia la sua testa, il dolore bruciante e la vista annebbiata la riportano alla realtà di una vita sospesa su un filo.
 
-### 3. Risoluzione dei Tiri
-- Nyra tira per colpire: 1d20 + abilità → 19 → colpisce  
-- Mercenario tenta schivata: 11 → fallisce  
+4. Esito del Round 1
+Personaggio	Ferite e Penalità
+Aric	Ferita Leggera al Torso (-2 azioni)
+Lyra	Ferita Grave alla Testa (-5 azioni)
+Orco1	Ferita Grave Braccio DX (-5 azioni)
+Orco2	Nessuna
 
-### 4. Danno e Ferita Letale
-- Danno effettivo = 10 → doppio della soglia torso → Ferita Letale  
-
-> *La lama entra nel cuore. Dolore bruciante, vita che scivola via. Il terrore rimane sospeso.*  
-
-> **Box narrativo:**  
-> *Ogni colpo mirato può essere l’ultimo. La carne urla, il sangue racconta storie di terrore e disperazione. La morte non aspetta.*
-
----
-
-## Esempio 6: Difesa Totale con Contrattacco Letale
-
-**Scenario:** Aric protegge un compagno ferito da un assassino.  
-
-### 1. Iniziativa
-- **Aric:** 1d20 + Destrezza + Prontezza → 17  
-- **Assassino:** 1d20 + Destrezza + Prontezza → 16  
-
-> *L’ombra dell’assassino scivola nella notte. Aric si muove come un fantasma, pronto a reagire.*
-
-### 2. Dichiarazioni Simultanee
-- **Aric:** Difesa Totale, mira a contrattaccare  
-- **Assassino:** Attacco Normale  
-
-### 3. Risoluzione
-- Aric difende: 18 → successo  
-- Contrattacco Aric: 1d20 + abilità + 5 → 22 → colpisce torso assassino  
-
-### 4. Danno
-- Danno effettivo = 6 → supera soglia torso → Ferita Grave  
-
-> *La lama di Aric fende l’oscurità. Carne e sangue gridano, la vita oscilla tra agonia e salvezza.*
-
-> **Box narrativo:**  
-> *Il cuore di chi difende batte forte, la carne del nemico si piega sotto il colpo. Ogni mossa è una danza tra vita e morte.*
+Box narrativo:
+La stanza è un turbinio di sangue, legno rotto e carne che geme. Ogni azione potrebbe essere l’ultima. La vita e la morte danzano a ritmo frenetico tra respiro e silenzio.
