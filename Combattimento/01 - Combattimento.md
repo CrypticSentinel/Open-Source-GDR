@@ -15,11 +15,10 @@ Seguendo l'ordine determinato dall'iniziativa, ogni personaggio dichiara le prop
 - Difendersi  
 - Compire altre azioni narrative o abilità speciali  
 
-Tutte le azioni saranno poi risolte **simultaneamente**. Ogni azione in corpo a corpo richiedono un tiro contrapposto, mentre tutti i tiri per attacchi a distanza, richiedono che venga superata almeno la difficoltà base di **10**.  
-- Risultato ≥ 10 → azione riuscita (intenzione completata)  
-- Risultato < 10 → azione fallita (colpo mancato, azione non riuscita)  
-
-> Nota: Eventuali bonus o malus sono a discrezione del DM.
+**Verifica dell’azione:**  
+Tutte le azioni saranno poi risolte **simultaneamente**. Ogni attacco in corpo a corpo richiedono un tiro contrapposto, mentre tutti i tiri per attacchi a distanza, richiedono che venga superata almeno la difficoltà base di **10**. Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.    
+   - Risultato ≥ 10 → azione riuscita (il personaggio colpisce l’area desiderata o esegue l’azione)  
+   - Risultato < 10 → azione fallita (il colpo manca, l’abilità non riesce)
 
 ### Risoluzione delle Azioni: Le Fasi
 In questo sistema, tutte le azioni avvengono risolte simultaneamente, riflettendo la velocità e l'incertezza di un vero combattimento.
