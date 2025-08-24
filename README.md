@@ -48,7 +48,7 @@ Se cerchi un’esperienza in cui la magia non conosce confini, dove l’unico li
 
 [Come funziona](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera#come-funziona-la-magia)
 
-[Utilizzare la magia](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera#utilizzare-la-magia)
+[Come si utilizza la magia](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera#come-si-evoca-limpossibile)
 
 [Assegnazione dei punti](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/11%20-%20Assegnazione%20dei%20punti)
 
