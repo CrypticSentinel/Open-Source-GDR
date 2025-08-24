@@ -1,10 +1,10 @@
-# Esempio di Magia Libera: Lancio di Incantesimo
+# Esempi di Magia Libera: Lancio di Incantesimo
 
 ## Scenario
 
 Lyra, maga della scuola di **Fuoco**, si trova in una stanza scarsamente illuminata.  
 Di fronte a lei, un orco armato di ascia si avvicina minaccioso.  
-Lyra decide di lanciare un incantesimo di **Palla di Fuoco** per fermare l’avanzata.
+Lyra decide di lanciare un incantesimo di **Palla di Fuoco** in pieno petto all'orco per fermare l’avanzata.
 
 > Il cuore accelera, il respiro si fa affannoso, la vita pende da un filo. Ogni gesto, ogni pensiero, è intriso di tensione.
 
@@ -31,7 +31,6 @@ Lancio totale = Mod Volontà (3) + Grado Scuola Fuoco (4) + d20 (14) = 21
 - **Difficoltà da superare**: 25  
 - **Risultato**: Fallimento
 
-> *Box Narrativo:*  
 > La Palla di Fuoco si accende imperfettamente. Una fiamma tremolante sfiora l’orco ma manca il bersaglio. Lyra sente un bruciore alla mano: il potere, non ancora pienamente padroneggiato, lascia un marchio sul suo corpo e sullo spirito.
 
 ## Passo 3: Nuovo Lancio
@@ -45,8 +44,14 @@ Lancio totale = 3 (Volontà) + 4 (Grado Fuoco) + 18 = 25
 - **Difficoltà totale**: 25  
 - **Risultato**: Successo marginale
 
-> *Box Narrativo:*  
-> La Palla di Fuoco esplode con energia contenuta, investendo l’orco. Il calore brucia la pelle del nemico, gli abiti si incendiano. Lyra sente il fremito del potere scorrere nelle braccia: ogni magia è un contratto, e lei ha appena pagato il prezzo.
+L'Orco questa volta vede la palla di fuoco dirigersi verso di lui, decide di lanciarsi di lato per non essere investito:
+
+- d20 (11) + Mod. Destrezza (3) + Schivare (3) = 17
+
+- **Difficoltà Resistenza Incantesimo**: 20
+- **Risultato**: Fillimento
+
+> La Palla di Fuoco esplode con energia contenuta, investendo l’orco che non riesce a spostarsi in tempo. Il calore brucia la pelle del nemico, gli abiti si incendiano. Lyra sente il fremito del potere scorrere nelle braccia: ogni magia è un contratto, e lei ha appena pagato il prezzo.
 
 ## Passo 4: Effetti dell'affaticamento
 Poichè riuscire ad incanalare correttamente l'energia magica comporta uno sforzo fisico, la stachezza pervade il corpo dell'incantatore
@@ -63,9 +68,8 @@ Consulta la [Tabella Affaticamento](https://crypticsentinel.github.io/Open-Sourc
 
 Danno effettivo = Danno Base - Assorbimento = 6 - 2 = 4
 
-- Secondo il sistema del Caos della Battaglia, il colpo provoca **Ferita Grave** se supera la soglia della parte colpita.
+- Il colpo provoca **Ferita Grave** non avendo superato la **Soglia di Resistenza** del torace (5).
 
-> *Box Narrativo:*  
 > L’orco urla, piegandosi sotto il dolore bruciante. L’odore acre della fiamma riempie la stanza, e Lyra sente il peso del potere nelle braccia e nel cuore.
 
 ## Conclusione
@@ -74,6 +78,6 @@ Lyra ha lanciato un incantesimo in due tentativi, subendo **affaticamento** e sf
 Il Narratore può aggiungere effetti secondari: incendi nell’ambiente, panico tra i nemici, danni collaterali.  
 
 > *Suggerimento per il Narratore:*  
-> Incoraggia i giocatori a descrivere **il corpo che trema, la mente che trema, la carne che brucia**. La magia libera è tanto narrativa quanto tattica.
+> Incoraggia i giocatori a descrivere **il corpo che trema o la carne che brucia**. La magia libera è tanto narrativa quanto tattica.
 
 Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
