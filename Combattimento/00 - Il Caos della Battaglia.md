@@ -10,7 +10,7 @@ Il combattimento non è mai ordinato. È un turbine di respiri spezzati, colpi i
 
 ## Esempio Narrativo
 > La pioggia batte sul selciato.  
-> L’orco alza la sua ascia, urlando. Irdar stringe la spada, cercando di leggere il movimento del nemico. Entrambi si muovono nello stesso istante.  
+> L’orco alza la sua ascia, urlando. Aric stringe la spada, cercando di leggere il movimento del nemico. Entrambi si muovono nello stesso istante.  
 > I dadi rotolano.  
 > L’attacco dell’orco (17) si abbatte con furia cieca, ma Aric (21) trova la forza di reagire: la sua lama si insinua veloce in un varco dell'armatura, la punta sfiora il fianco del mostro.  
 >  
