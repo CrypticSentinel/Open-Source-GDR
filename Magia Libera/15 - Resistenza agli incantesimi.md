@@ -1,8 +1,8 @@
-# Descrizione del sistema di Resistenza agli Incantesimi
-Nella mia personale visione, la resistenza agli incantesimi rappresenta la capacità di un personaggio di difendersi dagli effetti magici che possono alterare la mente, il corpo, o l'ambiente circostante. Questo sistema è progettato per fornire un metodo equilibrato e coerente per determinare se un incantesimo lanciato contro un personaggio avrà successo o se il bersaglio riuscirà a contrastarlo.
+# Resistere agli Incantesimi
+Nella mia personale visione, la resistenza agli incantesimi rappresenta la capacità di un personaggio di difendersi dagli effetti magici che possono alterare la mente, il corpo o l'ambiente circostante. Questo sistema è progettato per fornire un metodo equilibrato e coerente per determinare se un incantesimo lanciato contro un personaggio avrà successo o se il bersaglio riuscirà a contrastarlo.
 
 ## Meccanica di Base
-Quando un incantesimo viene lanciato contro un bersaglio, la difficoltà per resistere all'incantesimo viene determinata dalla difficoltà di lancio dell'incantesimo stesso. Ogni effetto può essere associata a una o più caratteristiche, che riflettono la natura dell'incantesimo e la resistenza che un personaggio può opporre. Il bersaglio effettuerà un tiro utilizzando la caratteristica appropriata (es. Volontà, Costituzione, Forza, ecc.) e, se disponibile, una specifica abilità di resistenza.
+Quando un incantesimo viene lanciato contro un bersaglio, la difficoltà per resistere all'incantesimo viene determinata dalla difficoltà di lancio dell'incantesimo stesso. Ogni effetto può essere associata a una o più caratteristiche, che riflettono la natura dell'incantesimo e la resistenza che un personaggio può opporre. Il bersaglio effettuerà un tiro utilizzando la caratteristica appropriata (es. Volontà, Costituzione, Forza, etc) e, se disponibile, una specifica abilità di resistenza (es. Resistenza Mentale, Schivare, Acrobazia etc).
 
 ## Determinazione della Difficoltà di Resistenza
 La difficoltà per resistere a un incantesimo è determinata in base alla tabella che confronta la difficoltà di lancio dell'incantesimo con una difficoltà predefinita per resistere. Più potente è l'incantesimo, maggiore sarà la difficoltà per resistere (es. Se la difficoltà di lancio di un incantesimo è 50, la difficoltà per resistere a questo incantesimo sarà 30 (come indicato nella tabella di resistenza sotto).
@@ -10,18 +10,18 @@ La difficoltà per resistere a un incantesimo è determinata in base alla tabell
 ### Tabella difficoltà per resistere agli incantesimi in base alla difficoltà di lancio
 Questa tabella definisce la difficoltà che un bersaglio deve superare per resistere a un incantesimo, in base alla difficoltà con cui l'incantesimo è stato lanciato. La difficoltà di resistenza aumenta all'aumentare della difficoltà di lancio, riflettendo la maggiore potenza o complessità dell'incantesimo.
 
-| Difficoltà di lancio | Difficoltà di resistenza | Descrizione                                                                                                         |
-| :-------------------:|:------------------------:|:------------------------------------------------------------------------------------------------------------------- |
-| 1-34                 | 20                       | Per gli incantesimi con una difficoltà di lancio relativamente bassa, la difficoltà per resistere è fissata a 20.   |
-| 35-44                | 25                       | Un incantesimo di questa difficoltà richiede una resistenza con difficoltà 25.                                      |
-| 45-54                | 30                       | La difficoltà di resistenza aumenta a 30.                                                                           |
-| 55-64                | 35                       | Con una difficoltà di lancio tra 55 e 64, la resistenza diventa ancora più difficile, con una difficoltà di 35.     |
-| 65-74                | 40                       | Per resistere a incantesimi con difficoltà di lancio in questo intervallo, la difficoltà di resistenza è 40.        |
-| 75-84                | 45                       | La resistenza richiede una difficoltà di 45.                                                                        |
-| 85-94                | 50                       | La difficoltà di resistenza si alza ulteriormente a 50.                                                             |
-| 95-104               | 55                       | La resistenza richiede una difficoltà di 55.                                                                        |
-| 105-114              | 60                       | La difficoltà di resistenza aumenta a 60.                                                                           |
-| 115-124              | 65                       | Per gli incantesimi più potenti con difficoltà di lancio fino a 124, la resistenza ha una difficoltà massima di 65. |
+| Difficoltà di lancio | Difficoltà di resistenza | Descrizione |
+| :------------------: | :----------------------: | :---------- |
+| 1-34 | 20 | Per gli incantesimi con una difficoltà di lancio relativamente bassa, la difficoltà per resistere è fissata a 20.   |
+| 35-44 | 25 | Un incantesimo di questa difficoltà richiede una resistenza con difficoltà 25.                                      |
+| 45-54 | 30 | La difficoltà di resistenza aumenta a 30.                                                                           |
+| 55-64 | 35 | Con una difficoltà di lancio tra 55 e 64, la resistenza diventa ancora più difficile, con una difficoltà di 35.     |
+| 65-74 | 40 | Per resistere a incantesimi con difficoltà di lancio in questo intervallo, la difficoltà di resistenza è 40.        |
+| 75-84 | 45 | La resistenza richiede una difficoltà di 45.                                                                        |
+| 85-94 | 50 | La difficoltà di resistenza si alza ulteriormente a 50.                                                             |
+| 95-104 | 55 | La resistenza richiede una difficoltà di 55.                                                                        |
+| 105-114 | 60 | La difficoltà di resistenza aumenta a 60.                                                                           |
+| 115-124 | 65 | Per gli incantesimi più potenti con difficoltà di lancio fino a 124, la resistenza ha una difficoltà massima di 65. |
 
 Per gestire la resistenza agli incantesimi, puoi associare ciascuna scuola di magia a una o più caratteristiche appropriate che meglio riflettono la natura e gli effetti degli incantesimi di quella scuola. Inoltre, potresti introdurre abilità specifiche o resistenze che i personaggi possono sviluppare o migliorare, offrendo così una varietà di opzioni tattiche e strategiche durante il gioco.
 
