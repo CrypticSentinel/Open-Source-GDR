@@ -1,4 +1,4 @@
-# # La Magia: Carne, Spirito e Sangue
+# La Magia: Carne, Spirito e Sangue
 
 La magia non è un dono gentile, né un talento che si eredita con grazia.  
 È una **trama invisibile** che scorre sotto la pelle del mondo, fatta di sangue, vento, cenere e silenzi.  
