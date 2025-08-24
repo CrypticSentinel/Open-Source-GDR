@@ -79,7 +79,7 @@ Di seguito sono riportate tutte le tabelle per utilizzare la Magia Libera così 
 
 Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un pratico tool online: [SpellCheck - Calcolo Difficoltà Incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
 
-[Esempio di Magia Libera](https://CrypticSentinel.github.io/Open-Source-GDR/Magia%20Libera/17%20-%20Esempio%20di%20Magia%20Libera)
+[Esempi di Magia Libera](https://CrypticSentinel.github.io/Open-Source-GDR/Magia%20Libera/17%20-%20Esempio%20di%20Magia%20Libera)
 
 ## Ringraziamenti
 Nessun regolamento nasce dal nulla. Ogni pagina di questo progetto è il riflesso di anni di storie condivise, di notti passate a tirare dadi e discutere di mondi possibili. È il risultato di amicizie, discussioni, sfide e sogni.
