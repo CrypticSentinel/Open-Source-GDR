@@ -72,7 +72,7 @@ Danno effettivo = Danno Base - Assorbimento = 6 - 2 = 4
 ## Conclusione
 
 Lyra ha lanciato un incantesimo in due tentativi, subendo **affaticamento** e sfiorando **pericoli fisici e spirituali**.  
-Il Master può aggiungere effetti secondari: incendi nell’ambiente, panico tra i nemici, danni collaterali.  
+Il Narratore può aggiungere effetti secondari: incendi nell’ambiente, panico tra i nemici, danni collaterali.  
 
-> *Suggerimento per il Master:*  
+> *Suggerimento per il Narratore:*  
 > Incoraggia i giocatori a descrivere **il corpo che trema, la mente che trema, la carne che brucia**. La magia libera è tanto narrativa quanto tattica.
