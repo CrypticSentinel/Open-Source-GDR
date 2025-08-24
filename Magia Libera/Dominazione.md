@@ -89,6 +89,6 @@ Durante il dominio, il vampiro percepisce tutto quello che il corpo dell'essere 
 
 ***Questo testo è un estratto da *Vampiri: La Masquerade*, © White Wolf Publishing, Inc. Tutti i diritti riservati. Edizione italiana a cura di Twenty Five Edition Srl. Questo estratto è utilizzato a scopo di recensione/analisi/commento secondo i termini dell'uso leale (fair use). Questo sito non è associato né approvato da White Wolf Publishing, Inc. o Twenty Five Edition Srl e non trae profitto dall'uso di questo materiale.***
 
-Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
-Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)
-Torna a [**Mente**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/09%20-%20Mente)
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)  
+Vai alla [**Descrizione della Magia**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/00%20-%20Descrizione%20Magia%20Libera)  
+Torna a [**Mente**](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/09%20-%20Mente)  
