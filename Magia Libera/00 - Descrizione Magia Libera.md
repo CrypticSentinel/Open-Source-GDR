@@ -9,7 +9,6 @@ La carne trema, la mente vacilla, lo spirito si spezza sotto il peso di energie 
 Eppure, è proprio in quell’attimo di dolore che nasce la magia.
 
 > *“Ogni parola sussurrata nell’aria è una ferita inferta al silenzio.”*  
-> — Appunti marginali del grimorio di Serya la Bianca
 
 
 ## Descrizione
@@ -31,8 +30,6 @@ La magia attinge dall’**energia vitale** di creature, natura e perfino dai flu
 Chi la utilizza deve connettersi profondamente con il mondo circostante, percependone le fonti di vita e raccogliendo energia spirituale.
 
 > **Nota di colore:** I lettori più attenti noteranno la similitudine con la *[Genkidama](https://it.wikipedia.org/wiki/Tecniche_di_Dragon_Ball#:~:text=la%20neutralizzer%C3%A0%20facilmente.-,Sfera%20dell%27energia%20spirituale,-%5Bmodifica%20%7C)* (Energia Sferica) di *Dragonball*.
-
-Per creare diversificazione tra gli incantatori, sono state introdotte **10 scuole di magia**.  
 
 ### Scuole di Magia
 Per diversificare gli utilizzatori e rendere il sistema equilibrato, la magia si articola in **dieci scuole** opposte tra loro, ciascuna con una prospettiva unica sul potere:
