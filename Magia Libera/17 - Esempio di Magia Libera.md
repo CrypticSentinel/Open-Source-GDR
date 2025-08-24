@@ -6,7 +6,6 @@ Lyra, maga della scuola di **Fuoco**, si trova in una stanza scarsamente illumin
 Di fronte a lei, un orco armato di ascia si avvicina minaccioso.  
 Lyra decide di lanciare un incantesimo di **Palla di Fuoco** per fermare l’avanzata.
 
-> *Box Narrativo:*  
 > Il cuore accelera, il respiro si fa affannoso, la vita pende da un filo. Ogni gesto, ogni pensiero, è intriso di tensione.
 
 ## Passo 1: Determinare i Modificatori
@@ -76,3 +75,5 @@ Il Narratore può aggiungere effetti secondari: incendi nell’ambiente, panico 
 
 > *Suggerimento per il Narratore:*  
 > Incoraggia i giocatori a descrivere **il corpo che trema, la mente che trema, la carne che brucia**. La magia libera è tanto narrativa quanto tattica.
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
