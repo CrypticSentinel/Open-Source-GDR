@@ -11,7 +11,9 @@ Eppure, è proprio in quell’attimo di dolore che nasce la magia.
 > *“Ogni parola sussurrata nell’aria è una ferita inferta al silenzio.”*  
 > — Appunti marginali del grimorio di Serya la Bianca
 
+
 ## Descrizione
+
 L'obiettivo di questo sistema è fornire una struttura solida per applicare la magia in **qualsiasi gioco di ruolo**, consentendo ai giocatori di personalizzare gli incantesimi in base a parametri come **distanza, modalità di lancio, durata e altre caratteristiche**.  
 
 Ogni aspetto influisce sulla difficoltà, bilanciando così il potere dell’incantesimo con la complessità del lancio.  
@@ -22,7 +24,6 @@ Per semplificare, è disponibile il tool **[SpellCheck](https://crypticsentinel.
 
 > 💡 **Nota:** il sistema è aperto a test e modifiche. L’obiettivo è renderlo sempre più bilanciato, accessibile e divertente, grazie ai feedback di diversi gruppi di gioco.
 
----
 
 ## Come funziona la magia
 
@@ -80,14 +81,12 @@ Quando un incantatore si tende verso le trame vitali del mondo, il suo destino s
 Fallire non è un semplice nulla di fatto.  
 Fallire significa che l’energia raccolta non trova forma… e cerca sfogo. 
 
----
 
 ### ⚠️ Fallimenti Critici
 Se il dado segna **1**, la magia divora chi l’ha evocata e sfugge al controllo dell’incantatore.  
 
-Le conseguenze sono a discrezione del **Master**, che può affidarsi alla **[Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)** per risultati imparziali e narrativamente divertenti.
+Le conseguenze sono a discrezione del **Narratore**, che può affidarsi alla **[Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)** per risultati imparziali e narrativamente divertenti.
 
----
 
 ## Il Ruolo del Narratore
 
@@ -96,7 +95,6 @@ Il dado decide se il potere è stato domato, ma spetta al Narratore dare forma a
 
 > 📖 **Suggerimento per il Narratore:** piega gli effetti magici alle esigenze della storia, non in un semplice numero.  Un fallimento o un successo può diventare un momento memorabile e rafforzare il tono della sessione e che ogni incantesimo lasci un segno nella storia… o nel corpo di chi lo evoca.
 
----
 
 ## Adattabilità
 
