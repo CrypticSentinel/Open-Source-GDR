@@ -35,7 +35,7 @@ Chi la utilizza deve connettersi profondamente con il mondo circostante, percepe
 Per creare diversificazione tra gli incantatori, sono state introdotte **10 scuole di magia**.  
 
 ### Scuole di Magia
-> Non esiste una sola verità, ma dieci riflessi opposti dello stesso specchio:
+Per diversificare gli utilizzatori e rendere il sistema equilibrato, la magia si articola in **dieci scuole** opposte tra loro, ciascuna con una prospettiva unica sul potere:
 
 - **Acqua ↔ Fuoco**  
 - **Aria ↔ Terra**  
@@ -43,8 +43,8 @@ Per creare diversificazione tra gli incantatori, sono state introdotte **10 scuo
 - **Spirito ↔ Materia**  
 - **Mente ↔ Corpo**
 
-Ogni incantatore sceglie una via, ma nessuno è immune al richiamo del suo opposto.  
-Nel cuore di un mago del fuoco arde sempre l’eco dell’acqua che lo spegnerà. 
+Ogni scuola guida il flusso dell’energia vitale verso effetti diversi.  
+Chi sceglie una scuola sente la sua voce, ma non può ignorare l’eco della sua controparte.
 
 ## Interpretazione le differenti visioni
 Ogni classe o archetipo vede la magia in modo diverso:
@@ -82,10 +82,10 @@ Fallire non è un semplice nulla di fatto.
 Fallire significa che l’energia raccolta non trova forma… e cerca sfogo. 
 
 
-### ⚠️ Fallimenti Critici
-Se il dado segna **1**, la magia divora chi l’ha evocata e sfugge al controllo dell’incantatore.  
-
-Le conseguenze sono a discrezione del **Narratore**, che può affidarsi alla **[Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)** per risultati imparziali e narrativamente divertenti.
+> ⚠️ Fallimenti Critici
+> Un **1 naturale sul d20** non è solo un fallimento: la magia può ribellarsi, colpire l’incantatore o alterare l’ambiente circostante.  
+> Il Narratore deciderà l’entità dell’abisso.  
+> Per una gestione imparziale, si può utilizzare la **[Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)**.
 
 
 ## Il Ruolo del Narratore
@@ -96,12 +96,12 @@ Il dado decide se il potere è stato domato, ma spetta al Narratore dare forma a
 > 📖 **Suggerimento per il Narratore:** piega gli effetti magici alle esigenze della storia, non in un semplice numero.  Un fallimento o un successo può diventare un momento memorabile e rafforzare il tono della sessione e che ogni incantesimo lasci un segno nella storia… o nel corpo di chi lo evoca.
 
 
-## Adattabilità
+## Flessibilità e Interpretazione
 
-Se non ti convince questa visione, puoi modificare facilmente la meccanica:  
-- Far dipendere la magia da **caratteristiche diverse** (es. Intelligenza per i maghi, Saggezza per i druidi).  
-- Richiedere **grimori**, **rituali**, **danzatori attorno al fuoco** o altri elementi narrativi.  
+Questo sistema è pensato per essere **adattabile** a qualsiasi campagna.  
+Il Narratore può modificare la meccanica: altri personaggi possono usare Caratteristiche diverse, gli incantesimi possono richiedere rituali particolari, danze, canti o grimori.  
+L’importante è che ogni scelta narrativa sia coerente con la **tensione della magia e il rischio che comporta**. Questa flessibilità vuole rendere il sistema di **Magia Libera** uno strumento universale, che ogni gruppo può adattare al proprio stile di gioco.
 
-Questa flessibilità vuole rendere il sistema di **Magia Libera** uno strumento universale, che ogni gruppo può adattare al proprio stile di gioco.
+> *“Piegare l’energia vitale circostante alla propria volontà è un atto di potere… e di follia.”*
 
 Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
