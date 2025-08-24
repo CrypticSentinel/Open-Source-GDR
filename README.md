@@ -23,6 +23,8 @@ Le regole qui proposte vogliono restituire al combattimento la **tensione del ra
 
 [Il Caos della Battaglia](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia)
 
+[Esempi di Combattimento](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Esempi%20di%20Combattimento)
+
 # Magia Libera
 
 ## Perché Adottare un sistema di magia libera?
