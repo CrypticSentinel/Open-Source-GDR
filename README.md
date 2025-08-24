@@ -84,7 +84,7 @@ Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un prati
 ## Ringraziamenti
 Nessun regolamento nasce dal nulla. Ogni pagina di questo progetto è il riflesso di anni di storie condivise, di notti passate a tirare dadi e discutere di mondi possibili. È il risultato di amicizie, discussioni, sfide e sogni.
 
-A chi mi ha spinto, ispirato, e persino criticato: questo regolamento è anche vostro.
+A chi mi ha spinto, ispirato e criticato: questo regolamento è anche vostro.
 Il gioco di ruolo non è mai un’esperienza solitaria, ma una costruzione collettiva, proprio come questo sistema.
 
 **[Rocco "JC"](https://it-it.facebook.com/rocco.ierino.14)** - è lui che ogni anno, da troppi anni, mi sprona(va) chiedendomi *"Quand'è che facciamo il nostro regolamento?"*  
