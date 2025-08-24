@@ -78,12 +78,12 @@ Quando un incantatore si tende verso le trame vitali del mondo, il suo destino s
 Fallire non è un semplice nulla di fatto.  
 Fallire significa che l’energia raccolta non trova forma… e cerca sfogo. 
 
-
 > ⚠️ Fallimenti Critici
 > Un **1 naturale sul d20** non è solo un fallimento: la magia può ribellarsi, colpire l’incantatore o alterare l’ambiente circostante.  
 > Il Narratore deciderà l’entità dell’abisso.  
 > Per una gestione imparziale, si può utilizzare la **[Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)**.
 
+[Esempio di Magia Libera](https://CrypticSentinel.github.io/Open-Source-GDR/Magia%20Libera/17%20-%20Esempio%20di%20Magia%20Libera)
 
 ## Il Ruolo del Narratore
 
