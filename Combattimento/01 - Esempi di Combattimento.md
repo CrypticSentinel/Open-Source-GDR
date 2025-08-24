@@ -118,6 +118,8 @@ Attacco a distanza, difficoltà base 10.
 
 > *La freccia fende l’aria, la punta affonda nella carne dell’Orco, un bruciore improvviso lo blocca e il respiro diventa affannoso.*
 
+---
+
 ## 7. Confronto Diretto
 
 **Scenario:** Lyra e un Orco si attaccano reciprocamente nello stesso round.  
@@ -189,7 +191,7 @@ Difesa Totale: +3 alla difesa, contrattacco +5 se riuscito
 ## Nota Editoriale
 > *Questi esempi mostrano la tensione e il rischio costante: ogni attacco può segnare la vita o la morte. I numeri e i tiri rappresentano l’incertezza e la brutalità della battaglia, dove la carne e il sangue parlano più dei dadi.*
 
-
+---
 
 # Scenario di Combattimento: “Scontro nella Taverna Abbandonata” – Round 1 (corretto)
 
