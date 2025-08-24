@@ -1,30 +1,62 @@
-# Descrizione Magia Libera
-L'obiettivo di questo sistema è di fornire una struttura solida per una sua applicazione in qualsiasi gioco di ruolo, così da consentire un utilizzo della magia in assoluta libertà che permetta ai giocatori di personalizzare gli incantesimi in base a vari parametri come distanza, modalità di lancio, durata e altre caratteristiche. Il sistema vuole consentire una grande libertà ai giocatori nella creazione degli incantesimi, incoraggiando la creatività. Ogni aspetto dell'incantesimo influisce sulla difficoltà, permettendo di bilanciare il potere dell'incantesimo con la difficoltà del lancio.
+# # La Magia: Carne, Spirito e Sangue
 
-Il sistema può certamente risultare ostico ad un primo sguardo e la quantità di variabili e calcoli potrebbe risultare complessa ad una prima lettura, specialmente durante le prime partite di gioco, rallentando il ritmo, ma una volta comprese le meccaniche, i calcoli dovrebbero avvenire in maniera semplice. Qualora così non fosse è disponibile il tool [SpellCheck](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/) per semplificare i calcoli.
+La magia non è un dono gentile, né un talento che si eredita con grazia.  
+È una **trama invisibile** che scorre sotto la pelle del mondo, fatta di sangue, vento, cenere e silenzi.  
+Chi osa toccarla, chi tenta di piegarla, offre in pegno qualcosa di sé: **un respiro, un battito, un frammento della propria vita**.
 
-Questo sistema cerca di bilanciare la potenza degli incantesimi con la difficoltà, sono sicuramente necessari ulteriori test per assicurarsi che non ci siano combinazioni che portino a incantesimi troppo potenti o troppo deboli rispetto alla difficoltà, motivo per cui rendere l'accesso e la modifica a chiunque vorrebbe rendere questo regolamento sempre migliorabile e adatto ad un vasto pubblico per testare il sistema con diversi gruppi di gioco e diversi scenari, in modo da individuare eventuali squilibri e adattare le regole  di conseguenza.
+Ogni incantatore lo sa: il potere non è mai gratuito.  
+La carne trema, la mente vacilla, lo spirito si spezza sotto il peso di energie troppo grandi.  
+Eppure, è proprio in quell’attimo di dolore che nasce la magia.
 
-L'augurio è quello di creare un sistema che sia gratificante per i giocatori che apprezzano la libertà creativa e la personalizzazione, con un'attenzione particolare al bilanciamento e alla semplicità d'uso, così da farla diventare una meccanica apprezzata.
+---
 
-# Come funziona la magia
-Alla base di questo regolamento vi è il concetto che la magia si attinge dall'energia vitale di tutte le creature viventi e persino della natura stessa, canalizzandola in ciò che l'incantatore desidera. Chi padroneggia questa tecnica è in grado di accumulare energia dalle piante, dagli animali, dagli esseri umani, e perfino dai flussi energetici della terra e del cielo<sup>1</sup>. Il mago che desidera utilizzare la magia deve entrare in una profonda connessione con il mondo circostante, espandendo la propria percezione per avvertire ogni fonte di vita nei dintorni, iniziando a raccogliere l'energia spirituale.
+> *“Ogni parola sussurrata nell’aria è una ferita inferta al silenzio.”*  
+> — Appunti marginali del grimorio di Serya la Bianca
 
- ><sup>1</sup>I lettori più attenti avranno notato la similitudine con la [Genkidama](https://it.wikipedia.org/wiki/Tecniche_di_Dragon_Ball#:~:text=la%20neutralizzer%C3%A0%20facilmente.-,Sfera%20dell%27energia%20spirituale,-%5Bmodifica%20%7C), o Energia Sferica, del manga Dragonball.
+---
 
-Per poter gestire al meglio questo sistema di magia e allo stesso tempo creare delle diversificazioni tra gli utilizzatori, la cosa più sensata è sembrata essere quella di creare delle scuole di magia, tramite le quali coprire tutti gli aspetti senza rendere il regolamento troppo complesso o troppo semplicistico, motivo per cui sono state scelte 10 specifiche scuole di magia. 
+## Descrizione
+L'obiettivo di questo sistema è fornire una struttura solida per applicare la magia in **qualsiasi gioco di ruolo**, consentendo ai giocatori di personalizzare gli incantesimi in base a parametri come **distanza, modalità di lancio, durata e altre caratteristiche**.  
 
-Esiste tuttavia un tema di contrapposizone che limita, ma non preclude, l’utilizzo di determinate scuole di magia, che possiamo facilmente riepilogare come segue:  
+Ogni aspetto influisce sulla difficoltà, bilanciando così il potere dell’incantesimo con la complessità del lancio.  
 
-Acqua ↔ Fuoco  
-Aria ↔ Terra  
-Vita ↔ Morte  
-Spirito ↔ Materia  
-Mente ↔ Corpo  
+Il sistema può sembrare ostico a un primo sguardo: le variabili sono numerose e i calcoli possono rallentare le prime sessioni. Con l’esperienza, però, il tutto diventa più fluido.  
 
-Ogni scuola di magia offre una prospettiva unica e meccaniche di gioco specifiche, permettendo ai giocatori di scegliere e sviluppare un personaggio che meglio si adatta al loro stile di gioco e alla narrativa della campagna. L'idea è che combinando queste scuole si riesca ad ottenere un sistema di magia che è sia complesso ed equilibrato, permettendo una grande varietà di scelte strategiche e di roleplay.
+Per semplificare, è disponibile il tool **[SpellCheck](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)**, utile per automatizzare i calcoli.
 
-## Differenze di visione
+> 💡 **Nota:** il sistema è aperto a test e modifiche. L’obiettivo è renderlo sempre più bilanciato, accessibile e divertente, grazie ai feedback di diversi gruppi di gioco.
+
+---
+
+## Come funziona la magia
+
+La magia attinge dall’**energia vitale** di creature, natura e perfino dai flussi energetici della terra e del cielo.  
+Chi la utilizza deve connettersi profondamente con il mondo circostante, percependone le fonti di vita e raccogliendo energia spirituale.
+
+> **Nota di colore:** I lettori più attenti noteranno la similitudine con la *[Genkidama](https://it.wikipedia.org/wiki/Tecniche_di_Dragon_Ball#:~:text=la%20neutralizzer%C3%A0%20facilmente.-,Sfera%20dell%27energia%20spirituale,-%5Bmodifica%20%7C)* (Energia Sferica) di *Dragonball*.
+
+Per creare diversificazione tra gli incantatori, sono state introdotte **10 scuole di magia**.  
+
+### Scuole di Magia
+> Non esiste una sola verità, ma dieci riflessi opposti dello stesso specchio:
+
+- **Acqua ↔ Fuoco**  
+- **Aria ↔ Terra**  
+- **Vita ↔ Morte**  
+- **Spirito ↔ Materia**  
+- **Mente ↔ Corpo**
+
+Ogni incantatore sceglie una via, ma nessuno è immune al richiamo del suo opposto.  
+Nel cuore di un mago del fuoco arde sempre l’eco dell’acqua che lo spegnerà. 
+
+## Interpretazione le differenti visioni
+Ogni classe o archetipo vede la magia in modo diverso:
+
+- **Maghi e Stregoni:** frutto di studio e disciplina.  
+- **Druidi e Sciamani:** dono della Natura o degli Spiriti.  
+- **Chierici e Paladini:** benedizione divina ottenuta con la fede.
+
+Non esiste una verità assoluta: il sistema lascia libertà interpretativa al giocatore, che potrà descrivere come il proprio personaggio **percepisce e canalizza** la magia.
 
 ### Maghi e Stregoni
 > Maghi e stregoni, hanno dedicato la vita a comprendere le leggi arcane che governano l'universo, l'utilizzo da parte loro richiede una concentrazione assoluta e una profonda comprensione dell'energia cosmica che permea tutte le cose, per utilizzare la magia è richiesto loro di richiamare l'energia da ogni creatura vivente, da ogni molecola dell'aria e dalla stessa trama della realtà. Questa energia si condensa in puro potere sotto il loro controllo e richiede una continua prova di forza mentale e volontà, e ogni incantatoree deve essere preparato a sacrificare parte della propria essenza per contenerla. Solo i maghi più esperti possono padroneggiare queste tecniche senza rischiare la propria vita, ma la ricompensa è la capacità di alterare il corso di una battaglia in un singolo, devastante istante. L'uso di questa magia è estremamente dispendioso e richiede una forza interiore straordinaria, se l'incantatore non è in perfetta sintonia con l'energia raccolta, rischia di subire gravi danni fisici e spirituali.
@@ -38,20 +70,44 @@ Attingendo dalla propria fede, l'utilizzo di preghiere permette loro di guidare 
 > I custodi degli antichi segreti della natura possiedono un’innata connessione con la Madre Terra, che permette loro di accedere a poteri che vanno oltre la semplice magia. Espando la propria coscienza verso ogni essere vivente intorno a se stessi, da maestosi alberi secolari a minuscole creature del sottobosco, la terra, l'acqua, l'aria e il fuoco rispondono al loro richiamo, e l'energia vitale della natura fluisce in loro.
 Tuttavia, questo potere ha un costo, la fusione anche se temporanea con la natura, rischia di far perdere una parte della propria energia vitale nel processo.
 
-# Utilizzare la magia
-Sulla base delle premesse fatte, ruolo fondamentale nell'utilizzo della magia libera lo ha forza di volontà, in questo regolamento gestita tramite la sola caratteristica di **Volontà**, il cui modificatore andrà sommato al proprio grado di conoscenza su una specifica scuola di magia al cui valore verrà sommato il risultato del lancio di 1d20, quindi riassumendo, la meccanica è:
+## Come si evoca l’impossibile
 
-**Lancio Incantesio = Modificatore Volontà + Grado Scuola di magia + 1d20**
+Il gesto non basta.  
+Servono **volontà e conoscenza**.  
+Quando un incantatore si tende verso le trame vitali del mondo, il suo destino si decide in un unico istante:
 
-Per la riuscita del lancio sarà sufficiente superare una difficoltà che avrà 20 come valore di base, a cui si dovranno sommare o sottrarre dei punteggi in base all'incantesimo che si vorrà lanciare (vedi [Tabelle lancio incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi)).
+**Lancio Incantesimo = Modificatore Volontà + Grado Scuola di magia + 1d20**
 
-Nella mia personale visione, esistono casi sfortuiti in cui la magia sfugge dal controllo dell'incantatore, nella meccanica di gioco avviene quando al lancio del d20 per il lancio dell'incantesimo, l'incantatore ottiene il risultato di 1 sul dado. Le conseguenze sono lasciate all'insindacabile giudizio del Master, ma per una gestione assolutamente imparziale e divertente delle conseguenze, ci si può affidare alla [Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)
+- La **difficoltà base** è **20**.  
+- Ogni variazione — distanza, durata, modalità di lancio — la rende più facile o difficile da raggiungere (vedi [Tabelle lancio incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/12%20-%20Tabelle%20lancio%20incantesimi)).
 
-Il tema principale per un usufruitore di magia, è quello di piegare alla propria volontà le energie vitali circostanti per ottenere qualcosa plasmando le energie stesse. Nel paragrafo precedente è stato cercato di fornire le differenti visioni, maghi e stregoni sono certi di controllare la magia grazie ai loro studi e alla pratica, druidi e sciamani sono convinti di ottenere i loro poteri da Madre Natura, dai loro antenati o dai loro spiriti protettori, mentre chierici e paladini credono di ottenere i favori della divinità che pregano, grazie alla loro incrollabile fede; possono essere tutte giuste e tutte sbagliate allo stesso tempo, la scelta vuole essere puramente interpretativa secondo le volontà del giocatore il quale avrà l'onere e l'onore di descrivere come il proprio personaggio apprende e utilizza la magia.
+Fallire non è un semplice nulla di fatto.  
+Fallire significa che l’energia raccolta non trova forma… e cerca sfogo. 
 
-Tutto il resto è lasciato all'insindacabile giudizio ultimo del Master, che avrà facoltà di piegare alla sua volontà qualsiasi effetto o conseguenza, al fine di creare una trama avvincente e delle epiche avventure.
+---
 
-**Non ti piace questa tematica? Ritieni che ogni usufruitore di magia debba utilizzare una Caratteristica diversa, che i maghi debbano concretamente studiare i loro incantesimi e scriverli sul loro grimorio, o che uno sciamano debba danzare attorno al fuoco preparando chissà quale rituale?**
-Nessun problema, come spero di essere risucito a trasmettere, quella descritta qui vuole essere una meccanica adattabile a qualunque gioco di ruolo, ho solo ritenuto utile per una miglior comprensione, condividere la mia visione così da far meglio comprendere il perchè di determinate meccaniche.
+### ⚠️ Fallimenti Critici
+Se il dado segna **1**, la magia divora chi l’ha evocata e sfugge al controllo dell’incantatore.  
+
+Le conseguenze sono a discrezione del **Master**, che può affidarsi alla **[Tabella dei Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)** per risultati imparziali e narrativamente divertenti.
+
+---
+
+## Il Ruolo del Narratore
+
+Non esiste incantesimo che non possa piegarsi alla narrazione.  
+Il dado decide se il potere è stato domato, ma spetta al Narratore dare forma al risultato: un lampo che lacera il cielo, una voce che sussurra da sotto terra, un cuore che batte un colpo in meno.  
+
+> 📖 **Suggerimento per il Narratore:** piega gli effetti magici alle esigenze della storia, non in un semplice numero.  Un fallimento o un successo può diventare un momento memorabile e rafforzare il tono della sessione e che ogni incantesimo lasci un segno nella storia… o nel corpo di chi lo evoca.
+
+---
+
+## Adattabilità
+
+Se non ti convince questa visione, puoi modificare facilmente la meccanica:  
+- Far dipendere la magia da **caratteristiche diverse** (es. Intelligenza per i maghi, Saggezza per i druidi).  
+- Richiedere **grimori**, **rituali**, **danzatori attorno al fuoco** o altri elementi narrativi.  
+
+Questa flessibilità vuole rendere il sistema di **Magia Libera** uno strumento universale, che ogni gruppo può adattare al proprio stile di gioco.
 
 Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
