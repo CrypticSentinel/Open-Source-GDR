@@ -2,14 +2,24 @@
 La maggior parte dei regolamenti riduce lo scontro a una sequenza prevedibile di numeri e lanci di dado.  
 Colpisci, subisci, attendi il tuo turno. Una danza meccanica che raramente cattura il brivido di una lama che fende l’aria a pochi centimetri dal volto o il peso della scelta tra attaccare e sopravvivere.  
 
-Questo sistema nasce per restituire al combattimento ciò che gli appartiene: **tensione, rischio e conseguenze reali**.  
+Questo sistema nasce per tentare di restituire al combattimento ciò che gli appartiene: **tensione, rischio e conseguenze reali**.  
 Ogni azione conta, ogni colpo può cambiare il destino di chi lo infligge o di chi lo subisce. Qui la difesa non è un gesto passivo, ma una scelta attiva, fatta di istinto, sangue freddo e disperazione.  
 
 ## Introduzione Narrativa
-
 Il combattimento non è mai ordinato. È un turbine di respiri spezzati, colpi improvvisi, occhi che cercano un varco nell’avversario. I personaggi non si muovono a turno come in una danza coreografata: non esiste un ritmo scandito, non c’è un “mio turno” o un “tuo turno”. Tutto avviene insieme, nello stesso istante: ogni lama che fende l’aria porta con sé un respiro interrotto e una possibilità di morte, un corpo che si piega sotto il dolore bruciante, un attimo di terrore sospeso tra vita e morte.
 
-All’interno del gioco, però, serve un minimo di ordine per rappresentare questa simultaneità. Il combattimento si svolge in **round**, attimi di pochi secondi che racchiudono dichiarazioni, azioni e reazioni: quei momenti in cui la vita è appesa a un filo, e ogni scelta può cambiare il destino.
+## Esempio Narrativo
+> La pioggia batte sul selciato.  
+> L’orco alza la sua ascia, urlando. Irdar stringe la spada, cercando di leggere il movimento del nemico. Entrambi si muovono nello stesso istante.  
+> I dadi rotolano.  
+> L’attacco dell’orco (17) si abbatte con furia cieca, ma Aric (21) trova la forza di reagire: la sua lama si insinua veloce in un varco dell'armatura, la punta sfiora il fianco del mostro.  
+>  
+> In questo sistema, Aric non “subisce e basta”: il suo successo ribalta il pericolo in occasione, trasformando la difesa in un contrattacco.  
+
+## I Momenti del Caos
+
+### Turni di Combattimento
+Durante un combattimento tutto accade più o meno in simultanea, all’interno del gioco però, serve un minimo di ordine per rappresentare questa simultaneità. Il combattimento si svolge in **round**, attimi di pochi secondi che racchiudono dichiarazioni, azioni e reazioni: quei momenti in cui la vita è appesa a un filo, e ogni scelta può cambiare il destino.
 
 In ogni round, i giocatori dichiarano cosa vogliono fare: attaccare, difendersi, arretrare, tentare un colpo mirato o compiere azioni narrative. Solo dopo, i dadi stabiliscono se quelle intenzioni producono ferite, schivate o restano movimenti nel vuoto.
 
@@ -18,26 +28,23 @@ Un combattimento non è una sequenza di colpi a segno, ma un continuo intrecciar
 > *Ogni lama che fende l’aria porta con sé un respiro interrotto e una possibilità di morte.  
 > Qui la tensione non è un contorno: è l’essenza stessa del combattimento.*
 
-## Esempio Narrativo
-
-> La pioggia batte sul selciato.  
-> L’orco alza la sua ascia, urlando. Irdar stringe la spada, cercando di leggere il movimento del nemico. Entrambi si muovono nello stesso istante.  
-> I dadi rotolano.  
-> L’attacco dell’orco (17) si abbatte con furia cieca, ma Aric (21) trova la forza di reagire: la sua lama si insinua veloce in un varco dell'armatura, la punta sfiora il fianco del mostro.  
->  
-> In questo sistema, Aric non “subisce e basta”: il suo successo ribalta il pericolo in occasione, trasformando la difesa in un contrattacco.  
-
-## I Tre Momenti del Caos
-
 ### 1. Iniziativa
-L’iniziativa stabilisce chi reagisce per primo:
+In questa fase si dichiara l'azione del proprio personaggio, l’iniziativa stabilisce chi dichiara per primo la propria azione. Tutti i personaggi tireranno 1d20 da aggiungere al proprio punteggio di **Iniziativa**, dato dalla somma di Mod. Destrezza + Mod. Prontezza.
 
-**Iniziativa = Mod. Destrezza + Mod. Prontezza + 1d20**
+**Iniziativa = (Mod. Destrezza + Mod. Prontezza) + 1d20**
 
-Chi ottiene il punteggio più alto dichiara per primo le proprie azioni. Ma attenzione: la battaglia rimane simultanea. Anche l’ultimo nella sequenza può cambiare il destino con una reazione al momento giusto. L’iniziativa definisce solo chi annuncia per primo, non chi agisce davvero prima.
+Chi ottiene il punteggio più alto dichiara per primo le proprie azioni: attaccare, difendersi, arretrare, attendere uno spcifico evento, tentare un colpo mirato o compiere azioni narrative. Ma attenzione: la battaglia rimane simultanea. Anche l’ultimo nella sequenza può cambiare il destino con una reazione al momento giusto. L’iniziativa definisce solo chi annuncia per primo, non chi agisce realmente prima.
 
-### 2. Dichiarazioni Simultanee
-Partendo dall’iniziativa più alta fino alla più bassa, ogni giocatore dichiara cosa intende fare: attaccare, difendersi, arretrare, tentare un colpo mirato o compiere azioni narrative. Dichiarare non è ancora agire: significa tendere corpo e mente verso quell’azione, prepararsi, posizionarsi per il prossimo istante di caos.
+### 2. Attacco
+Gli attacchi sono ovviamente il fulcro di un combattimento, esistono due tipi di combattimento ed entrambi utilizzano lo stesso sistema di base con alcune differenze:
+
+ - **Combattimento Ravvicinato:** Comprende il combattimento a mani nude (Mod. Destrezza + Lottare o Rissa) come una rissa in taverna o uno scontro onorevole tra orchi, ed il combattimento armato (Mod. Destrezza + Abilità nell’uso dell’arma), come un duello tra cavalieri o uno scontro tra le fanterie di un esercito. In entrambi i casi, gli avversari devono trovarsi entro un paio di metri l'uno dall'altro. L'esito del risultato è dato da un tiro contrapposto per parare (Mod. Destrezza + Abilità nell’uso dell’arma, Lotta o Rissa) o per Schivare (Mod. Destrezza + Schivare, Lottare o Rissa).
+
+ - **Combattimento a distanza:** è un combattimento armato che prevede armi da lancio, come coltelli e giavellotti, oppure armi a distanza, come archi o balestre. In questo caso la difficoltà base per colpire il bersaglio è **10***. Se il bersaglio può schivare o mettersi al riparo, verrà effettuato un tiro contrapposto (Mod. Destrezza + Scudo o Schivare).
+
+> Un attimo di tensione, un respiro sospeso prima dell’impatto.
+
+> **Nota:** *Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.
 
 #### Azioni Possibili
 Quando più nemici si affrontano, il caos domina. Le priorità cambiano in un lampo, il nemico di un istante diventa lo scudo dell’istante dopo. 
@@ -52,71 +59,10 @@ Quando più nemici si affrontano, il caos domina. Le priorità cambiano in un la
 
 > *La battaglia è un intrico di possibilità: non tutto può essere controllato, e spesso sopravvive chi sa adattarsi, non chi colpisce più forte.*
 
-### 3. Risoluzione delle azioni
-I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la battaglia prende forma concreta: una lama che colpisce, un corpo che si piega, sangue che schizza e carne che geme sotto il colpo.
-
-#### Tiri e Confronti
- - **Attacco e Parata:** Mod. Destrezza + Abilità nell’uso dell’arma.
- - **Schivata:** Mod. Destrezza + Abilità Schivare.
- - **Attacco a distanza:** Difficoltà base **10***. Se il bersaglio può schivare, si confrontano i tiri. Un attimo di tensione, un respiro sospeso prima dell’impatto.
-
-> **Nota:** *Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.
-
-#### Colpi Critici
-- Se un **d20 lanciato per colpire** risulta **20 naturale**:
-  - Gli eventuali dadi di danno vengono **lanciati due volte** (doppio danno) e sommati al danno dell'arma e al modificatore di Forza presi singolarmente.
-  - Il giocatore può tentare un nuovo lancio di d20 per il colpo successivo, se anche il nuovo d20 risulta 20 naturale, si verifica un **colpo mortale** immediato, secondo valutazione del Narratore e la parte del corpo colpita.
-
-- Se un **d20 lanciato per attaccare** risulta **1 naturale**, si applicano le regole dei **fallimenti critici** come già previsto dal sistema.
-
-> *Questo introduce il rischio e la possibilità di momenti straordinari in combattimento, sia per il successo clamoroso che per il fallimento epico.*
-
-A livello narrativo, un 20 naturale su un d20 può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
-
-## Gestione dei Danni: Realismo e Narrazione
-Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali. Il corpo reagisce: ossa, carne e sangue raccontano la storia dello scontro.
-
-### Determinazione della Parte Colpita
-Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso, il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella [**Colpi Mirati e Tiri di Localizzazione**](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia#colpi-mirati-e-tiri-di-localizzazione).  
-
-### Calcolo del danno
-Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto viene sottratto il punteggio di assorbimento. La differenza rappresenta il danno effettivamente subito.
-
-**Danno effettivo = (Danno Arma + Mod. Forza) – (Armatura + Mod. Costituzione)**
-
-Il risultato determina i danni inflitti alla zona colpita. Ogni parte del corpo ha una soglia di resistenza; superarla produce ferite di gravità crescente:
-
-| Zona    | Soglia | Effetto Narrativo |
-| :------ | :----: | :-----------------|
-| Testa   | 3      | Stordimento, perdita di sensi o morte |
-| Torso   | 5      | Ferite gravi, difficoltà respiratorie, emorragie interne |
-| Braccia | 4      | Incapacità di usare l’arto, caduta dell’arma, amputazione |
-| Gambe   | 4      | Difficoltà a muoversi, caduta, immobilizzazione |
-| Mani    | 3      | Perdita di destrezza, incapacità di impugnare oggetti |
-| Piedi   | 3      | Difficoltà a correre o stare in piedi, caduta |
-
-## Ferite e conseguenze
-Ogni colpo ha un peso. Non sono solo punti che calano da una scheda: sono **sangue, dolore, affaticamento**.  
-Ogni ferita rallenta, piega la volontà, costringe a scelte difficili.  
-
-> **Regola: Tipi di Ferite**  
-> - **Leggera**: fastidiosa, ma non arresta.  
-> - **Grave**: rallenta e impone malus ai tiri.  
-> - **Letale**: la vita pende da un filo, il corpo cede, la volontà vacilla.   
-
-| Tipo Ferita | Danno richiesto | Effetto sui Tiri |
-| :---------- | :-------------- | :--------------- |
-| Leggera     | ≥2 danni (ma sotto la soglia) | -2 a tutte le azioni (dal round successivo) |
-| Grave       | ≥ soglia locazione | -5 a tutte le azioni (dal round successivo) |
-| Letale      | ≥ 2x soglia locazione | Potenzialmente mortale: morte, amputazione, emorragia grave |
-
-> *Un duello può finire non quando l’avversario cade a terra, ma quando il peso delle ferite lo spezza prima dentro che fuori.*   
-
-**Esempio di Applicazione del Danno:**
-Un personaggio con un punteggio di assorbimento pari a 4 (dato da +1 di Modificatore di Costituzione e +3 dall'armatura) subisce un colpo al petto che infligge 6 danni. Dopo aver sottratto l'assorbimento, il danno reale subito è 2 (6 danni - 4 assorbimento = 2 danni), portandolo ad una **Ferita Leggera** e conseguente -2 a tutte le azioni. Se, in un turno successivo, il personaggio subisce 8 danni al torso, sottraendo ancora 4 punti di assorbimento, rimangono 4 danni effettivi, portando il totale dei danni al torso a 6. Avendo superato la **Soglia di resistenza** del torso (5), il personaggio subisce una **Ferita Grave**, che il DM determina in base alla natura del danno ricevuto.
+#### Determinazione della Parte Colpita
+Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso, il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella **Colpi Mirati e Tiri di Localizzazione**
 
 ## Colpi Mirati e Tiri di Localizzazione
-Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano delle necessità di eseguire colpi mirati, in questi casi è possibile utilizzare una tabella delle locazioni. Se non si dichiara un colpo mirato, la zona viene determinata tirando 1d100:
 
 | Zona  | Locazione | Dado (1d100) |
 | :---- | :-------- | :----------: |
@@ -139,13 +85,50 @@ Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano dell
 | Bassa | Ginocchio DX | 66 - 70 |
 | Bassa | Addome    | 72 - 100 |
 
-## Guarigione
-La guarigione dalle ferite richiede tempo e cure appropriate. Alcune condizioni possono essere trattate rapidamente tramite magia o abilità curative, mentre altre potrebbero richiedere riposo prolungato o interventi medici.
+### 3. Risoluzione
+I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la battaglia prende forma concreta: una lama che colpisce, un corpo che si piega, sangue che schizza e carne che geme sotto il colpo. In questa fase viene determinato l'esito degli attacchi ed il danno inflitto e il Narratore descrive ciò che accade nel turno. 
 
-## Gestione della morte
+Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali. Il corpo reagisce: ossa, carne e sangue raccontano la storia dello scontro.
 
-### Tiro salvezza contro Morte
-   Quando un personaggio subisce una ferita che il Narratore considera potenzialmente mortale, il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
+#### Calcolo del danno
+Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto viene sottratto il punteggio di assorbimento. La differenza rappresenta il danno effettivamente subito.
+
+**Danno effettivo = (Danno Arma + Mod. Forza) – (Armatura + Mod. Costituzione)**
+
+Il risultato determina i danni inflitti alla zona colpita. Ogni parte del corpo ha una soglia di resistenza; superarla produce ferite di gravità crescente:
+
+| Zona    | Soglia | Effetto Narrativo |
+| :------ | :----: | :-----------------|
+| Testa   | 3      | Stordimento, perdita di sensi o morte |
+| Torso   | 5      | Ferite gravi, difficoltà respiratorie, emorragie interne |
+| Braccia | 4      | Incapacità di usare l’arto, caduta dell’arma, amputazione |
+| Gambe   | 4      | Difficoltà a muoversi, caduta, immobilizzazione |
+| Mani    | 3      | Perdita di destrezza, incapacità di impugnare oggetti |
+| Piedi   | 3      | Difficoltà a correre o stare in piedi, caduta |
+
+#### Ferite e conseguenze
+Ogni colpo ha un peso. Non sono solo punti che calano da una scheda: sono **sangue, dolore, affaticamento**.  Ogni ferita rallenta, piega la volontà, costringe a scelte difficili.  
+
+> **Regola: Tipi di Ferite**  
+> - **Leggera**: fastidiosa, ma non arresta.  
+> - **Grave**: rallenta e impone malus ai tiri.  
+> - **Letale**: la vita pende da un filo, il corpo cede, la volontà vacilla.   
+
+| Tipo Ferita | Danno richiesto | Effetto sui Tiri |
+| :---------- | :-------------- | :--------------- |
+| Leggera     | ≥2 danni (ma sotto la soglia) | -2 a tutte le azioni (dal round successivo) |
+| Grave       | ≥ soglia locazione | -5 a tutte le azioni (dal round successivo) |
+| Letale      | ≥ 2x soglia locazione | Potenzialmente mortale: morte, amputazione, emorragia grave |
+
+> *Un duello può finire non quando l’avversario cade a terra, ma quando il peso delle ferite lo spezza prima dentro che fuori.*   
+
+**Esempio di Applicazione del Danno:**
+Un personaggio con un punteggio di assorbimento pari a 4 (dato da +1 di Modificatore di Costituzione e +3 dall'armatura) subisce un colpo al petto che infligge 6 danni. Dopo aver sottratto l'assorbimento, il danno reale subito è 2 (6 danni - 4 assorbimento = 2 danni), portandolo ad una **Ferita Leggera** e conseguente -2 a tutte le azioni. Se, in un turno successivo, il personaggio subisce 8 danni al torso, sottraendo ancora 4 punti di assorbimento, rimangono 4 danni effettivi, portando il totale dei danni al torso a 6. Avendo superato la **Soglia di resistenza** del torso (5), il personaggio subisce una **Ferita Grave**, che il DM determina in base alla natura del danno ricevuto.
+
+#### Gestione della morte
+
+##### Tiro salvezza contro Morte
+Quando un personaggio subisce una ferita che il Narratore considera potenzialmente mortale, il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
   - Ogni turno il giocatore dovrà tirare un d20
   - Con un risultato da 2 a 10 viene considerato fallimento
   - Con un risultato da 11 a 19 è considerato successo.
@@ -154,7 +137,21 @@ La guarigione dalle ferite richiede tempo e cure appropriate. Alcune condizioni 
 
 > *La vita pende da un filo; ogni respiro può essere l’ultimo.*
 
-## Suggerimenti narrativi
+#### Colpi Critici
+- Se un **d20 lanciato per colpire** risulta **20 naturale**:
+  - Gli eventuali dadi di danno vengono **lanciati due volte** (doppio danno) e sommati al danno dell'arma e al modificatore di Forza presi singolarmente.
+  - Il giocatore può tentare un nuovo lancio di d20 per il colpo successivo, se anche il nuovo d20 risulta 20 naturale, si verifica un **colpo mortale** immediato, secondo valutazione del Narratore e la parte del corpo colpita.
+
+- Se un **d20 lanciato per attaccare** risulta **1 naturale**, si applicano le regole dei **fallimenti critici** come già previsto dal sistema.
+
+> *Questo introduce il rischio e la possibilità di momenti straordinari in combattimento, sia per il successo clamoroso che per il fallimento epico.*
+
+> **Nota:** A livello narrativo, un 20 naturale su un d20 può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
+
+### 4. Guarigione
+La guarigione dalle ferite richiede tempo e cure appropriate. Alcune condizioni possono essere trattate rapidamente tramite magia o abilità curative, mentre altre potrebbero richiedere riposo prolungato o interventi medici.
+
+### Suggerimenti narrativi
 Il combattimento non si svolge in un vuoto. Fattori ambientali come il terreno, l'illuminazione, e gli oggetti presenti nell'area di combattimento possono influenzare le azioni e le reazioni dei personaggi, rendendo ogni scontro unico e memorabile. Considera di integrare questi elementi per arricchire la narrazione e fornire ai giocatori nuove sfide tattiche, incoraggiando i giocatori a pensare in modo dinamico e a sfruttare l'ambiente e le reazioni degli avversari. La gestione delle azioni e delle reazioni non deve essere rigida; anzi, un approccio flessibile e narrativo può portare a situazioni di gioco più emozionanti e imprevedibili.
 
 Questo sistema di combattimento è pensato per dare vita a scontri più vividi e interattivi, dove ogni decisione può influire sull'esito del round. Ricorda che, come ogni regolamento, queste regole sono linee guida da adattare alle esigenze del gruppo. Sperimentare, modificare e trovare il bilanciamento che meglio si adatta al proprio stile di gioco, è forse la migliore delle regole.
