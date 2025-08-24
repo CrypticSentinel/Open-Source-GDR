@@ -288,3 +288,5 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 
 > **Box narrativo:**  
 > La stanza è un turbinio di sangue, legno rotto e carne che geme. Ogni azione potrebbe essere l’ultima. La vita e la morte danzano a ritmo frenetico tra respiro e silenzio.
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
