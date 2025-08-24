@@ -5,6 +5,8 @@ Colpisci, subisci, attendi il tuo turno. Una danza meccanica che raramente cattu
 Questo sistema nasce per restituire al combattimento ciò che gli appartiene: **tensione, rischio e conseguenze reali**.  
 Ogni azione conta, ogni colpo può cambiare il destino di chi lo infligge o di chi lo subisce. Qui la difesa non è un gesto passivo, ma una scelta attiva, fatta di istinto, sangue freddo e disperazione.  
 
+## Introduzione Narrativa
+
 Il combattimento non è mai ordinato. È un turbine di respiri spezzati, colpi improvvisi, occhi che cercano un varco nell’avversario. I personaggi non si muovono a turno come in una danza coreografata: non esiste un ritmo scandito, non c’è un “mio turno” o un “tuo turno”. Tutto avviene insieme, nello stesso istante: ogni lama che fende l’aria porta con sé un respiro interrotto e una possibilità di morte, un corpo che si piega sotto il dolore bruciante, un attimo di terrore sospeso tra vita e morte.
 
 All’interno del gioco, però, serve un minimo di ordine per rappresentare questa simultaneità. Il combattimento si svolge in **round**, attimi di pochi secondi che racchiudono dichiarazioni, azioni e reazioni: quei momenti in cui la vita è appesa a un filo, e ogni scelta può cambiare il destino.
@@ -25,12 +27,10 @@ Un combattimento non è una sequenza di colpi a segno, ma un continuo intrecciar
 >  
 > In questo sistema, Aric non “subisce e basta”: il suo successo ribalta il pericolo in occasione, trasformando la difesa in un contrattacco.  
 
----
-
 ## I Tre Momenti del Caos
 
 ### 1. Iniziativa
-I dadi stabiliscono chi è più rapido, chi reagisce per primo all’istante di pericolo.  
+L’iniziativa stabilisce chi reagisce per primo:
 
 **Iniziativa = Mod. Destrezza + Mod. Prontezza + 1d20**
 
@@ -47,7 +47,8 @@ Quando più nemici si affrontano, il caos domina. Le priorità cambiano in un la
  - **Attacco Doppio:** Due colpi nello stesso round, -3 a entrambi e -5 all'azione reattiva. Ogni lama si muove come un’ombra fulminea.  
  - **Difesa Totale:** Rinuncia all’attacco per ottenere +3 alla difesa. Se la difesa riesce, può contrattaccare con +5 all’attacco; se fallisce, perde l’azione. Il corpo diventa barriera viva, il cuore un martello sospeso.  
  - **Carica:** Nessuna possibilità di schivare o parare, ma danno aumentato dal Mod. Costituzione (+1 minimo). L’assalto è bruciante, il corpo si getta in avanti con violenza.  
- - **Movimento:** Tutti i personaggi si muovono secondo le azioni dichiarate. Il DM decide se l’azione consuma l’intero turno o lascia spazio per altre azioni.  
+ - **Movimento:** Tutti i personaggi si muovono secondo le azioni dichiarate. Il DM decide se l’azione consuma l’intero turno o lascia spazio per altre azioni.
+ - **Confronto diretto:** Quando due personaggi si attaccano a vicenda, si confrontano i tiri per colpire e solo il punteggio più alto va a segno; il perdente fallisce automaticamente, mentre altri attacchi di altri personaggi vengono risolti normalmente. 
 
 > *La battaglia è un intrico di possibilità: non tutto può essere controllato, e spesso sopravvive chi sa adattarsi, non chi colpisce più forte.*
 
@@ -58,24 +59,32 @@ I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la bat
  - **Attacco e Parata:** Mod. Destrezza + Abilità nell’uso dell’arma.
  - **Schivata:** Mod. Destrezza + Abilità Schivare.
  - **Attacco a distanza:** Difficoltà base **10***. Se il bersaglio può schivare, si confrontano i tiri. Un attimo di tensione, un respiro sospeso prima dell’impatto.
- - **Confronto diretto:** Quando due personaggi si attaccano a vicenda, si confrontano i tiri per colpire e solo il punteggio più alto va a segno; il perdente fallisce automaticamente, mentre altri attacchi di altri personaggi vengono risolti normalmente.
 
 > **Nota:** *Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.
 
+#### Colpi Critici
+- Se un **d20 lanciato per colpire** risulta **20 naturale**:
+  - Gli eventuali dadi di danno vengono **lanciati due volte** (doppio danno) e sommati al danno dell'arma e al modificatore di Forza presi singolarmente.
+  - Il giocatore può tentare un nuovo lancio di d20 per il colpo successivo, se anche il nuovo d20 risulta 20 naturale, si verifica un **colpo mortale** immediato, secondo valutazione del Narratore e la parte del corpo colpita.
+
+- Se un **d20 lanciato per attaccare** risulta **1 naturale**, si applicano le regole dei **fallimenti critici** come già previsto dal sistema.
+
+> *Questo introduce il rischio e la possibilità di momenti straordinari in combattimento, sia per il successo clamoroso che per il fallimento epico.*
+
+A livello narrativo, un 20 naturale su un d20 può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
+
 ## Gestione dei Danni: Realismo e Narrazione
-Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali. I Punti Ferita sono sostituiti da **Danni Localizzati** e **Gravità delle ferite**. Il corpo reagisce: ossa, carne e sangue raccontano la storia dello scontro.
+Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali. Il corpo reagisce: ossa, carne e sangue raccontano la storia dello scontro.
 
 ### Determinazione della Parte Colpita
-Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella [**Colpi Mirati e Tiri di Localizzazione**](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia#colpi-mirati-e-tiri-di-localizzazione).  
+Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso, il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella [**Colpi Mirati e Tiri di Localizzazione**](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia#colpi-mirati-e-tiri-di-localizzazione).  
 
 ### Calcolo del danno
 Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto viene sottratto il punteggio di assorbimento. La differenza rappresenta il danno effettivamente subito.
 
 **Danno effettivo = (Danno Arma + Mod. Forza) – (Armatura + Mod. Costituzione)**
 
-Il risultato determina i danni inflitti alla zona colpita. Superare la soglia di resistenza porta a ferite di diversa gravità:
-
-Ogni parte del corpo ha una soglia di resistenza; superarla produce ferite di gravità crescente:
+Il risultato determina i danni inflitti alla zona colpita. Ogni parte del corpo ha una soglia di resistenza; superarla produce ferite di gravità crescente:
 
 | Zona    | Soglia | Effetto Narrativo |
 | :------ | :----: | :-----------------|
@@ -134,13 +143,9 @@ Durante un combattimento, corpo a corpo o a distanza, è possibile ci siano dell
 La guarigione dalle ferite richiede tempo e cure appropriate. Alcune condizioni possono essere trattate rapidamente tramite magia o abilità curative, mentre altre potrebbero richiedere riposo prolungato o interventi medici.
 
 ## Gestione della morte
-Per riflettere la possibilità che un colpo ben assestato possa essere immediatamente letale, si può introdurre la regola del **Colpo Critico**:
-
-### Colpo Critico
-Un 20 naturale su un d20 su parti vitali come la testa o il torso, può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
 
 ### Tiro salvezza contro Morte
-   Quando un personaggio subisce una ferita che il DM considera potenzialmente mortale (es una palla chiodata in testa, trafitto da una lancia, lesione dell'aorta femorale etc), il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
+   Quando un personaggio subisce una ferita che il Narratore considera potenzialmente mortale, il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
   - Ogni turno il giocatore dovrà tirare un d20
   - Con un risultato da 2 a 10 viene considerato fallimento
   - Con un risultato da 11 a 19 è considerato successo.
