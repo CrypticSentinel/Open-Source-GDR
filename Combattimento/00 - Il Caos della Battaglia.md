@@ -33,12 +33,12 @@ In questa fase si dichiara l'azione del proprio personaggio, l’iniziativa stab
 
 **Iniziativa = (Mod. Destrezza + Mod. Prontezza) + 1d20**
 
-Chi ottiene il punteggio più alto dichiara per primo le proprie azioni: attaccare, difendersi, arretrare, attendere uno spcifico evento, tentare un colpo mirato o compiere azioni narrative. Ma attenzione: la battaglia rimane simultanea. Anche l’ultimo nella sequenza può cambiare il destino con una reazione al momento giusto. L’iniziativa definisce solo chi annuncia per primo, non chi agisce realmente prima.
+Chi ottiene il punteggio più alto dichiara per primo le proprie azioni: attaccare, difendersi, arretrare, attendere uno specifico evento, tentare un colpo mirato o compiere azioni narrative. Ma attenzione: la battaglia rimane simultanea. Anche l’ultimo nella sequenza può cambiare il destino con una reazione al momento giusto. L’iniziativa definisce solo chi annuncia per primo, non chi agisce realmente prima.
 
 ### 2. Attacco
 Gli attacchi sono ovviamente il fulcro di un combattimento, esistono due tipi di combattimento ed entrambi utilizzano lo stesso sistema di base con alcune differenze:
 
- - **Combattimento Ravvicinato:** Comprende il combattimento a mani nude (Mod. Destrezza + Lottare o Rissa) come una rissa in taverna o uno scontro onorevole tra orchi, ed il combattimento armato (Mod. Destrezza + Abilità nell’uso dell’arma), come un duello tra cavalieri o uno scontro tra le fanterie di un esercito. In entrambi i casi, gli avversari devono trovarsi entro un paio di metri l'uno dall'altro. L'esito del risultato è dato da un tiro contrapposto per parare (Mod. Destrezza + Abilità nell’uso dell’arma, Lotta o Rissa) o per Schivare (Mod. Destrezza + Schivare, Lottare o Rissa).
+ - **Combattimento Ravvicinato:** Comprende il combattimento a mani nude (Mod. Destrezza + Lottare o Rissa) come una rissa in taverna o uno scontro onorevole tra orchi, e il combattimento armato (Mod. Destrezza + Abilità nell’uso dell’arma), come un duello tra cavalieri o uno scontro tra le fanterie di un esercito. In entrambi i casi, gli avversari devono trovarsi entro un paio di metri l'uno dall'altro. L'esito del risultato è dato da un tiro contrapposto per parare (Mod. Destrezza + Abilità nell’uso dell’arma, Lotta o Rissa) o per Schivare (Mod. Destrezza + Schivare, Lottare o Rissa).
 
  - **Combattimento a distanza:** è un combattimento armato che prevede armi da lancio, come coltelli e giavellotti, oppure armi a distanza, come archi o balestre. In questo caso la difficoltà base per colpire il bersaglio è **10***. Se il bersaglio può schivare o mettersi al riparo, verrà effettuato un tiro contrapposto (Mod. Destrezza + Scudo o Schivare).
 
@@ -87,17 +87,17 @@ Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori po
 
 #### Colpi Critici
 - Se un **d20 lanciato per colpire** risulta **20 naturale**:
-  - Gli eventuali dadi di danno vengono **lanciati due volte** (doppio danno) e sommati al danno dell'arma e al modificatore di Forza presi singolarmente.
-  - Il giocatore può tentare un nuovo lancio di d20 per il colpo successivo, se anche il nuovo d20 risulta 20 naturale, si verifica un **colpo mortale** immediato, secondo valutazione del Narratore e la parte del corpo colpita.
+  - Gli eventuali dadi di danno (e solo quelli) vengono **lanciati nuoveamente** e sommati al precedente risultato.
+  - Il giocatore può tentare un nuovo lancio di d20 per il colpo successivo, se anche il nuovo d20 risulta 20 naturale, si verifica un **Colpo Letale** immediato, secondo valutazione del Narratore e la parte del corpo colpita.
 
-- Se un **d20 lanciato per attaccare** risulta **1 naturale**, si applicano le regole dei **fallimenti critici** come già previsto dal sistema.
+- Se un **d20 lanciato per attaccare** risulta **1 naturale**, si applicano le regole dei **Fallimenti Critici** come già previsto dal sistema.
 
 > *Questo introduce il rischio e la possibilità di momenti straordinari in combattimento, sia per il successo clamoroso che per il fallimento epico.*
 
 > **Nota:** A livello narrativo, un 20 naturale su un d20 può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
 > 
 ### 3. Risoluzione
-I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la battaglia prende forma concreta: una lama che colpisce, un corpo che si piega, sangue che schizza e carne che geme sotto il colpo. In questa fase viene determinato l'esito degli attacchi ed il danno inflitto e il Narratore descrive ciò che accade nel turno. 
+I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la battaglia prende forma concreta: una lama che colpisce, un corpo che si piega, sangue che schizza e carne che geme sotto il colpo. In questa fase viene determinato l'esito degli attacchi e il danno inflitto e il Narratore descrive ciò che accade nel turno. 
 
 Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali. Il corpo reagisce: ossa, carne e sangue raccontano la storia dello scontro.
 
@@ -106,9 +106,9 @@ Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. 
 
 **Danno effettivo = (Danno Arma + Mod. Forza) – (Armatura + Mod. Costituzione)**
 
-Il risultato determina i danni inflitti alla zona colpita. Ogni parte del corpo ha una soglia di resistenza; superarla produce ferite di gravità crescente:
+Il risultato determina i danni inflitti alla zona colpita. Ogni parte del corpo ha una **Soglia di Resistenza**; superarla produce ferite di gravità crescente:
 
-| Zona    | Soglia | Effetto Narrativo |
+| Zona    | Soglia di Resistenza | Effetto Narrativo |
 | :------ | :----: | :-----------------|
 | Testa   | 3      | Stordimento, perdita di sensi o morte |
 | Torso   | 5      | Ferite gravi, difficoltà respiratorie, emorragie interne |
@@ -127,23 +127,23 @@ Ogni colpo ha un peso. Non sono solo punti che calano da una scheda: sono **sang
 
 | Tipo Ferita | Danno richiesto | Effetto sui Tiri |
 | :---------- | :-------------- | :--------------- |
-| Leggera     | ≥2 danni (ma sotto la soglia) | -2 a tutte le azioni (dal round successivo) |
-| Grave       | ≥ soglia locazione | -5 a tutte le azioni (dal round successivo) |
-| Letale      | ≥ 2x soglia locazione | Potenzialmente mortale: morte, amputazione, emorragia grave |
+| Leggera     | ≥2 danni (ma sotto la Soglia di Resistenza) | -2 a tutte le azioni (dal round successivo) |
+| Grave       | ≥ Soglia di Resistenza | -5 a tutte le azioni (dal round successivo) |
+| Letale      | ≥ 2x Soglia di Resistenza | Potenzialmente mortale: morte, amputazione, emorragia grave |
 
 > *Un duello può finire non quando l’avversario cade a terra, ma quando il peso delle ferite lo spezza prima dentro che fuori.*   
 
 **Esempio di Applicazione del Danno:**
-Un personaggio con un punteggio di assorbimento pari a 4 (dato da +1 di Modificatore di Costituzione e +3 dall'armatura) subisce un colpo al petto che infligge 6 danni. Dopo aver sottratto l'assorbimento, il danno reale subito è 2 (6 danni - 4 assorbimento = 2 danni), portandolo ad una **Ferita Leggera** e conseguente -2 a tutte le azioni. Se, in un turno successivo, il personaggio subisce 8 danni al torso, sottraendo ancora 4 punti di assorbimento, rimangono 4 danni effettivi, portando il totale dei danni al torso a 6. Avendo superato la **Soglia di resistenza** del torso (5), il personaggio subisce una **Ferita Grave**, che il DM determina in base alla natura del danno ricevuto.
+Un personaggio con un punteggio di assorbimento pari a 4 (dato da +1 di Modificatore di Costituzione e +3 dall'armatura) subisce un colpo al petto che infligge 6 danni. Dopo aver sottratto l'assorbimento, il danno effettivo è 2 (6 danni - 4 assorbimento = 2 danni), portandolo ad una **Ferita Leggera** e conseguente -2 a tutte le azioni. Se, in un turno successivo, il personaggio subisce 8 danni al torso, sottraendo ancora 4 punti di assorbimento, rimangono 4 danni effettivi, portando il totale dei danni al torso a 6. Avendo superato la **Soglia di Resistenza** del torso (5), il personaggio subisce una **Ferita Grave**, che il DM determina in base alla natura del danno ricevuto.
 
 #### Gestione della morte
 
-##### Tiro salvezza contro Morte
+##### Tiro Salvezza contro Morte
 Quando un personaggio subisce una ferita che il Narratore considera potenzialmente mortale, il giocatore dovrà effettuare dei tiri con il d20 svolti in tale maniera:
   - Ogni turno il giocatore dovrà tirare un d20
   - Con un risultato da 2 a 10 viene considerato fallimento
   - Con un risultato da 11 a 19 è considerato successo.
-  - Se il giocatore otterrà 3 successi prima di compiere 3 fallimenti, si stabilizzerà, altrimenti morirà.
+  - Se il giocatore otterrà 3 successi prima di compiere 3 **Fallimenti**, si stabilizzerà, altrimenti morirà.
   - In caso di 20 o 1 sul dado, quel tiro varrà come doppio successo o doppio fallimento.
 
 > *La vita pende da un filo; ogni respiro può essere l’ultimo.*
