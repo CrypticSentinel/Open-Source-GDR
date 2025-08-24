@@ -8,12 +8,8 @@ Ogni incantatore lo sa: il potere non è mai gratuito.
 La carne trema, la mente vacilla, lo spirito si spezza sotto il peso di energie troppo grandi.  
 Eppure, è proprio in quell’attimo di dolore che nasce la magia.
 
----
-
 > *“Ogni parola sussurrata nell’aria è una ferita inferta al silenzio.”*  
 > — Appunti marginali del grimorio di Serya la Bianca
-
----
 
 ## Descrizione
 L'obiettivo di questo sistema è fornire una struttura solida per applicare la magia in **qualsiasi gioco di ruolo**, consentendo ai giocatori di personalizzare gli incantesimi in base a parametri come **distanza, modalità di lancio, durata e altre caratteristiche**.  
