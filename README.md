@@ -77,8 +77,7 @@ Di seguito sono riportate tutte le tabelle per utilizzare la Magia Libera così 
 
 [Fallimenti Critici Magici](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/16%20-%20Fallimenti%20Critici%20Magici)
 
-Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un pratico tool online:  
-[SpellCheck - Calcolo Difficoltà Incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
+Per velocizzare e semplificare i calcoli durante le sessioni, ho creato un pratico tool online: [SpellCheck - Calcolo Difficoltà Incantesimi](https://crypticsentinel.github.io/Open-Source-GDR/Magia%20Libera/SpellCheck/)
 
 [Esempio di Magia Libera](https://CrypticSentinel.github.io/Open-Source-GDR/Magia%20Libera/17%20-%20Esempio%20di%20Magia%20Libera)
 
