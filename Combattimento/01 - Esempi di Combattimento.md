@@ -18,7 +18,7 @@ Lyra dichiara: Attacco Normale al torso dell’Orco.
 - Mod Forza: +2  
 - Armatura Orco: 3  
 - Mod Costituzione: +1  
-- **Danno effettivo:** 5 + 2 – (3 + 1) = 3 → **Ferita Grave Torso**  
+- **Danno effettivo:** 5 + 2 – (3 + 1) = 3 → **Ferita Leggera Torso**  
 
 > *La lama fende la pelle dell’Orco, un bruciore acuto esplode nel suo torso; il respiro si fa corto, la vita vacilla.*
 
@@ -42,7 +42,7 @@ Attacco Focalizzato contro Orco. +5 al tiro per colpire, -5 alla difesa.
 - Mod Forza: +2  
 - Armatura: 3  
 - Mod Costituzione: +1  
-- **Danno effettivo:** 5 + 2 – (3 + 1) = 3 → **Ferita Grave Braccio DX**  
+- **Danno effettivo:** 5 + 2 – (3 + 1) = 3 → **Ferita Leggera Braccio DX**  
 
 > *La lama di Lyra affonda con precisione chirurgica; l’Orco urla, il dolore bruciante lo blocca mentre il sangue cola tra le dita.*
 
@@ -96,7 +96,7 @@ Carica: nessuna schivata o parata, +Mod Costituzione al danno.
 
 ### Calcolo danno
 - Danno arma: 6 + Mod Forza 3 + Mod Costituzione 2 = 11  
-- Armatura Orco: 3 → **Danno effettivo:** 8 → **Ferita Letale Torso**  
+- Armatura Orco: 3 → **Danno effettivo:** 8 → **Ferita Grave Torso**  
 
 > *Aric si getta sul nemico come una furia, il corpo che si piega sotto la forza, l’impatto è devastante, la vita dell’Orco pende da un filo.*
 
@@ -114,7 +114,7 @@ Attacco a distanza, difficoltà base 10.
 - Orco può schivare: 12 + 1 + 2 = 15 → tiro confronto: 18 > 15 → Lyra colpisce  
 
 ### Calcolo danno
-- Danno effettivo: 5 + 2 – (3 + 1) = 3 → **Ferita Grave Torso**  
+- Danno effettivo: 5 + 2 – (3 + 1) = 3 → **Ferita Leggera Torso**  
 
 > *La freccia fende l’aria, la punta affonda nella carne dell’Orco, un bruciore improvviso lo blocca e il respiro diventa affannoso.*
 
@@ -141,7 +141,7 @@ Attacco a distanza, difficoltà base 10.
 - Mod Forza: +2  
 - Armatura Orco: 3  
 - Mod Costituzione: +1  
-- **Danno effettivo:** 5 + 2 – (3 + 1) = 3 → **Ferita Grave Torso**
+- **Danno effettivo:** 5 + 2 – (3 + 1) = 3 → **Ferita Leggera Torso**
 
 > *Le lame si incrociano, scintille di carne e sangue; Lyra colpisce, l’Orco non riesce a reagire, il respiro gli manca.*
 
@@ -188,12 +188,12 @@ Difesa Totale: +3 alla difesa, contrattacco +5 se riuscito
 
 ---
 
-## Nota Editoriale
+## Nota Narrativa
 > *Questi esempi mostrano la tensione e il rischio costante: ogni attacco può segnare la vita o la morte. I numeri e i tiri rappresentano l’incertezza e la brutalità della battaglia, dove la carne e il sangue parlano più dei dadi.*
 
 ---
 
-# Scenario di Combattimento: “Scontro nella Taverna Abbandonata” – Round 1 (corretto)
+# Scenario di Combattimento: “Scontro nella Taverna Abbandonata” – Round 1
 
 **Situazione:**  
 Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella taverna abbandonata. La stanza è buia e piena di detriti.
