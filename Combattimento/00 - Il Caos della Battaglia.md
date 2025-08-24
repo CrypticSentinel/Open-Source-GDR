@@ -62,7 +62,7 @@ Quando più nemici si affrontano, il caos domina. Le priorità cambiano in un la
 #### Determinazione della Parte Colpita
 Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso, il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella **Colpi Mirati e Tiri di Localizzazione**
 
-## Colpi Mirati e Tiri di Localizzazione
+##### Colpi Mirati e Tiri di Localizzazione
 
 | Zona  | Locazione | Dado (1d100) |
 | :---- | :-------- | :----------: |
@@ -85,6 +85,17 @@ Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori po
 | Bassa | Ginocchio DX | 66 - 70 |
 | Bassa | Addome    | 72 - 100 |
 
+#### Colpi Critici
+- Se un **d20 lanciato per colpire** risulta **20 naturale**:
+  - Gli eventuali dadi di danno vengono **lanciati due volte** (doppio danno) e sommati al danno dell'arma e al modificatore di Forza presi singolarmente.
+  - Il giocatore può tentare un nuovo lancio di d20 per il colpo successivo, se anche il nuovo d20 risulta 20 naturale, si verifica un **colpo mortale** immediato, secondo valutazione del Narratore e la parte del corpo colpita.
+
+- Se un **d20 lanciato per attaccare** risulta **1 naturale**, si applicano le regole dei **fallimenti critici** come già previsto dal sistema.
+
+> *Questo introduce il rischio e la possibilità di momenti straordinari in combattimento, sia per il successo clamoroso che per il fallimento epico.*
+
+> **Nota:** A livello narrativo, un 20 naturale su un d20 può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
+> 
 ### 3. Risoluzione
 I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la battaglia prende forma concreta: una lama che colpisce, un corpo che si piega, sangue che schizza e carne che geme sotto il colpo. In questa fase viene determinato l'esito degli attacchi ed il danno inflitto e il Narratore descrive ciò che accade nel turno. 
 
@@ -136,17 +147,6 @@ Quando un personaggio subisce una ferita che il Narratore considera potenzialmen
   - In caso di 20 o 1 sul dado, quel tiro varrà come doppio successo o doppio fallimento.
 
 > *La vita pende da un filo; ogni respiro può essere l’ultimo.*
-
-#### Colpi Critici
-- Se un **d20 lanciato per colpire** risulta **20 naturale**:
-  - Gli eventuali dadi di danno vengono **lanciati due volte** (doppio danno) e sommati al danno dell'arma e al modificatore di Forza presi singolarmente.
-  - Il giocatore può tentare un nuovo lancio di d20 per il colpo successivo, se anche il nuovo d20 risulta 20 naturale, si verifica un **colpo mortale** immediato, secondo valutazione del Narratore e la parte del corpo colpita.
-
-- Se un **d20 lanciato per attaccare** risulta **1 naturale**, si applicano le regole dei **fallimenti critici** come già previsto dal sistema.
-
-> *Questo introduce il rischio e la possibilità di momenti straordinari in combattimento, sia per il successo clamoroso che per il fallimento epico.*
-
-> **Nota:** A livello narrativo, un 20 naturale su un d20 può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
 
 ### 4. Guarigione
 La guarigione dalle ferite richiede tempo e cure appropriate. Alcune condizioni possono essere trattate rapidamente tramite magia o abilità curative, mentre altre potrebbero richiedere riposo prolungato o interventi medici.
