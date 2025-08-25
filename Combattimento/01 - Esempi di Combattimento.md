@@ -188,6 +188,129 @@ Difesa Totale: +3 alla difesa, contrattacco +5 se riuscito
 
 ---
 
+## 10. Combattimento con Due Armi (senza Ambidestria)
+La pioggia cade torrenziale nel vicolo, mescolandosi al sangue che già sporca i ciottoli.  
+**Kael**, mercenario esperto ma privo dell’abilità Ambidestro, affronta due cultisti armati di falci. Nella mano destra stringe la sua spada corta, nella sinistra un pugnale. Il respiro è veloce, la vita appesa a un filo.
+
+## Dichiarazioni d’Azione
+- Kael decide di **attaccare con entrambe le armi**.  
+- I due cultisti lo fronteggiano: uno lo colpisce frontalmente, l’altro tenta un aggiramento laterale.
+
+> **Nota**: poiché Kael attacca con entrambe le armi, non potrà parare. Gli resta solo la possibilità di schivare.
+
+## Round 1
+
+### Fase 1: Tiri per Colpire
+- **Kael (spada corta, mano destra)**  
+  - Destrezza +3, Abilità Spada Corta 4 → **+7**  
+  - Tira 1d20: **13** → Totale = 20
+
+- **Kael (pugnale, mano sinistra, senza Ambidestro)**  
+  - Destrezza +3 → **+3**  
+  - Tira 1d20: **16** → Totale = 19
+
+- **Cultista A (falce, vs Kael)**  
+  - Destrezza +2, Arma 3 → **+5**  
+  - Tira 1d20: **15** → Totale = 20
+
+- **Cultista B (falce, vs Kael)**  
+  - Destrezza +2, Arma 2 → **+4**  
+  - Tira 1d20: **8** → Totale = 12
+
+### Fase 2: Risoluzione degli Attacchi
+
+- **Kael vs Cultista A (confronto diretto)**  
+  Entrambi si attaccano reciprocamente.  
+  - Kael (20 con spada corta)  
+  - Cultista A (20 con falce)  
+  → **Pareggio!**  
+  Nessuno dei due colpi va a segno: le armi cozzano con un urlo di metallo e scintille.
+
+- **Kael (pugnale) vs Cultista A**  
+  L’attacco con il pugnale (19) si aggiunge nello stesso round, perché non è un confronto diretto ma un secondo affondo.  
+  → Colpo a segno! Il pugnale lacera il fianco del cultista, infliggendo 1d6 danni.  
+  - Tiro danni: **4** → Il cultista vacilla, il sangue cola.
+
+- **Cultista B vs Kael**  
+  Il colpo del secondo cultista (12) è basso, facilmente evitabile. Kael tenta una **schivata**.  
+  - Destrezza +3, Schivare 2 → **+5**  
+  - Tira 1d20: **9** → Totale = 14  
+  → Schivata riuscita! Il colpo sibila a vuoto, tagliando solo aria e pioggia.
+
+## Esito del Round
+- Kael ha colpito una volta con il pugnale, ferendo gravemente il Cultista A.  
+- Lo scontro diretto tra Kael e lo stesso cultista con le armi principali è finito in parità.  
+- Il Cultista B non è riuscito a colpire.  
+
+Il mercenario rimane però esposto: senza parata, se i nemici avessero tirato punteggi più alti, avrebbe potuto subire ferite letali.
+
+> Ogni lama è un rischio. Due lame sono due rischi raddoppiati.  
+> Kael danza nel vicolo come un animale braccato: le sue mani fendono l’aria, ma la difesa è un lusso che non può permettersi. In quel battito di cuore, la differenza tra vita e morte si misura in dadi lanciati e respiri trattenuti.
+
+---
+
+# 11. Combattimento con Due Armi (con Ambidestro)
+
+Il vicolo è lo stesso, ma la pioggia scivola sulla pelle di **Kael** con meno peso.  
+Questa volta il mercenario è un vero **Ambidestro**: ogni mano è una lama, ogni lama è un colpo mortale. Davanti a lui i due cultisti con le falci, pronti ad azzannarlo.
+
+## Dichiarazioni d’Azione
+- Kael sceglie di **attaccare con entrambe le armi**.  
+- Uno dei cultisti (A) lo fronteggia direttamente, l’altro (B) tenta di stringerlo di lato.
+
+## Round 1
+
+### Fase 1: Tiri per Colpire
+- **Kael (spada corta, mano destra)**  
+  - Destrezza +3, Abilità Spada Corta 4 → **+7**  
+  - Tira 1d20: **14** → Totale = 21
+
+- **Kael (pugnale, mano sinistra, con Ambidestro)**  
+  - Grado Ambidestro 3, Abilità Pugnale 4 → si usa il **più basso** = 3  
+  - Destrezza +3 → Totale bonus **+6**  
+  - Tira 1d20: **12** → Totale = 18
+
+- **Cultista A (falce, vs Kael)**  
+  - Destrezza +2, Arma 3 → **+5**  
+  - Tira 1d20: **11** → Totale = 16
+
+- **Cultista B (falce, vs Kael)**  
+  - Destrezza +2, Arma 2 → **+4**  
+  - Tira 1d20: **19** → Totale = 23
+
+### Fase 2: Risoluzione degli Attacchi
+
+- **Kael (spada corta) vs Cultista A**  
+  - Kael (21) supera di 5 il Cultista A (16).  
+  → **Colpo netto!** La spada affonda nella spalla del nemico, infliggendo 1d8 danni.  
+  - Tiro danni: **6** → Il cultista barcolla, quasi disarmato.
+
+- **Kael (pugnale) vs Cultista A**  
+  - Kael (18) contro la difesa ridotta del cultista già colpito.  
+  → **Secondo colpo a segno!** Il pugnale squarcia il fianco del nemico, infliggendo 1d6 danni.  
+  - Tiro danni: **3** → Il Cultista A crolla a terra in un grido soffocato.
+
+- **Cultista B vs Kael**  
+  Il secondo cultista (23) sferra un colpo pericoloso.  
+  Kael tenta una **schivata**:  
+  - Destrezza +3, Schivare 2 → **+5**  
+  - Tira 1d20: **15** → Totale = 20  
+  → **Fallimento della schivata!** Il falcetto affonda nella carne di Kael.  
+  - Danno: 1d8 = **5**  
+  → Ferita media, Kael sanguina ma resta in piedi.
+
+## Esito del Round
+- Kael ha eliminato il Cultista A con due colpi precisi e fluidi.  
+- Il Cultista B, approfittando della sua esposizione, è riuscito a infliggergli una ferita dolorosa.  
+- Nonostante il colpo subito, Kael ha mostrato la vera forza dell’Ambidestro: **due attacchi efficaci nello stesso round**, con un controllo che un guerriero senza questa abilità non potrebbe mai avere.
+
+> Con due mani uguali, Kael è una tempesta di ferro.  
+> Le sue armi danzano in sincronia, fendendo l’aria come se fossero un unico pensiero.  
+> Ma ogni scelta ha un prezzo: mentre un nemico cade, l’altro trova lo spiraglio per ferire.  
+> Il corpo è segnato, ma la vittoria comincia a prendere forma.
+
+---
+
 ## Nota Narrativa
 > *Questi esempi mostrano la tensione e il rischio costante: ogni attacco può segnare la vita o la morte. I numeri e i tiri rappresentano l’incertezza e la brutalità della battaglia, dove la carne e il sangue parlano più dei dadi.*
 
@@ -197,8 +320,6 @@ Difesa Totale: +3 alla difesa, contrattacco +5 se riuscito
 
 **Situazione:**  
 Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella taverna abbandonata. La stanza è buia e piena di detriti.
-
----
 
 ## 1. Iniziativa
 
@@ -211,10 +332,7 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 
 **Ordine dichiarazioni:** Aric (17) → Orco1 (16) → Lyra (13) → Orco2 (6)  
 
-> **Box narrativo:**  
 > L’aria è densa di tensione, ogni respiro sospeso come se il filo della vita potesse spezzarsi da un momento all’altro.
-
----
 
 ## 2. Dichiarazioni Simultanee
 
@@ -225,8 +343,6 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 | Orco1       | Attacco Normale verso Aric |
 | Orco2       | Carica verso Lyra |
 
----
-
 ## 3. Risoluzione delle azioni – Confronto diretto e tiri
 
 ### Confronto Diretto: Aric vs Orco1
@@ -235,15 +351,12 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 
 **Esito confronto diretto:** Orco1 colpisce Aric, Aric fallisce automaticamente.  
 
-> **Box narrativo:**  
 > L’orco anticipa il colpo di Aric, il ferro graffia l’aria sopra la sua spalla. Un attimo di terrore sospeso tra vita e morte.
 
 - Danno Orco1: Spadone 6 + Mod. Costituzione 2 = 8  
 - Assorbimento Aric: Armatura 3 + Mod. Costituzione 2 = 5  
 - Danno effettivo: 8 – 5 = 3  
 - Zona colpita: 1d100=32 → Torso → Soglia 5 → **Ferita Leggera** (-2 a tutte le azioni)
-
----
 
 ### Attacco Lyra vs Orco1
 - Mod. Destrezza +3, Abilità pugnale +4, Attacco Focalizzato +5, 1d20=9 → Totale 21  
@@ -256,10 +369,7 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 - Danno effettivo: 7 – 3 = 4  
 - Zona colpita: 1d100=45 → Braccio DX → Soglia 4 → **Ferita Grave** (-5 a tutte le azioni)  
 
-> **Box narrativo:**  
 > Lyra scivola tra i colpi, il pugnale fende la carne dell’orco, l’arto cede e la lama cade a terra. Il dolore bruciante piega il suo corpo, mentre la morte sembra vicina a ogni respiro.
-
----
 
 ### Attacco Orco2 vs Lyra (Carica)
 - Mod. Destrezza +1, Abilità spadone +2, 1d20=14 → Totale 17  
@@ -272,10 +382,7 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 - Danno effettivo: 8 – 2 = 6  
 - Zona colpita: 1d100=2 → Testa → Soglia 3 → **Ferita Grave** (-5 a tutte le azioni)  
 
-> **Box narrativo:**  
 > L’orco piomba su Lyra. La lama graffia la sua testa, il dolore bruciante e la vista annebbiata la riportano alla realtà di una vita sospesa su un filo.
-
----
 
 ## 4. Esito del Round 1
 
@@ -286,7 +393,6 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 | Orco1       | Ferita Grave Braccio DX (-5 azioni) |
 | Orco2       | Nessuna |
 
-> **Box narrativo:**  
 > La stanza è un turbinio di sangue, legno rotto e carne che geme. Ogni azione potrebbe essere l’ultima. La vita e la morte danzano a ritmo frenetico tra respiro e silenzio.
 
 Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
