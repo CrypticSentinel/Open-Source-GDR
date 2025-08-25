@@ -82,8 +82,8 @@ Tiri:
 
 Può rinunciare all’attacco con la mano sinistra per tentare una parata con: 3 + 2.
 
-> Due lame significano due possibilità di morte, ma anche due fronti da scoprire.  
-> Chi sceglie questa via non è protetto: è un funambolo che danza su un filo tagliente, tra gloria e rovina.
+> *Due lame significano due possibilità di morte, ma anche due fronti da scoprire.  
+> Chi sceglie questa via non è protetto: è un funambolo che danza su un filo tagliente, tra gloria e rovina.*
 
 # Combattere con Due Armi: Confronto
 
@@ -99,6 +99,7 @@ Può rinunciare all’attacco con la mano sinistra per tentare una parata con: 3
 
 > Il fatto stesso di non possedere Ambidestro è già una penalità implicita: il secondo attacco è quasi sempre poco incisivo.  
 > Con Ambidestro invece i due colpi diventano **affidabili**, senza però essere mai superiori a un combattente che padroneggia perfettamente un’unica arma: l’equilibrio è dato dal rischio di esposizione (più azioni → più possibilità di subire contrattacchi).
+
 
 > ### Suggerimenti Narrativi: Combattere con Due Armi
 >
