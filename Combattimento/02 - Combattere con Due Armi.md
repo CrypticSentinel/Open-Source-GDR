@@ -59,7 +59,7 @@ Ogni arma segue i propri danni e regole di localizzazione. I due attacchi posson
 
 # Esempi
 
-### Senza Ambidestro
+### Esempio Senza Ambidestro
 - **Destrezza +3**  
 - Arma principale: Spada corta (abilità 4)  
 - Arma secondaria: Pugnale (abilità 2)
@@ -70,7 +70,7 @@ Tiri:
 
 Se usa entrambe le armi: non potrà parare in quella risoluzione; potrà solo tentare una schivata.
 
-### Con Ambidestro 2
+### Esempio Con Ambidestro
 - **Destrezza +3**  
 - Arma principale: Spada corta (abilità 4)  
 - Arma secondaria: Pugnale (abilità 3)  
