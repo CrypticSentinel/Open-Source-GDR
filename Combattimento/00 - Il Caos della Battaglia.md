@@ -49,17 +49,17 @@ Gli attacchi sono ovviamente il fulcro di un combattimento, esistono due tipi di
 #### Azioni Possibili
 Quando più nemici si affrontano, il caos domina. Le priorità cambiano in un lampo, il nemico di un istante diventa lo scudo dell’istante dopo. 
 
- - **Attacco Normale:** Cauto, misurato, senza bonus o penalità. L’azione di base del combattimento.
- - **Attacco Focalizzato:** Il personaggio si concentra interamente sull'attacco, ottenendo un +5 al tiro per colpire ma un -5 al tiro per difendersi (schivate, parate). La concentrazione è totale, la mente e il corpo sospesi sul filo del colpo.  
- - **Attacco Doppio:** Due colpi nello stesso round, -3 a entrambi e -5 all'azione reattiva. Ogni lama si muove come un’ombra fulminea.
- - **Combattere con Due Armi:** L’uso simultaneo di una lama in ogni mano.  
-  - **Senza Ambidestro:** L’attacco con la mano dominante si effettua normalmente. L’attacco con la mano secondaria si effettua utilizzando solo il **Modificatore di Destrezza**, senza l’abilità dell’arma.  
-  - **Con Ambidestro:** L’attacco con la mano dominante si effettua normalmente. L’attacco con la mano secondaria si effettua utilizzando il grado più basso tra l’abilità dell’arma impugnata e l’abilità **Ambidestro**.  
-  - *Nota narrativa:* Senza addestramento, la seconda arma è un peso che intralcia; con Ambidestro, diventa un’estensione naturale del corpo, una danza di acciaio che lascia il sangue sospeso a mezz’aria.  
- - **Difesa Totale:** Rinuncia all’attacco per ottenere +3 alla difesa. Se la difesa riesce, può contrattaccare con +5 all’attacco; se fallisce, perde l’azione. Il corpo diventa barriera viva, il cuore un martello sospeso.  
- - **Carica:** Nessuna possibilità di schivare o parare, ma danno aumentato dal Mod. Costituzione (+1 minimo). L’assalto è bruciante, il corpo si getta in avanti con violenza.  
- - **Movimento:** Tutti i personaggi si muovono secondo le azioni dichiarate. Il DM decide se l’azione consuma l’intero turno o lascia spazio per altre azioni.
- - **Confronto diretto:** Quando due personaggi si attaccano a vicenda, si confrontano i tiri per colpire e solo il punteggio più alto va a segno; il perdente fallisce automaticamente, mentre altri attacchi di altri personaggi vengono risolti normalmente. 
+ - **[Attacco Normale](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Esempi%20di%20Combattimento#1-attacco-normale):** Cauto, misurato, senza bonus o penalità. L’azione di base del combattimento.  
+ - **[Attacco Focalizzato](https://CrypticSentinel.github.io/Open-Source-GDR/blob/main/Combattimento/01%20-%20Esempi%20di%20Combattimento#2-attacco-focalizzato):** Il personaggio si concentra interamente sull'attacco, ottenendo un +5 al tiro per colpire ma un -5 al tiro per difendersi (schivate, parate). La concentrazione è totale, la mente e il corpo sospesi sul filo del colpo.  
+ - **[Attacco Doppio](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Esempi%20di%20Combattimento#3-attacco-doppio):** Due colpi nello stesso round, -3 a entrambi e -5 all'azione reattiva. Ogni lama si muove come un’ombra fulminea.  
+ - **[Combattere con Due Armi](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Combattere%20con%20Due%20Armi#combattere-con-due-armi):** L’uso simultaneo di una lama in ogni mano.
+     - **[Senza Ambidestro]([https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Combattere%20con%20Due%20Armi#senza-ambidestro):** L’attacco con la mano dominante si effettua normalmente. L’attacco con la mano secondaria si effettua utilizzando solo il **Modificatore di Destrezza**, senza l’abilità dell’arma.  
+     - **[Con Ambidestro](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/02%20-%20Combattere%20con%20Due%20Armi#esempio-con-ambidestro):** L’attacco con la mano dominante si effettua normalmente. L’attacco con la mano secondaria si effettua utilizzando il grado più basso tra l’abilità dell’arma impugnata e l’abilità **Ambidestro**.  
+     - *Nota narrativa:* Senza addestramento, la seconda arma è un peso che intralcia; con Ambidestro, diventa un’estensione naturale del corpo, una danza di acciaio che lascia il sangue sospeso a mezz’aria.  
+ - **[Difesa Totale](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Esempi%20di%20Combattimento#4-difesa-totale-e-contrattacco):** Rinuncia all’attacco per ottenere +3 alla difesa. Se la difesa riesce, può contrattaccare con +5 all’attacco; se fallisce, perde l’azione. Il corpo diventa barriera viva, il cuore un martello sospeso.  
+ - **[Carica](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Esempi%20di%20Combattimento#5-carica):** Nessuna possibilità di schivare o parare, ma danno aumentato dal Mod. Costituzione (+1 minimo). L’assalto è bruciante, il corpo si getta in avanti con violenza.  
+ - **[Movimento]:** Tutti i personaggi si muovono secondo le azioni dichiarate. Il DM decide se l’azione consuma l’intero turno o lascia spazio per altre azioni.  
+ - **[Confronto diretto](https://CrypticSentinel.github.io/Open-Source-GDR/Combattimento/01%20-%20Esempi%20di%20Combattimento#7-confronto-diretto):** Quando due personaggi si attaccano a vicenda, si confrontano i tiri per colpire e solo il punteggio più alto va a segno; il perdente fallisce automaticamente, mentre altri attacchi di altri personaggi vengono risolti normalmente.  
 
 > *La battaglia è un intrico di possibilità: non tutto può essere controllato, e spesso sopravvive chi sa adattarsi, non chi colpisce più forte.*
 
