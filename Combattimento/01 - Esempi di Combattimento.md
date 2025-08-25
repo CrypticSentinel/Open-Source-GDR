@@ -396,3 +396,4 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 > La stanza è un turbinio di sangue, legno rotto e carne che geme. Ogni azione potrebbe essere l’ultima. La vita e la morte danzano a ritmo frenetico tra respiro e silenzio.
 
 Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai al **[Combattimento]**(https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia)
