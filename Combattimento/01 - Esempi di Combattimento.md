@@ -332,7 +332,7 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 
 **Ordine dichiarazioni:** Aric (17) → Orco1 (16) → Lyra (13) → Orco2 (6)  
 
-> L’aria è densa di tensione, ogni respiro sospeso come se il filo della vita potesse spezzarsi da un momento all’altro.
+> *L’aria è densa di tensione, ogni respiro sospeso come se il filo della vita potesse spezzarsi da un momento all’altro.*
 
 ## 2. Dichiarazioni Simultanee
 
@@ -351,7 +351,7 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 
 **Esito confronto diretto:** Orco1 colpisce Aric, Aric fallisce automaticamente.  
 
-> L’orco anticipa il colpo di Aric, il ferro graffia l’aria sopra la sua spalla. Un attimo di terrore sospeso tra vita e morte.
+> *L’orco anticipa il colpo di Aric, il ferro graffia l’aria sopra la sua spalla. Un attimo di terrore sospeso tra vita e morte.*
 
 - Danno Orco1: Spadone 6 + Mod. Costituzione 2 = 8  
 - Assorbimento Aric: Armatura 3 + Mod. Costituzione 2 = 5  
@@ -369,7 +369,7 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 - Danno effettivo: 7 – 3 = 4  
 - Zona colpita: 1d100=45 → Braccio DX → Soglia 4 → **Ferita Grave** (-5 a tutte le azioni)  
 
-> Lyra scivola tra i colpi, il pugnale fende la carne dell’orco, l’arto cede e la lama cade a terra. Il dolore bruciante piega il suo corpo, mentre la morte sembra vicina a ogni respiro.
+> *Lyra scivola tra i colpi, il pugnale fende la carne dell’orco, l’arto cede e la lama cade a terra. Il dolore bruciante piega il suo corpo, mentre la morte sembra vicina a ogni respiro.*
 
 ### Attacco Orco2 vs Lyra (Carica)
 - Mod. Destrezza +1, Abilità spadone +2, 1d20=14 → Totale 17  
@@ -382,7 +382,7 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 - Danno effettivo: 8 – 2 = 6  
 - Zona colpita: 1d100=2 → Testa → Soglia 3 → **Ferita Grave** (-5 a tutte le azioni)  
 
-> L’orco piomba su Lyra. La lama graffia la sua testa, il dolore bruciante e la vista annebbiata la riportano alla realtà di una vita sospesa su un filo.
+> *L’orco piomba su Lyra. La lama graffia la sua testa, il dolore bruciante e la vista annebbiata la riportano alla realtà di una vita sospesa su un filo.*
 
 ## 4. Esito del Round 1
 
@@ -393,7 +393,7 @@ Aric (guerriero umano) e Lyra (ladra elfica) affrontano due predoni orchi nella 
 | Orco1       | Ferita Grave Braccio DX (-5 azioni) |
 | Orco2       | Nessuna |
 
-> La stanza è un turbinio di sangue, legno rotto e carne che geme. Ogni azione potrebbe essere l’ultima. La vita e la morte danzano a ritmo frenetico tra respiro e silenzio.
+> *La stanza è un turbinio di sangue, legno rotto e carne che geme. Ogni azione potrebbe essere l’ultima. La vita e la morte danzano a ritmo frenetico tra respiro e silenzio.*
 
 Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)  
 Vai al [**Combattimento**](https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia)  
