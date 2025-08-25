@@ -114,3 +114,6 @@ Può rinunciare all’attacco con la mano sinistra per tentare una parata con: 3
 > - Sottolinea la differenza tra improvvisazione e maestria.  
 > - Senza Ambidestro, gli avversari possono approfittare delle aperture lasciate dal personaggio.  
 > - Con Ambidestro, i nemici percepiscono un combattente temibile e difficile da affrontare, capace di mantenere la pressione costante.
+
+Vai alla [**Home**](https://crypticsentinel.github.io/Open-Source-GDR/)
+Vai al **[Combattimento]**(https://crypticsentinel.github.io/Open-Source-GDR/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia)
