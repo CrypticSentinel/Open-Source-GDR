@@ -189,8 +189,8 @@ Difesa Totale: +3 alla difesa, contrattacco +5 se riuscito
 ---
 
 ## 10. Combattimento con Due Armi (senza Ambidestria)
-La pioggia cade torrenziale nel vicolo, mescolandosi al sangue che già sporca i ciottoli.  
-**Kael**, mercenario esperto ma privo dell’abilità Ambidestro, affronta due cultisti armati di falci. Nella mano destra stringe la sua spada corta, nella sinistra un pugnale. Il respiro è veloce, la vita appesa a un filo.
+*La pioggia cade torrenziale nel vicolo, mescolandosi al sangue che già sporca i ciottoli.  
+**Kael**, mercenario esperto ma privo dell’abilità Ambidestro, affronta due cultisti armati di falci. Nella mano destra stringe la sua spada corta, nella sinistra un pugnale. Il respiro è veloce, la vita appesa a un filo.*
 
 ## Dichiarazioni d’Azione
 - Kael decide di **attaccare con entrambe le armi**.  
@@ -244,15 +244,15 @@ La pioggia cade torrenziale nel vicolo, mescolandosi al sangue che già sporca i
 
 Il mercenario rimane però esposto: senza parata, se i nemici avessero tirato punteggi più alti, avrebbe potuto subire ferite letali.
 
-> Ogni lama è un rischio. Due lame sono due rischi raddoppiati.  
-> Kael danza nel vicolo come un animale braccato: le sue mani fendono l’aria, ma la difesa è un lusso che non può permettersi. In quel battito di cuore, la differenza tra vita e morte si misura in dadi lanciati e respiri trattenuti.
+> *Ogni lama è un rischio. Due lame sono due rischi raddoppiati.  
+> Kael danza nel vicolo come un animale braccato: le sue mani fendono l’aria, ma la difesa è un lusso che non può permettersi. In quel battito di cuore, la differenza tra vita e morte si misura in dadi lanciati e respiri trattenuti.*
 
 ---
 
 # 11. Combattimento con Due Armi (con Ambidestro)
 
 Il vicolo è lo stesso, ma la pioggia scivola sulla pelle di **Kael** con meno peso.  
-Questa volta il mercenario è un vero **Ambidestro**: ogni mano è una lama, ogni lama è un colpo mortale. Davanti a lui i due cultisti con le falci, pronti ad azzannarlo.
+Questa volta il mercenario è un vero **Ambidestro**: ogni mano è una lama, ogni lama è un colpo mortale. Davanti a lui i due cultisti con le falci, pronti ad attaccarlo.
 
 ## Dichiarazioni d’Azione
 - Kael sceglie di **attaccare con entrambe le armi**.  
@@ -304,10 +304,10 @@ Questa volta il mercenario è un vero **Ambidestro**: ogni mano è una lama, ogn
 - Il Cultista B, approfittando della sua esposizione, è riuscito a infliggergli una ferita dolorosa.  
 - Nonostante il colpo subito, Kael ha mostrato la vera forza dell’Ambidestro: **due attacchi efficaci nello stesso round**, con un controllo che un guerriero senza questa abilità non potrebbe mai avere.
 
-> Con due mani uguali, Kael è una tempesta di ferro.  
+> *Con due mani uguali, Kael è una tempesta di ferro.  
 > Le sue armi danzano in sincronia, fendendo l’aria come se fossero un unico pensiero.  
 > Ma ogni scelta ha un prezzo: mentre un nemico cade, l’altro trova lo spiraglio per ferire.  
-> Il corpo è segnato, ma la vittoria comincia a prendere forma.
+> Il corpo è segnato, ma la vittoria comincia a prendere forma.*
 
 ---
 
