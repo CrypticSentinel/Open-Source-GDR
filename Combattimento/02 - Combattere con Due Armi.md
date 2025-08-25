@@ -99,3 +99,18 @@ Può rinunciare all’attacco con la mano sinistra per tentare una parata con: 3
 
 > Il fatto stesso di non possedere Ambidestro è già una penalità implicita: il secondo attacco è quasi sempre poco incisivo.  
 > Con Ambidestro invece i due colpi diventano **affidabili**, senza però essere mai superiori a un combattente che padroneggia perfettamente un’unica arma: l’equilibrio è dato dal rischio di esposizione (più azioni → più possibilità di subire contrattacchi).
+
+> ### Suggerimenti Narrativi: Combattere con Due Armi
+>
+> - **Senza Ambidestro**  
+> Descrivi movimenti goffi e scoordinati: il personaggio tende a sbilanciarsi, l’arma secondaria è usata più per istinto che per tecnica.  
+> *Esempio:* «Il colpo con la mano debole parte in ritardo, mancando il bersaglio di un soffio. Il guerriero serra i denti: non è facile domare due lame allo stesso tempo.»
+>
+> - **Con Ambidestro**  
+> Rendi le azioni fluide e spettacolari: le due armi sembrano danzare, si muovono come se fossero guidate da un’unica volontà.  
+> *Esempio:* «Le due lame si incrociano in un turbine di colpi: la mano destra attacca, mentre la sinistra sfrutta il minimo varco, rendendo l’assalto inarrestabile.»
+>
+> - **Spunti per il Narratore**  
+> - Sottolinea la differenza tra improvvisazione e maestria.  
+> - Senza Ambidestro, gli avversari possono approfittare delle aperture lasciate dal personaggio.  
+> - Con Ambidestro, i nemici percepiscono un combattente temibile e difficile da affrontare, capace di mantenere la pressione costante.
