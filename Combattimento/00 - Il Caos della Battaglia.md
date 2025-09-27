@@ -9,12 +9,12 @@ Ogni azione conta, ogni colpo può cambiare il destino di chi lo infligge o di c
 Il combattimento non è mai ordinato. È un turbine di respiri spezzati, colpi improvvisi, occhi che cercano un varco nell’avversario. I personaggi non si muovono a turno come in una danza coreografata: non esiste un ritmo scandito, non c’è un “mio turno” o un “tuo turno”. Tutto avviene insieme, nello stesso istante: ogni lama che fende l’aria porta con sé un respiro interrotto e una possibilità di morte, un corpo che si piega sotto il dolore bruciante, un attimo di terrore sospeso tra vita e morte.
 
 ## Esempio Narrativo
-> La pioggia batte sul selciato.  
+> *La pioggia batte sul selciato.  
 > L’orco alza la sua ascia, urlando. Aric stringe la spada, cercando di leggere il movimento del nemico. Entrambi si muovono nello stesso istante.  
 > I dadi rotolano.  
-> L’attacco dell’orco (17) si abbatte con furia cieca, ma Aric (21) trova la forza di reagire: la sua lama si insinua veloce in un varco dell'armatura, la punta sfiora il fianco del mostro.  
->  
-> In questo sistema, Aric non “subisce e basta”: il suo successo ribalta il pericolo in occasione, trasformando la difesa in un contrattacco.  
+> L’attacco dell’orco (17) si abbatte con furia cieca, ma Aric (21) trova la forza di reagire: la sua lama si insinua veloce in un varco dell'armatura, la punta sfiora il fianco del mostro.*  
+
+*In questo sistema, Aric non “subisce e basta”: il suo successo ribalta il pericolo in occasione, trasformando la difesa in un contrattacco.*  
 
 ## I Momenti del Caos
 
@@ -44,7 +44,7 @@ Gli attacchi sono ovviamente il fulcro di un combattimento, esistono due tipi di
 
 > Un attimo di tensione, un respiro sospeso prima dell’impatto.
 
-> **Nota:** *Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.
+**Nota:** *Eventuali modificatori aggiuntivi possono essere sommati o sottratti a discrezione del DM.*  
 
 #### Azioni Possibili
 Quando più nemici si affrontano, il caos domina. Le priorità cambiano in un lampo, il nemico di un istante diventa lo scudo dell’istante dopo. 
@@ -64,7 +64,7 @@ Quando più nemici si affrontano, il caos domina. Le priorità cambiano in un la
 > *La battaglia è un intrico di possibilità: non tutto può essere controllato, e spesso sopravvive chi sa adattarsi, non chi colpisce più forte.*
 
 #### Determinazione della Parte Colpita
-Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso, il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella **Colpi Mirati e Tiri di Localizzazione**
+Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori possono dichiarare la parte da colpire e, in quel caso, il tiro di localizzazione non è necessario (a discrezione del DM). Se l’attacco ha successo e non è stata dichiarata una parte specifica, si tira 1d100 per determinare quale parte del corpo è stata colpita, usando la tabella **[Colpi Mirati e Tiri di Localizzazione](https://github.com/CrypticSentinel/Open-Source-GDR/edit/main/Combattimento/00%20-%20Il%20Caos%20della%20Battaglia.md#colpi-mirati-e-tiri-di-localizzazione)**
 
 ##### Colpi Mirati e Tiri di Localizzazione
 
@@ -96,10 +96,8 @@ Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori po
 
 - Se un **d20 lanciato per attaccare** risulta **1 naturale**, si applicano le regole dei **Fallimenti Critici** come già previsto dal sistema.
 
-> *Questo introduce il rischio e la possibilità di momenti straordinari in combattimento, sia per il successo clamoroso che per il fallimento epico.*
+> *Questo introduce il rischio e la possibilità di momenti straordinari in combattimento, sia per il successo clamoroso che per il fallimento epico.*  
 
-> **Nota:** A livello narrativo, un 20 naturale su un d20 può portare il DM a decidere che l'effetto sia letale immediato. Esempi includono una decapitazione, l'affondamento di un pugnale nel cuore, o un taglio alla gola.
-> 
 ### 3. Risoluzione
 I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la battaglia prende forma concreta: una lama che colpisce, un corpo che si piega, sangue che schizza e carne che geme sotto il colpo. In questa fase viene determinato l'esito degli attacchi e il danno inflitto e il Narratore descrive ciò che accade nel turno. 
 
@@ -138,7 +136,7 @@ Ogni colpo ha un peso. Non sono solo punti che calano da una scheda: sono **sang
 > *Un duello può finire non quando l’avversario cade a terra, ma quando il peso delle ferite lo spezza prima dentro che fuori.*   
 
 **Esempio di Applicazione del Danno:**
-Un personaggio con un punteggio di assorbimento pari a 4 (dato da +1 di Modificatore di Costituzione e +3 dall'armatura) subisce un colpo al petto che infligge 6 danni. Dopo aver sottratto l'assorbimento, il danno effettivo è 2 (6 danni - 4 assorbimento = 2 danni), portandolo ad una **Ferita Leggera** e conseguente -2 a tutte le azioni. Se, in un turno successivo, il personaggio subisce 8 danni al torso, sottraendo ancora 4 punti di assorbimento, rimangono 4 danni effettivi, portando il totale dei danni al torso a 6. Avendo superato la **Soglia di Resistenza** del torso (5), il personaggio subisce una **Ferita Grave**, che il DM determina in base alla natura del danno ricevuto.
+Un personaggio con un punteggio di assorbimento pari a 4 (dato da +1 di Modificatore di Costituzione e +3 dall'armatura) subisce un colpo al petto che infligge 6 danni. Dopo aver sottratto l'assorbimento, il danno effettivo è 2 (6 danni - 4 assorbimento = 2 danni), portandolo ad una **Ferita Leggera** e conseguente -2 a tutte le azioni. Se, in un turno successivo, il personaggio subisce 8 danni al torso, sottraendo ancora 4 punti di assorbimento, rimangono 4 danni effettivi, portando il totale dei danni al torso a 6. Avendo superato la **Soglia di Resistenza** del torso (5), il personaggio subisce una **Ferita Grave**, che il Narratore determina in base alla natura del danno ricevuto.
 
 #### Gestione della morte
 
