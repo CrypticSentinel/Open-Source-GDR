@@ -26,7 +26,7 @@ In molte campagne, i personaggi giocanti (PG) vengono visti come individui eccez
 Per questo motivo, l'assegnazione dei punteggi delle caratteristiche potrebbe sembrare più contenuta rispetto ad altri giochi di ruolo:
 
 - I punteggi delle caratteristiche vanno da un minimo di 1 a un massimo di 20, con 10 considerato il valore medio per un essere umano.
-- Ogni giocatore ha a disposizione 60 punti da distribuire liberamente tra le sei caratteristiche. Questa scelta mira a limitare la creazione di personaggi estremamente sbilanciati e a scoraggiare il "power play". Chi decide di assegnare punteggi elevati in una caratteristica dovrà bilanciare questa scelta con punteggi inferiori in altre aree.
+- Ogni giocatore ha a disposizione 48 punti da distribuire liberamente tra le sei caratteristiche. Questa scelta mira a limitare la creazione di personaggi estremamente sbilanciati e a scoraggiare il "power play". Chi decide di assegnare punteggi elevati in una caratteristica dovrà bilanciare questa scelta con punteggi inferiori in altre aree.
 - Una volta completata questa distribuzione, per riflettere ulteriormente la diversità tra i personaggi (e per offrire un po' di margine ai giocatori), il passo successivo prevede il lancio di 5d4 e 1d6, da aggiungere alle caratteristiche. È consentito ritirare il d6 e solo uno dei d4.
 
 Questa metodologia rappresenta la mia personale visione del gioco, ma ognuno è libero di adattarla o modificarla secondo le proprie preferenze e necessità narrative.
