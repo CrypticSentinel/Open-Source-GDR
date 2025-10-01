@@ -25,14 +25,14 @@ Spirito ↔ Materia
 Mente ↔ Corpo  
 
 #### Esempio di Applicazione
-Immaginiamo un personaggio appena creato, con 20 punti distribuiti tra le scuole di magia. Il giocatore decide di assegnare i punti iniziali in questo modo:  
+Immaginiamo un personaggio appena creato, con 15 punti distribuiti tra le scuole di magia. Il giocatore decide di assegnare i punti iniziali in questo modo:  
 
 •	Fuoco: 3  
 •	Acqua: 3 (opposta a Fuoco)  
-•	Terra: 2  
-•	Aria: 2 (opposta a Terra)  
-•	Morte: 3  
-•	Vita: 3 (opposta a Morte)  
+•	Terra: 1  
+•	Aria: 1 (opposta a Terra)  
+•	Morte: 2  
+•	Vita: 1 (opposta a Morte)  
 •	Corpo: 1  
 •	Mente: 1 (opposta a Corpo)  
 •	Spirito: 1  
