@@ -8,7 +8,7 @@ Questo sistema vuole incoraggiare la specializzazione, ma allo stesso tempo anch
 ## Sistema di Assegnazione dei Punti
 
 ### Distribuzione dei punti iniziali:  
-Per garantire una base equilibrata da cui partire, Ogni personaggio inizia con 20 punti da distribuire tra le 10 scuole di magia. I giocatori possono assegnare un massimo di 3 punti per scuola, senza alcun obbligo su quali scuole scegliere.  
+Per garantire una base equilibrata da cui partire, Ogni personaggio inizia con 15 punti da distribuire tra le 10 scuole di magia. I giocatori possono assegnare un massimo di 3 punti per scuola, senza alcun obbligo su quali scuole scegliere.  
   
 <center>
   <img src="Schema_Scuole.png" alt="Schema Scuole">
