@@ -17,8 +17,8 @@ Quando un personaggio vuole migliorare un’abilità:
  - Se il tiro non supera il grado, l’abilità non cambia e dovrà attendere la prossima volta per incrementare la sua abilità.
 
 > *Esempio:*
->  - Un personaggio con 3 in Sopravvivenza tira un 4 o più sul dado: l’abilità aumenta a 4.
->  - Un personaggio con 18 in Spada deve tirare 19 o 20 per migliorare ulteriormente: diventare maestro è difficile, ma non impossibile.
+>  - Un personaggio con 3 in Sopravvivenza ottiene un 4 o più sul d20 lanciato: l’abilità aumenta a 4.
+>  - Un personaggio con 18 in Spada deve ottenere un 19 o un 20 sul d20 per migliorare ulteriormente: diventare maestro è difficile, ma non impossibile.
 
 ### Principio alla base
 Questo sistema enfatizza un concetto chiave: chi parte da inesperto può apprendere velocemente: le lezioni sono numerose, le ferite insegnano, i fallimenti forgiano. Chi già eccelle deve affrontare prove più ardue per superare se stesso. E così il mondo rimane vivo, pericoloso e formativo: ogni giorno di lotta, ogni colpo, ogni decisione conta, trasformando il caos in maestria.
