@@ -14,6 +14,8 @@ Le caratteristiche diventano quindi punti di partenza per immaginare le forze e 
 
 [Caratteristiche](https://crypticsentinel.github.io/Open-Source-GDR/Creazione%20PG/01%20-%20Caratteristiche)
 
+[Punti Esperienza](https://crypticsentinel.github.io/Open-Source-GDR/Creazione%20PG/02%20-%20Punti%20Esperienza)
+
 ## Combattimento
 Il combattimento non è una sequenza meccanica di colpi e parate: è caos, adrenalina, incertezza. In molte regole tradizionali, difendersi è un atto passivo, ridotto a un numero che separa vita e morte. Ma in questo sistema, la battaglia è un confronto diretto: chi attacca e chi resiste si incontrano sul filo del dado, in un duello fatto di rischio e di scelta.
 
