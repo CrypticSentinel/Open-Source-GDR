@@ -104,7 +104,7 @@ I dadi si sollevano e cadono. Attacchi, difese e reazioni si intrecciano, la bat
 Ogni colpo ha conseguenze reali, localizzate, potenzialmente letali. Il corpo reagisce: ossa, carne e sangue raccontano la storia dello scontro.
 
 #### Calcolo del danno
-Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto viene sottratto il punteggio di assorbimento. La differenza rappresenta il danno effettivamente subito.
+In questo regolamento non sono presenti dei **Punti Ferita (PF)**, ma il danno subito serve unicamente a poter indicare il tipo di ferita inferta al personaggio. Il danno viene calcolato in base all'arma utilizzata e alla forza dell'attacco. Dal danno totale inflitto viene sottratto il punteggio di assorbimento. La differenza rappresenta il danno effettivamente subito.
 
 **Danno effettivo = (Danno Arma + Mod. Forza) – (Armatura + Mod. Costituzione)**
 
