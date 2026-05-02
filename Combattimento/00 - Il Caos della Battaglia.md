@@ -70,24 +70,17 @@ Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori po
 
 | Zona  | Locazione | Dado (1d100) |
 | :---- | :-------- | :----------: |
-| Alta  | Testa     | 1 - 6   |
-| Alta  | Collo     | 7 - 10  |
-| Alta  | Spalla SX | 12 - 25 |
-| Alta  | Spalla DX | 26 - 40 |
-| Alta  | Braccio SX| 41 - 50 |
-| Alta  | Braccio DX| 51 - 60 |
-| Alta  | Mano SX   | 61 - 65 |
-| Alta  | Mano DX   | 66 - 70 |
-| Alta  | Torace    | 72 - 100 |
-| Bassa | Piede SX  | 1 - 6 |
-| Bassa | Piede DX  | 7 - 10 |
-| Bassa | Gamba SX  | 12 - 25 |
-| Bassa | Gamba DX  | 26 - 40 |
-| Bassa | Stinco SX | 41 - 50 |
-| Bassa | Stinco DX | 51 - 60 |
-| Bassa | Ginocchio SX | 61 - 65 |
-| Bassa | Ginocchio DX | 66 - 70 |
-| Bassa | Addome    | 72 - 100 |
+| Alta  | Testa     | 1 - 10  |
+| Alta  | Braccio SX| 11 - 20 |
+| Alta  | Braccio DX| 21 - 30 |
+| Alta  | Mano SX   | 31 - 35 |
+| Alta  | Mano DX   | 36 - 40 |
+| Alta  | Torace    | 41 - 100 |
+| Bassa | Piede SX  | 1 - 5 |
+| Bassa | Piede DX  | 6 - 10 |
+| Bassa | Gamba SX  | 11 - 35 |
+| Bassa | Gamba DX  | 36 - 60 |
+| Bassa | Torace    | 61 - 100 |
 
 #### Colpi Critici
 - Se un **d20 lanciato per colpire** risulta **20 naturale**:
