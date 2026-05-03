@@ -80,7 +80,7 @@ Prima di tirare il dado per determinare se l'attacco ha successo, i giocatori po
 | Bassa | Piede DX  | 6 - 10 |
 | Bassa | Gamba SX  | 11 - 35 |
 | Bassa | Gamba DX  | 36 - 60 |
-| Bassa | Torace    | 61 - 100 |
+| Bassa | Addome    | 61 - 100 |
 
 #### Colpi Critici
 - Se un **d20 lanciato per colpire** risulta **20 naturale**:
