@@ -217,6 +217,42 @@
       </div>
      </div>
     </div>
+	<!-- Durata subordinata: visibile solo per le 6 durate condizionali -->
+	<div class="mb-3" id="input-durata-condizione" style="display:none;">
+	  <label class="form-label" for="durata-condizione">Durata successiva alla condizione</label>
+	  <select class="form-select" id="durata-condizione" onchange="mostraInputDurataCondizione()" aria-describedby="durata-condizione-help">
+		<option value="0" data-code="DURC_ISTANTANEO" selected>1 round / Istantaneo (+0)</option>
+		<option value="2" data-code="DURC_ROUND_OLTRE">Ogni round oltre il primo (+2)</option>
+		<option value="6" data-code="DURC_MIN_10">Ogni 10 minuti (+6)</option>
+		<option value="-2" data-code="DURC_CONCENTRAZIONE">Finché si rimane concentrati (-2)</option>
+		<option value="35" data-code="DURC_PERMANENTE">Permanente (+35)</option>
+	  </select>
+		<small class="form-text text-muted" id="durata-condizione-help">
+		  Il costo della durata successiva viene ridotto del 50% e arrotondato per eccesso.
+		</small>
+	</div>
+
+	<div class="mb-3 text-center" id="input-durata-condizione-round" style="display:none;">
+	  <div class="mago-input-container">
+		<label class="mago-label" for="numero-durata-condizione-round">Ogni round oltre il primo (durata subordinata)</label>
+		<div class="input-group">
+		  <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-durata-condizione-round')">
+		  <input type="number" id="numero-durata-condizione-round" class="form-control mx-auto" min="0" value="1" style="width:88px;">
+		  <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-durata-condizione-round')">
+		</div>
+	  </div>
+	</div>
+
+	<div class="mb-3 text-center" id="input-durata-condizione-minuti10" style="display:none;">
+	  <div class="mago-input-container">
+		<label class="mago-label" for="numero-durata-condizione-minuti10">Ogni 10 minuti (durata subordinata)</label>
+		<div class="input-group">
+		  <img src="assets/icons/minus.png" alt="-" class="adjust-icon" onclick="decrementaInput('numero-durata-condizione-minuti10')">
+		  <input type="number" id="numero-durata-condizione-minuti10" class="form-control mx-auto" min="0" value="1" style="width:88px;">
+		  <img src="assets/icons/plus.png" alt="+" class="adjust-icon" onclick="incrementaInput('numero-durata-condizione-minuti10')">
+		</div>
+	  </div>
+	</div>
     <!-- Modalità di lancio -->
     <!--=== SEZIONE: Modalità di lancio ===-->
     <h2 class="h4 text-center">
@@ -495,7 +531,7 @@
   </div>
   <footer class="text-center mt-4">
    <p>
-    &copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202606261351
+    &copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202606261436
    </p>
   </footer>
   <script>
