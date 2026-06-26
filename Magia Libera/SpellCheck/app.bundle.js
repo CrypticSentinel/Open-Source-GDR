@@ -1094,7 +1094,25 @@ function calcolaMoltiplicatori() {
         costoDurataCondizione = valoreBaseDurataCondizione;
       }
 
-      mDurataCondizione = Math.ceil(costoDurataCondizione * 0.5);
+            /*
+       * Applichiamo la riduzione del 50% alla durata subordinata.
+       *
+       * Scelta di design:
+       * - per i valori positivi arrotondiamo per eccesso, così +3 diventa +2, +17 diventa +9, ecc.
+       * - per i valori negativi arrotondiamo in modo simmetrico verso il basso,
+       *   così -2 diventa -1 e non otteniamo comportamenti strani in prossimità dello zero.
+       *
+       * In pratica:
+       * - positivi  -> Math.ceil(...)
+       * - negativi  -> Math.floor(...)
+       */
+      const costoRidotto = costoDurataCondizione * 0.5;
+
+      if (costoRidotto >= 0) {
+        mDurataCondizione = Math.ceil(costoRidotto);
+      } else {
+        mDurataCondizione = Math.floor(costoRidotto);
+      }
     }
   }
 

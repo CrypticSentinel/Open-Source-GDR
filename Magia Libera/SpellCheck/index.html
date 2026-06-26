@@ -222,10 +222,10 @@
 	  <label class="form-label" for="durata-condizione">Durata successiva alla condizione</label>
 	  <select class="form-select" id="durata-condizione" onchange="mostraInputDurataCondizione()" aria-describedby="durata-condizione-help">
 		<option value="0" data-code="DURC_ISTANTANEO" selected>1 round / Istantaneo (+0)</option>
-		<option value="2" data-code="DURC_ROUND_OLTRE">Ogni round oltre il primo (+2)</option>
-		<option value="6" data-code="DURC_MIN_10">Ogni 10 minuti (+6)</option>
-		<option value="-2" data-code="DURC_CONCENTRAZIONE">Finché si rimane concentrati (-2)</option>
-		<option value="35" data-code="DURC_PERMANENTE">Permanente (+35)</option>
+		<option value="2" data-code="DURC_ROUND_OLTRE">Ogni round oltre il primo (+1, costo base +2 ridotto del 50%)</option>
+		<option value="6" data-code="DURC_MIN_10">Ogni 10 minuti (+3, costo base +6 ridotto del 50%)</option>
+		<option value="-2" data-code="DURC_CONCENTRAZIONE">Finché si rimane concentrati (-1, costo base -2 ridotto del 50%)</option>
+		<option value="35" data-code="DURC_PERMANENTE">Permanente (+18, costo base +35 ridotto del 50%)</option>
 	  </select>
 		<small class="form-text text-muted" id="durata-condizione-help">
 		  Il costo della durata successiva viene ridotto del 50% e arrotondato per eccesso.
