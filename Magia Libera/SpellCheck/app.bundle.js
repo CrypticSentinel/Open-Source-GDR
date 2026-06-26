@@ -6,7 +6,6 @@
      - Funzioni pure dove possibile; accesso al DOM in wrapper dedicati.
      - Event listeners registrati su DOMContentLoaded per idempotenza.
      - Nomi costanti in MAIUSCOLO, funzioni in camelCase.
-   Authoring: Refactor by ChatGPT — 2025-08-19
    ========================================================================== */
 
 const TABELLE = {
