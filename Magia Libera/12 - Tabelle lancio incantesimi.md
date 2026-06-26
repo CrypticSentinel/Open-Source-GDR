@@ -50,16 +50,26 @@ Questa tabella gestisce l'aumento della difficoltà in base alla durata dell'eff
 | :-----------------------------|:-----------------------:| :----------------------------------------------------------------------------------------------------------|
 | 1 round / Istantaneo          | +0                      | L'effetto si manifesterà e sparira all'interno dello stesso round di lancio                                |
 | Ogni round oltre il primo     | +2                      | L'effetto si manifesterà e perdurerà per il numero di round scelti                                         |
-| Ogni 10 minuti                 | +6                      | L'effetto durerà per ogni incremento di 10 minuti                                                                |
-| Finchè si rimane concentrati  | -2                      | L'effetto perdurerà fino a quanto si rimarrà concentrati, sarà necessario almeno 1 turno di concentrazione |
-| Condizione (Finchè, Quando)   | +25                     | L'effetto si manifesterà quando o finchè non accadrà un evento specifico                                   |
+| Ogni 10 minuti                | +6                      | L'effetto durerà per ogni incremento di 10 minuti                                                          |
+| Finché si rimane concentrati  | -2                      | L'effetto perdurerà fino a quanto si rimarrà concentrati, sarà necessario almeno 1 turno di concentrazione |
+| Quando – Evento evidente      | +8                      | L'effetto si manifesterà quando accadrà un evento semplice, chiaro e immediatamente riconoscibile        |
+| Quando – Evento specifico     | +12                     | L'effetto si manifesterà quando accadrà un evento preciso e definito                                      |
+| Quando – Evento articolato    | +18                     | L'effetto si manifesterà solo quando accadrà un evento complesso, raro o composto da più condizioni       |
+| Finché – Vincolo semplice     | +10                     | L'effetto perdurerà finché resterà valida una condizione semplice e lineare                               |
+| Finché – Vincolo specifico    | +15                     | L'effetto perdurerà finché continuerà a essere soddisfatta una condizione precisa                         |
+| Finché – Vincolo articolato   | +20                     | L'effetto perdurerà finché non verrà spezzata una condizione complessa, simbolica o narrativa             |
 | Permanente                    | +35                     | L'effetto sarà permanente                                                                                  |
 
 - **1 round / Istantaneo (+0):** L'incantesimo ha effetto immediato e dura solo un round, senza modificare la difficoltà. È l'uso più semplice e rapido di un incantesimo.  
 - **Ogni round oltre il primo (+2):** Ogni round aggiuntivo in cui l'incantesimo continua a fare effetto aumenta la difficoltà, poiché richiede un impegno magico prolungato.  
 - **Ogni 10 minuti (+6):** L'incantesimo dura per incrementi di 10 minuti, con ogni intervallo che aumenta la difficoltà a causa del mantenimento prolungato dell'energia magica.  
 - **Finché si rimane concentrati (-2):** L'incantesimo dura finché il mago riesce a mantenere la concentrazione, riducendo la difficoltà poiché richiede uno sforzo continuo ma controllato. Il lancio dell'incantesimo avverrà nel turno successivo, ogni turno di concentrazione potrà essere richiesto un tiro di concentrazione a discrezione del Master.  
-- **Condizione (Finché, Quando) (+25):** L'incantesimo si attiva o continua finché non si verifica un evento specifico. Questo tipo di controllo richiede molta energia e concentrazione, aumentando notevolmente la difficoltà.  
+- **Quando – Evento evidente (+8):** L'incantesimo si manifesta quando accade un evento semplice e facilmente riconoscibile, come aprire una porta, toccare un oggetto o essere colpiti.
+- **Quando – Evento specifico (+12):** L'incantesimo si manifesta quando accade un evento preciso, come pronunciare una parola, entrare in un luogo definito o compiere un gesto stabilito.
+- **Quando – Evento articolato (+18):** L'incantesimo si manifesta solo quando si verifica una combinazione di condizioni o un evento complesso, come entrare in un luogo, pronunciare una formula e trovarsi in una determinata situazione.
+- **Finché – Vincolo semplice (+10):** L'effetto perdura finché resta vera una condizione chiara e lineare, come restare in un'area, impugnare un oggetto o mantenere il contatto con un bersaglio.
+- **Finché – Vincolo specifico (+15):** L'effetto perdura finché continua a essere soddisfatta una condizione più precisa, come non ricevere cure, non oltrepassare un confine o non interrompere un gesto rituale.
+- **Finché – Vincolo articolato (+20):** L'effetto perdura finché non viene spezzata una condizione complessa o narrativa, come ottenere perdono sincero, distruggere un simbolo o completare un atto significativo.
 - **Permanente (+35):** L'incantesimo dura per sempre, il che richiede un'enorme quantità di energia magica e un alto livello di abilità, comportando un aumento significativo della difficoltà.  
 
 ## Tabella Modalità di lancio gestuali
