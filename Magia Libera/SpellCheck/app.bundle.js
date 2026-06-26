@@ -34,14 +34,19 @@ const TABELLE = {
       { code: "AREA_BERSAGLI_OLTRE", text: "Ogni bersaglio oltre il primo (+5)", value: 5 },
       { code: "AREA_DIAMETRO_5M", text: "Ogni 5 metri di diametro (+5)", value: 5 }
     ],
-    durata: [
-      { code: "DUR_ISTANTANEO", text: "1 round / Istantaneo (+0)", value: 0, selected: true },
-      { code: "DUR_ROUND_OLTRE", text: "Ogni round oltre il primo (+2)", value: 2 },
-      { code: "DUR_MIN_10", text: "Ogni 10 minuti (+6)", value: 6 },
-      { code: "DUR_CONCENTRAZIONE", text: "Finchè si rimane concentrati (-2)", value: -2 },
-      { code: "DUR_CONDIZIONE", text: "Condizione (Finchè, Quando) (+25)", value: 25 },
-      { code: "DUR_PERMANENTE", text: "Permanente (+35)", value: 35 }
-    ],
+	durata: [
+	  { code: "DUR_ISTANTANEO", text: "1 round / Istantaneo (+0)", value: 0, selected: true },
+	  { code: "DUR_ROUND_OLTRE", text: "Ogni round oltre il primo (+2)", value: 2 },
+	  { code: "DUR_MIN_10", text: "Ogni 10 minuti (+6)", value: 6 },
+	  { code: "DUR_CONCENTRAZIONE", text: "Finché si rimane concentrati (-2)", value: -2 },
+	  { code: "DUR_QUANDO_EVIDENTE", text: "Quando – Evento evidente (+8)", value: 8 },
+	  { code: "DUR_QUANDO_SPECIFICO", text: "Quando – Evento specifico (+12)", value: 12 },
+	  { code: "DUR_QUANDO_ARTICOLATO", text: "Quando – Evento articolato (+18)", value: 18 },
+	  { code: "DUR_FINCHE_SEMPLICE", text: "Finché – Vincolo semplice (+10)", value: 10 },
+	  { code: "DUR_FINCHE_SPECIFICO", text: "Finché – Vincolo specifico (+15)", value: 15 },
+	  { code: "DUR_FINCHE_ARTICOLATO", text: "Finché – Vincolo articolato (+20)", value: 20 },
+	  { code: "DUR_PERMANENTE", text: "Permanente (+35)", value: 35 }
+	],
     gesti: [
       { code: "GESTI_SENZA", text: "Senza gesti (+5)", value: 5 },
       { code: "GESTI_NASCOSTI", text: "Gesti nascosti (+3)", value: 3 },
