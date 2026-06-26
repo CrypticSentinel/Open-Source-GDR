@@ -6,6 +6,7 @@
      - Funzioni pure dove possibile; accesso al DOM in wrapper dedicati.
      - Event listeners registrati su DOMContentLoaded per idempotenza.
      - Nomi costanti in MAIUSCOLO, funzioni in camelCase.
+   Authoring: Refactor by ChatGPT — 2025-08-19
    ========================================================================== */
 
 const TABELLE = {
@@ -33,19 +34,14 @@ const TABELLE = {
       { code: "AREA_BERSAGLI_OLTRE", text: "Ogni bersaglio oltre il primo (+5)", value: 5 },
       { code: "AREA_DIAMETRO_5M", text: "Ogni 5 metri di diametro (+5)", value: 5 }
     ],
-	durata: [
-	  { code: "DUR_ISTANTANEO", text: "1 round / Istantaneo (+0)", value: 0, selected: true },
-	  { code: "DUR_ROUND_OLTRE", text: "Ogni round oltre il primo (+2)", value: 2 },
-	  { code: "DUR_MIN_10", text: "Ogni 10 minuti (+6)", value: 6 },
-	  { code: "DUR_CONCENTRAZIONE", text: "Finché si rimane concentrati (-2)", value: -2 },
-	  { code: "DUR_QUANDO_EVIDENTE", text: "Quando – Evento evidente (+8)", value: 8 },
-	  { code: "DUR_QUANDO_SPECIFICO", text: "Quando – Evento specifico (+12)", value: 12 },
-	  { code: "DUR_QUANDO_ARTICOLATO", text: "Quando – Evento articolato (+18)", value: 18 },
-	  { code: "DUR_FINCHE_SEMPLICE", text: "Finché – Vincolo semplice (+10)", value: 10 },
-	  { code: "DUR_FINCHE_SPECIFICO", text: "Finché – Vincolo specifico (+15)", value: 15 },
-	  { code: "DUR_FINCHE_ARTICOLATO", text: "Finché – Vincolo articolato (+20)", value: 20 },
-	  { code: "DUR_PERMANENTE", text: "Permanente (+35)", value: 35 }
-	],
+    durata: [
+      { code: "DUR_ISTANTANEO", text: "1 round / Istantaneo (+0)", value: 0, selected: true },
+      { code: "DUR_ROUND_OLTRE", text: "Ogni round oltre il primo (+2)", value: 2 },
+      { code: "DUR_MIN_10", text: "Ogni 10 minuti (+6)", value: 6 },
+      { code: "DUR_CONCENTRAZIONE", text: "Finchè si rimane concentrati (-2)", value: -2 },
+      { code: "DUR_CONDIZIONE", text: "Condizione (Finchè, Quando) (+25)", value: 25 },
+      { code: "DUR_PERMANENTE", text: "Permanente (+35)", value: 35 }
+    ],
     gesti: [
       { code: "GESTI_SENZA", text: "Senza gesti (+5)", value: 5 },
       { code: "GESTI_NASCOSTI", text: "Gesti nascosti (+3)", value: 3 },
@@ -661,92 +657,19 @@ function mostraInputBersagliDiametro() {
 
 function mostraInputDurata() {
   const code = getSelectedCode("durata");
-  const inputRound = document.getElementById("input-round");
+  const inputRound   = document.getElementById("input-round");
   const inputMinuti10 = document.getElementById("input-minuti10");
-
-  inputRound.style.display = (code === "DUR_ROUND_OLTRE") ? "block" : "none";
-  inputMinuti10.style.display = (code === "DUR_MIN_10") ? "block" : "none";
-
+  
+  inputRound.style.display   = (code === "DUR_ROUND_OLTRE") ? 'block' : 'none';
+  inputMinuti10.style.display = (code === "DUR_MIN_10")       ? 'block' : 'none';
+  
   if (code !== "DUR_ROUND_OLTRE") document.getElementById("numero-round").value = "1";
-  if (code !== "DUR_MIN_10") document.getElementById("numero-minuti10").value = "1";
-
-  // Nuovo: aggiorna la visibilità della durata subordinata
-  mostraInputDurataCondizionale();
-}
+  if (code !== "DUR_MIN_10")       document.getElementById("numero-minuti10").value = "1";
+  }
 /**
  * incrementaMagiAggiuntivi() — vedi implementazione per dettagli.
  * @returns {void}
  */
-
-/**
- * Restituisce true se la durata principale selezionata è una delle 6 condizioni.
- * Questo ci serve per capire quando mostrare la durata subordinata.
- */
-function isDurataCondizionale(code) {
-  return [
-    "DUR_QUANDO_EVIDENTE",
-    "DUR_QUANDO_SPECIFICO",
-    "DUR_QUANDO_ARTICOLATO",
-    "DUR_FINCHE_SEMPLICE",
-    "DUR_FINCHE_SPECIFICO",
-    "DUR_FINCHE_ARTICOLATO"
-  ].includes(code);
-}
-
-/**
- * Mostra o nasconde i controlli della durata subordinata in base
- * alla durata principale selezionata.
- */
-function mostraInputDurataCondizionale() {
-  const codeDurataPrincipale = getSelectedCode("durata");
-  const wrapDurataCondizione = document.getElementById("input-durata-condizione");
-
-  if (!wrapDurataCondizione) return;
-
-  if (isDurataCondizionale(codeDurataPrincipale)) {
-    wrapDurataCondizione.style.display = "block";
-  } else {
-    wrapDurataCondizione.style.display = "none";
-
-    const selectDurataCondizione = document.getElementById("durata-condizione");
-    if (selectDurataCondizione) {
-      selectDurataCondizione.value = "0";
-      if (selectDurataCondizione.options.length > 0) {
-        selectDurataCondizione.selectedIndex = 0;
-      }
-    }
-
-    document.getElementById("numero-durata-condizione-round").value = "1";
-    document.getElementById("numero-durata-condizione-minuti10").value = "1";
-  }
-
-  mostraInputDurataCondizione();
-}
-
-/**
- * Mostra i campi numerici della durata subordinata solo se necessari.
- */
-function mostraInputDurataCondizione() {
-  const select = document.getElementById("durata-condizione");
-  const inputRound = document.getElementById("input-durata-condizione-round");
-  const inputMinuti10 = document.getElementById("input-durata-condizione-minuti10");
-
-  if (!select || !inputRound || !inputMinuti10) return;
-
-  const opt = select.options[select.selectedIndex];
-  const code = opt?.dataset?.code || "DURC_ISTANTANEO";
-
-  inputRound.style.display = (code === "DURC_ROUND_OLTRE") ? "block" : "none";
-  inputMinuti10.style.display = (code === "DURC_MIN_10") ? "block" : "none";
-
-  if (code !== "DURC_ROUND_OLTRE") {
-    document.getElementById("numero-durata-condizione-round").value = "1";
-  }
-
-  if (code !== "DURC_MIN_10") {
-    document.getElementById("numero-durata-condizione-minuti10").value = "1";
-  }
-}
 
 function incrementaMagiAggiuntivi() {
   const inputElement = document.getElementById("numero-magi-aggiuntivi");
@@ -1018,101 +941,42 @@ function _difficoltaResistenza(difficoltaLancio, tab = TABELLE.difficoltaResiste
  */
 
 function calcolaMoltiplicatori() {
-  let mBersagli = 0,
-      mDiametro = 0,
-      mRound = 0,
-      mMin10 = 0,
-      mMagi = 0,
-      mRituali = 0,
-      mConc = 0,
-      mDurataCondizione = 0;
+  let mBersagli = 0, mDiametro = 0, mRound = 0, mMin10 = 0, mMagi = 0, mRituali = 0, mConc = 0;
 
-  if (document.getElementById("input-bersagli").style.display === "block") {
+  if (document.getElementById("input-bersagli").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-bersagli").value) || 0;
     mBersagli = (n - 1) * (TABELLE.select.area.find(a => a.code === "AREA_BERSAGLI_OLTRE")?.value ?? 0);
   }
-
-  if (document.getElementById("input-diametro").style.display === "block") {
+  if (document.getElementById("input-diametro").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-diametro").value) || 0;
     mDiametro = (n - 1) * (TABELLE.select.area.find(a => a.code === "AREA_DIAMETRO_5M")?.value ?? 0);
   }
-
-  if (document.getElementById("input-round").style.display === "block") {
+  if (document.getElementById("input-round").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-round").value) || 0;
     mRound = (n - 1) * (TABELLE.select.durata.find(d => d.code === "DUR_ROUND_OLTRE")?.value ?? 0);
   }
-
-  if (document.getElementById("input-minuti10").style.display === "block") {
+  if (document.getElementById("input-minuti10").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-minuti10").value) || 0;
     mMin10 = (n - 1) * (TABELLE.select.durata.find(d => d.code === "DUR_MIN_10")?.value ?? 0);
   }
-
-  if (document.getElementById("input-mago-aggiuntivo").style.display === "block") {
+  if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
     mMagi = 0;
   }
-
-  if (document.getElementById("input-lancio-rituale").style.display === "block") {
+  if (document.getElementById("input-lancio-rituale").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-rituali").value) || 0;
-    mRituali = n * TABELLE.variabili.variabile3.value;
+    mRituali = n * TABELLE.variabili.variabile3.value; // tipicamente -10 per step
   }
-
-  if (document.getElementById("input-rounds").style.display === "block") {
+  if (document.getElementById("input-rounds").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-rounds").value) || 0;
-    mConc = n * TABELLE.variabili.rounds.value;
+    mConc = n * TABELLE.variabili.rounds.value; // tipicamente -1 per round
   }
 
   let punteggiMagi = 0;
-  if (document.getElementById("input-mago-aggiuntivo").style.display === "block") {
+  if (document.getElementById("input-mago-aggiuntivo").style.display === 'block') {
     const n = parseInt(document.getElementById("numero-magi-aggiuntivi").value);
     for (let i = 1; i <= n; i++) {
       const p = parseInt(document.getElementById("punteggio-mago-" + i).value) || 0;
       punteggiMagi += p;
-    }
-  }
-
-  // -----------------------------------------
-  // Nuova logica: durata subordinata ridotta
-  // -----------------------------------------
-  const codiceDurataPrincipale = getSelectedCode("durata");
-  if (isDurataCondizionale(codiceDurataPrincipale)) {
-    const selectDurataCondizione = document.getElementById("durata-condizione");
-
-    if (selectDurataCondizione) {
-      const opt = selectDurataCondizione.options[selectDurataCondizione.selectedIndex];
-      const codeDurataCondizione = opt?.dataset?.code || "DURC_ISTANTANEO";
-      const valoreBaseDurataCondizione = parseInt(selectDurataCondizione.value) || 0;
-
-      let costoDurataCondizione = 0;
-
-      if (codeDurataCondizione === "DURC_ROUND_OLTRE") {
-        const n = parseInt(document.getElementById("numero-durata-condizione-round").value) || 0;
-        costoDurataCondizione = (n - 1) * valoreBaseDurataCondizione;
-      } else if (codeDurataCondizione === "DURC_MIN_10") {
-        const n = parseInt(document.getElementById("numero-durata-condizione-minuti10").value) || 0;
-        costoDurataCondizione = (n - 1) * valoreBaseDurataCondizione;
-      } else {
-        costoDurataCondizione = valoreBaseDurataCondizione;
-      }
-
-            /*
-       * Applichiamo la riduzione del 50% alla durata subordinata.
-       *
-       * Scelta di design:
-       * - per i valori positivi arrotondiamo per eccesso, così +3 diventa +2, +17 diventa +9, ecc.
-       * - per i valori negativi arrotondiamo in modo simmetrico verso il basso,
-       *   così -2 diventa -1 e non otteniamo comportamenti strani in prossimità dello zero.
-       *
-       * In pratica:
-       * - positivi  -> Math.ceil(...)
-       * - negativi  -> Math.floor(...)
-       */
-      const costoRidotto = costoDurataCondizione * 0.5;
-
-      if (costoRidotto >= 0) {
-        mDurataCondizione = Math.ceil(costoRidotto);
-      } else {
-        mDurataCondizione = Math.floor(costoRidotto);
-      }
     }
   }
 
@@ -1124,11 +988,9 @@ function calcolaMoltiplicatori() {
     moltiplicatoreMagiAggiuntivi: mMagi,
     moltiplicatoreRituali: mRituali,
     moltiplicatoreConcentrazione: mConc,
-    moltiplicatoreDurataCondizione: mDurataCondizione,
     punteggiMagi
   };
 }
-
 /**
  * mostraPopupGradoMagia() — vedi implementazione per dettagli.
  * @returns {void}
@@ -1136,62 +998,8 @@ function calcolaMoltiplicatori() {
 
 function mostraPopupGradoMagia() { window.showModal ? window.showModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "block"); }
 
-/**
- * Ricalcola automaticamente la difficoltà solo se i campi del popup
- * Grado Magia / Volontà hanno già un valore valido.
- *
- * Questo evita errori quando l'utente cambia una durata subordinata
- * prima di aver lanciato il calcolo principale almeno una volta.
- */
-function ricalcolaSePossibile() {
-  const gradoMagiaEl = document.getElementById("grado-magia");
-  const volontaEl = document.getElementById("punteggio-volonta");
-
-  if (!gradoMagiaEl || !volontaEl) return;
-
-  const gradoMagia = parseInt(gradoMagiaEl.value, 10);
-  const punteggioVolonta = parseInt(volontaEl.value, 10);
-
-  /*
-   * Ricalcoliamo solo se entrambi i valori sono numeri validi.
-   * In questo modo non forziamo popup o stati incoerenti.
-   */
-  if (!Number.isNaN(gradoMagia) && !Number.isNaN(punteggioVolonta)) {
-    calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
-  }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   bootstrapSelects();
-  mostraInputDurata();
-  mostraInputDurataCondizione();
-
-  /*
-   * Listener per la durata subordinata:
-   * quando l'utente cambia una delle opzioni collegate alla
-   * "Durata successiva alla condizione", la difficoltà totale
-   * viene ricalcolata subito.
-   */
-  const durataCondizioneEl = document.getElementById("durata-condizione");
-  const durataCondizioneRoundEl = document.getElementById("numero-durata-condizione-round");
-  const durataCondizioneMinutiEl = document.getElementById("numero-durata-condizione-minuti10");
-
-  if (durataCondizioneEl) {
-    durataCondizioneEl.addEventListener("change", () => {
-      mostraInputDurataCondizione();
-      ricalcolaSePossibile();
-    });
-  }
-
-  if (durataCondizioneRoundEl) {
-    durataCondizioneRoundEl.addEventListener("input", ricalcolaSePossibile);
-    durataCondizioneRoundEl.addEventListener("change", ricalcolaSePossibile);
-  }
-
-  if (durataCondizioneMinutiEl) {
-    durataCondizioneMinutiEl.addEventListener("input", ricalcolaSePossibile);
-    durataCondizioneMinutiEl.addEventListener("change", ricalcolaSePossibile);
-  }
 
   document.getElementById("mente-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("mente-checkbox"); });
   document.getElementById("corpo-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("corpo-checkbox"); });
@@ -1200,6 +1008,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.getElementById("close-popup");
   if (closeBtn) closeBtn.addEventListener("click", () => { window.hideModal ? window.hideModal("popup-difficolta") : (document.getElementById("popup-difficolta").style.display = "none"); });
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//  const submit = document.getElementById("submit-grado-magia");
+//  if (submit) {
+//    submit.addEventListener("click", function () {
+//      const gradoMagia = parseInt(document.getElementById("grado-magia").value);
+//      const punteggioVolonta = parseInt(document.getElementById("punteggio-volonta").value);
+//      window.hideModal ? window.hideModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "none");
+//      calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
+//    });
+//  }
+//});
+/**
+ * incrementaGradoMagia() — vedi implementazione per dettagli.
+ * @returns {void}
+ */
 
 function incrementaGradoMagia() { const el = document.getElementById("grado-magia"); el.value = parseInt(el.value) + 1; }
 /**
@@ -1290,7 +1114,6 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
     moltiplicatoreMagiAggiuntivi,
     moltiplicatoreRituali,
     moltiplicatoreConcentrazione,
-    moltiplicatoreDurataCondizione,
     punteggiMagi
   } = calcolaMoltiplicatori();
 
@@ -1306,13 +1129,12 @@ function calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta) {
     danni_totali += (parseInt(document.getElementById(d.id).value) || 0) * d.costo;
   });
 
-	let totale = base + distanza + area + durata + gesti + verbale + posizione
-	+ moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound
-	+ moltiplicatoreMinuti10 + moltiplicatoreMagiAggiuntivi
-	+ moltiplicatoreRituali + moltiplicatoreConcentrazione
-	+ moltiplicatoreDurataCondizione
-	+ mod_corpo + mod_materia + mod_mente
-	+ effetti + danni_totali;
+  let totale = base + distanza + area + durata + gesti + verbale + posizione
+    + moltiplicatoreBersagli + moltiplicatoreDiametro + moltiplicatoreRound
+    + moltiplicatoreMinuti10 + moltiplicatoreMagiAggiuntivi
+    + moltiplicatoreRituali + moltiplicatoreConcentrazione
+    + mod_corpo + mod_materia + mod_mente
+    + effetti + danni_totali;
 
   totale -= punteggiMagi;
 
@@ -1344,23 +1166,9 @@ function ripristinaValori() {
 
   setVal("numero-bersagli","1"); setVal("numero-diametro","1"); setVal("numero-round","1");
   setVal("numero-minuti10","1");
-  setVal("durata-condizione", "0");
-  setVal("numero-durata-condizione-round", "1");
-  setVal("numero-durata-condizione-minuti10", "1");
   setVal("numero-magi-aggiuntivi","1"); setVal("numero-rituali","1"); setVal("numero-rounds","1");
 
-  [
-  "input-bersagli",
-  "input-diametro",
-  "input-round",
-  "input-minuti10",
-  "input-durata-condizione",
-  "input-durata-condizione-round",
-  "input-durata-condizione-minuti10",
-  "input-mago-aggiuntivo",
-  "input-lancio-rituale",
-  "input-rounds"
-  ]
+  ["input-bersagli","input-diametro","input-round","input-minuti10","input-mago-aggiuntivo","input-lancio-rituale","input-rounds"]
     .forEach(id => document.getElementById(id).style.display = 'none');
 
   ["variabile1","variabile2","variabile3","rounds-checkbox","effetto1","effetto2","effetto3","corpo-checkbox","materia-checkbox","mente-checkbox"]
