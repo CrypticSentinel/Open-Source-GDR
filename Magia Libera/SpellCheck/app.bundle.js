@@ -1136,10 +1136,62 @@ function calcolaMoltiplicatori() {
 
 function mostraPopupGradoMagia() { window.showModal ? window.showModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "block"); }
 
+/**
+ * Ricalcola automaticamente la difficoltà solo se i campi del popup
+ * Grado Magia / Volontà hanno già un valore valido.
+ *
+ * Questo evita errori quando l'utente cambia una durata subordinata
+ * prima di aver lanciato il calcolo principale almeno una volta.
+ */
+function ricalcolaSePossibile() {
+  const gradoMagiaEl = document.getElementById("grado-magia");
+  const volontaEl = document.getElementById("punteggio-volonta");
+
+  if (!gradoMagiaEl || !volontaEl) return;
+
+  const gradoMagia = parseInt(gradoMagiaEl.value, 10);
+  const punteggioVolonta = parseInt(volontaEl.value, 10);
+
+  /*
+   * Ricalcoliamo solo se entrambi i valori sono numeri validi.
+   * In questo modo non forziamo popup o stati incoerenti.
+   */
+  if (!Number.isNaN(gradoMagia) && !Number.isNaN(punteggioVolonta)) {
+    calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   bootstrapSelects();
   mostraInputDurata();
   mostraInputDurataCondizione();
+
+  /*
+   * Listener per la durata subordinata:
+   * quando l'utente cambia una delle opzioni collegate alla
+   * "Durata successiva alla condizione", la difficoltà totale
+   * viene ricalcolata subito.
+   */
+  const durataCondizioneEl = document.getElementById("durata-condizione");
+  const durataCondizioneRoundEl = document.getElementById("numero-durata-condizione-round");
+  const durataCondizioneMinutiEl = document.getElementById("numero-durata-condizione-minuti10");
+
+  if (durataCondizioneEl) {
+    durataCondizioneEl.addEventListener("change", () => {
+      mostraInputDurataCondizione();
+      ricalcolaSePossibile();
+    });
+  }
+
+  if (durataCondizioneRoundEl) {
+    durataCondizioneRoundEl.addEventListener("input", ricalcolaSePossibile);
+    durataCondizioneRoundEl.addEventListener("change", ricalcolaSePossibile);
+  }
+
+  if (durataCondizioneMinutiEl) {
+    durataCondizioneMinutiEl.addEventListener("input", ricalcolaSePossibile);
+    durataCondizioneMinutiEl.addEventListener("change", ricalcolaSePossibile);
+  }
 
   document.getElementById("mente-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("mente-checkbox"); });
   document.getElementById("corpo-checkbox").addEventListener("change", function () { if (this.checked) uncheckOtherCheckboxes("corpo-checkbox"); });
@@ -1148,22 +1200,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.getElementById("close-popup");
   if (closeBtn) closeBtn.addEventListener("click", () => { window.hideModal ? window.hideModal("popup-difficolta") : (document.getElementById("popup-difficolta").style.display = "none"); });
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//  const submit = document.getElementById("submit-grado-magia");
-//  if (submit) {
-//    submit.addEventListener("click", function () {
-//      const gradoMagia = parseInt(document.getElementById("grado-magia").value);
-//      const punteggioVolonta = parseInt(document.getElementById("punteggio-volonta").value);
-//      window.hideModal ? window.hideModal("popup-grado-magia") : (document.getElementById("popup-grado-magia").style.display = "none");
-//      calcolaDifficoltaConGrado(gradoMagia, punteggioVolonta);
-//    });
-//  }
-//});
-/**
- * incrementaGradoMagia() — vedi implementazione per dettagli.
- * @returns {void}
- */
 
 function incrementaGradoMagia() { const el = document.getElementById("grado-magia"); el.value = parseInt(el.value) + 1; }
 /**
