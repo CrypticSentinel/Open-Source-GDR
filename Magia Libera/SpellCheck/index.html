@@ -6,7 +6,6 @@
        - Bootstrap 5 usato per grid/utilities; stile custom in assets/css/style.css.
        - I modali sono implementati custom e non dipendono da Bootstrap JS.
        - I pulsanti 'Tema'/'Stile' agiscono su classi/variabili CSS lato client.
-     Authoring: Refactor by ChatGPT — 2025-08-19
      ======================================================================= -->
 <html lang="it">
  <head>
@@ -218,6 +217,57 @@
       </div>
      </div>
     </div>
+	<!-- =========================================================
+		 DURATA SUCCESSIVA PER LE DURATE CONDIZIONALI
+		 Questo blocco resta nascosto finché l'utente non seleziona
+		 una delle 6 durate condizionali principali.
+	========================================================= -->
+	<div id="input-durata-condizione" style="display: none; margin-top: 12px;">
+
+	  <!-- Etichetta del secondo livello di durata -->
+	  <label for="durata-condizione" class="form-label">
+		Durata successiva della condizione
+	  </label>
+
+	  <!-- Select della durata successiva:
+		   verrà popolata da JavaScript con:
+		   - 1 round / Istantaneo
+		   - Ogni round oltre il primo
+		   - Ogni 10 minuti
+		   - Permanente
+		   - Le 6 condizioni aggiuntive
+	  -->
+	  <select id="durata-condizione" class="form-select" onchange="mostraInputDurataCondizione()">
+	  </select>
+
+	  <!-- Input numerico per "Ogni round oltre il primo" -->
+	  <div id="input-durata-condizione-round" style="display: none; margin-top: 10px;">
+		<label for="numero-durata-condizione-round" class="form-label">
+		  Numero di round
+		</label>
+		<input
+		  type="number"
+		  id="numero-durata-condizione-round"
+		  class="form-control"
+		  min="1"
+		  value="1"
+		/>
+	  </div>
+
+	  <!-- Input numerico per "Ogni 10 minuti" -->
+	  <div id="input-durata-condizione-minuti10" style="display: none; margin-top: 10px;">
+		<label for="numero-durata-condizione-minuti10" class="form-label">
+		  Numero di intervalli da 10 minuti
+		</label>
+		<input
+		  type="number"
+		  id="numero-durata-condizione-minuti10"
+		  class="form-control"
+		  min="1"
+		  value="1"
+		/>
+	  </div>
+	</div>
     <!-- Modalità di lancio -->
     <!--=== SEZIONE: Modalità di lancio ===-->
     <h2 class="h4 text-center">
@@ -496,7 +546,7 @@
   </div>
   <footer class="text-center mt-4">
    <p>
-    &copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202508190905
+    &copy; 2024 CrypticSentinel - Open Source GDR - SpellCheck - ver 202606281834
    </p>
   </footer>
   <script>
