@@ -38,27 +38,16 @@ const TABELLE = {
 	  // DURATE BASE STANDARD
 	  // Queste sono le durate normali già previste dal sistema.
 	  // =========================================================
+	  { code: "DUR_CONCENTRAZIONE", text: "Finchè si rimane concentrati (-2)", value: -2 },
 	  { code: "DUR_ISTANTANEO", text: "1 round / Istantaneo (+0)", value: 0, selected: true },
 	  { code: "DUR_ROUND_OLTRE", text: "Ogni round oltre il primo (+2)", value: 2 },
 	  { code: "DUR_MIN_10", text: "Ogni 10 minuti (+6)", value: 6 },
-	  { code: "DUR_CONCENTRAZIONE", text: "Finchè si rimane concentrati (-2)", value: -2 },
-
-	  // =========================================================
-	  // NUOVE 6 DURATE CONDIZIONALI
-	  // Se una di queste viene selezionata come durata principale,
-	  // l'interfaccia mostrerà una seconda select per scegliere
-	  // la durata successiva dell'effetto.
-	  // =========================================================
 	  { code: "DUR_QUANDO_EVIDENTE", text: "Quando – Evento evidente (+8)", value: 8 },
 	  { code: "DUR_QUANDO_SPECIFICO", text: "Quando – Evento specifico (+12)", value: 12 },
 	  { code: "DUR_QUANDO_ARTICOLATO", text: "Quando – Evento articolato (+18)", value: 18 },
 	  { code: "DUR_FINCHE_SEMPLICE", text: "Finchè – Vincolo semplice (+10)", value: 10 },
 	  { code: "DUR_FINCHE_SPECIFICO", text: "Finchè – Vincolo specifico (+15)", value: 15 },
 	  { code: "DUR_FINCHE_ARTICOLATO", text: "Finchè – Vincolo articolato (+20)", value: 20 },
-
-	  // =========================================================
-	  // DURATA MASSIMA FINALE
-	  // =========================================================
 	  { code: "DUR_PERMANENTE", text: "Permanente (+35)", value: 35 }
 	],
     gesti: [
@@ -591,13 +580,13 @@ const DURATE_CONDIZIONALI_SUCCESSIVE = [
   { code: "DURC_ISTANTANEO", text: "1 round / Istantaneo (+0)", value: 0, selected: true },
   { code: "DURC_ROUND_OLTRE", text: "Ogni round oltre il primo (+2)", value: 2 },
   { code: "DURC_MIN_10", text: "Ogni 10 minuti (+6)", value: 6 },
-  { code: "DURC_PERMANENTE", text: "Permanente (+35)", value: 35 },
   { code: "DURC_QUANDO_EVIDENTE", text: "Quando – Evento evidente (+8)", value: 8 },
   { code: "DURC_QUANDO_SPECIFICO", text: "Quando – Evento specifico (+12)", value: 12 },
   { code: "DURC_QUANDO_ARTICOLATO", text: "Quando – Evento articolato (+18)", value: 18 },
   { code: "DURC_FINCHE_SEMPLICE", text: "Finchè – Vincolo semplice (+10)", value: 10 },
   { code: "DURC_FINCHE_SPECIFICO", text: "Finchè – Vincolo specifico (+15)", value: 15 },
-  { code: "DURC_FINCHE_ARTICOLATO", text: "Finchè – Vincolo articolato (+20)", value: 20 }
+  { code: "DURC_FINCHE_ARTICOLATO", text: "Finchè – Vincolo articolato (+20)", value: 20 },
+  { code: "DURC_PERMANENTE", text: "Permanente (+35)", value: 35 }
 ];
 
 /**
