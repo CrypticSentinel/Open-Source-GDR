@@ -70,7 +70,32 @@ Questa tabella gestisce l'aumento della difficoltà in base alla durata dell'eff
 - **Finché – Vincolo semplice (+10):** L'effetto perdura finché resta vera una condizione chiara e lineare, come restare in un'area, impugnare un oggetto o mantenere il contatto con un bersaglio.
 - **Finché – Vincolo specifico (+15):** L'effetto perdura finché continua a essere soddisfatta una condizione più precisa, come non ricevere cure, non oltrepassare un confine o non interrompere un gesto rituale.
 - **Finché – Vincolo articolato (+20):** L'effetto perdura finché non viene spezzata una condizione complessa o narrativa, come ottenere perdono sincero, distruggere un simbolo o completare un atto significativo.
-- **Permanente (+35):** L'incantesimo dura per sempre, il che richiede un'enorme quantità di energia magica e un alto livello di abilità, comportando un aumento significativo della difficoltà.  
+- **Permanente (+35):** L'incantesimo dura per sempre, il che richiede un'enorme quantità di energia magica e un alto livello di abilità, comportando un aumento significativo della difficoltà.
+
+### Durata condizionale e durata successiva
+
+Le voci **Quando** e **Finché** possono essere utilizzate non solo come durata autonoma dell'incantesimo, ma anche come **innesco o vincolo iniziale** al quale associare una **durata successiva**.
+
+Questo significa che un incantesimo può:
+- attivarsi **quando** si verifica un certo evento, e da quel momento durare per 1 round, più round, 10 minuti, oppure in modo permanente;
+- perdurare **finché** una certa condizione resta valida, ma una volta definita l'attivazione o il vincolo può anche essere seguito da una durata ulteriore dell'effetto, se coerente con la formulazione dell'incantesimo.
+
+In termini di calcolo, si sommano:
+- il costo della voce **Quando** o **Finché** scelta come condizione principale;
+- il costo della **durata successiva** scelta per determinare quanto a lungo l'effetto resta attivo dopo l'attivazione o all'interno del vincolo definito.
+
+Quando la durata successiva scelta è:
+- **1 round / Istantaneo (+0):** l'effetto si esaurisce immediatamente al verificarsi della condizione;
+- **Ogni round oltre il primo (+2):** il primo round è già compreso nella scelta della durata successiva, e ogni round ulteriore aumenta la difficoltà di +2;
+- **Ogni 10 minuti (+6):** i primi 10 minuti sono già compresi nella scelta della durata successiva, e ogni intervallo ulteriore di 10 minuti aumenta la difficoltà di +6;
+- **Permanente (+35):** l'effetto, una volta attivato o definito dal vincolo, permane stabilmente finché non viene spezzato con altri mezzi narrativi o magici.
+
+Alcuni esempi:
+- un glifo che si attiva **quando** qualcuno apre una porta e infligge danno in quell'istante userà solo la voce **Quando** scelta, senza ulteriori aumenti di durata;
+- una benedizione che si attiva **quando** il portatore estrae una spada e dura 3 round sommerà il costo della voce **Quando** scelta più **Ogni round oltre il primo (+2)** per i round aggiuntivi;
+- una protezione che resta attiva **finché** il bersaglio rimane entro un cerchio sacro e continua poi per altri 10 minuti, sommerà il costo della voce **Finché** scelta più **Ogni 10 minuti (+6)** per la durata successiva.
+
+Questa regola permette di costruire incantesimi più flessibili e narrativi, mantenendo però coerente il calcolo della difficoltà: la **condizione** definisce *come* o *quando* l'effetto entra in gioco, mentre la **durata successiva** definisce *per quanto tempo* l'effetto rimane attivo.
 
 ## Tabella Modalità di lancio gestuali
 Questa tabella considera il tipo di gesti necessari per lanciare un incantesimo. Gesti più discreti o l'assenza totale di movimenti rendono il lancio più difficile, mentre gesti ampi e visibili possono facilitarlo.
